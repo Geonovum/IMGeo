@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="25"
+   height="25"
+   id="svg4044"
+   version="1.1"
+   inkscape:version="0.48.3.1 r9886"
+   sodipodi:docname="New document 3">
+  <defs
+     id="defs3" />
+  <sodipodi:namedview
+     inkscape:document-units="mm"
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="20.879946"
+     inkscape:cx="12.49997"
+     inkscape:cy="12.500045"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     units="px"
+     inkscape:window-width="1366"
+     inkscape:window-height="692"
+     inkscape:window-x="0"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata4">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-1027.3622)">
+    <g
+       transform="translate(-526.75189,107.99117)"
+       id="g4023"
+       inkscape:export-filename="/home/emacgillavry/projecten/2012/19_geonovum_bgt_imgeo/04_implementatie/iconen/hoospanningsmast.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         style="fill:#cc0000;fill-opacity:1;stroke:#ffffff;stroke-width:1.28693509"
+         inkscape:connector-curvature="0"
+         d="m 551.10836,941.35457 c 0,1.31003 -1.06049,2.37298 -2.37323,2.37298 H 529.7673 c -1.31017,0 -2.37194,-1.06295 -2.37194,-2.37298 v -18.96716 c 0,-1.31004 1.06177,-2.37299 2.37194,-2.37299 h 18.96783 c 1.31274,0 2.37323,1.06295 2.37323,2.37299 v 18.96716 z"
+         id="path3219" />
+      <polyline
+         transform="matrix(1.2870013,0,0,1.2868688,520.95649,914.40496)"
+         style="fill:none;stroke:#ffffff;stroke-linecap:round;stroke-linejoin:round"
+         points="10.891,21.367,14.139,5.777,17.541,21.367"
+         id="polyline3221" />
+      <polygon
+         transform="matrix(1.2870013,0,0,1.2868688,520.95649,914.40496)"
+         style="fill:none;stroke:#ffffff;stroke-width:0.5;stroke-linecap:round;stroke-linejoin:round"
+         points="15.285,11.003 12.314,14.766 16.107,14.779 13.07,11.003 "
+         id="polygon3223" />
+      <polyline
+         transform="matrix(1.2870013,0,0,1.2868688,520.95649,914.40496)"
+         style="fill:none;stroke:#ffffff;stroke-width:0.5;stroke-linecap:round;stroke-linejoin:round"
+         points="12.314,14.766,17.236,19.875,11.178,19.879,16.107,14.779"
+         id="polyline3225" />
+    </g>
+  </g>
+</svg>

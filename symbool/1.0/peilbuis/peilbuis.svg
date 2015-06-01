@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generator: Adobe Illustrator 15.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   enable-background="new 0 0 28.347 28.347"
+   xml:space="preserve"
+   viewBox="0 0 25 25"
+   version="1.1"
+   y="0px"
+   x="0px"
+   id="svg2"
+   inkscape:version="0.48.0 r9654"
+   width="100%"
+   height="100%"
+   sodipodi:docname="peilbuis.svg"><defs
+   id="defs16" /><sodipodi:namedview
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1"
+   objecttolerance="10"
+   gridtolerance="10"
+   guidetolerance="10"
+   inkscape:pageopacity="0"
+   inkscape:pageshadow="2"
+   inkscape:window-width="739"
+   inkscape:window-height="480"
+   id="namedview14"
+   showgrid="false"
+   inkscape:zoom="9.4870588"
+   inkscape:cx="12.5"
+   inkscape:cy="12.5"
+   inkscape:window-x="0"
+   inkscape:window-y="24"
+   inkscape:window-maximized="0"
+   inkscape:current-layer="g6" /><metadata
+   id="metadata4"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata>
+<g
+   transform="matrix(1.2870013,0,0,1.2868026,-5.7954165,-5.172997)"
+   id="g6"><path
+   fill="#947100"
+   stroke="#FFF"
+   d="m23.428,21.104c0,1.018-0.824,1.844-1.844,1.844h-14.738c-1.018,0-1.843-0.826-1.843-1.844v-14.74c0-1.018,0.825-1.844,1.843-1.844h14.738c1.02,0,1.844,0.826,1.844,1.844v14.74z"
+   id="path8"
+   style="fill:#42145f;fill-opacity:1"
+   inkscape:export-filename="/media/Storage/projecten/2011/19_bgt_imgeo_vis_revisie/03_ontwerp/grafisch/peilbuis.png"
+   inkscape:export-xdpi="300"
+   inkscape:export-ydpi="300" />
+	<path
+   fill="#FFF"
+   d="m14.216,8.157c0.68,0,1.289-0.299,1.715-0.766-0.297-0.434-0.803-0.826-1.709-0.826-0.908,0-1.418,0.395-1.717,0.832,0.426,0.463,1.033,0.76,1.711,0.76z"
+   id="path10" />
+	<path
+   fill="#FFF"
+   d="m14.216,9.157c-0.803,0-1.527-0.297-2.104-0.77-0.016,0.102-0.023,0.178-0.023,0.178v10.338s0.08,2,2.133,2c2.055,0,2.119-2,2.119-2v-10.338s-0.006-0.076-0.021-0.178c-0.575,0.473-1.303,0.77-2.104,0.77z"
+   id="path12" />
+</g>
+</svg>

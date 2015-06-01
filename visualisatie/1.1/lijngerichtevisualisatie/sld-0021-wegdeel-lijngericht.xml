@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<StyledLayerDescriptor version="1.0.0" xmlns="http://www.opengis.net/sld" xmlns:ogc="http://www.opengis.net/ogc"
+  xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.0.0/StyledLayerDescriptor.xsd">
+	<NamedLayer>
+		<Name>Wegdeel</Name>
+		<UserStyle>
+			<Title>Visualisatie van de wegdelen</Title>
+			<Abstract>Deze stylesheet bevat de regels voor de visualisatie van het objecttype Wegdeel</Abstract>
+			<FeatureTypeStyle>
+				<Rule>
+					<Name>0021-00-00-00</Name>
+					<Title>Wegdeel</Title>
+					<MinScaleDenominator>0</MinScaleDenominator>
+					<MaxScaleDenominator>5000</MaxScaleDenominator>
+					<PolygonSymbolizer>
+						<Stroke>
+							<CssParameter name="stroke">#000000</CssParameter>
+							<CssParameter name="stroke-width">1</CssParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>transitie</Name>
+					<Title>Transitie</Title>
+					<ogc:Filter>
+						<ogc:Or>
+							<ogc:PropertyIsEqualTo>
+								<ogc:PropertyName>plus-type</ogc:PropertyName>
+								<ogc:Literal>transitie</ogc:Literal>
+							</ogc:PropertyIsEqualTo>
+							<ogc:PropertyIsEqualTo>
+								<ogc:PropertyName>bgt-type</ogc:PropertyName>
+								<ogc:Literal>transitie</ogc:Literal>
+							</ogc:PropertyIsEqualTo>
+							<ogc:PropertyIsEqualTo>
+								<ogc:PropertyName>plus-functieWegdeel</ogc:PropertyName>
+								<ogc:Literal>transitie</ogc:Literal>
+							</ogc:PropertyIsEqualTo>
+							<ogc:PropertyIsEqualTo>
+								<ogc:PropertyName>bgt-functie</ogc:PropertyName>
+								<ogc:Literal>transitie</ogc:Literal>
+							</ogc:PropertyIsEqualTo>
+							<ogc:PropertyIsEqualTo>
+								<ogc:PropertyName>plus-fysiekVoorkomenWegdeel</ogc:PropertyName>
+								<ogc:Literal>transitie</ogc:Literal>
+							</ogc:PropertyIsEqualTo>
+							<ogc:PropertyIsEqualTo>
+								<ogc:PropertyName>bgt-fysiekVoorkomen</ogc:PropertyName>
+								<ogc:Literal>transitie</ogc:Literal>
+							</ogc:PropertyIsEqualTo>
+						</ogc:Or>
+					</ogc:Filter>
+					<MinScaleDenominator>0</MinScaleDenominator>
+					<MaxScaleDenominator>5000</MaxScaleDenominator>
+					<PolygonSymbolizer>
+						<Stroke>
+							<CssParameter name="stroke">#000000</CssParameter>
+							<CssParameter name="stroke-width">3</CssParameter>
+							<CssParameter name="stroke-dasharray">6 3</CssParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+			</FeatureTypeStyle>
+		</UserStyle>
+	</NamedLayer>
+</StyledLayerDescriptor>

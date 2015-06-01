@@ -1,0 +1,1594 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2013 sp1 (x64) (http://www.altova.com) by Maarten van den Broek (messageDesign B.V.) -->
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:cit="http://www.opengis.net/citygml/2.0" xmlns:gml="http://www.opengis.net/gml" xmlns:imgeo="http://www.geostandaarden.nl/imgeo/2.1/stuf-imgeo/1.2" xmlns:StUF="http://www.egem.nl/StUF/StUF0301" xmlns:BG="http://www.egem.nl/StUF/sector/bg/0310" targetNamespace="http://www.geostandaarden.nl/imgeo/2.1/stuf-imgeo/1.2" elementFormDefault="qualified" attributeFormDefault="unqualified" version="030100">
+	<annotation>
+		<documentation>
+			Wijzigingen vergeleken met versie 030002:
+			- imgeo:namespace en target namespace gewijzigd in http://www.geostandaarden.nl/imgeo/2.1/stuf-imgeo/1.2
+			- schemaLocation in include gewijzigd van "imgeo0300_ent_horizontaal.xsd" naar "imgeo0301_ent_horizontaal.xsd"
+			- schemaLocation in import namespace "http://www.egem.nl/StUF/StUF0301" gewijzigd van "imgeo0300_stuf_msg_horizontaal.xsd" naar "imgeo0301_stuf_msg_horizontaal.xsd"
+		</documentation>
+	</annotation>
+	<import namespace="http://www.egem.nl/StUF/StUF0301" schemaLocation="imgeo0301_stuf_msg_horizontaal.xsd"/>
+	<include schemaLocation="imgeo0301_ent_horizontaal.xsd"/>
+	<!--Vrije berichten-->
+	<element name="expDi01">
+		<annotation>
+			<documentation>Asynchroon vrij bericht met een exploratieverzoek</documentation>
+		</annotation>
+		<complexType>
+			<sequence>
+				<element name="stuurgegevens" type="StUF:EXP-StuurgegevensDi01"/>
+				<element name="exploratieverzoek">
+					<complexType>
+						<complexContent>
+							<extension base="imgeo:EXP-verzoek">
+								<attribute ref="StUF:functie" use="required" fixed="entiteit"/>
+							</extension>
+						</complexContent>
+					</complexType>
+				</element>
+			</sequence>
+		</complexType>
+	</element>
+	<element name="expDu01">
+		<annotation>
+			<documentation>Asynchroon vrij bericht met de respons op een exploratieverzoek</documentation>
+		</annotation>
+		<complexType>
+			<sequence>
+				<element name="stuurgegevens" type="StUF:EXP-StuurgegevensDu01"/>
+				<element name="exploratieverzoek">
+					<complexType>
+						<complexContent>
+							<extension base="imgeo:EXP-respons">
+								<attribute ref="StUF:functie" use="required" fixed="entiteit"/>
+							</extension>
+						</complexContent>
+					</complexType>
+				</element>
+			</sequence>
+		</complexType>
+	</element>
+	<element name="mtbHorizontaalDi01">
+		<annotation>
+			<documentation>Asynchroon vrij bericht voor het doorgeven van één of meer verplicht over te nemen wijzigingen van de BGT naar BOR applicaties</documentation>
+		</annotation>
+		<complexType>
+			<sequence>
+				<element name="stuurgegevens" type="StUF:MTBHorizontaal-StuurgegevensDi01"/>
+				<element name="mutatiebericht">
+					<complexType>
+						<complexContent>
+							<extension base="imgeo:MTB-verzoekHorizontaal">
+								<attribute ref="StUF:functie" use="required" fixed="entiteit"/>
+							</extension>
+						</complexContent>
+					</complexType>
+				</element>
+				<choice maxOccurs="unbounded">
+					<element name="bakLk01T">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xTV"/>
+								<element name="object" type="imgeo:BAK-TW-imgeo"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="BAK"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="bakLk01W">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xWV"/>
+								<element name="object" type="imgeo:BAK-TW-imgeo" minOccurs="2" maxOccurs="2"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="BAK"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="brdLk01T">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xTV"/>
+								<element name="object" type="imgeo:BRD-TW-imgeo"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="BRD"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="brdLk01W">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xWV"/>
+								<element name="object" type="imgeo:BRD-TW-imgeo" minOccurs="2" maxOccurs="2"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="BRD"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="brtLk01T">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xTV"/>
+								<element name="object" type="imgeo:BRT-TW-imgeo"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="BRT"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="brtLk01W">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xWV"/>
+								<element name="object" type="imgeo:BRT-TW-imgeo" minOccurs="2" maxOccurs="2"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="BRT"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="btdLk01T">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xTV"/>
+								<element name="object" type="imgeo:BTD-TW-imgeo"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="BTD"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="btdLk01W">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xWV"/>
+								<element name="object" type="imgeo:BTD-TW-imgeo" minOccurs="2" maxOccurs="2"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="BTD"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="fugLk01T">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xTV"/>
+								<element name="object" type="imgeo:FUG-TW-imgeo"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="FUG"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="fugLk01W">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xWV"/>
+								<element name="object" type="imgeo:FUG-TW-imgeo" minOccurs="2" maxOccurs="2"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="FUG"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="gbiLk01T">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xTV"/>
+								<element name="object" type="imgeo:GBI-TW-imgeo"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="GBI"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="gbiLk01W">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xWV"/>
+								<element name="object" type="imgeo:GBI-TW-imgeo" minOccurs="2" maxOccurs="2"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="GBI"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="insLk01T">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xTV"/>
+								<element name="object" type="imgeo:INS-TW-imgeo"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="INS"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="insLk01W">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xWV"/>
+								<element name="object" type="imgeo:INS-TW-imgeo" minOccurs="2" maxOccurs="2"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="INS"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="kstLk01T">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xTV"/>
+								<element name="object" type="imgeo:KST-TW-imgeo"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="KST"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="kstLk01W">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xWV"/>
+								<element name="object" type="imgeo:KST-TW-imgeo" minOccurs="2" maxOccurs="2"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="KST"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="kwdLk01T">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xTV"/>
+								<element name="object" type="imgeo:KWD-TW-imgeo"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="KWD"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="kwdLk01W">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xWV"/>
+								<element name="object" type="imgeo:KWD-TW-imgeo" minOccurs="2" maxOccurs="2"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="KWD"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="ldeLk01T">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xTV"/>
+								<element name="object" type="imgeo:LDE-TW-imgeo"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="LDE"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="ldeLk01W">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xWV"/>
+								<element name="object" type="imgeo:LDE-TW-imgeo" minOccurs="2" maxOccurs="2"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="LDE"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="ldgLk01T">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xTV"/>
+								<element name="object" type="imgeo:LDG-TW-imgeo"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="LDG"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="ldgLk01W">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xWV"/>
+								<element name="object" type="imgeo:LDG-TW-imgeo" minOccurs="2" maxOccurs="2"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="LDG"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="mstLk01T">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xTV"/>
+								<element name="object" type="imgeo:MST-TW-imgeo"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="MST"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="mstLk01W">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xWV"/>
+								<element name="object" type="imgeo:MST-TW-imgeo" minOccurs="2" maxOccurs="2"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="MST"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="obdLk01T">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xTV"/>
+								<element name="object" type="imgeo:OBD-TW-imgeo"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="OBD"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="obdLk01W">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xWV"/>
+								<element name="object" type="imgeo:OBD-TW-imgeo" minOccurs="2" maxOccurs="2"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="OBD"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="obwLk01T">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xTV"/>
+								<element name="object" type="imgeo:OBW-TW-imgeo"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="OBW"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="obwLk01W">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xWV"/>
+								<element name="object" type="imgeo:OBW-TW-imgeo" minOccurs="2" maxOccurs="2"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="OBW"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="ocoLk01T">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xTV"/>
+								<element name="object" type="imgeo:OCO-TW-imgeo"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="OCO"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="ocoLk01W">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xWV"/>
+								<element name="object" type="imgeo:OCO-TW-imgeo" minOccurs="2" maxOccurs="2"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="OCO"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="oprLk01T">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xTV"/>
+								<element name="object" type="imgeo:OPR-TW-imgeo"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="OPR"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="oprLk01W">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xWV"/>
+								<element name="object" type="imgeo:OPR-TW-imgeo" minOccurs="2" maxOccurs="2"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="OPR"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="orlLk01T">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xTV"/>
+								<element name="object" type="imgeo:ORL-TW-imgeo"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="ORL"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="orlLk01W">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xWV"/>
+								<element name="object" type="imgeo:ORL-TW-imgeo" minOccurs="2" maxOccurs="2"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="ORL"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="oshLk01T">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xTV"/>
+								<element name="object" type="imgeo:OSH-TW-imgeo"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="OSH"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="oshLk01W">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xWV"/>
+								<element name="object" type="imgeo:OSH-TW-imgeo" minOccurs="2" maxOccurs="2"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="OSH"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="otdLk01T">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xTV"/>
+								<element name="object" type="imgeo:OTD-TW-imgeo"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="OTD"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="otdLk01W">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xWV"/>
+								<element name="object" type="imgeo:OTD-TW-imgeo" minOccurs="2" maxOccurs="2"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="OTD"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="owgLk01T">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xTV"/>
+								<element name="object" type="imgeo:OWG-TW-imgeo"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="OWG"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="owgLk01W">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xWV"/>
+								<element name="object" type="imgeo:OWG-TW-imgeo" minOccurs="2" maxOccurs="2"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="OWG"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="owtLk01T">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xTV"/>
+								<element name="object" type="imgeo:OWT-TW-imgeo"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="OWT"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="owtLk01W">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xWV"/>
+								<element name="object" type="imgeo:OWT-TW-imgeo" minOccurs="2" maxOccurs="2"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="OWT"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="palLk01T">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xTV"/>
+								<element name="object" type="imgeo:PAL-TW-imgeo"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="PAL"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="palLk01W">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xWV"/>
+								<element name="object" type="imgeo:PAL-TW-imgeo" minOccurs="2" maxOccurs="2"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="PAL"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="pndLk01T">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xTV"/>
+								<element name="object" type="imgeo:PND-TW-imgeo"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="PND"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="pndLk01W">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xWV"/>
+								<element name="object" type="imgeo:PND-TW-imgeo" minOccurs="2" maxOccurs="2"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="PND"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="putLk01T">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xTV"/>
+								<element name="object" type="imgeo:PUT-TW-imgeo"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="PUT"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="putLk01W">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xWV"/>
+								<element name="object" type="imgeo:PUT-TW-imgeo" minOccurs="2" maxOccurs="2"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="PUT"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="shdLk01T">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xTV"/>
+								<element name="object" type="imgeo:SHD-TW-imgeo"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="SHD"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="shdLk01W">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xWV"/>
+								<element name="object" type="imgeo:SHD-TW-imgeo" minOccurs="2" maxOccurs="2"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="SHD"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="snsLk01T">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xTV"/>
+								<element name="object" type="imgeo:SNS-TW-imgeo"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="SNS"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="snsLk01W">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xWV"/>
+								<element name="object" type="imgeo:SNS-TW-imgeo" minOccurs="2" maxOccurs="2"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="SNS"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="sprLk01T">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xTV"/>
+								<element name="object" type="imgeo:SPR-TW-imgeo"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="SPR"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="sprLk01W">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xWV"/>
+								<element name="object" type="imgeo:SPR-TW-imgeo" minOccurs="2" maxOccurs="2"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="SPR"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="stdLk01T">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xTV"/>
+								<element name="object" type="imgeo:STD-TW-imgeo"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="STD"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="stdLk01W">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xWV"/>
+								<element name="object" type="imgeo:STD-TW-imgeo" minOccurs="2" maxOccurs="2"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="STD"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="stmLk01T">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xTV"/>
+								<element name="object" type="imgeo:STM-TW-imgeo"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="STM"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="stmLk01W">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xWV"/>
+								<element name="object" type="imgeo:STM-TW-imgeo" minOccurs="2" maxOccurs="2"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="STM"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="tndLk01T">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xTV"/>
+								<element name="object" type="imgeo:TND-TW-imgeo"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="TND"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="tndLk01W">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xWV"/>
+								<element name="object" type="imgeo:TND-TW-imgeo" minOccurs="2" maxOccurs="2"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="TND"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="vgoLk01T">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xTV"/>
+								<element name="object" type="imgeo:VGO-TW-imgeo"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="VGO"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="vgoLk01W">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xWV"/>
+								<element name="object" type="imgeo:VGO-TW-imgeo" minOccurs="2" maxOccurs="2"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="VGO"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="wgdLk01T">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xTV"/>
+								<element name="object" type="imgeo:WGD-TW-imgeo"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="WGD"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="wgdLk01W">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xWV"/>
+								<element name="object" type="imgeo:WGD-TW-imgeo" minOccurs="2" maxOccurs="2"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="WGD"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="wgiLk01T">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xTV"/>
+								<element name="object" type="imgeo:WGI-TW-imgeo"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="WGI"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="wgiLk01W">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xWV"/>
+								<element name="object" type="imgeo:WGI-TW-imgeo" minOccurs="2" maxOccurs="2"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="WGI"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="wspLk01T">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xTV"/>
+								<element name="object" type="imgeo:WSP-TW-imgeo"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="WSP"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="wspLk01W">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xWV"/>
+								<element name="object" type="imgeo:WSP-TW-imgeo" minOccurs="2" maxOccurs="2"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="WSP"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="wtdLk01T">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xTV"/>
+								<element name="object" type="imgeo:WTD-TW-imgeo"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="WTD"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="wtdLk01W">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xWV"/>
+								<element name="object" type="imgeo:WTD-TW-imgeo" minOccurs="2" maxOccurs="2"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="WTD"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="wtiLk01T">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xTV"/>
+								<element name="object" type="imgeo:WTI-TW-imgeo"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="WTI"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="wtiLk01W">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xWV"/>
+								<element name="object" type="imgeo:WTI-TW-imgeo" minOccurs="2" maxOccurs="2"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="WTI"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="wykLk01T">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xTV"/>
+								<element name="object" type="imgeo:WYK-TW-imgeo"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="WYK"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="wykLk01W">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xWV"/>
+								<element name="object" type="imgeo:WYK-TW-imgeo" minOccurs="2" maxOccurs="2"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="WYK"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+				</choice>
+			</sequence>
+		</complexType>
+	</element>
+	<element name="mtvHorizontaalDi01">
+		<annotation>
+			<documentation>Asynchroon vrij bericht voor het vragen om het doorvoeren van één of meer wijzigingen</documentation>
+		</annotation>
+		<complexType>
+			<sequence>
+				<element name="stuurgegevens" type="StUF:MTVHorizontaal-StuurgegevensDi01"/>
+				<element name="mutatieverzoek">
+					<complexType>
+						<complexContent>
+							<extension base="imgeo:MTV-verzoekHorizontaal">
+								<attribute ref="StUF:functie" use="required" fixed="entiteit"/>
+							</extension>
+						</complexContent>
+					</complexType>
+				</element>
+				<choice maxOccurs="unbounded">
+					<element name="bakLk01T">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xTI"/>
+								<element name="object" type="imgeo:BAK-TW-bor"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="BAK"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="bakLk01W">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xWI"/>
+								<element name="object" type="imgeo:BAK-TW-bor" minOccurs="2" maxOccurs="2"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="BAK"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="brdLk01T">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xTI"/>
+								<element name="object" type="imgeo:BRD-TW-bor"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="BRD"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="brdLk01W">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xWI"/>
+								<element name="object" type="imgeo:BRD-TW-bor" minOccurs="2" maxOccurs="2"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="BRD"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="brtLk01T">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xTI"/>
+								<element name="object" type="imgeo:BRT-TW-bor"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="BRT"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="brtLk01W">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xWI"/>
+								<element name="object" type="imgeo:BRT-TW-bor" minOccurs="2" maxOccurs="2"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="BRT"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="btdLk01T">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xTI"/>
+								<element name="object" type="imgeo:BTD-TW-bor"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="BTD"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="btdLk01W">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xWI"/>
+								<element name="object" type="imgeo:BTD-TW-bor" minOccurs="2" maxOccurs="2"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="BTD"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="fugLk01T">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xTI"/>
+								<element name="object" type="imgeo:FUG-TW-bor"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="FUG"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="fugLk01W">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xWI"/>
+								<element name="object" type="imgeo:FUG-TW-bor" minOccurs="2" maxOccurs="2"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="FUG"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="gbiLk01T">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xTI"/>
+								<element name="object" type="imgeo:GBI-TW-bor"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="GBI"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="gbiLk01W">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xWI"/>
+								<element name="object" type="imgeo:GBI-TW-bor" minOccurs="2" maxOccurs="2"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="GBI"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="insLk01T">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xTI"/>
+								<element name="object" type="imgeo:INS-TW-bor"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="INS"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="insLk01W">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xWI"/>
+								<element name="object" type="imgeo:INS-TW-bor" minOccurs="2" maxOccurs="2"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="INS"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="kstLk01T">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xTI"/>
+								<element name="object" type="imgeo:KST-TW-bor"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="KST"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="kstLk01W">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xWI"/>
+								<element name="object" type="imgeo:KST-TW-bor" minOccurs="2" maxOccurs="2"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="KST"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="kwdLk01T">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xTI"/>
+								<element name="object" type="imgeo:KWD-TW-bor"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="KWD"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="kwdLk01W">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xWI"/>
+								<element name="object" type="imgeo:KWD-TW-bor" minOccurs="2" maxOccurs="2"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="KWD"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="ldeLk01T">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xTI"/>
+								<element name="object" type="imgeo:LDE-TW-bor"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="LDE"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="ldeLk01W">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xWI"/>
+								<element name="object" type="imgeo:LDE-TW-bor" minOccurs="2" maxOccurs="2"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="LDE"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="ldgLk01T">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xTI"/>
+								<element name="object" type="imgeo:LDG-TW-bor"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="LDG"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="ldgLk01W">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xWI"/>
+								<element name="object" type="imgeo:LDG-TW-bor" minOccurs="2" maxOccurs="2"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="LDG"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="mstLk01T">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xTI"/>
+								<element name="object" type="imgeo:MST-TW-bor"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="MST"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="mstLk01W">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xWI"/>
+								<element name="object" type="imgeo:MST-TW-bor" minOccurs="2" maxOccurs="2"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="MST"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="obdLk01T">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xTI"/>
+								<element name="object" type="imgeo:OBD-TW-bor"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="OBD"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="obdLk01W">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xWI"/>
+								<element name="object" type="imgeo:OBD-TW-bor" minOccurs="2" maxOccurs="2"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="OBD"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="obwLk01T">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xTI"/>
+								<element name="object" type="imgeo:OBW-TW-bor"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="OBW"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="obwLk01W">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xWI"/>
+								<element name="object" type="imgeo:OBW-TW-bor" minOccurs="2" maxOccurs="2"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="OBW"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="ocoLk01T">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xTI"/>
+								<element name="object" type="imgeo:OCO-TW-bor"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="OCO"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="ocoLk01W">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xWI"/>
+								<element name="object" type="imgeo:OCO-TW-bor" minOccurs="2" maxOccurs="2"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="OCO"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="oprLk01T">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xTI"/>
+								<element name="object" type="imgeo:OPR-TW-bor"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="OPR"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="oprLk01W">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xWI"/>
+								<element name="object" type="imgeo:OPR-TW-bor" minOccurs="2" maxOccurs="2"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="OPR"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="orlLk01T">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xTI"/>
+								<element name="object" type="imgeo:ORL-TW-bor"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="ORL"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="orlLk01W">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xWI"/>
+								<element name="object" type="imgeo:ORL-TW-bor" minOccurs="2" maxOccurs="2"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="ORL"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="oshLk01T">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xTI"/>
+								<element name="object" type="imgeo:OSH-TW-bor"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="OSH"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="oshLk01W">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xWI"/>
+								<element name="object" type="imgeo:OSH-TW-bor" minOccurs="2" maxOccurs="2"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="OSH"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="otdLk01T">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xTI"/>
+								<element name="object" type="imgeo:OTD-TW-bor"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="OTD"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="otdLk01W">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xWI"/>
+								<element name="object" type="imgeo:OTD-TW-bor" minOccurs="2" maxOccurs="2"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="OTD"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="owgLk01T">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xTI"/>
+								<element name="object" type="imgeo:OWG-TW-bor"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="OWG"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="owgLk01W">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xWI"/>
+								<element name="object" type="imgeo:OWG-TW-bor" minOccurs="2" maxOccurs="2"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="OWG"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="owtLk01T">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xTI"/>
+								<element name="object" type="imgeo:OWT-TW-bor"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="OWT"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="owtLk01W">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xWI"/>
+								<element name="object" type="imgeo:OWT-TW-bor" minOccurs="2" maxOccurs="2"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="OWT"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="palLk01T">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xTI"/>
+								<element name="object" type="imgeo:PAL-TW-bor"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="PAL"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="palLk01W">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xWI"/>
+								<element name="object" type="imgeo:PAL-TW-bor" minOccurs="2" maxOccurs="2"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="PAL"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="pndLk01T">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xTI"/>
+								<element name="object" type="imgeo:PND-TW-bor"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="PND"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="pndLk01W">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xWI"/>
+								<element name="object" type="imgeo:PND-TW-bor" minOccurs="2" maxOccurs="2"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="PND"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="putLk01T">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xTI"/>
+								<element name="object" type="imgeo:PUT-TW-bor"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="PUT"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="putLk01W">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xWI"/>
+								<element name="object" type="imgeo:PUT-TW-bor" minOccurs="2" maxOccurs="2"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="PUT"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="shdLk01T">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xTI"/>
+								<element name="object" type="imgeo:SHD-TW-bor"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="SHD"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="shdLk01W">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xWI"/>
+								<element name="object" type="imgeo:SHD-TW-bor" minOccurs="2" maxOccurs="2"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="SHD"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="snsLk01T">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xTI"/>
+								<element name="object" type="imgeo:SNS-TW-bor"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="SNS"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="snsLk01W">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xWI"/>
+								<element name="object" type="imgeo:SNS-TW-bor" minOccurs="2" maxOccurs="2"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="SNS"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="sprLk01T">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xTI"/>
+								<element name="object" type="imgeo:SPR-TW-bor"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="SPR"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="sprLk01W">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xWI"/>
+								<element name="object" type="imgeo:SPR-TW-bor" minOccurs="2" maxOccurs="2"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="SPR"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="stdLk01T">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xTI"/>
+								<element name="object" type="imgeo:STD-TW-bor"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="STD"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="stdLk01W">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xWI"/>
+								<element name="object" type="imgeo:STD-TW-bor" minOccurs="2" maxOccurs="2"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="STD"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="stmLk01T">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xTI"/>
+								<element name="object" type="imgeo:STM-TW-bor"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="STM"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="stmLk01W">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xWI"/>
+								<element name="object" type="imgeo:STM-TW-bor" minOccurs="2" maxOccurs="2"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="STM"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="tndLk01T">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xTI"/>
+								<element name="object" type="imgeo:TND-TW-bor"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="TND"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="tndLk01W">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xWI"/>
+								<element name="object" type="imgeo:TND-TW-bor" minOccurs="2" maxOccurs="2"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="TND"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="vgoLk01T">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xTI"/>
+								<element name="object" type="imgeo:VGO-TW-bor"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="VGO"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="vgoLk01W">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xWI"/>
+								<element name="object" type="imgeo:VGO-TW-bor" minOccurs="2" maxOccurs="2"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="VGO"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="wgdLk01T">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xTI"/>
+								<element name="object" type="imgeo:WGD-TW-bor"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="WGD"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="wgdLk01W">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xWI"/>
+								<element name="object" type="imgeo:WGD-TW-bor" minOccurs="2" maxOccurs="2"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="WGD"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="wgiLk01T">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xTI"/>
+								<element name="object" type="imgeo:WGI-TW-bor"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="WGI"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="wgiLk01W">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xWI"/>
+								<element name="object" type="imgeo:WGI-TW-bor" minOccurs="2" maxOccurs="2"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="WGI"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="wspLk01T">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xTI"/>
+								<element name="object" type="imgeo:WSP-TW-bor"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="WSP"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="wspLk01W">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xWI"/>
+								<element name="object" type="imgeo:WSP-TW-bor" minOccurs="2" maxOccurs="2"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="WSP"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="wtdLk01T">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xTI"/>
+								<element name="object" type="imgeo:WTD-TW-bor"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="WTD"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="wtdLk01W">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xWI"/>
+								<element name="object" type="imgeo:WTD-TW-bor" minOccurs="2" maxOccurs="2"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="WTD"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="wtiLk01T">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xTI"/>
+								<element name="object" type="imgeo:WTI-TW-bor"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="WTI"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="wtiLk01W">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xWI"/>
+								<element name="object" type="imgeo:WTI-TW-bor" minOccurs="2" maxOccurs="2"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="WTI"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="wykLk01T">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xTI"/>
+								<element name="object" type="imgeo:WYK-TW-bor"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="WYK"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+					<element name="wykLk01W">
+						<complexType>
+							<sequence>
+								<element name="parameters" type="StUF:ParametersLk0xWI"/>
+								<element name="object" type="imgeo:WYK-TW-bor" minOccurs="2" maxOccurs="2"/>
+							</sequence>
+							<attribute ref="StUF:entiteittype" use="required" fixed="WYK"/>
+							<attribute ref="StUF:functie" use="required" fixed="update"/>
+						</complexType>
+					</element>
+				</choice>
+			</sequence>
+		</complexType>
+	</element>
+	<element name="mtvWeigerDu01">
+		<annotation>
+			<documentation>Asynchroon vrij bericht voor het doorgeven dat een gevraagde mutatie in een mutatieverzoek niet zal worden doorgevoerd</documentation>
+		</annotation>
+		<complexType>
+			<sequence>
+				<element name="stuurgegevens" type="StUF:MTVWeiger-StuurgegevensDu01"/>
+				<element name="weigerbericht">
+					<complexType>
+						<complexContent>
+							<extension base="imgeo:WGB-horizontaal">
+								<attribute ref="StUF:functie" use="required" fixed="entiteit"/>
+							</extension>
+						</complexContent>
+					</complexType>
+				</element>
+			</sequence>
+		</complexType>
+	</element>
+</schema>

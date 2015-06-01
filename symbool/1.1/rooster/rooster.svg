@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="25"
+   height="25"
+   id="svg3375"
+   version="1.1"
+   inkscape:version="0.48.3.1 r9886"
+   sodipodi:docname="New document 5">
+  <defs
+     id="defs3" />
+  <sodipodi:namedview
+     inkscape:document-units="mm"
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="20.880426"
+     inkscape:cx="12.49977"
+     inkscape:cy="12.499765"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     units="px"
+     inkscape:window-width="1366"
+     inkscape:window-height="692"
+     inkscape:window-x="0"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata4">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-1027.3622)">
+    <g
+       id="g3402"
+       transform="translate(-250.65258,547.54242)">
+      <path
+         style="color:#000000;fill:#d52b1e;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.99999994;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         inkscape:connector-curvature="0"
+         d="m 275.15212,501.91826 c 0,1.3258 -1.07336,2.4015 -2.40204,2.4015 h -19.19807 c -1.32607,0 -2.39943,-1.0757 -2.39943,-2.4015 v -19.19647 c 0,-1.32579 1.07336,-2.40152 2.39943,-2.40152 h 19.19807 c 1.32868,0 2.40204,1.07573 2.40204,2.40152 v 19.19647 z"
+         id="path4128"
+         inkscape:export-filename="/media/Storage/projecten/2011/07_BGT_IMGeo_Visualisatie/05_GrafischOntwerp/vuilvang.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90" />
+      <line
+         style="fill:none;stroke:#ffffff;stroke-width:1.99996138"
+         x1="255.0284"
+         y1="495.03864"
+         x2="271.20224"
+         y2="495.03864"
+         id="line4130" />
+      <rect
+         id="rect4132"
+         x="254.99797"
+         y="484.28528"
+         width="16.234705"
+         height="16.069548"
+         style="fill:none;stroke:#ffffff;stroke-width:1.93045223;stroke-linejoin:round" />
+      <line
+         id="line4134"
+         y2="489.60144"
+         x2="271.27631"
+         y1="489.60144"
+         x1="255.10246"
+         style="fill:none;stroke:#ffffff;stroke-width:1.99996138" />
+      <line
+         id="line4136"
+         y2="495.03864"
+         x2="271.20224"
+         y1="495.03864"
+         x1="255.0284"
+         style="fill:none;stroke:#ffffff;stroke-width:1.99996138" />
+      <rect
+         style="fill:none;stroke:#ffffff;stroke-width:1.93045223;stroke-linejoin:round"
+         height="16.069548"
+         width="16.234705"
+         y="484.28528"
+         x="254.99797"
+         id="rect4138" />
+      <line
+         style="fill:none;stroke:#ffffff;stroke-width:1.99996138"
+         x1="255.10246"
+         y1="489.60144"
+         x2="271.27631"
+         y2="489.60144"
+         id="line4140" />
+      <line
+         id="line4323"
+         y2="489.60144"
+         x2="271.27631"
+         y1="489.60144"
+         x1="255.10246"
+         style="fill:none;stroke:#ffffff;stroke-width:1.99996138" />
+    </g>
+  </g>
+</svg>

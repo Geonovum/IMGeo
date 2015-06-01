@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<StyledLayerDescriptor version="1.0.0" xmlns="http://www.opengis.net/sld" xmlns:ogc="http://www.opengis.net/ogc"
+  xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.0.0/StyledLayerDescriptor.xsd">
+	<NamedLayer>
+		<Name>Bak</Name>
+		<UserStyle>
+			<Title>Visualisatie van de bakken</Title>
+			<Abstract>Deze stylesheet bevat de regels voor de visualisatie van het objecttype Bak</Abstract>
+      			<FeatureTypeStyle>
+				<Rule>
+					<Name>0100-01-00-01</Name>
+					<Title>Afval apart plaats</Title>
+					<ogc:Filter>
+						<ogc:PropertyIsEqualTo>
+							<ogc:PropertyName>plus-type</ogc:PropertyName>
+							<ogc:Literal>afval apart plaats</ogc:Literal>
+						</ogc:PropertyIsEqualTo>	    
+					</ogc:Filter>
+					<MinScaleDenominator>0</MinScaleDenominator>
+					<MaxScaleDenominator>5000</MaxScaleDenominator>
+					<PointSymbolizer>
+						<Graphic>
+							<ExternalGraphic>
+								<OnlineResource xlink:type="simple" xlink:href="bak.svg"/>
+								<Format>image/svg+xml</Format>
+							</ExternalGraphic>
+							<Size>25</Size>
+						</Graphic>
+					</PointSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>0100-02-00-01</Name>
+					<Title>Afvalbak</Title>
+					<ogc:Filter>
+						<ogc:PropertyIsEqualTo>
+							<ogc:PropertyName>plus-type</ogc:PropertyName>
+							<ogc:Literal>afvalbak</ogc:Literal>
+						</ogc:PropertyIsEqualTo>	    
+					</ogc:Filter>
+					<MinScaleDenominator>0</MinScaleDenominator>
+					<MaxScaleDenominator>5000</MaxScaleDenominator>
+					<PointSymbolizer>
+						<Graphic>
+							<ExternalGraphic>
+								<OnlineResource xlink:type="simple" xlink:href="bak.svg"/>
+								<Format>image/svg+xml</Format>
+							</ExternalGraphic>
+							<Size>25</Size>
+						</Graphic>
+					</PointSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>0100-03-00-01</Name>
+					<Title>Bloembak</Title>
+					<ogc:Filter>
+						<ogc:PropertyIsEqualTo>
+							<ogc:PropertyName>plus-type</ogc:PropertyName>
+							<ogc:Literal>bloembak</ogc:Literal>
+						</ogc:PropertyIsEqualTo>	    
+					</ogc:Filter>
+					<MinScaleDenominator>0</MinScaleDenominator>
+					<MaxScaleDenominator>5000</MaxScaleDenominator>
+					<PointSymbolizer>
+						<Graphic>
+							<ExternalGraphic>
+								<OnlineResource xlink:type="simple" xlink:href="bak.svg"/>
+								<Format>image/svg+xml</Format>
+							</ExternalGraphic>
+							<Size>25</Size>
+						</Graphic>
+					</PointSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>0100-04-00-01</Name>
+					<Title>Container</Title>
+					<ogc:Filter>
+						<ogc:PropertyIsEqualTo>
+							<ogc:PropertyName>plus-type</ogc:PropertyName>
+							<ogc:Literal>container</ogc:Literal>
+						</ogc:PropertyIsEqualTo>	    
+					</ogc:Filter>
+					<MinScaleDenominator>0</MinScaleDenominator>
+					<MaxScaleDenominator>5000</MaxScaleDenominator>
+					<PointSymbolizer>
+						<Graphic>
+							<ExternalGraphic>
+								<OnlineResource xlink:type="simple" xlink:href="bak.svg"/>
+								<Format>image/svg+xml</Format>
+							</ExternalGraphic>
+							<Size>25</Size>
+						</Graphic>
+					</PointSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>0100-05-00-01</Name>
+					<Title>Drinkbak</Title>
+					<ogc:Filter>
+						<ogc:PropertyIsEqualTo>
+							<ogc:PropertyName>plus-type</ogc:PropertyName>
+							<ogc:Literal>drinkbak</ogc:Literal>
+						</ogc:PropertyIsEqualTo>	    
+					</ogc:Filter>
+					<MinScaleDenominator>0</MinScaleDenominator>
+					<MaxScaleDenominator>5000</MaxScaleDenominator>
+					<PointSymbolizer>
+						<Graphic>
+							<ExternalGraphic>
+								<OnlineResource xlink:type="simple" xlink:href="bak.svg"/>
+								<Format>image/svg+xml</Format>
+							</ExternalGraphic>
+							<Size>25</Size>
+						</Graphic>
+					</PointSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>0100-06-00-01</Name>
+					<Title>Zand-/zoutbak</Title>
+					<ogc:Filter>
+						<ogc:PropertyIsEqualTo>
+							<ogc:PropertyName>plus-type</ogc:PropertyName>
+							<ogc:Literal>zand-/zoutbak</ogc:Literal>
+						</ogc:PropertyIsEqualTo>	    
+					</ogc:Filter>
+					<MinScaleDenominator>0</MinScaleDenominator>
+					<MaxScaleDenominator>5000</MaxScaleDenominator>
+					<PointSymbolizer>
+						<Graphic>
+							<ExternalGraphic>
+								<OnlineResource xlink:type="simple" xlink:href="bak.svg"/>
+								<Format>image/svg+xml</Format>
+							</ExternalGraphic>
+							<Size>25</Size>
+						</Graphic>
+					</PointSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>transitie</Name>
+					<Title>Transitie</Title>
+					<ogc:Filter>
+						<ogc:Or>
+							<ogc:PropertyIsEqualTo>
+								<ogc:PropertyName>plus-type</ogc:PropertyName>
+								<ogc:Literal>transitie</ogc:Literal>
+							</ogc:PropertyIsEqualTo>
+							<ogc:PropertyIsEqualTo>
+								<ogc:PropertyName>bgt-type</ogc:PropertyName>
+								<ogc:Literal>transitie</ogc:Literal>
+							</ogc:PropertyIsEqualTo>
+							<ogc:PropertyIsEqualTo>
+								<ogc:PropertyName>plus-functie</ogc:PropertyName>
+								<ogc:Literal>transitie</ogc:Literal>
+							</ogc:PropertyIsEqualTo>
+							<ogc:PropertyIsEqualTo>
+								<ogc:PropertyName>bgt-functie</ogc:PropertyName>
+								<ogc:Literal>transitie</ogc:Literal>
+							</ogc:PropertyIsEqualTo>
+							<ogc:PropertyIsEqualTo>
+								<ogc:PropertyName>plus-fysiekVoorkomen</ogc:PropertyName>
+								<ogc:Literal>transitie</ogc:Literal>
+							</ogc:PropertyIsEqualTo>
+							<ogc:PropertyIsEqualTo>
+								<ogc:PropertyName>bgt-fysiekVoorkomen</ogc:PropertyName>
+								<ogc:Literal>transitie</ogc:Literal>
+							</ogc:PropertyIsEqualTo>
+						</ogc:Or>
+					</ogc:Filter>
+					<MinScaleDenominator>0</MinScaleDenominator>
+					<MaxScaleDenominator>5000</MaxScaleDenominator>
+					<PointSymbolizer>
+						<Graphic>
+							<Mark>
+								<WellKnownName>circle</WellKnownName>
+								<Fill>
+									<CssParameter name="fill">#f2f2f2</CssParameter>
+								</Fill>
+								<Stroke>
+									<CssParameter name="stroke">#535353</CssParameter>
+									<CssParameter name="stroke-width">3</CssParameter>
+									<CssParameter name="stroke-dasharray">6 3</CssParameter>
+								</Stroke>
+							</Mark>
+							<Size>25</Size>
+						</Graphic>
+					</PointSymbolizer>
+				</Rule>
+			</FeatureTypeStyle>
+		</UserStyle>
+	</NamedLayer>
+</StyledLayerDescriptor>

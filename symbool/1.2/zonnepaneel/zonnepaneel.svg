@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" xml:space="preserve" height="25" width="25" enable-background="new 0 0 28.347 28.347" y="0px" x="0px" viewBox="0 0 25 25">
+  <metadata>
+    <rdf:RDF>
+      <cc:Work rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+        <dc:title/>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <path d="m24.5,22.098c0,1.3259-1.0733,2.4017-2.402,2.4017h-19.197c-1.326,0-2.4006-1.076-2.4006-2.402v-19.196c0-1.3259,1.0746-2.4017,2.4006-2.4017h19.197c1.3286,0,2.402,1.0758,2.402,2.4017v19.197z" stroke="#FFF" stroke-width="0.99999994000000003" fill="#947100"/>
+  <polygon points="13.119,10.999,10.56,10.999,12.037,7.742,14.597,7.742" fill="#FFF" transform="matrix(1.302577,0,0,1.3024356,-5.8696016,-5.4573212)"/>
+  <polygon points="16.648,10.999,14.09,10.999,15.567,7.742,18.126,7.742" fill="#FFF" transform="matrix(1.302577,0,0,1.3024356,-5.8696016,-5.4573212)"/>
+  <polygon points="20.179,10.999,17.618,10.999,19.096,7.742,21.655,7.742" fill="#FFF" transform="matrix(1.302577,0,0,1.3024356,-5.8696016,-5.4573212)"/>
+  <polygon points="9.11,19.833,6.551,19.833,8.028,16.576,10.588,16.576" fill="#FFF" transform="matrix(1.302577,0,0,1.3024356,-5.8696016,-5.4573212)"/>
+  <polygon points="12.64,19.833,10.08,19.833,11.56,16.576,14.117,16.576" fill="#FFF" transform="matrix(1.302577,0,0,1.3024356,-5.8696016,-5.4573212)"/>
+  <polygon points="16.169,19.833,13.609,19.833,15.087,16.576,17.646,16.576" fill="#FFF" transform="matrix(1.302577,0,0,1.3024356,-5.8696016,-5.4573212)"/>
+  <polygon points="11.115,15.416,8.556,15.416,10.032,12.159,12.593,12.159" fill="#FFF" transform="matrix(1.302577,0,0,1.3024356,-5.8696016,-5.4573212)"/>
+  <polygon points="14.644,15.416,12.085,15.416,13.562,12.159,16.121,12.159" fill="#FFF" transform="matrix(1.302577,0,0,1.3024356,-5.8696016,-5.4573212)"/>
+  <polygon points="18.174,15.416,15.614,15.416,17.091,12.159,19.651,12.159" fill="#FFF" transform="matrix(1.302577,0,0,1.3024356,-5.8696016,-5.4573212)"/>
+</svg>

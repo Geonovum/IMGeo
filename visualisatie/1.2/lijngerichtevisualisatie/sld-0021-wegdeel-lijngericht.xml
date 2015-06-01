@@ -1,0 +1,724 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<StyledLayerDescriptor version="1.0.0" xmlns="http://www.opengis.net/sld" xmlns:ogc="http://www.opengis.net/ogc"
+	xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.0.0/StyledLayerDescriptor.xsd">
+	<NamedLayer>
+		<Name>Wegdeel</Name>
+		<UserStyle>
+			<Title>Visualisatie van de wegdelen</Title>
+			<Abstract>Deze stylesheet bevat de regels voor de visualisatie van het objecttype Wegdeel</Abstract>
+			<FeatureTypeStyle>
+				<Rule>
+					<Name>0021-01-00-01</Name>
+					<Title>Baan voor vliegverkeer: lijn</Title>
+					<ogc:Filter>
+						<ogc:PropertyIsEqualTo>
+							<ogc:PropertyName>bgt-functie</ogc:PropertyName>
+							<ogc:Literal>baan voor vliegverkeer</ogc:Literal>
+						</ogc:PropertyIsEqualTo>
+					</ogc:Filter>
+					<MinScaleDenominator>0</MinScaleDenominator>
+					<MaxScaleDenominator>5000</MaxScaleDenominator>
+					<PolygonSymbolizer>
+						<Stroke>
+							<CssParameter name="stroke">#000000</CssParameter>
+							<CssParameter name="stroke-width">2</CssParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+			</FeatureTypeStyle>
+			<FeatureTypeStyle>
+				<Rule>
+					<Name>0021-01-00-02</Name>
+					<Title>Baan voor vliegverkeer: vulling</Title>
+					<ogc:Filter>
+						<ogc:PropertyIsEqualTo>
+							<ogc:PropertyName>bgt-functie</ogc:PropertyName>
+							<ogc:Literal>baan voor vliegverkeer</ogc:Literal>
+						</ogc:PropertyIsEqualTo>
+					</ogc:Filter>
+					<MinScaleDenominator>0</MinScaleDenominator>
+					<MaxScaleDenominator>5000</MaxScaleDenominator>
+					<PolygonSymbolizer>
+						<Fill>
+							<CssParameter name="fill">#ffffff</CssParameter>
+						</Fill>
+						<Stroke>
+							<CssParameter name="stroke">#ffffff</CssParameter>
+							<CssParameter name="stroke-width">0.75</CssParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+			</FeatureTypeStyle>
+			<FeatureTypeStyle>
+				<Rule>
+					<Name>0021-02-00-01</Name>
+					<Title>Fietspad: lijn</Title>
+					<ogc:Filter>
+						<ogc:PropertyIsEqualTo>
+							<ogc:PropertyName>bgt-functie</ogc:PropertyName>
+							<ogc:Literal>fietspad</ogc:Literal>
+						</ogc:PropertyIsEqualTo>
+					</ogc:Filter>
+					<MinScaleDenominator>0</MinScaleDenominator>
+					<MaxScaleDenominator>5000</MaxScaleDenominator>
+					<PolygonSymbolizer>
+						<Stroke>
+							<CssParameter name="stroke">#000000</CssParameter>
+							<CssParameter name="stroke-width">2</CssParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+			</FeatureTypeStyle>
+			<FeatureTypeStyle>
+				<Rule>
+					<Name>0021-02-00-02</Name>
+					<Title>Fietspad: vulling</Title>
+					<ogc:Filter>
+						<ogc:PropertyIsEqualTo>
+							<ogc:PropertyName>bgt-functie</ogc:PropertyName>
+							<ogc:Literal>fietspad</ogc:Literal>
+						</ogc:PropertyIsEqualTo>
+					</ogc:Filter>
+					<MinScaleDenominator>0</MinScaleDenominator>
+					<MaxScaleDenominator>5000</MaxScaleDenominator>
+					<PolygonSymbolizer>
+						<Fill>
+							<CssParameter name="fill">#FFFFFF</CssParameter>
+						</Fill>
+						<Stroke>
+							<CssParameter name="stroke">#FFFFFF</CssParameter>
+							<CssParameter name="stroke-width">0.75</CssParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+			</FeatureTypeStyle>
+			<FeatureTypeStyle>
+				<Rule>
+					<Name>0021-03-00-01</Name>
+					<Title>Inrit: lijn</Title>
+					<ogc:Filter>
+						<ogc:PropertyIsEqualTo>
+							<ogc:PropertyName>bgt-functie</ogc:PropertyName>
+							<ogc:Literal>inrit</ogc:Literal>
+						</ogc:PropertyIsEqualTo>
+					</ogc:Filter>
+					<MinScaleDenominator>0</MinScaleDenominator>
+					<MaxScaleDenominator>5000</MaxScaleDenominator>
+					<PolygonSymbolizer>
+						<Stroke>
+							<CssParameter name="stroke">#000000</CssParameter>
+							<CssParameter name="stroke-width">2</CssParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+			</FeatureTypeStyle>
+			<FeatureTypeStyle>
+				<Rule>
+					<Name>0021-03-00-02</Name>
+					<Title>Inrit: vulling</Title>
+					<ogc:Filter>
+						<ogc:PropertyIsEqualTo>
+							<ogc:PropertyName>bgt-functie</ogc:PropertyName>
+							<ogc:Literal>inrit</ogc:Literal>
+						</ogc:PropertyIsEqualTo>
+					</ogc:Filter>
+					<MinScaleDenominator>0</MinScaleDenominator>
+					<MaxScaleDenominator>5000</MaxScaleDenominator>
+					<PolygonSymbolizer>
+						<Fill>
+							<CssParameter name="fill">#FFFFFF</CssParameter>
+						</Fill>
+						<Stroke>
+							<CssParameter name="stroke">#FFFFFF</CssParameter>
+							<CssParameter name="stroke-width">0.75</CssParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+			</FeatureTypeStyle>
+			<FeatureTypeStyle>
+				<Rule>
+					<Name>0021-04-00-01</Name>
+					<Title>Overweg: lijn</Title>
+					<ogc:Filter>
+						<ogc:PropertyIsEqualTo>
+							<ogc:PropertyName>bgt-functie</ogc:PropertyName>
+							<ogc:Literal>overweg</ogc:Literal>
+						</ogc:PropertyIsEqualTo>
+					</ogc:Filter>
+					<MinScaleDenominator>0</MinScaleDenominator>
+					<MaxScaleDenominator>5000</MaxScaleDenominator>
+					<PolygonSymbolizer>
+						<Stroke>
+							<CssParameter name="stroke">#000000</CssParameter>
+							<CssParameter name="stroke-width">2</CssParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+			</FeatureTypeStyle>
+			<FeatureTypeStyle>
+				<Rule>
+					<Name>0021-04-00-02</Name>
+					<Title>Overweg: vulling</Title>
+					<ogc:Filter>
+						<ogc:PropertyIsEqualTo>
+							<ogc:PropertyName>bgt-functie</ogc:PropertyName>
+							<ogc:Literal>overweg</ogc:Literal>
+						</ogc:PropertyIsEqualTo>
+					</ogc:Filter>
+					<MinScaleDenominator>0</MinScaleDenominator>
+					<MaxScaleDenominator>5000</MaxScaleDenominator>
+					<PolygonSymbolizer>
+						<Fill>
+							<CssParameter name="fill">#ffffff</CssParameter>
+						</Fill>
+						<Stroke>
+							<CssParameter name="stroke">#ffffff</CssParameter>
+							<CssParameter name="stroke-width">0.75</CssParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+			</FeatureTypeStyle>
+			<FeatureTypeStyle>
+				<Rule>
+					<Name>0021-05-00-01</Name>
+					<Title>OV-baan: lijn</Title>
+					<ogc:Filter>
+						<ogc:PropertyIsEqualTo>
+							<ogc:PropertyName>bgt-functie</ogc:PropertyName>
+							<ogc:Literal>ov-baan</ogc:Literal>
+						</ogc:PropertyIsEqualTo>
+					</ogc:Filter>
+					<MinScaleDenominator>0</MinScaleDenominator>
+					<MaxScaleDenominator>5000</MaxScaleDenominator>
+					<PolygonSymbolizer>
+						<Stroke>
+							<CssParameter name="stroke">#000000</CssParameter>
+							<CssParameter name="stroke-width">2</CssParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+			</FeatureTypeStyle>
+			<FeatureTypeStyle>
+				<Rule>
+					<Name>0021-05-00-02</Name>
+					<Title>OV-baan: vulling</Title>
+					<ogc:Filter>
+						<ogc:PropertyIsEqualTo>
+							<ogc:PropertyName>bgt-functie</ogc:PropertyName>
+							<ogc:Literal>ov-baan</ogc:Literal>
+						</ogc:PropertyIsEqualTo>
+					</ogc:Filter>
+					<MinScaleDenominator>0</MinScaleDenominator>
+					<MaxScaleDenominator>5000</MaxScaleDenominator>
+					<PolygonSymbolizer>
+						<Fill>
+							<CssParameter name="fill">#ffffff</CssParameter>
+						</Fill>
+						<Stroke>
+							<CssParameter name="stroke">#ffffff</CssParameter>
+							<CssParameter name="stroke-width">0.75</CssParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+			</FeatureTypeStyle>
+			<FeatureTypeStyle>
+				<Rule>
+					<Name>0021-06-00-01</Name>
+					<Title>Parkeervlak: lijn</Title>
+					<ogc:Filter>
+						<ogc:PropertyIsEqualTo>
+							<ogc:PropertyName>bgt-functie</ogc:PropertyName>
+							<ogc:Literal>parkeervlak</ogc:Literal>
+						</ogc:PropertyIsEqualTo>
+					</ogc:Filter>
+					<MinScaleDenominator>0</MinScaleDenominator>
+					<MaxScaleDenominator>5000</MaxScaleDenominator>
+					<PolygonSymbolizer>
+						<Stroke>
+							<CssParameter name="stroke">#000000</CssParameter>
+							<CssParameter name="stroke-width">2</CssParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+			</FeatureTypeStyle>
+			<FeatureTypeStyle>
+				<Rule>
+					<Name>0021-06-00-02</Name>
+					<Title>Parkeervlak: vulling</Title>
+					<ogc:Filter>
+						<ogc:PropertyIsEqualTo>
+							<ogc:PropertyName>bgt-functie</ogc:PropertyName>
+							<ogc:Literal>parkeervlak</ogc:Literal>
+						</ogc:PropertyIsEqualTo>
+					</ogc:Filter>
+					<MinScaleDenominator>0</MinScaleDenominator>
+					<MaxScaleDenominator>5000</MaxScaleDenominator>
+					<PolygonSymbolizer>
+						<Fill>
+							<CssParameter name="fill">#FFFFFF</CssParameter>
+						</Fill>
+						<Stroke>
+							<CssParameter name="stroke">#FFFFFF</CssParameter>
+							<CssParameter name="stroke-width">0.75</CssParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+			</FeatureTypeStyle>
+			<FeatureTypeStyle>
+				<Rule>
+					<Name>0021-07-00-01</Name>
+					<Title>Autosnelweg: lijn</Title>
+					<ogc:Filter>
+						<ogc:PropertyIsEqualTo>
+							<ogc:PropertyName>bgt-functie</ogc:PropertyName>
+							<ogc:Literal>rijbaan autosnelweg</ogc:Literal>
+						</ogc:PropertyIsEqualTo>
+					</ogc:Filter>
+					<MinScaleDenominator>0</MinScaleDenominator>
+					<MaxScaleDenominator>5000</MaxScaleDenominator>
+					<PolygonSymbolizer>
+						<Stroke>
+							<CssParameter name="stroke">#000000</CssParameter>
+							<CssParameter name="stroke-width">2</CssParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+			</FeatureTypeStyle>
+			<FeatureTypeStyle>
+				<Rule>
+					<Name>0021-07-00-02</Name>
+					<Title>Autosnelweg: vulling</Title>
+					<ogc:Filter>
+						<ogc:PropertyIsEqualTo>
+							<ogc:PropertyName>bgt-functie</ogc:PropertyName>
+							<ogc:Literal>rijbaan autosnelweg</ogc:Literal>
+						</ogc:PropertyIsEqualTo>
+					</ogc:Filter>
+					<MinScaleDenominator>0</MinScaleDenominator>
+					<MaxScaleDenominator>5000</MaxScaleDenominator>
+					<PolygonSymbolizer>
+						<Fill>
+							<CssParameter name="fill">#ffffff</CssParameter>
+						</Fill>
+						<Stroke>
+							<CssParameter name="stroke">#ffffff</CssParameter>
+							<CssParameter name="stroke-width">0.75</CssParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+			</FeatureTypeStyle>
+			<FeatureTypeStyle>
+				<Rule>
+					<Name>0021-08-00-01</Name>
+					<Title>Autoweg: lijn</Title>
+					<ogc:Filter>
+						<ogc:PropertyIsEqualTo>
+							<ogc:PropertyName>bgt-functie</ogc:PropertyName>
+							<ogc:Literal>rijbaan autoweg</ogc:Literal>
+						</ogc:PropertyIsEqualTo>
+					</ogc:Filter>
+					<MinScaleDenominator>0</MinScaleDenominator>
+					<MaxScaleDenominator>5000</MaxScaleDenominator>
+					<PolygonSymbolizer>
+						<Stroke>
+							<CssParameter name="stroke">#000000</CssParameter>
+							<CssParameter name="stroke-width">2</CssParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+			</FeatureTypeStyle>
+			<FeatureTypeStyle>
+				<Rule>
+					<Name>0021-08-00-02</Name>
+					<Title>Autoweg: vulling</Title>
+					<ogc:Filter>
+						<ogc:PropertyIsEqualTo>
+							<ogc:PropertyName>bgt-functie</ogc:PropertyName>
+							<ogc:Literal>rijbaan autoweg</ogc:Literal>
+						</ogc:PropertyIsEqualTo>
+					</ogc:Filter>
+					<MinScaleDenominator>0</MinScaleDenominator>
+					<MaxScaleDenominator>5000</MaxScaleDenominator>
+					<PolygonSymbolizer>
+						<Fill>
+							<CssParameter name="fill">#ffffff</CssParameter>
+						</Fill>
+						<Stroke>
+							<CssParameter name="stroke">#ffffff</CssParameter>
+							<CssParameter name="stroke-width">0.75</CssParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+			</FeatureTypeStyle>
+			<FeatureTypeStyle>
+				<Rule>
+					<Name>0021-09-00-01</Name>
+					<Title>Regionale weg: lijn</Title>
+					<ogc:Filter>
+						<ogc:PropertyIsEqualTo>
+							<ogc:PropertyName>bgt-functie</ogc:PropertyName>
+							<ogc:Literal>rijbaan regionale weg</ogc:Literal>
+						</ogc:PropertyIsEqualTo>
+					</ogc:Filter>
+					<MinScaleDenominator>0</MinScaleDenominator>
+					<MaxScaleDenominator>5000</MaxScaleDenominator>
+					<PolygonSymbolizer>
+						<Stroke>
+							<CssParameter name="stroke">#000000</CssParameter>
+							<CssParameter name="stroke-width">2</CssParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+			</FeatureTypeStyle>
+			<FeatureTypeStyle>
+				<Rule>
+					<Name>0021-09-00-02</Name>
+					<Title>Regionale weg: vulling</Title>
+					<ogc:Filter>
+						<ogc:PropertyIsEqualTo>
+							<ogc:PropertyName>bgt-functie</ogc:PropertyName>
+							<ogc:Literal>rijbaan regionale weg</ogc:Literal>
+						</ogc:PropertyIsEqualTo>
+					</ogc:Filter>
+					<MinScaleDenominator>0</MinScaleDenominator>
+					<MaxScaleDenominator>5000</MaxScaleDenominator>
+					<PolygonSymbolizer>
+						<Fill>
+							<CssParameter name="fill">#ffffff</CssParameter>
+						</Fill>
+						<Stroke>
+							<CssParameter name="stroke">#ffffff</CssParameter>
+							<CssParameter name="stroke-width">0.75</CssParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+			</FeatureTypeStyle>
+			<FeatureTypeStyle>
+				<Rule>
+					<Name>0021-10-00-01</Name>
+					<Title>Lokale weg: lijn</Title>
+					<ogc:Filter>
+						<ogc:PropertyIsEqualTo>
+							<ogc:PropertyName>bgt-functie</ogc:PropertyName>
+							<ogc:Literal>rijbaan lokale weg</ogc:Literal>
+						</ogc:PropertyIsEqualTo>
+					</ogc:Filter>
+					<MinScaleDenominator>0</MinScaleDenominator>
+					<MaxScaleDenominator>5000</MaxScaleDenominator>
+					<PolygonSymbolizer>
+						<Stroke>
+							<CssParameter name="stroke">#000000</CssParameter>
+							<CssParameter name="stroke-width">2</CssParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+			</FeatureTypeStyle>
+			<FeatureTypeStyle>
+				<Rule>
+					<Name>0021-10-00-02</Name>
+					<Title>Lokale weg: vulling</Title>
+					<ogc:Filter>
+						<ogc:PropertyIsEqualTo>
+							<ogc:PropertyName>bgt-functie</ogc:PropertyName>
+							<ogc:Literal>rijbaan lokale weg</ogc:Literal>
+						</ogc:PropertyIsEqualTo>
+					</ogc:Filter>
+					<MinScaleDenominator>0</MinScaleDenominator>
+					<MaxScaleDenominator>5000</MaxScaleDenominator>
+					<PolygonSymbolizer>
+						<Fill>
+							<CssParameter name="fill">#ffffff</CssParameter>
+						</Fill>
+						<Stroke>
+							<CssParameter name="stroke">#ffffff</CssParameter>
+							<CssParameter name="stroke-width">0.75</CssParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+			</FeatureTypeStyle>
+			<FeatureTypeStyle>
+				<Rule>
+					<Name>0021-11-00-01</Name>
+					<Title>Ruiterpad: lijn</Title>
+					<ogc:Filter>
+						<ogc:PropertyIsEqualTo>
+							<ogc:PropertyName>bgt-functie</ogc:PropertyName>
+							<ogc:Literal>ruiterpad</ogc:Literal>
+						</ogc:PropertyIsEqualTo>
+					</ogc:Filter>
+					<MinScaleDenominator>0</MinScaleDenominator>
+					<MaxScaleDenominator>5000</MaxScaleDenominator>
+					<PolygonSymbolizer>
+						<Stroke>
+							<CssParameter name="stroke">#000000</CssParameter>
+							<CssParameter name="stroke-width">2</CssParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+			</FeatureTypeStyle>
+			<FeatureTypeStyle>
+				<Rule>
+					<Name>0021-11-00-02</Name>
+					<Title>Ruiterpad: vulling</Title>
+					<ogc:Filter>
+						<ogc:PropertyIsEqualTo>
+							<ogc:PropertyName>bgt-functie</ogc:PropertyName>
+							<ogc:Literal>ruiterpad</ogc:Literal>
+						</ogc:PropertyIsEqualTo>
+					</ogc:Filter>
+					<MinScaleDenominator>0</MinScaleDenominator>
+					<MaxScaleDenominator>5000</MaxScaleDenominator>
+					<PolygonSymbolizer>
+						<Fill>
+							<CssParameter name="fill">#FFFFFF</CssParameter>
+						</Fill>
+						<Stroke>
+							<CssParameter name="stroke">#FFFFFF</CssParameter>
+							<CssParameter name="stroke-width">0.75</CssParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+			</FeatureTypeStyle>
+			<FeatureTypeStyle>
+				<Rule>
+					<Name>0021-12-00-01</Name>
+					<Title>Spoorbaan: lijn</Title>
+					<ogc:Filter>
+						<ogc:PropertyIsEqualTo>
+							<ogc:PropertyName>bgt-functie</ogc:PropertyName>
+							<ogc:Literal>spoorbaan</ogc:Literal>
+						</ogc:PropertyIsEqualTo>
+					</ogc:Filter>
+					<MinScaleDenominator>0</MinScaleDenominator>
+					<MaxScaleDenominator>5000</MaxScaleDenominator>
+					<PolygonSymbolizer>
+						<Stroke>
+							<CssParameter name="stroke">#000000</CssParameter>
+							<CssParameter name="stroke-width">2</CssParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+			</FeatureTypeStyle>
+			<FeatureTypeStyle>
+				<Rule>
+					<Name>0021-12-00-02</Name>
+					<Title>Spoorbaan: lijn</Title>
+					<ogc:Filter>
+						<ogc:PropertyIsEqualTo>
+							<ogc:PropertyName>bgt-functie</ogc:PropertyName>
+							<ogc:Literal>spoorbaan</ogc:Literal>
+						</ogc:PropertyIsEqualTo>
+					</ogc:Filter>
+					<MinScaleDenominator>0</MinScaleDenominator>
+					<MaxScaleDenominator>5000</MaxScaleDenominator>
+					<PolygonSymbolizer>
+						<Fill>
+							<CssParameter name="fill">#ffffff</CssParameter>
+						</Fill>
+						<Stroke>
+							<CssParameter name="stroke">#ffffff</CssParameter>
+							<CssParameter name="stroke-width">0.75</CssParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+			</FeatureTypeStyle>
+			<FeatureTypeStyle>
+				<Rule>
+					<Name>0021-13-00-01</Name>
+					<Title>Voetgangersgebied</Title>
+					<ogc:Filter>
+						<ogc:PropertyIsEqualTo>
+							<ogc:PropertyName>bgt-functie</ogc:PropertyName>
+							<ogc:Literal>voetgangersgebied</ogc:Literal>
+						</ogc:PropertyIsEqualTo>
+					</ogc:Filter>
+					<MinScaleDenominator>0</MinScaleDenominator>
+					<MaxScaleDenominator>5000</MaxScaleDenominator>
+					<PolygonSymbolizer>
+						<Stroke>
+							<CssParameter name="stroke">#000000</CssParameter>
+							<CssParameter name="stroke-width">2</CssParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+			</FeatureTypeStyle>
+			<FeatureTypeStyle>
+				<Rule>
+					<Name>0021-13-00-02</Name>
+					<Title>Voetgangersgebied: vulling</Title>
+					<ogc:Filter>
+						<ogc:PropertyIsEqualTo>
+							<ogc:PropertyName>bgt-functie</ogc:PropertyName>
+							<ogc:Literal>voetgangersgebied</ogc:Literal>
+						</ogc:PropertyIsEqualTo>
+					</ogc:Filter>
+					<MinScaleDenominator>0</MinScaleDenominator>
+					<MaxScaleDenominator>5000</MaxScaleDenominator>
+					<PolygonSymbolizer>
+						<Fill>
+							<CssParameter name="fill">#ffffff</CssParameter>
+						</Fill>
+						<Stroke>
+							<CssParameter name="stroke">#ffffff</CssParameter>
+							<CssParameter name="stroke-width">0.75</CssParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+			</FeatureTypeStyle>
+			<FeatureTypeStyle>
+				<Rule>
+					<Name>0021-14-00-01</Name>
+					<Title>Voetpad</Title>
+					<ogc:Filter>
+						<ogc:PropertyIsEqualTo>
+							<ogc:PropertyName>bgt-functie</ogc:PropertyName>
+							<ogc:Literal>voetpad</ogc:Literal>
+						</ogc:PropertyIsEqualTo>
+					</ogc:Filter>
+					<MinScaleDenominator>0</MinScaleDenominator>
+					<MaxScaleDenominator>5000</MaxScaleDenominator>
+					<PolygonSymbolizer>
+						<Stroke>
+							<CssParameter name="stroke">#000000</CssParameter>
+							<CssParameter name="stroke-width">2</CssParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+			</FeatureTypeStyle>
+			<FeatureTypeStyle>
+				<Rule>
+					<Name>0021-14-00-02</Name>
+					<Title>Voetpad: vulling</Title>
+					<ogc:Filter>
+						<ogc:PropertyIsEqualTo>
+							<ogc:PropertyName>bgt-functie</ogc:PropertyName>
+							<ogc:Literal>voetpad</ogc:Literal>
+						</ogc:PropertyIsEqualTo>
+					</ogc:Filter>
+					<MinScaleDenominator>0</MinScaleDenominator>
+					<MaxScaleDenominator>5000</MaxScaleDenominator>
+					<PolygonSymbolizer>
+						<Fill>
+							<CssParameter name="fill">#ffffff</CssParameter>
+						</Fill>
+						<Stroke>
+							<CssParameter name="stroke">#ffffff</CssParameter>
+							<CssParameter name="stroke-width">0.75</CssParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+			</FeatureTypeStyle>
+			<FeatureTypeStyle>
+				<Rule>
+					<Name>0021-15-00-01</Name>
+					<Title>Voetpad op trap</Title>
+					<ogc:Filter>
+						<ogc:PropertyIsEqualTo>
+							<ogc:PropertyName>bgt-functie</ogc:PropertyName>
+							<ogc:Literal>voetpad op trap</ogc:Literal>
+						</ogc:PropertyIsEqualTo>
+					</ogc:Filter>
+					<MinScaleDenominator>0</MinScaleDenominator>
+					<MaxScaleDenominator>5000</MaxScaleDenominator>
+					<PolygonSymbolizer>
+						<Stroke>
+							<CssParameter name="stroke">#000000</CssParameter>
+							<CssParameter name="stroke-width">2</CssParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+			</FeatureTypeStyle>
+			<FeatureTypeStyle>
+				<Rule>
+					<Name>0021-15-00-02</Name>
+					<Title>Voetpad op trap: vulling</Title>
+					<ogc:Filter>
+						<ogc:PropertyIsEqualTo>
+							<ogc:PropertyName>bgt-functie</ogc:PropertyName>
+							<ogc:Literal>voetpad op trap</ogc:Literal>
+						</ogc:PropertyIsEqualTo>
+					</ogc:Filter>
+					<MinScaleDenominator>0</MinScaleDenominator>
+					<MaxScaleDenominator>5000</MaxScaleDenominator>
+					<PolygonSymbolizer>
+						<Fill>
+							<CssParameter name="fill">#ffffff</CssParameter>
+						</Fill>
+						<Stroke>
+							<CssParameter name="stroke">#ffffff</CssParameter>
+							<CssParameter name="stroke-width">0.75</CssParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+			</FeatureTypeStyle>
+			<FeatureTypeStyle>
+				<Rule>
+					<Name>0021-16-00-01</Name>
+					<Title>Woonerf: lijn</Title>
+					<ogc:Filter>
+						<ogc:PropertyIsEqualTo>
+							<ogc:PropertyName>bgt-functie</ogc:PropertyName>
+							<ogc:Literal>woonerf</ogc:Literal>
+						</ogc:PropertyIsEqualTo>
+					</ogc:Filter>
+					<MinScaleDenominator>0</MinScaleDenominator>
+					<MaxScaleDenominator>5000</MaxScaleDenominator>
+					<PolygonSymbolizer>
+						<Stroke>
+							<CssParameter name="stroke">#000000</CssParameter>
+							<CssParameter name="stroke-width">2</CssParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+			</FeatureTypeStyle>
+			<FeatureTypeStyle>
+				<Rule>
+					<Name>0021-16-00-02</Name>
+					<Title>Woonerf: vulling</Title>
+					<ogc:Filter>
+						<ogc:PropertyIsEqualTo>
+							<ogc:PropertyName>bgt-functie</ogc:PropertyName>
+							<ogc:Literal>woonerf</ogc:Literal>
+						</ogc:PropertyIsEqualTo>
+					</ogc:Filter>
+					<MinScaleDenominator>0</MinScaleDenominator>
+					<MaxScaleDenominator>5000</MaxScaleDenominator>
+					<PolygonSymbolizer>
+						<Fill>
+							<CssParameter name="fill">#FFFFFF</CssParameter>
+						</Fill>
+						<Stroke>
+							<CssParameter name="stroke">#FFFFFF</CssParameter>
+							<CssParameter name="stroke-width">0.75</CssParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+			</FeatureTypeStyle>
+			<FeatureTypeStyle>
+				<Rule>
+					<Name>0021-99-00-01</Name>
+					<Title>Transitie</Title>
+					<ogc:Filter>
+						<ogc:PropertyIsEqualTo>
+							<ogc:PropertyName>bgt-functie</ogc:PropertyName>
+							<ogc:Literal>transitie</ogc:Literal>
+						</ogc:PropertyIsEqualTo>
+					</ogc:Filter>
+					<MinScaleDenominator>0</MinScaleDenominator>
+					<MaxScaleDenominator>5000</MaxScaleDenominator>
+					<PolygonSymbolizer>
+						<Fill>
+							<CssParameter name="fill">#ffffff</CssParameter>
+						</Fill>
+						<Stroke>
+							<CssParameter name="stroke">#000000</CssParameter>
+							<CssParameter name="stroke-width">2</CssParameter>
+							<CssParameter name="stroke-dasharray">6 3</CssParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+			</FeatureTypeStyle>
+		</UserStyle>
+	</NamedLayer>
+</StyledLayerDescriptor>

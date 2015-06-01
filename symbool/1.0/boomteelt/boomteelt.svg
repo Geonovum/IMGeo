@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="32" width="32" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+	<metadata>
+		<rdf:RDF>
+			<cc:Work rdf:about="">
+				<dc:format>image/svg+xml</dc:format>
+				<dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+				<dc:title/>
+			</cc:Work>
+		</rdf:RDF>
+	</metadata>
+	<g transform="translate(-0.00541,-1020.3528)">
+		<g transform="translate(-155.96334,745.22778)">
+			<rect stroke-dasharray="none" height="31.478" width="31.478" stroke="#FFC" stroke-miterlimit="4" y="275.4" x="156.22" stroke-width="0.5219" fill="#FFC"/>
+			<text style="letter-spacing:0px;word-spacing:0px;" font-weight="500" font-variant="normal" font-size="12px" font-stretch="normal" line-height="125%" font-style="normal" y="286.87189" x="164.22585" font-family="The Sans Semi Bold-" xml:space="preserve" fill="#000000"><tspan font-weight="bold" font-size="25px" font-style="normal" font-stretch="normal" font-variant="normal" y="286.87189" x="164.22585" font-family="ESRI ArcGIS TDN">%</tspan></text>
+			<text style="letter-spacing:0px;word-spacing:0px;" font-weight="500" xml:space="preserve" font-size="12px" font-stretch="normal" line-height="125%" font-variant="normal" y="298.87189" x="176.22585" font-family="The Sans Semi Bold-" font-style="normal" fill="#000000"><tspan font-weight="bold" font-size="25px" font-style="normal" font-stretch="normal" font-variant="normal" y="298.87189" x="176.22585" font-family="ESRI ArcGIS TDN">%</tspan></text>
+		</g>
+	</g>
+</svg>

@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<StyledLayerDescriptor version="1.0.0" xmlns="http://www.opengis.net/sld" xmlns:ogc="http://www.opengis.net/ogc"
+  xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.0.0/StyledLayerDescriptor.xsd">
+	<NamedLayer>
+		<Name>OverigBouwwerk</Name>
+		<UserStyle>
+			<Title>Visualisatie van de overige bouwwerken</Title>
+			<Abstract>Deze stylesheet bevat de regels voor de visualisatie van het objecttype Overig Bouwwerk</Abstract>
+			<FeatureTypeStyle>
+				<Rule>
+					<Name>0043-01-00-01</Name>
+					<Title>Bassin</Title>
+					<ogc:Filter>
+						<ogc:PropertyIsEqualTo>
+							<ogc:PropertyName>bgt-type</ogc:PropertyName>
+							<ogc:Literal>bassin</ogc:Literal>
+						</ogc:PropertyIsEqualTo>
+					</ogc:Filter>
+					<MinScaleDenominator>0</MinScaleDenominator>
+					<MaxScaleDenominator>5000</MaxScaleDenominator>
+					<PolygonSymbolizer>
+						<Fill>
+							<CssParameter name="fill">#80bde3</CssParameter>
+						</Fill>
+						<Stroke>
+							<CssParameter name="stroke">#d1d1d1</CssParameter>
+							<CssParameter name="stroke-width">3</CssParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>0043-02-00-01</Name>
+					<Title>Bezinkbak</Title>
+					<ogc:Filter>
+						<ogc:PropertyIsEqualTo>
+							<ogc:PropertyName>bgt-type</ogc:PropertyName>
+							<ogc:Literal>bezinkbak</ogc:Literal>
+						</ogc:PropertyIsEqualTo>
+					</ogc:Filter>
+					<MinScaleDenominator>0</MinScaleDenominator>
+					<MaxScaleDenominator>5000</MaxScaleDenominator>
+					<PolygonSymbolizer>
+						<Fill>
+							<CssParameter name="fill">#80bde3</CssParameter>
+						</Fill>
+						<Stroke>
+							<CssParameter name="stroke">#d1d1d1</CssParameter>
+							<CssParameter name="stroke-width">3</CssParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>0043-03-00-01</Name>
+					<Title>Lage trafo</Title>
+					<ogc:Filter>
+						<ogc:PropertyIsEqualTo>
+							<ogc:PropertyName>bgt-type</ogc:PropertyName>
+							<ogc:Literal>lage trafo</ogc:Literal>
+						</ogc:PropertyIsEqualTo>
+					</ogc:Filter>
+					<MinScaleDenominator>0</MinScaleDenominator>
+					<MaxScaleDenominator>5000</MaxScaleDenominator>
+					<PolygonSymbolizer>
+						<Fill>
+							<CssParameter name="fill">#d1d1d1</CssParameter>
+						</Fill>
+						<Stroke>
+							<CssParameter name="stroke">#d1d1d1</CssParameter>
+							<CssParameter name="stroke-width">1</CssParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>0043-04-00-01</Name>
+					<Title>Open loods</Title>
+					<ogc:Filter>
+						<ogc:PropertyIsEqualTo>
+							<ogc:PropertyName>bgt-type</ogc:PropertyName>
+							<ogc:Literal>open loods</ogc:Literal>
+						</ogc:PropertyIsEqualTo>
+					</ogc:Filter>
+					<MinScaleDenominator>0</MinScaleDenominator>
+					<MaxScaleDenominator>5000</MaxScaleDenominator>
+					<PolygonSymbolizer>
+						<Fill>
+							<CssParameter name="fill">#d1d1d1</CssParameter>
+						</Fill>
+						<Stroke>
+							<CssParameter name="stroke">#d1d1d1</CssParameter>
+							<CssParameter name="stroke-width">1</CssParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>0043-05-00-01</Name>
+					<Title>Opslagtank</Title>
+					<ogc:Filter>
+						<ogc:PropertyIsEqualTo>
+							<ogc:PropertyName>bgt-type</ogc:PropertyName>
+							<ogc:Literal>opslagtank</ogc:Literal>
+						</ogc:PropertyIsEqualTo>
+					</ogc:Filter>
+					<MinScaleDenominator>0</MinScaleDenominator>
+					<MaxScaleDenominator>5000</MaxScaleDenominator>
+					<PolygonSymbolizer>
+						<Fill>
+							<CssParameter name="fill">#d1d1d1</CssParameter>
+						</Fill>
+						<Stroke>
+							<CssParameter name="stroke">#d1d1d1</CssParameter>
+							<CssParameter name="stroke-width">1</CssParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>0043-06-00-01</Name>
+					<Title>Overkapping</Title>
+					<ogc:Filter>
+						<ogc:PropertyIsEqualTo>
+							<ogc:PropertyName>bgt-type</ogc:PropertyName>
+							<ogc:Literal>overkapping</ogc:Literal>
+						</ogc:PropertyIsEqualTo>
+					</ogc:Filter>
+					<MinScaleDenominator>0</MinScaleDenominator>
+					<MaxScaleDenominator>5000</MaxScaleDenominator>
+					<PolygonSymbolizer>
+						<Fill>
+							<CssParameter name="fill">#d1d1d1</CssParameter>
+						</Fill>
+						<Stroke>
+							<CssParameter name="stroke">#d1d1d1</CssParameter>
+							<CssParameter name="stroke-width">1</CssParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>0043-07-00-01</Name>
+					<Title>Voedersilo</Title>
+					<ogc:Filter>
+						<ogc:PropertyIsEqualTo>
+							<ogc:PropertyName>plus-type</ogc:PropertyName>
+							<ogc:Literal>voedersilo</ogc:Literal>
+						</ogc:PropertyIsEqualTo>
+					</ogc:Filter>
+					<MinScaleDenominator>0</MinScaleDenominator>
+					<MaxScaleDenominator>5000</MaxScaleDenominator>
+					<PolygonSymbolizer>
+						<Fill>
+							<CssParameter name="fill">#d1d1d1</CssParameter>
+						</Fill>
+						<Stroke>
+							<CssParameter name="stroke">#d1d1d1</CssParameter>
+							<CssParameter name="stroke-width">1</CssParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>0043-08-00-01</Name>
+					<Title>Windturbine</Title>
+					<ogc:Filter>
+						<ogc:PropertyIsEqualTo>
+							<ogc:PropertyName>bgt-type</ogc:PropertyName>
+							<ogc:Literal>windturbine</ogc:Literal>
+						</ogc:PropertyIsEqualTo>
+					</ogc:Filter>
+					<MinScaleDenominator>0</MinScaleDenominator>
+					<MaxScaleDenominator>5000</MaxScaleDenominator>
+					<PolygonSymbolizer>
+						<Fill>
+							<CssParameter name="fill">#d1d1d1</CssParameter>
+						</Fill>
+						<Stroke>
+							<CssParameter name="stroke">#d1d1d1</CssParameter>
+							<CssParameter name="stroke-width">1</CssParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>0043-09-00-01</Name>
+					<Title>Bunker</Title>
+					<ogc:Filter>
+						<ogc:PropertyIsEqualTo>
+							<ogc:PropertyName>plus-type</ogc:PropertyName>
+							<ogc:Literal>bunker</ogc:Literal>
+						</ogc:PropertyIsEqualTo>
+					</ogc:Filter>
+					<MinScaleDenominator>0</MinScaleDenominator>
+					<MaxScaleDenominator>5000</MaxScaleDenominator>
+					<PolygonSymbolizer>
+						<Fill>
+							<CssParameter name="fill">#d1d1d1</CssParameter>
+						</Fill>
+						<Stroke>
+							<CssParameter name="stroke">#d1d1d1</CssParameter>
+							<CssParameter name="stroke-width">1</CssParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>0043-10-00-01</Name>
+					<Title>Schuur</Title>
+					<ogc:Filter>
+						<ogc:PropertyIsEqualTo>
+							<ogc:PropertyName>plus-type</ogc:PropertyName>
+							<ogc:Literal>schuur</ogc:Literal>
+						</ogc:PropertyIsEqualTo>
+					</ogc:Filter>
+					<MinScaleDenominator>0</MinScaleDenominator>
+					<MaxScaleDenominator>5000</MaxScaleDenominator>
+					<PolygonSymbolizer>
+						<Fill>
+							<CssParameter name="fill">#d1d1d1</CssParameter>
+						</Fill>
+						<Stroke>
+							<CssParameter name="stroke">#d1d1d1</CssParameter>
+							<CssParameter name="stroke-width">1</CssParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>transitie</Name>
+					<Title>Transitie</Title>
+					<ogc:Filter>
+						<ogc:Or>
+							<ogc:PropertyIsEqualTo>
+								<ogc:PropertyName>plus-type</ogc:PropertyName>
+								<ogc:Literal>transitie</ogc:Literal>
+							</ogc:PropertyIsEqualTo>
+							<ogc:PropertyIsEqualTo>
+								<ogc:PropertyName>bgt-type</ogc:PropertyName>
+								<ogc:Literal>transitie</ogc:Literal>
+							</ogc:PropertyIsEqualTo>
+							<ogc:PropertyIsEqualTo>
+								<ogc:PropertyName>plus-functie</ogc:PropertyName>
+								<ogc:Literal>transitie</ogc:Literal>
+							</ogc:PropertyIsEqualTo>
+							<ogc:PropertyIsEqualTo>
+								<ogc:PropertyName>bgt-functie</ogc:PropertyName>
+								<ogc:Literal>transitie</ogc:Literal>
+							</ogc:PropertyIsEqualTo>
+							<ogc:PropertyIsEqualTo>
+								<ogc:PropertyName>plus-fysiekVoorkomen</ogc:PropertyName>
+								<ogc:Literal>transitie</ogc:Literal>
+							</ogc:PropertyIsEqualTo>
+							<ogc:PropertyIsEqualTo>
+								<ogc:PropertyName>bgt-fysiekVoorkomen</ogc:PropertyName>
+								<ogc:Literal>transitie</ogc:Literal>
+							</ogc:PropertyIsEqualTo>
+						</ogc:Or>
+					</ogc:Filter>
+					<MinScaleDenominator>0</MinScaleDenominator>
+					<MaxScaleDenominator>5000</MaxScaleDenominator>
+					<PolygonSymbolizer>
+						<Fill>
+							<CssParameter name="fill">#f2f2f2</CssParameter>
+						</Fill>
+						<Stroke>
+							<CssParameter name="stroke">#535353</CssParameter>
+							<CssParameter name="stroke-width">3</CssParameter>
+							<CssParameter name="stroke-dasharray">6 3</CssParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+			</FeatureTypeStyle>
+		</UserStyle>
+	</NamedLayer>
+</StyledLayerDescriptor>

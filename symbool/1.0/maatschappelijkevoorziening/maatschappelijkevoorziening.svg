@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="25.015" width="25.01" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+	<metadata>
+		<rdf:RDF>
+			<cc:Work rdf:about="">
+				<dc:format>image/svg+xml</dc:format>
+				<dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+				<dc:title/>
+			</cc:Work>
+		</rdf:RDF>
+	</metadata>
+	<g transform="translate(-0.00446,-1027.3477)">
+		<g transform="translate(-196.64142,909.66025)">
+			<path d="m221.14,139.8c0,1.3258-1.0733,2.4016-2.402,2.4016h-19.197c-1.326,0-2.4006-1.0758-2.4006-2.4016v-19.197c0-1.3258,1.0746-2.4016,2.4006-2.4016h19.197c1.3286,0,2.402,1.0758,2.402,2.4016v19.197z" stroke="#FFF" stroke-width="1" fill="#535353"/>
+			<g transform="matrix(1.1,0,0,1.1,-22.753897,-15.579482)">
+				<polygon transform="matrix(1.302577,0,0,1.302365,190.37974,112.48639)" stroke="#535353" points="19.638,15.636,17.567,17.706,16.337,15.596,14.237,17.696,12.997,15.596,10.696,17.756,10.696,20.156,20.679,20.156,20.659,16.916" stroke-width="1.39594805" fill="none"/>
+				<path d="m9.63,18.132,2.0076,0,0-3.868,2.465,0,0,3.78,5.0804,0,0-4.782-4.774-4.031-4.779,4.031z" transform="matrix(1.302577,0,0,1.3023649,191.70305,113.38908)" fill="#FFF"/>
+				<rect style="enable-background:accumulate;color:#000000;" fill-rule="nonzero" height="2.5095" width="2.8721" y="131.92" x="211.64" fill="#535353"/>
+			</g>
+		</g>
+		<path d="m24.5,1049.5c0,1.3258-1.0733,2.4016-2.402,2.4016h-19.197c-1.326,0-2.4006-1.0758-2.4006-2.4016v-19.197c0-1.3258,1.0746-2.4016,2.4006-2.4016h19.197c1.3286,0,2.402,1.0758,2.402,2.4016v19.197z" stroke="#FFF" stroke-width="1" fill="#535353"/>
+		<polygon transform="matrix(1.4328347,0,0,1.4326015,-9.9776,1017.8158)" stroke="#535353" points="20.659,16.916,19.638,15.636,17.567,17.706,16.337,15.596,14.237,17.696,12.997,15.596,10.696,17.756,10.696,20.156,20.679,20.156" stroke-width="1.39594805" fill="none"/>
+		<path d="m5.25,1044.9,14.5,0,0-10.223-7.2005-2.725-7.2995,2.725z" fill="#FFF"/>
+		<rect style="enable-background:accumulate;color:#000000;" fill-rule="nonzero" height="1.5" width="16.5" y="1044.4" x="4.25" fill="#FFF"/>
+		<rect style="enable-background:accumulate;color:#000000;" fill-rule="nonzero" height="1.5" width="18.5" y="1045.9" x="3.25" fill="#FFF"/>
+		<g fill-rule="nonzero" fill="#535353" transform="matrix(1,0,0,1.0101929,-132.58754,1000.1354)">
+			<rect style="enable-background:accumulate;color:#000000;" height="8.6963" width="2.0767" y="35.026" x="140.05"/>
+			<rect style="enable-background:accumulate;color:#000000;" height="8.6963" width="2.0767" y="35.026" x="144.05"/>
+			<rect style="enable-background:accumulate;color:#000000;" height="8.6963" width="2.0767" y="35.026" x="148.05"/>
+		</g>
+	</g>
+</svg>

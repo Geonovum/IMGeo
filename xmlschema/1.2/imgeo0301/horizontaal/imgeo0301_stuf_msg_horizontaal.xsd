@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2013 sp1 (x64) (http://www.altova.com) by Maarten van den Broek (messageDesign B.V.) -->
+<schema xmlns:StUF="http://www.egem.nl/StUF/StUF0301" xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.egem.nl/StUF/StUF0301" elementFormDefault="qualified" attributeFormDefault="unqualified" version="030100">
+	<annotation>
+		<documentation>
+			Wijzigingen vergeleken met versie 030005:
+			- schemaLocation in include gewijzigd van "../horVert/imgeo0300_stuf_msg_horVert.xsd" naar "../horVert/imgeo0301_stuf_msg_horVert.xsd"
+	</documentation>
+	</annotation>
+	<include schemaLocation="../horVert/imgeo0301_stuf_msg_horVert.xsd"/>
+	<simpleType name="FunctieEXP">
+		<restriction base="StUF:Functie">
+			<enumeration value="exploratieverzoek"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="FunctieMTBHorizontaal">
+		<restriction base="StUF:Functie">
+			<enumeration value="mutatieberichtHorizontaal"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="FunctieMTVHorizontaal">
+		<restriction base="StUF:Functie">
+			<enumeration value="mutatieverzoekHorizontaal"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="FunctieMTVWeiger">
+		<restriction base="StUF:Functie">
+			<enumeration value="weigerMutatieverzoek"/>
+		</restriction>
+	</simpleType>
+	<!--Stuurgegevens complexTypes vrije berichten-->
+	<complexType name="EXP-StuurgegevensDi01">
+		<complexContent>
+			<restriction base="StUF:Stuurgegevens">
+				<sequence>
+					<element name="berichtcode" type="StUF:BerichtcodeDi01"/>
+					<element name="zender" type="StUF:Systeem"/>
+					<element name="ontvanger" type="StUF:Systeem"/>
+					<element name="referentienummer" type="StUF:Refnummer"/>
+					<element name="tijdstipBericht" type="StUF:Tijdstip"/>
+					<element name="functie" type="StUF:FunctieEXP"/>
+				</sequence>
+			</restriction>
+		</complexContent>
+	</complexType>
+	<complexType name="EXP-StuurgegevensDu01">
+		<complexContent>
+			<restriction base="StUF:Stuurgegevens">
+				<sequence>
+					<element name="berichtcode" type="StUF:BerichtcodeDu01"/>
+					<element name="zender" type="StUF:Systeem"/>
+					<element name="ontvanger" type="StUF:Systeem"/>
+					<element name="referentienummer" type="StUF:Refnummer"/>
+					<element name="tijdstipBericht" type="StUF:Tijdstip"/>
+					<element name="crossRefnummer" type="StUF:Refnummer"/>
+					<element name="functie" type="StUF:FunctieEXP"/>
+				</sequence>
+			</restriction>
+		</complexContent>
+	</complexType>
+	<complexType name="MTBHorizontaal-StuurgegevensDi01">
+		<complexContent>
+			<restriction base="StUF:Stuurgegevens">
+				<sequence>
+					<element name="berichtcode" type="StUF:BerichtcodeDi01"/>
+					<element name="zender" type="StUF:Systeem"/>
+					<element name="ontvanger" type="StUF:Systeem"/>
+					<element name="referentienummer" type="StUF:Refnummer"/>
+					<element name="tijdstipBericht" type="StUF:Tijdstip"/>
+					<element name="functie" type="StUF:FunctieMTBHorizontaal"/>
+				</sequence>
+			</restriction>
+		</complexContent>
+	</complexType>
+	<complexType name="MTVHorizontaal-StuurgegevensDi01">
+		<complexContent>
+			<restriction base="StUF:Stuurgegevens">
+				<sequence>
+					<element name="berichtcode" type="StUF:BerichtcodeDi01"/>
+					<element name="zender" type="StUF:Systeem"/>
+					<element name="ontvanger" type="StUF:Systeem"/>
+					<element name="referentienummer" type="StUF:Refnummer"/>
+					<element name="tijdstipBericht" type="StUF:Tijdstip"/>
+					<element name="functie" type="StUF:FunctieMTVHorizontaal"/>
+				</sequence>
+			</restriction>
+		</complexContent>
+	</complexType>
+	<complexType name="MTVWeiger-StuurgegevensDu01">
+		<complexContent>
+			<restriction base="StUF:Stuurgegevens">
+				<sequence>
+					<element name="berichtcode" type="StUF:BerichtcodeDu01"/>
+					<element name="zender" type="StUF:Systeem"/>
+					<element name="ontvanger" type="StUF:Systeem"/>
+					<element name="referentienummer" type="StUF:Refnummer"/>
+					<element name="tijdstipBericht" type="StUF:Tijdstip"/>
+					<element name="crossRefnummer" type="StUF:Refnummer"/>
+					<element name="functie" type="StUF:FunctieMTVWeiger"/>
+				</sequence>
+			</restriction>
+		</complexContent>
+	</complexType>
+</schema>

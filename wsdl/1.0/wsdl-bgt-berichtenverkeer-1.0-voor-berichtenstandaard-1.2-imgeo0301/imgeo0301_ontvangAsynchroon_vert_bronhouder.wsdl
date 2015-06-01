@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2011 (http://www.altova.com) by Maarten van den Broek (messageDesign) -->
+<definitions xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:imgeo="http://www.geostandaarden.nl/imgeo/2.1/stuf-imgeo/1.2" xmlns:StUF="http://www.egem.nl/StUF/StUF0301" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsi="http://ws-i.org/schemas/conformanceClaim/" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.geostandaarden.nl/imgeo/2.1/stuf-imgeo/1.2">
+	<import namespace="http://www.egem.nl/StUF/StUF0301" location="../../0301/stuf0301_types.wsdl"/>
+	<documentation>
+		Dit document definieert de webservices voor het portType OntvangAsynchroon voor de berichtencatalogus horizontaal en voor een bronhouder
+		Version: 030103:
+		
+		Wijzigingen vergelekem met version 030102:
+		- De message elementen voor mtbSVBDi01 en mtoDi01 verwijderd
+		- De operations mtbSVBDi01, mtoDi01 en Fo03 verwijderd
+		- message element voor opvDi01 toegevoegd
+		- De operation voor opvDi01 toegevoegd
+		
+		Wijzigingen vergeleken met version 030101:
+		- het wsp:policy element verplaatst van het service-element naar het binding-element en paar kleine verbetering doorgevoerd in de namespaces (met dank aan Albert Lems)
+		
+		Wijzigingen vergeleken met version 030100:
+		- Geen (per abuis was bovenstaande wijziging in deze versie niet doorgevoerd)
+		
+		Wijzigingen vergeleken met versie 030002:
+			- imgeo:namespace en target namespace gewijzigd in http://www.geostandaarden.nl/imgeo/2.1/stuf-imgeo/1.2
+			- in import element binnen het schema element de namespace gewijzigd in "http://www.geostandaarden.nl/imgeo/2.1/stuf-imgeo/1.2"en de schemaLocation in "imgeo0301_msg_verticaal.xsd"
+			- binnen het attribute soapAction overal "http://www.geostandaarden.nl/imgeo/2.0" vervangen door "http://www.geostandaarden.nl/imgeo/2.1/stuf-imgeo/1.2"
+			- overal vavDu01 vervangen door vavDi01, zodat de bronhouder in plaats van het vavDu01 het vavDi01 bericht moet ondersteunen
+			- binnen het service element een wsp:Policy element dat voorschrijft dat ws:addressing ondersteund dient te worden met nonAnonymous response
+			- binnen de input/output/fault element binnen porttype/operation het attribute wsam:Action toegevoegd
+			- overbodige namespace declaraties ns t/m ns7 verwijderd in het definitions element
+			- toevoegen aanwijzing in documentation element binnen porttype element over gebruik StUF:Bv03 en StUF:Bv04 als respons
+			- toevoegen operation voor asynchroon ontvangen Fo03-bericht
+	</documentation>
+	<types>
+		<xs:schema>
+			<xs:import namespace="http://www.geostandaarden.nl/imgeo/2.1/stuf-imgeo/1.2" schemaLocation="imgeo0301_msg_verticaal.xsd"/>
+		</xs:schema>
+	</types>
+	<message name="mtbDu01">
+		<part name="body" element="imgeo:mtbDu01"/>
+	</message>
+	<message name="opvDi01">
+		<part name="body" element="imgeo:opvDi01"/>
+	</message>
+	<message name="vavDi01">
+		<part name="body" element="imgeo:vavDi01"/>
+	</message>
+	<portType name="OntvangAsynchroon" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata/">
+		<documentation>
+		Dit portType ondersteunt als operaties alle asynchrone berichten gedefinieerd binnen het sectormodel
+		
+		Hieronder is steeds als output message StUF:Bv03 gedefinieerd. Dit is correct voor een StUF-endnode. Voor intermediaire nodes die de StUF-fouthandeling op het niveau van de StUF:stuurgegevens niet implementeren dienen in plaats van een StUF:Bv03 een StUF:Bv04 als respons te sturen (<output message="StUF:Bv04" wsam:Action="http://www.egem.nl/StUF/StUF0301/Bv04"/>). Dergelijke systemen dienen zelf hun wsdl hierop aan te passen (ook binnen het binding element moeten dan aanpassingen worden doorgevoerd).
+		</documentation>
+		<operation name="mtbDu01">
+			<input message="imgeo:mtbDu01" wsam:Action="http://www.geostandaarden.nl/imgeo/2.1/stuf-imgeo/1.2/mtbDu01"/>
+			<output message="StUF:Bv03" wsam:Action="http://www.egem.nl/StUF/StUF0301/Bv03"/>
+			<fault name="fout" message="StUF:Fo03" wsam:Action="http://www.egem.nl/StUF/StUF0301/Fo03"/>
+		</operation>
+		<operation name="opvDi01">
+			<input message="imgeo:opvDi01" wsam:Action="http://www.geostandaarden.nl/imgeo/2.1/stuf-imgeo/1.2/opvDi01"/>
+			<output message="StUF:Bv03" wsam:Action="http://www.egem.nl/StUF/StUF0301/Bv03"/>
+			<fault name="fout" message="StUF:Fo03" wsam:Action="http://www.egem.nl/StUF/StUF0301/Fo03"/>
+		</operation>
+		<operation name="vavDi01">
+			<input message="imgeo:vavDi01" wsam:Action="http://www.geostandaarden.nl/imgeo/2.1/stuf-imgeo/1.2/vavDi01"/>
+			<output message="StUF:Bv03" wsam:Action="http://www.egem.nl/StUF/StUF0301/Bv03"/>
+			<fault name="fout" message="StUF:Fo03" wsam:Action="http://www.egem.nl/StUF/StUF0301/Fo03"/>
+		</operation>
+	</portType>
+	<binding name="SOAPOntvangAsynchroon" type="imgeo:OntvangAsynchroon">
+		<documentation>
+			Omdat de uit te wisselen berichten volledig gedefinieerd zijn in het sectormodel cq de StUF-standaard, kunnen we ze zonder verdere encoding (“literal”) opnemen in de body.
+Niet ondersteunde berichten kunnen uit de binding en portType worden verwijderd.
+		</documentation>
+		<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+		<wsp:Policy xmlns:wsp="http://www.w3.org/ns/ws-policy">
+			<wsam:Addressing xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata">
+				<wsp:Policy>
+					<wsam:NonAnonymousResponses/>
+				</wsp:Policy>
+			</wsam:Addressing>
+		</wsp:Policy>
+		<operation name="mtbDu01">
+			<soap:operation soapAction="http://www.geostandaarden.nl/imgeo/2.1/stuf-imgeo/1.2/mtbDu01"/>
+			<input>
+				<soap:body use="literal"/>
+			</input>
+			<output>
+				<soap:body use="literal"/>
+			</output>
+			<fault name="fout">
+				<soap:fault name="fout" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="opvDi01">
+			<soap:operation soapAction="http://www.geostandaarden.nl/imgeo/2.1/stuf-imgeo/1.2/opvDi01"/>
+			<input>
+				<soap:body use="literal"/>
+			</input>
+			<output>
+				<soap:body use="literal"/>
+			</output>
+			<fault name="fout">
+				<soap:fault name="fout" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="vavDi01">
+			<soap:operation soapAction="http://www.geostandaarden.nl/imgeo/2.1/stuf-imgeo/1.2/vavDi01"/>
+			<input>
+				<soap:body use="literal"/>
+			</input>
+			<output>
+				<soap:body use="literal"/>
+			</output>
+			<fault name="fout">
+				<soap:fault name="fout" use="literal"/>
+			</fault>
+		</operation>
+	</binding>
+	<service name="OntvangAsynchroon">
+		<documentation>
+	Hieronder wordt de concreet aan te roepen service gedefinieerd voor het ontvangen van asynchrone IMGeo2.1 berichten door een bronhouder. 
+		</documentation>
+		<port name="OntvangAsynchroon" binding="imgeo:SOAPOntvangAsynchroon">
+			<documentation>
+				<wsi:Claim conformsTo="http://ws-i.org/profiles/basic/1.1"/>
+			</documentation>
+			<soap:address location="http://example.com/OntvangAsynchroon"/>
+		</port>
+	</service>
+</definitions>
