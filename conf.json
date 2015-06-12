@@ -1,0 +1,10 @@
+{
+	"title": "Informatiemodel Grootschalige Geografie",
+	"description": "Het informatiemodel geografie (IMGeo) is het informatiemodel horend bij de Basisregistratie Grootschalige Topografie (BGT). Het verplichte deel van IMGeo specificeert de inhoud van de BGT. Het optionele deel biedt ruimte voor het opnemen van meer objecttypen, gedetailleerdere kenmerken van objecten, en het uitwisselen van gegevens in 3D. Voor meer informatie zie BGT|IMGeo op de website van Geonovum.",
+	"sub_standards": {
+		"informatiemodel": "UML informatiemodellen (*.EAP of *.XMI). UML modellen worden hier aangeboden voor technische doeleinden zoals het genereren van schema's/code of het hergebruiken van entiteiten uit elkaars informatiemodel.",
+		"gmlapplicatieschema": "GML application schemas: XML schema's die een valide extensie van GML zijn.",
+		"xmlschema": "StUF schema's en andere XML schema's",
+		"regels": "<a href=\"http://www.schematron.com/\">Schematron</a> schema's, waarin validatieregels aanvullend op GML of XML schema's zijn opgenomen."
+	}
+}
