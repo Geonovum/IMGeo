@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2016 (x64) (http://www.altova.com) by Maarten van den Broek (messageDesign B.V.) -->
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:StUF="http://www.egem.nl/StUF/StUF0301" xmlns:BG="http://www.egem.nl/StUF/sector/bg/0310" targetNamespace="http://www.egem.nl/StUF/sector/bg/0310" elementFormDefault="qualified" attributeFormDefault="unqualified" version="010001">
+	<annotation>
+		<documentation>
+			Wijzigingen vergeleken met versie 010000:
+			- bestandsnaam aangepast aan best practice en waar nodig import/includes aangepast
+			- in de choices binnen de complexTypes BevestigingDu01, FoutDu01, GmlDi01 en GmvDi01 elementen voor overigGebouwdObject en overigTerrein toegevoegd
+	</documentation>
+	</annotation>
+	<import namespace="http://www.egem.nl/StUF/StUF0301" schemaLocation="geoBAG0100_stuf0301_msg.xsd"/>
+	<include schemaLocation="geoBAG0100_bg0310_ent.xsd"/>
+	<complexType name="BevestigingDu01">
+		<annotation>
+			<documentation>ComplexType voor vrij bericht dat als een respons op een gmlDi01 of gmvDi01 bericht aangeeft dat de levering succesvol verwerkt is c.q. dat het verzoek zal worden uitgevoerd</documentation>
+		</annotation>
+		<sequence>
+			<element name="stuurgegevens" type="StUF:Stuurgegevens-verzoekBevestiging"/>
+			<element name="parameters" type="BG:ParametersBevestiging"/>
+			<choice maxOccurs="unbounded">
+				<element name="ligplaats">
+					<complexType>
+						<complexContent>
+							<extension base="BG:LIG-geoBAG-identificatie">
+								<attribute ref="StUF:functie" use="required" fixed="entiteit"/>
+							</extension>
+						</complexContent>
+					</complexType>
+				</element>
+				<element name="overigGebouwdObject">
+					<complexType>
+						<complexContent>
+							<extension base="BG:OGO-geoBAG-identificatie">
+								<attribute ref="StUF:functie" use="required" fixed="entiteit"/>
+							</extension>
+						</complexContent>
+					</complexType>
+				</element>
+				<element name="overigTerrein">
+					<complexType>
+						<complexContent>
+							<extension base="BG:OTR-geoBAG-identificatie">
+								<attribute ref="StUF:functie" use="required" fixed="entiteit"/>
+							</extension>
+						</complexContent>
+					</complexType>
+				</element>
+				<element name="pand">
+					<complexType>
+						<complexContent>
+							<extension base="BG:PND-geoBAG-identificatie">
+								<attribute ref="StUF:functie" use="required" fixed="entiteit"/>
+							</extension>
+						</complexContent>
+					</complexType>
+				</element>
+				<element name="standplaats">
+					<complexType>
+						<complexContent>
+							<extension base="BG:STA-geoBAG-identificatie">
+								<attribute ref="StUF:functie" use="required" fixed="entiteit"/>
+							</extension>
+						</complexContent>
+					</complexType>
+				</element>
+				<element name="verblijfsobject">
+					<complexType>
+						<complexContent>
+							<extension base="BG:VBO-geoBAG-identificatie">
+								<attribute ref="StUF:functie" use="required" fixed="entiteit"/>
+							</extension>
+						</complexContent>
+					</complexType>
+				</element>
+				<element name="woonplaats">
+					<complexType>
+						<complexContent>
+							<extension base="BG:WPL-geoBAG-identificatie">
+								<attribute ref="StUF:functie" use="required" fixed="entiteit"/>
+							</extension>
+						</complexContent>
+					</complexType>
+				</element>
+			</choice>
+		</sequence>
+	</complexType>
+	<complexType name="FoutDu01">
+		<annotation>
+			<documentation>ComplexType voor een vrij bericht dat als een respons op een gmlDi01 of gmvDi01 bericht aangeeft dat de levering niet verwerkt zal worden c.q. het verzoek niet zal worden uitgevoerd</documentation>
+		</annotation>
+		<sequence>
+			<element name="stuurgegevens" type="StUF:Stuurgegevens-verzoekFout"/>
+			<element name="parameters" type="BG:ParametersFout"/>
+			<choice maxOccurs="unbounded">
+				<element name="ligplaats">
+					<complexType>
+						<complexContent>
+							<extension base="BG:LIG-geoBAG-identificatie">
+								<attribute ref="StUF:functie" use="required" fixed="entiteit"/>
+							</extension>
+						</complexContent>
+					</complexType>
+				</element>
+				<element name="overigGebouwdObject">
+					<complexType>
+						<complexContent>
+							<extension base="BG:OGO-geoBAG-identificatie">
+								<attribute ref="StUF:functie" use="required" fixed="entiteit"/>
+							</extension>
+						</complexContent>
+					</complexType>
+				</element>
+				<element name="overigTerrein">
+					<complexType>
+						<complexContent>
+							<extension base="BG:OTR-geoBAG-identificatie">
+								<attribute ref="StUF:functie" use="required" fixed="entiteit"/>
+							</extension>
+						</complexContent>
+					</complexType>
+				</element>
+				<element name="pand">
+					<complexType>
+						<complexContent>
+							<extension base="BG:PND-geoBAG-identificatie">
+								<attribute ref="StUF:functie" use="required" fixed="entiteit"/>
+							</extension>
+						</complexContent>
+					</complexType>
+				</element>
+				<element name="standplaats">
+					<complexType>
+						<complexContent>
+							<extension base="BG:STA-geoBAG-identificatie">
+								<attribute ref="StUF:functie" use="required" fixed="entiteit"/>
+							</extension>
+						</complexContent>
+					</complexType>
+				</element>
+				<element name="verblijfsobject">
+					<complexType>
+						<complexContent>
+							<extension base="BG:VBO-geoBAG-identificatie">
+								<attribute ref="StUF:functie" use="required" fixed="entiteit"/>
+							</extension>
+						</complexContent>
+					</complexType>
+				</element>
+				<element name="woonplaats">
+					<complexType>
+						<complexContent>
+							<extension base="BG:WPL-geoBAG-identificatie">
+								<attribute ref="StUF:functie" use="required" fixed="entiteit"/>
+							</extension>
+						</complexContent>
+					</complexType>
+				</element>
+			</choice>
+		</sequence>
+	</complexType>
+	<complexType name="GmlDi01">
+		<annotation>
+			<documentation>ComplexType voor een vrij bericht voor een geometrieverzoek vanuit de BAG aan de Geo</documentation>
+		</annotation>
+		<sequence>
+			<element name="stuurgegevens" type="StUF:Stuurgegevens-geometrieVerzoek"/>
+			<element name="parameters" type="BG:ParametersLevering"/>
+			<choice maxOccurs="unbounded">
+				<element name="ligplaats">
+					<complexType>
+						<complexContent>
+							<extension base="BG:LIG-geoBAG-basis">
+								<attribute ref="StUF:functie" use="required" fixed="entiteit"/>
+							</extension>
+						</complexContent>
+					</complexType>
+				</element>
+				<element name="overigGebouwdObject">
+					<complexType>
+						<complexContent>
+							<extension base="BG:OGO-geoBAG-basis">
+								<attribute ref="StUF:functie" use="required" fixed="entiteit"/>
+							</extension>
+						</complexContent>
+					</complexType>
+				</element>
+				<element name="overigTerrein">
+					<complexType>
+						<complexContent>
+							<extension base="BG:OTR-geoBAG-basis">
+								<attribute ref="StUF:functie" use="required" fixed="entiteit"/>
+							</extension>
+						</complexContent>
+					</complexType>
+				</element>
+				<element name="pand">
+					<complexType>
+						<complexContent>
+							<extension base="BG:PND-geoBAG-basis">
+								<attribute ref="StUF:functie" use="required" fixed="entiteit"/>
+							</extension>
+						</complexContent>
+					</complexType>
+				</element>
+				<element name="standplaats">
+					<complexType>
+						<complexContent>
+							<extension base="BG:STA-geoBAG-basis">
+								<attribute ref="StUF:functie" use="required" fixed="entiteit"/>
+							</extension>
+						</complexContent>
+					</complexType>
+				</element>
+				<element name="verblijfsobject">
+					<complexType>
+						<complexContent>
+							<extension base="BG:VBO-geoBAG-basis">
+								<attribute ref="StUF:functie" use="required" fixed="entiteit"/>
+							</extension>
+						</complexContent>
+					</complexType>
+				</element>
+				<element name="woonplaats">
+					<complexType>
+						<complexContent>
+							<extension base="BG:WPL-geoBAG-basis">
+								<attribute ref="StUF:functie" use="required" fixed="entiteit"/>
+							</extension>
+						</complexContent>
+					</complexType>
+				</element>
+			</choice>
+		</sequence>
+	</complexType>
+	<complexType name="GmvDi01">
+		<annotation>
+			<documentation>ComplexType voor vrij bericht voor een geometrieverzoek vanuit de BAG aan de Geo</documentation>
+		</annotation>
+		<sequence>
+			<element name="stuurgegevens" type="StUF:Stuurgegevens-geometrieVerzoek"/>
+			<element name="parameters" type="BG:ParametersVerzoek"/>
+			<choice maxOccurs="unbounded">
+				<element name="ligplaats">
+					<complexType>
+						<complexContent>
+							<extension base="BG:LIG-geoBAG-basis">
+								<attribute ref="StUF:functie" use="required" fixed="entiteit"/>
+							</extension>
+						</complexContent>
+					</complexType>
+				</element>
+				<element name="overigGebouwdObject">
+					<complexType>
+						<complexContent>
+							<extension base="BG:OGO-geoBAG-basis">
+								<attribute ref="StUF:functie" use="required" fixed="entiteit"/>
+							</extension>
+						</complexContent>
+					</complexType>
+				</element>
+				<element name="overigTerrein">
+					<complexType>
+						<complexContent>
+							<extension base="BG:OTR-geoBAG-basis">
+								<attribute ref="StUF:functie" use="required" fixed="entiteit"/>
+							</extension>
+						</complexContent>
+					</complexType>
+				</element>
+				<element name="pand">
+					<complexType>
+						<complexContent>
+							<extension base="BG:PND-geoBAG-basis">
+								<attribute ref="StUF:functie" use="required" fixed="entiteit"/>
+							</extension>
+						</complexContent>
+					</complexType>
+				</element>
+				<element name="standplaats">
+					<complexType>
+						<complexContent>
+							<extension base="BG:STA-geoBAG-basis">
+								<attribute ref="StUF:functie" use="required" fixed="entiteit"/>
+							</extension>
+						</complexContent>
+					</complexType>
+				</element>
+				<element name="verblijfsobject">
+					<complexType>
+						<complexContent>
+							<extension base="BG:VBO-geoBAG-basis">
+								<attribute ref="StUF:functie" use="required" fixed="entiteit"/>
+							</extension>
+						</complexContent>
+					</complexType>
+				</element>
+				<element name="woonplaats">
+					<complexType>
+						<complexContent>
+							<extension base="BG:WPL-geoBAG-basis">
+								<attribute ref="StUF:functie" use="required" fixed="entiteit"/>
+							</extension>
+						</complexContent>
+					</complexType>
+				</element>
+			</choice>
+		</sequence>
+	</complexType>
+	<complexType name="CodeType-geoBAG">
+		<simpleContent>
+			<extension base="BG:Code-geoBAG">
+				<attribute name="codeSpace" type="string" use="required"/>
+			</extension>
+		</simpleContent>
+	</complexType>
+	<complexType name="ParametersBevestiging">
+		<sequence>
+			<element name="identificatie" type="StUF:Sleutel"/>
+		</sequence>
+	</complexType>
+	<complexType name="ParametersFout">
+		<sequence>
+			<element name="identificatie" type="StUF:Sleutel"/>
+			<element name="foutcode" type="BG:FoutCode-geoBAG"/>
+			<element name="foutomschrijving" type="StUF:Foutomschrijving" minOccurs="0"/>
+			<element name="plek" type="StUF:Foutplek"/>
+			<element name="details" type="StUF:Foutdetails" minOccurs="0"/>
+		</sequence>
+	</complexType>
+	<complexType name="ParametersLevering">
+		<sequence>
+			<element name="idLevering" type="StUF:Sleutel"/>
+			<element name="idGerelateerdVerzoek" type="StUF:Sleutel" minOccurs="0"/>
+			<element name="gebeurtenisCode" type="BG:CodeType-geoBAG"/>
+			<element name="documentVerwijzing" type="BG:Url" minOccurs="0"/>
+			<element name="toelichting" type="BG:Toelichting-geoBAG" minOccurs="0"/>
+		</sequence>
+	</complexType>
+	<complexType name="ParametersVerzoek">
+		<sequence>
+			<element name="idVerzoek" type="StUF:Sleutel"/>
+			<element name="gebeurtenis" type="BG:CodeType-geoBAG"/>
+			<element name="documentVerwijzing" type="BG:Url" minOccurs="0"/>
+			<element name="toelichting" type="BG:Toelichting-geoBAG" minOccurs="0"/>
+		</sequence>
+	</complexType>
+	<simpleType name="Code-geoBAG">
+		<restriction base="string"/>
+	</simpleType>
+	<simpleType name="FoutCode-geoBAG">
+		<restriction base="string">
+			<pattern value="StUFGeoBAG[0-9]{5}"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="Toelichting-geoBAG">
+		<restriction base="string">
+			<maxLength value="500"/>
+		</restriction>
+	</simpleType>
+</schema>

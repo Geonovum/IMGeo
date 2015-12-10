@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2014 rel. 2 sp1 (x64) (http://www.altova.com) by Maarten van den Broek (messageDesign B.V.) -->
+<schema xmlns:StUF="http://www.egem.nl/StUF/StUF0301" xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.egem.nl/StUF/StUF0301" elementFormDefault="qualified" attributeFormDefault="unqualified" version="010000">
+	<annotation>
+		<documentation>
+			ComplexTypes tbv stuurgegevens
+		</documentation>
+	</annotation>
+	<include schemaLocation="../bg0310/entiteiten/bg0310_stuf_simpleTypes.xsd"/>
+	<!--Restrictions op in StUF gedefinieerde types-->
+	<complexType name="Stuurgegevens-geometrieLevering">
+		<complexContent>
+			<restriction base="StUF:StuurgegevensDi01">
+				<sequence>
+					<element name="berichtcode" type="StUF:BerichtcodeDi01"/>
+					<element name="zender" type="StUF:Systeem"/>
+					<element name="ontvanger" type="StUF:Systeem"/>
+					<element name="referentienummer" type="StUF:Refnummer"/>
+					<element name="tijdstipBericht" type="StUF:Tijdstip"/>
+					<element name="functie" type="StUF:Functie-GeometrieLevering"/>
+				</sequence>
+			</restriction>
+		</complexContent>
+	</complexType>
+	<complexType name="Stuurgegevens-geometrieVerzoek">
+		<complexContent>
+			<restriction base="StUF:StuurgegevensDi01">
+				<sequence>
+					<element name="berichtcode" type="StUF:BerichtcodeDi01"/>
+					<element name="zender" type="StUF:Systeem"/>
+					<element name="ontvanger" type="StUF:Systeem"/>
+					<element name="referentienummer" type="StUF:Refnummer"/>
+					<element name="tijdstipBericht" type="StUF:Tijdstip"/>
+					<element name="functie" type="StUF:Functie-GeometrieVerzoek"/>
+				</sequence>
+			</restriction>
+		</complexContent>
+	</complexType>
+	<complexType name="Stuurgegevens-verzoekBevestiging">
+		<complexContent>
+			<restriction base="StUF:StuurgegevensDu01">
+				<sequence>
+					<element name="berichtcode" type="StUF:BerichtcodeDu01"/>
+					<element name="zender" type="StUF:Systeem"/>
+					<element name="ontvanger" type="StUF:Systeem"/>
+					<element name="referentienummer" type="StUF:Refnummer"/>
+					<element name="tijdstipBericht" type="StUF:Tijdstip"/>
+					<element name="crossRefnummer" type="StUF:Refnummer"/>
+					<element name="functie" type="StUF:Functie-Bevestiging"/>
+				</sequence>
+			</restriction>
+		</complexContent>
+	</complexType>
+	<complexType name="Stuurgegevens-verzoekFout">
+		<complexContent>
+			<restriction base="StUF:StuurgegevensDu01">
+				<sequence>
+					<element name="berichtcode" type="StUF:BerichtcodeDu01"/>
+					<element name="zender" type="StUF:Systeem"/>
+					<element name="ontvanger" type="StUF:Systeem"/>
+					<element name="referentienummer" type="StUF:Refnummer"/>
+					<element name="tijdstipBericht" type="StUF:Tijdstip"/>
+					<element name="crossRefnummer" type="StUF:Refnummer"/>
+					<element name="functie" type="StUF:Functie-Fout"/>
+				</sequence>
+			</restriction>
+		</complexContent>
+	</complexType>
+	<!--SimpleTypes-->
+	<simpleType name="Functie-GeometrieLevering">
+		<restriction base="StUF:Functie">
+			<enumeration value="geometrieLevering"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="Functie-GeometrieVerzoek">
+		<restriction base="StUF:Functie">
+			<enumeration value="geometrieVerzoek"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="Functie-Bevestiging">
+		<restriction base="StUF:Functie"/>
+	</simpleType>
+	<simpleType name="Functie-Fout">
+		<restriction base="StUF:Functie">
+			<enumeration value="verzoekFout"/>
+		</restriction>
+	</simpleType>
+</schema>

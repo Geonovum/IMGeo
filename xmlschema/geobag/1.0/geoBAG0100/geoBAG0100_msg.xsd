@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2016 (x64) (http://www.altova.com) by Maarten van den Broek (messageDesign B.V.) -->
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:StUF="http://www.egem.nl/StUF/StUF0301" xmlns:BG="http://www.egem.nl/StUF/sector/bg/0310" xmlns:geoBAG="http://register.geostandaarden.nl/xmlschema/geobag/1.0" targetNamespace="http://register.geostandaarden.nl/xmlschema/geobag/1.0" elementFormDefault="qualified" attributeFormDefault="unqualified" version="010002">
+	<annotation>
+		<documentation xml:lang="nl">
+		Wijzigingen vergeleken met versie 010001:
+		- bestandsnaam gewijzigd
+		- import aangepast aan nieuwe bestandsnamen
+		</documentation>
+	</annotation>
+	<import namespace="http://www.egem.nl/StUF/sector/bg/0310" schemaLocation="geoBAG0100_bg0310_msg.xsd"/>
+	<element name="bevestigingDu01" type="BG:BevestigingDu01">
+		<annotation>
+			<documentation>Vrij bericht dat als een respons op een gmlDi01 of gmvDi01 bericht aangeeft dat de levering succesvol verwerkt is c.q. dat het verzoek zal worden uitgevoerd</documentation>
+		</annotation>
+	</element>
+	<element name="foutDu01" type="BG:FoutDu01">
+		<annotation>
+			<documentation>Vrij bericht dat als een respons op een gmlDi01 of gmvDi01 bericht aangeeft dat de levering niet verwerkt zal worden c.q. het verzoek niet zal worden uitgevoerd</documentation>
+		</annotation>
+	</element>
+	<element name="gmlDi01" type="BG:GmlDi01">
+		<annotation>
+			<documentation>Vrij bericht voor een geometrie levering vanuit de Geo aan de BAG</documentation>
+		</annotation>
+	</element>
+	<element name="gmvDi01" type="BG:GmvDi01">
+		<annotation>
+			<documentation>Vrij bericht voor een geometrieverzoek vanuit de BAG aan de Geo</documentation>
+		</annotation>
+	</element>
+</schema>
