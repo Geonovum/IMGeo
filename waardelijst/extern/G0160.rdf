@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<!-- Domeinwaardenlijst Uitbreiding Geo-BOR voor bronhouder Gemeente Hardenberg (G0160) -->
+<!-- Domeinwaardenlijst gepubliceerd in http://register.geostandaarden.nl/imgeo/extern -->
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:imgeo="http://register.geostandaarden.nl/imgeo/extern/G0160#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+<ConceptScheme xmlns="http://www.w3.org/2004/02/skos/core#" rdf:about="http://register.geostandaarden.nl/imgeo/extern/G0160#BeheerderBOR">
+<type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</ConceptScheme>
+<Concept xmlns="http://www.w3.org/2004/02/skos/core#" rdf:about="http://register.geostandaarden.nl/imgeo/extern/G0160#BeheerderBOR_BA">
+<type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">BA</prefLabel>
+<definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">BAG</definition>
+<inScheme rdf:resource="http://register.geostandaarden.nl/imgeo/extern/G0160#BeheerderBOR"/>
+</Concept>
+<Concept xmlns="http://www.w3.org/2004/02/skos/core#" rdf:about="http://register.geostandaarden.nl/imgeo/extern/G0160#BeheerderBOR_BO">
+<type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">BO</prefLabel>
+<definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Bomen</definition>
+<inScheme rdf:resource="http://register.geostandaarden.nl/imgeo/extern/G0160#BeheerderBOR"/>
+</Concept>
+<Concept xmlns="http://www.w3.org/2004/02/skos/core#" rdf:about="http://register.geostandaarden.nl/imgeo/extern/G0160#BeheerderBOR_GR">
+<type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">GR</prefLabel>
+<definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Groenbeheer</definition>
+<inScheme rdf:resource="http://register.geostandaarden.nl/imgeo/extern/G0160#BeheerderBOR"/>
+</Concept>
+<Concept xmlns="http://www.w3.org/2004/02/skos/core#" rdf:about="http://register.geostandaarden.nl/imgeo/extern/G0160#BeheerderBOR_KL">
+<type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">KL</prefLabel>
+<definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Kabels en leidingen</definition>
+<inScheme rdf:resource="http://register.geostandaarden.nl/imgeo/extern/G0160#BeheerderBOR"/>
+</Concept>
+<Concept xmlns="http://www.w3.org/2004/02/skos/core#" rdf:about="http://register.geostandaarden.nl/imgeo/extern/G0160#BeheerderBOR_KU">
+<type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">KU</prefLabel>
+<definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Kunstwerkbeheer</definition>
+<inScheme rdf:resource="http://register.geostandaarden.nl/imgeo/extern/G0160#BeheerderBOR"/>
+</Concept>
+<Concept xmlns="http://www.w3.org/2004/02/skos/core#" rdf:about="http://register.geostandaarden.nl/imgeo/extern/G0160#BeheerderBOR_O1">
+<type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">O1</prefLabel>
+<definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Overig 1</definition>
+<inScheme rdf:resource="http://register.geostandaarden.nl/imgeo/extern/G0160#BeheerderBOR"/>
+</Concept>
+<Concept xmlns="http://www.w3.org/2004/02/skos/core#" rdf:about="http://register.geostandaarden.nl/imgeo/extern/G0160#BeheerderBOR_O2">
+<type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">O2</prefLabel>
+<definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Overig 2</definition>
+<inScheme rdf:resource="http://register.geostandaarden.nl/imgeo/extern/G0160#BeheerderBOR"/>
+</Concept>
+<Concept xmlns="http://www.w3.org/2004/02/skos/core#" rdf:about="http://register.geostandaarden.nl/imgeo/extern/G0160#BeheerderBOR_O3">
+<type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">O3</prefLabel>
+<definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Overig 3</definition>
+<inScheme rdf:resource="http://register.geostandaarden.nl/imgeo/extern/G0160#BeheerderBOR"/>
+</Concept>
+<Concept xmlns="http://www.w3.org/2004/02/skos/core#" rdf:about="http://register.geostandaarden.nl/imgeo/extern/G0160#BeheerderBOR_OP">
+<type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">OP</prefLabel>
+<definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Openbare verlichting</definition>
+<inScheme rdf:resource="http://register.geostandaarden.nl/imgeo/extern/G0160#BeheerderBOR"/>
+</Concept>
+<Concept xmlns="http://www.w3.org/2004/02/skos/core#" rdf:about="http://register.geostandaarden.nl/imgeo/extern/G0160#BeheerderBOR_RI">
+<type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">RI</prefLabel>
+<definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Rioolbeheer</definition>
+<inScheme rdf:resource="http://register.geostandaarden.nl/imgeo/extern/G0160#BeheerderBOR"/>
+</Concept>
+<Concept xmlns="http://www.w3.org/2004/02/skos/core#" rdf:about="http://register.geostandaarden.nl/imgeo/extern/G0160#BeheerderBOR_SP">
+<type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">SP</prefLabel>
+<definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Speelwerktuigenbeheer</definition>
+<inScheme rdf:resource="http://register.geostandaarden.nl/imgeo/extern/G0160#BeheerderBOR"/>
+</Concept>
+<Concept xmlns="http://www.w3.org/2004/02/skos/core#" rdf:about="http://register.geostandaarden.nl/imgeo/extern/G0160#BeheerderBOR_ST">
+<type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">ST</prefLabel>
+<definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Straatmeubilair</definition>
+<inScheme rdf:resource="http://register.geostandaarden.nl/imgeo/extern/G0160#BeheerderBOR"/>
+</Concept>
+<Concept xmlns="http://www.w3.org/2004/02/skos/core#" rdf:about="http://register.geostandaarden.nl/imgeo/extern/G0160#BeheerderBOR_VE">
+<type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">VE</prefLabel>
+<definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Verkeersborden</definition>
+<inScheme rdf:resource="http://register.geostandaarden.nl/imgeo/extern/G0160#BeheerderBOR"/>
+</Concept>
+<Concept xmlns="http://www.w3.org/2004/02/skos/core#" rdf:about="http://register.geostandaarden.nl/imgeo/extern/G0160#BeheerderBOR_VR">
+<type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">VR</prefLabel>
+<definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Verkeersregelsystemen</definition>
+<inScheme rdf:resource="http://register.geostandaarden.nl/imgeo/extern/G0160#BeheerderBOR"/>
+</Concept>
+<Concept xmlns="http://www.w3.org/2004/02/skos/core#" rdf:about="http://register.geostandaarden.nl/imgeo/extern/G0160#BeheerderBOR_WA">
+<type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">WA</prefLabel>
+<definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Waterbeheer</definition>
+<inScheme rdf:resource="http://register.geostandaarden.nl/imgeo/extern/G0160#BeheerderBOR"/>
+</Concept>
+<Concept xmlns="http://www.w3.org/2004/02/skos/core#" rdf:about="http://register.geostandaarden.nl/imgeo/extern/G0160#BeheerderBOR_WE">
+<type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">WE</prefLabel>
+<definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Wegbeheer</definition>
+<inScheme rdf:resource="http://register.geostandaarden.nl/imgeo/extern/G0160#BeheerderBOR"/>
+</Concept>
+<Concept xmlns="http://www.w3.org/2004/02/skos/core#" rdf:about="http://register.geostandaarden.nl/imgeo/extern/G0160#BeheerderBOR_GR_WE">
+<type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">GR,WE</prefLabel>
+<definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Groenbeheer, Wegbeheer</definition>
+<inScheme rdf:resource="http://register.geostandaarden.nl/imgeo/extern/G0160#BeheerderBOR"/>
+</Concept>
+</RDF>
