@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="14px">
+<g transform="translate(-0.54999971,-0.54999971)">
+	<g>
+		<rect x="2.35" y="2.35" fill="#DD6C27" width="10.4" height="10.4"/>
+		<path fill="#FFFFFF" d="M12.5,2.6v9.9H2.6V2.6H12.5 M13,2.1h-0.5H2.6H2.1v0.5v9.9V13h0.5h9.9H13v-0.5V2.6V2.1L13,2.1z"/>
+	</g>
+</g>
+<g transform="translate(-0.54999971,-0.54999971)">
+	<rect x="2.6" y="2.6" fill="#DD6C27" width="9.9" height="9.9"/>
+</g>
+</svg>

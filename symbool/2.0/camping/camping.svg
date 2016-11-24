@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="25px" height="25px">
+<g transform="translate(-2.6726567,-2.6732003)">
+	<g>
+		<path fill="#FFFFFF" d="M15.173,4.087l10.799,10.799l-10.8,10.8L4.372,14.889L15.173,4.087 M15.173,2.673L14.466,3.38l-10.8,10.8
+			l-0.707,0.707l0.707,0.708l10.799,10.798l0.707,0.707l0.707-0.707l10.802-10.8l0.707-0.707L26.68,14.18L15.881,3.38L15.173,2.673
+			L15.173,2.673z"/>
+	</g>
+	
+		<rect x="7.535" y="7.252" transform="matrix(0.7072 -0.7071 0.7071 0.7072 -6.0836 15.0871)" display="none" fill="#693380" fill-opacity="0.2" stroke="#693380" width="15.274" height="15.272"/>
+</g>
+<rect id="rect3281" x="4.863" y="4.578" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -4.9757 12.4159)" fill="#693380" fill-opacity="0.2" stroke="#693380" width="15.273" height="15.272"/>
+<path id="path3284" fill="#693380" d="M17.727,16.818l-5.185-9.923l-5.182,9.923H6.264v0.717h12.473v-0.717H17.727z M9.768,16.818
+	l2.774-5.316l2.779,5.316H9.768z"/>
+</svg>

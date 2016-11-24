@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30px" height="31px">
+<g>
+	<polygon fill="#228CCC" points="11.293,17.75 13.008,5.419 16.991,5.419 18.707,17.75 	"/>
+	<path fill="#FFFFFF" d="M16.773,5.669L18.42,17.5h-6.839l1.646-11.831H16.773 M17.209,5.169h-0.436h-3.547h-0.435L12.731,5.6
+		l-1.646,11.83L11.006,18h0.574h6.839h0.574l-0.079-0.568L17.268,5.601L17.209,5.169L17.209,5.169z"/>
+</g>
+<g>
+	<rect x="12.976" y="0.25" fill="#228CCC" width="4.047" height="4.442"/>
+	<path fill="#FFFFFF" d="M16.773,0.5v3.942h-3.547V0.5H16.773 M17.273,0h-0.5h-3.547h-0.5v0.5v3.942v0.5h0.5h3.547h0.5v-0.5V0.5V0
+		L17.273,0z"/>
+</g>
+<polygon fill="#228CCC" points="16.773,5.669 18.42,17.5 11.581,17.5 13.226,5.669 "/>
+<rect x="13.226" y="0.5" fill="#228CCC" width="3.547" height="3.942"/>
+</svg>

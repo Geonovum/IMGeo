@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="14px">
+<g transform="translate(-0.55,-0.5)">
+	<g>
+		<polygon fill="#248BCB" points="3.361,13.55 0.95,6.005 7.242,1.391 13.638,6.005 11.124,13.55 		"/>
+		<path fill="#FFFFFF" d="M7.243,1.7l6.1,4.4l-2.399,7.2h-7.4l-2.3-7.2L7.243,1.7 M7.241,1.082L6.947,1.297l-6,4.4L0.657,5.91
+			l0.11,0.343l2.3,7.2L3.178,13.8h0.365h7.4h0.36l0.114-0.342l2.399-7.2l0.116-0.349l-0.298-0.215l-6.1-4.4L7.241,1.082L7.241,1.082
+			z"/>
+	</g>
+</g>
+<g transform="translate(-0.55,-0.5)">
+	<polygon fill="#248BCB" points="13.343,6.1 10.945,13.3 3.544,13.3 1.244,6.1 7.244,1.7 	"/>
+</g>
+</svg>
