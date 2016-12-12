@@ -12,16 +12,10 @@
 					<Name>0080-04-00-02</Name>
 					<Title>Kademuur</Title>
 					<ogc:Filter>
-						<ogc:And>
-							<ogc:PropertyIsEqualTo>
-								<ogc:PropertyName>bgt-type</ogc:PropertyName>
-								<ogc:Literal>niet-bgt</ogc:Literal>
-							</ogc:PropertyIsEqualTo>
-							<ogc:PropertyIsEqualTo>
-								<ogc:PropertyName>plus-type</ogc:PropertyName>
-								<ogc:Literal>kademuur</ogc:Literal>
-							</ogc:PropertyIsEqualTo>
-						</ogc:And>
+						<ogc:PropertyIsEqualTo>
+							<ogc:PropertyName>plus-type</ogc:PropertyName>
+							<ogc:Literal>kademuur</ogc:Literal>
+						</ogc:PropertyIsEqualTo>
 					</ogc:Filter>
 					<MinScaleDenominator>0</MinScaleDenominator>
 					<MaxScaleDenominator>5000</MaxScaleDenominator>
@@ -39,16 +33,10 @@
 					<Name>0080-05-00-02</Name>
 					<Title>Muur</Title>
 					<ogc:Filter>
-						<ogc:And>
-							<ogc:PropertyIsEqualTo>
-								<ogc:PropertyName>bgt-type</ogc:PropertyName>
-								<ogc:Literal>muur</ogc:Literal>
-							</ogc:PropertyIsEqualTo>
-							<ogc:PropertyIsEqualTo>
-								<ogc:PropertyName>bgt-type</ogc:PropertyName>
-								<ogc:Literal>muur</ogc:Literal>
-							</ogc:PropertyIsEqualTo>
-						</ogc:And>
+						<ogc:PropertyIsEqualTo>
+							<ogc:PropertyName>bgt-type</ogc:PropertyName>
+							<ogc:Literal>muur</ogc:Literal>
+						</ogc:PropertyIsEqualTo>
 					</ogc:Filter>
 					<MinScaleDenominator>0</MinScaleDenominator>
 					<MaxScaleDenominator>5000</MaxScaleDenominator>
