@@ -14,7 +14,7 @@
 					<ogc:Filter>
 						<ogc:PropertyIsEqualTo>
 							<ogc:PropertyName>openbareRuimteType</ogc:PropertyName>
-							<ogc:Literal>Kunstwerk</ogc:Literal>
+							<ogc:Literal>kunstwerk</ogc:Literal>
 						</ogc:PropertyIsEqualTo>
 					</ogc:Filter>
 					<MinScaleDenominator>0</MinScaleDenominator>
@@ -54,7 +54,7 @@
 					<ogc:Filter>
 						<ogc:PropertyIsEqualTo>
 							<ogc:PropertyName>openbareRuimteType</ogc:PropertyName>
-							<ogc:Literal>Spoorbaan</ogc:Literal>
+							<ogc:Literal>spoorbaan</ogc:Literal>
 						</ogc:PropertyIsEqualTo>
 					</ogc:Filter>
 					<MinScaleDenominator>0</MinScaleDenominator>
@@ -97,7 +97,7 @@
 					<ogc:Filter>
 						<ogc:PropertyIsEqualTo>
 							<ogc:PropertyName>openbareRuimteType</ogc:PropertyName>
-							<ogc:Literal>Terrein</ogc:Literal>
+							<ogc:Literal>terrein</ogc:Literal>
 						</ogc:PropertyIsEqualTo>
 					</ogc:Filter>
 					<MinScaleDenominator>0</MinScaleDenominator>
@@ -132,7 +132,7 @@
 					<ogc:Filter>
 						<ogc:PropertyIsEqualTo>
 							<ogc:PropertyName>openbareRuimteType</ogc:PropertyName>
-							<ogc:Literal>Water</ogc:Literal>
+							<ogc:Literal>water</ogc:Literal>
 						</ogc:PropertyIsEqualTo>
 					</ogc:Filter>
 					<MinScaleDenominator>0</MinScaleDenominator>
@@ -168,7 +168,7 @@
 					<ogc:Filter>
 						<ogc:PropertyIsEqualTo>
 							<ogc:PropertyName>openbareRuimteType</ogc:PropertyName>
-							<ogc:Literal>Weg</ogc:Literal>
+							<ogc:Literal>weg</ogc:Literal>
 						</ogc:PropertyIsEqualTo>
 					</ogc:Filter>
 					<MinScaleDenominator>0</MinScaleDenominator>
@@ -211,7 +211,7 @@
 					<ogc:Filter>
 						<ogc:PropertyIsEqualTo>
 							<ogc:PropertyName>openbareRuimteType</ogc:PropertyName>
-							<ogc:Literal>Administratief gebied</ogc:Literal>
+							<ogc:Literal>administratief gebied</ogc:Literal>
 						</ogc:PropertyIsEqualTo>
 					</ogc:Filter>
 					<MinScaleDenominator>0</MinScaleDenominator>
@@ -244,7 +244,7 @@
 					<ogc:Filter>
 						<ogc:PropertyIsEqualTo>
 							<ogc:PropertyName>openbareRuimteType</ogc:PropertyName>
-							<ogc:Literal>Landschappelijk gebied</ogc:Literal>
+							<ogc:Literal>landschappelijk gebied</ogc:Literal>
 						</ogc:PropertyIsEqualTo>
 					</ogc:Filter>
 					<MinScaleDenominator>0</MinScaleDenominator>
