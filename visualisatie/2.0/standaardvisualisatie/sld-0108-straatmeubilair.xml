@@ -550,6 +550,36 @@
 				</Rule>
 				<Rule>
 					<Name>0108-00-00-01</Name>
+					<Title>Overig straatmeubilair</Title>
+					<ogc:Filter>
+						<ogc:PropertyIsNull>
+							<ogc:PropertyName>plus-type</ogc:PropertyName>
+						</ogc:PropertyIsNull>
+					</ogc:Filter>
+					<MaxScaleDenominator>501</MaxScaleDenominator>
+					<PointSymbolizer>
+						<Graphic>
+							<ExternalGraphic>
+								<OnlineResource xlink:type="simple" xlink:href="straatmeubilair.svg"/>
+								<Format>image/svg+xml</Format>
+							</ExternalGraphic>
+							<Size>25</Size>
+						</Graphic>
+					</PointSymbolizer>
+					<PointSymbolizer>
+						<Graphic>
+							<Mark>
+								<WellKnownName>circle</WellKnownName>
+								<Fill>
+									<CssParameter name="fill">#6a2d14</CssParameter>
+								</Fill>
+							</Mark>
+							<Size>3</Size>
+						</Graphic>
+					</PointSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>0108-00-00-01</Name>
 					<Title>Straatmeubilair</Title>
 					<ogc:Filter>
 						<ogc:Not>

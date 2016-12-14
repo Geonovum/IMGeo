@@ -100,6 +100,36 @@
 				</Rule>
 				<Rule>
 					<Name>0109-00-00-01</Name>
+					<Title>Overig waterinrichtingselement</Title>
+					<ogc:Filter>
+						<ogc:PropertyIsNull>
+							<ogc:PropertyName>plus-type</ogc:PropertyName>
+						</ogc:PropertyIsNull>
+					</ogc:Filter>
+					<MaxScaleDenominator>501</MaxScaleDenominator>
+					<PointSymbolizer>
+						<Graphic>
+							<ExternalGraphic>
+								<OnlineResource xlink:type="simple" xlink:href="water.svg"/>
+								<Format>image/svg+xml</Format>
+							</ExternalGraphic>
+							<Size>25</Size>
+						</Graphic>
+					</PointSymbolizer>
+					<PointSymbolizer>
+						<Graphic>
+							<Mark>
+								<WellKnownName>circle</WellKnownName>
+								<Fill>
+									<CssParameter name="fill">#104b6e</CssParameter>
+								</Fill>
+							</Mark>
+							<Size>3</Size>
+						</Graphic>
+					</PointSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>0109-00-00-01</Name>
 					<Title>Waterinrichtingselementen</Title>
 					<MinScaleDenominator>502</MinScaleDenominator>
 					<MaxScaleDenominator>1251</MaxScaleDenominator>

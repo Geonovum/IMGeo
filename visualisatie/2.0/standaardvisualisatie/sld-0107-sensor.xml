@@ -310,6 +310,35 @@
 				</Rule>
 				<Rule>
 					<Name>0107-00-00-01</Name>
+					<Title>Overige sensor</Title>
+					<ogc:Filter>
+						<ogc:PropertyIsNull>
+							<ogc:PropertyName>plus-type</ogc:PropertyName>
+						</ogc:PropertyIsNull>
+					</ogc:Filter>
+					<MaxScaleDenominator>501</MaxScaleDenominator>
+					<PointSymbolizer>
+						<Graphic>
+							<ExternalGraphic>
+								<OnlineResource xlink:type="simple" xlink:href="sensor.svg"/>
+								<Format>image/svg+xml</Format>
+							</ExternalGraphic>
+						</Graphic>
+					</PointSymbolizer>
+					<PointSymbolizer>
+						<Graphic>
+							<Mark>
+								<WellKnownName>circle</WellKnownName>
+								<Fill>
+									<CssParameter name="fill">#681648</CssParameter>
+								</Fill>
+							</Mark>
+							<Size>3</Size>
+						</Graphic>
+					</PointSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>0107-00-00-01</Name>
 					<Title>Sensoren</Title>
 					<ogc:Filter>
 						<ogc:Or>
