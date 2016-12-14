@@ -312,9 +312,10 @@
 					<Name>0101-00-00-01</Name>
 					<Title>Overig bord</Title>
 					<ogc:Filter>
-						<ogc:PropertyIsNull>
+						<ogc:PropertyIsEqualTo>
 							<ogc:PropertyName>plus-type</ogc:PropertyName>
-						</ogc:PropertyIsNull>
+							<ogc:Literal>geenWaarde</ogc:Literal>
+						</ogc:PropertyIsEqualTo>
 					</ogc:Filter>
 					<MaxScaleDenominator>501</MaxScaleDenominator>
 					<PointSymbolizer>
@@ -383,9 +384,10 @@
 					<Name>0101-00-00-01</Name>
 					<Title>Overig bord</Title>
 					<ogc:Filter>
-						<ogc:PropertyIsNull>
+						<ogc:PropertyIsEqualTo>
 							<ogc:PropertyName>plus-type</ogc:PropertyName>
-						</ogc:PropertyIsNull>
+							<ogc:Literal>geenWaarde</ogc:Literal>
+						</ogc:PropertyIsEqualTo>
 					</ogc:Filter>
 					<MinScaleDenominator>502</MinScaleDenominator>
 					<MaxScaleDenominator>1251</MaxScaleDenominator>
@@ -445,9 +447,10 @@
 					<Name>0101-00-00-01</Name>
 					<Title>Overig bord</Title>
 					<ogc:Filter>
-						<ogc:PropertyIsNull>
+						<ogc:PropertyIsEqualTo>
 							<ogc:PropertyName>plus-type</ogc:PropertyName>
-						</ogc:PropertyIsNull>
+							<ogc:Literal>geenWaarde</ogc:Literal>
+						</ogc:PropertyIsEqualTo>
 					</ogc:Filter>
 					<MinScaleDenominator>1252</MinScaleDenominator>
 					<MaxScaleDenominator>2501</MaxScaleDenominator>
