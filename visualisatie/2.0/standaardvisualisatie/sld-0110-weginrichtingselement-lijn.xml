@@ -265,9 +265,10 @@
 					<Name>0110-00-00-01</Name>
 					<Title>Overig weginrichtingselement</Title>
 					<ogc:Filter>
-						<ogc:PropertyIsNull>
+						<ogc:PropertyIsEqualTo>
 							<ogc:PropertyName>plus-type</ogc:PropertyName>
-						</ogc:PropertyIsNull>
+							<ogc:Literal>geenWaarde</ogc:Literal>
+						</ogc:PropertyIsEqualTo>
 					</ogc:Filter>
 					<MaxScaleDenominator>2501</MaxScaleDenominator>
 					<LineSymbolizer>
@@ -299,9 +300,10 @@
 					<Name>0110-00-00-01</Name>
 					<Title>Overig weginrichtingselement</Title>
 					<ogc:Filter>
-						<ogc:PropertyIsNull>
+						<ogc:PropertyIsEqualTo>
 							<ogc:PropertyName>plus-type</ogc:PropertyName>
-						</ogc:PropertyIsNull>
+							<ogc:Literal>geenWaarde</ogc:Literal>
+						</ogc:PropertyIsEqualTo>
 					</ogc:Filter>
 					<MinScaleDenominator>502</MinScaleDenominator>
 					<MaxScaleDenominator>2501</MaxScaleDenominator>

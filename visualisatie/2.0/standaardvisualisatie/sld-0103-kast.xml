@@ -282,9 +282,10 @@
 					<Name>0103-00-00-01</Name>
 					<Title>Overige kast</Title>
 					<ogc:Filter>
-						<ogc:PropertyIsNull>
+						<ogc:PropertyIsEqualTo>
 							<ogc:PropertyName>plus-type</ogc:PropertyName>
-						</ogc:PropertyIsNull>
+							<ogc:Literal>geenWaarde</ogc:Literal>
+						</ogc:PropertyIsEqualTo>
 					</ogc:Filter>
 					<MaxScaleDenominator>501</MaxScaleDenominator>
 					<PointSymbolizer>

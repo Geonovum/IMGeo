@@ -40,9 +40,10 @@
 					<Name>0120-00-01-01</Name>
 					<Title>Overig vegetatieobject</Title>
 					<ogc:Filter>
-						<ogc:PropertyIsNull>
+						<ogc:PropertyIsEqualTo>
 							<ogc:PropertyName>plus-type</ogc:PropertyName>
-						</ogc:PropertyIsNull>
+							<ogc:Literal>geenWaarde</ogc:Literal>
+						</ogc:PropertyIsEqualTo>
 					</ogc:Filter>
 					<MaxScaleDenominator>501</MaxScaleDenominator>
 					<PointSymbolizer>
