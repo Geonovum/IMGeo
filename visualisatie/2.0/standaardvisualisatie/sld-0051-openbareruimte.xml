@@ -5,7 +5,7 @@
 	<NamedLayer>
 		<Name>OpenbareRuimte</Name>
 		<UserStyle>
-			<Title>Visualisatie van de buurten</Title>
+			<Title>Visualisatie van de openbare ruimtes</Title>
 			<Abstract>Deze stylesheet bevat de regels voor de visualisatie van het objecttype OpenbareRuimte</Abstract>
 			<FeatureTypeStyle>
 				<Rule>
