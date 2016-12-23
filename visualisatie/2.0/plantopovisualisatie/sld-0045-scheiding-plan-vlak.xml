@@ -7,11 +7,11 @@
 			<Abstract>Deze stylesheet bevat de regels voor de visualisatie van het objecttype Scheiding</Abstract>
 			<FeatureTypeStyle>
 				<Rule>
-					<Name>0080-04-00-02</Name>
+					<Name>0045-04-00-02</Name>
 					<Title>Kademuur</Title>
 					<ogc:Filter>
 						<ogc:PropertyIsEqualTo>
-							<ogc:PropertyName>plus-type</ogc:PropertyName>
+							<ogc:PropertyName>bgt-type</ogc:PropertyName>
 							<ogc:Literal>kademuur</ogc:Literal>
 						</ogc:PropertyIsEqualTo>
 					</ogc:Filter>
@@ -26,11 +26,11 @@
 					</PolygonSymbolizer>
 				</Rule>
 				<Rule>
-					<Name>0080-05-00-02</Name>
+					<Name>0045-05-00-02</Name>
 					<Title>Muur</Title>
 					<ogc:Filter>
 						<ogc:PropertyIsEqualTo>
-							<ogc:PropertyName>plus-type</ogc:PropertyName>
+							<ogc:PropertyName>bgt-type</ogc:PropertyName>
 							<ogc:Literal>muur</ogc:Literal>
 						</ogc:PropertyIsEqualTo>
 					</ogc:Filter>
@@ -45,24 +45,26 @@
 					</PolygonSymbolizer>
 				</Rule>
 				<Rule>
-					<Name>0080-00-00-02</Name>
-					<Title>Overige scheiding</Title>
+					<Name>0045-99-00-01</Name>
+					<Title>Transitie</Title>
 					<ogc:Filter>
 						<ogc:PropertyIsEqualTo>
-							<ogc:PropertyName>plus-type</ogc:PropertyName>
-							<ogc:Literal>geenWaarde</ogc:Literal>
+							<ogc:PropertyName>bgt-type</ogc:PropertyName>
+							<ogc:Literal>transitie</ogc:Literal>
 						</ogc:PropertyIsEqualTo>
 					</ogc:Filter>
 					<PolygonSymbolizer>
 						<Fill>
-							<CssParameter name="fill">#cc0000</CssParameter>
+							<CssParameter name="fill">#f2f2f2</CssParameter>
 						</Fill>
 						<Stroke>
-							<CssParameter name="stroke">#cc0000</CssParameter>
+							<CssParameter name="stroke">#535353</CssParameter>
 							<CssParameter name="stroke-width">2</CssParameter>
+							<CssParameter name="stroke-dasharray">6 3</CssParameter>
 						</Stroke>
 					</PolygonSymbolizer>
 				</Rule>
+				<VendorOption name="composite">multiply, 0.5</VendorOption>
 			</FeatureTypeStyle>
 		</UserStyle>
 	</NamedLayer>

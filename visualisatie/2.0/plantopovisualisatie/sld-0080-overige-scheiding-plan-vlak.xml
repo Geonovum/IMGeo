@@ -63,6 +63,7 @@
 						</Stroke>
 					</PolygonSymbolizer>
 				</Rule>
+				<VendorOption name="composite">multiply, 0.5</VendorOption>
 			</FeatureTypeStyle>
 		</UserStyle>
 	</NamedLayer>
