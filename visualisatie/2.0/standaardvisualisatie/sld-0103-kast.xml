@@ -7,7 +7,7 @@
 		<UserStyle>
 			<Title>Visualisatie van de kasten</Title>
 			<Abstract>Deze stylesheet bevat de regels voor de visualisatie van het objecttype Kast</Abstract>
-      			<FeatureTypeStyle>
+			<FeatureTypeStyle>
 				<Rule>
 					<Name>0103-01-00-01</Name>
 					<Title>CAI-kast</Title>
@@ -255,6 +255,36 @@
 						<ogc:PropertyIsEqualTo>
 							<ogc:PropertyName>plus-type</ogc:PropertyName>
 							<ogc:Literal>verkeersregelinstallatiekast</ogc:Literal>
+						</ogc:PropertyIsEqualTo>
+					</ogc:Filter>
+					<MaxScaleDenominator>501</MaxScaleDenominator>
+					<PointSymbolizer>
+						<Graphic>
+							<ExternalGraphic>
+								<OnlineResource xlink:type="simple" xlink:href="kast.svg"/>
+								<Format>image/svg+xml</Format>
+							</ExternalGraphic>
+						</Graphic>
+					</PointSymbolizer>
+					<PointSymbolizer>
+						<Graphic>
+							<Mark>
+								<WellKnownName>circle</WellKnownName>
+								<Fill>
+									<CssParameter name="fill">#681648</CssParameter>
+								</Fill>
+							</Mark>
+							<Size>3</Size>
+						</Graphic>
+					</PointSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>0103-00-00-01</Name>
+					<Title>Overige kast</Title>
+					<ogc:Filter>
+						<ogc:PropertyIsEqualTo>
+							<ogc:PropertyName>plus-type</ogc:PropertyName>
+							<ogc:Literal>geenWaarde</ogc:Literal>
 						</ogc:PropertyIsEqualTo>
 					</ogc:Filter>
 					<MaxScaleDenominator>501</MaxScaleDenominator>

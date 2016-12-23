@@ -460,6 +460,36 @@
 				</Rule>
 				<Rule>
 					<Name>0105-00-00-01</Name>
+					<Title>Overige paal</Title>
+					<ogc:Filter>
+						<ogc:PropertyIsEqualTo>
+							<ogc:PropertyName>plus-type</ogc:PropertyName>
+							<ogc:Literal>geenWaarde</ogc:Literal>
+						</ogc:PropertyIsEqualTo>
+					</ogc:Filter>
+					<MaxScaleDenominator>501</MaxScaleDenominator>
+					<PointSymbolizer>
+						<Graphic>
+							<ExternalGraphic>
+								<OnlineResource xlink:type="simple" xlink:href="paal.svg"/>
+								<Format>image/svg+xml</Format>
+							</ExternalGraphic>
+						</Graphic>
+					</PointSymbolizer>
+					<PointSymbolizer>
+						<Graphic>
+							<Mark>
+								<WellKnownName>circle</WellKnownName>
+								<Fill>
+									<CssParameter name="fill">#681648</CssParameter>
+								</Fill>
+							</Mark>
+							<Size>3</Size>
+						</Graphic>
+					</PointSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>0105-00-00-01</Name>
 					<Title>Palen</Title>
 					<MinScaleDenominator>502</MinScaleDenominator>
 					<MaxScaleDenominator>1251</MaxScaleDenominator>

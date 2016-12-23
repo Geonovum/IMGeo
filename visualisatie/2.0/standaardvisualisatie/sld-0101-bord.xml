@@ -310,6 +310,36 @@
 				</Rule>
 				<Rule>
 					<Name>0101-00-00-01</Name>
+					<Title>Overig bord</Title>
+					<ogc:Filter>
+						<ogc:PropertyIsEqualTo>
+							<ogc:PropertyName>plus-type</ogc:PropertyName>
+							<ogc:Literal>geenWaarde</ogc:Literal>
+						</ogc:PropertyIsEqualTo>
+					</ogc:Filter>
+					<MaxScaleDenominator>501</MaxScaleDenominator>
+					<PointSymbolizer>
+						<Graphic>
+							<ExternalGraphic>
+								<OnlineResource xlink:type="simple" xlink:href="bord.svg"/>
+								<Format>image/svg+xml</Format>
+							</ExternalGraphic>
+						</Graphic>
+					</PointSymbolizer>
+					<PointSymbolizer>
+						<Graphic>
+							<Mark>
+								<WellKnownName>circle</WellKnownName>
+								<Fill>
+									<CssParameter name="fill">#681648</CssParameter>
+								</Fill>
+							</Mark>
+							<Size>3</Size>
+						</Graphic>
+					</PointSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>0101-00-00-01</Name>
 					<Title>Borden</Title>
 					<ogc:Filter>
 						<ogc:PropertyIsNotEqualTo>
@@ -344,6 +374,27 @@
 						<Graphic>
 							<ExternalGraphic>
 								<OnlineResource xlink:type="simple" xlink:href="water.svg"/>
+								<Format>image/svg+xml</Format>
+							</ExternalGraphic>
+							<Size>10</Size>
+						</Graphic>
+					</PointSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>0101-00-00-01</Name>
+					<Title>Overig bord</Title>
+					<ogc:Filter>
+						<ogc:PropertyIsEqualTo>
+							<ogc:PropertyName>plus-type</ogc:PropertyName>
+							<ogc:Literal>geenWaarde</ogc:Literal>
+						</ogc:PropertyIsEqualTo>
+					</ogc:Filter>
+					<MinScaleDenominator>502</MinScaleDenominator>
+					<MaxScaleDenominator>1251</MaxScaleDenominator>
+					<PointSymbolizer>
+						<Graphic>
+							<ExternalGraphic>
+								<OnlineResource xlink:type="simple" xlink:href="inrichtingselement.svg"/>
 								<Format>image/svg+xml</Format>
 							</ExternalGraphic>
 							<Size>10</Size>
@@ -386,6 +437,27 @@
 						<Graphic>
 							<ExternalGraphic>
 								<OnlineResource xlink:type="simple" xlink:href="water.svg"/>
+								<Format>image/svg+xml</Format>
+							</ExternalGraphic>
+							<Size>6</Size>
+						</Graphic>
+					</PointSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>0101-00-00-01</Name>
+					<Title>Overig bord</Title>
+					<ogc:Filter>
+						<ogc:PropertyIsEqualTo>
+							<ogc:PropertyName>plus-type</ogc:PropertyName>
+							<ogc:Literal>geenWaarde</ogc:Literal>
+						</ogc:PropertyIsEqualTo>
+					</ogc:Filter>
+					<MinScaleDenominator>1252</MinScaleDenominator>
+					<MaxScaleDenominator>2501</MaxScaleDenominator>
+					<PointSymbolizer>
+						<Graphic>
+							<ExternalGraphic>
+								<OnlineResource xlink:type="simple" xlink:href="inrichtingselement.svg"/>
 								<Format>image/svg+xml</Format>
 							</ExternalGraphic>
 							<Size>6</Size>

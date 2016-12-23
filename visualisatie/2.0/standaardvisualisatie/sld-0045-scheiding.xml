@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<StyledLayerDescriptor version="1.0.0" xmlns="http://www.opengis.net/sld" xmlns:ogc="http://www.opengis.net/ogc"
-  xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.0.0/StyledLayerDescriptor.xsd">
+<StyledLayerDescriptor version="1.0.0" xmlns="http://www.opengis.net/sld" xmlns:ogc="http://www.opengis.net/ogc" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.0.0/StyledLayerDescriptor.xsd">
 	<NamedLayer>
 		<Name>Scheiding</Name>
 		<UserStyle>
@@ -120,16 +118,10 @@
 					<Name>0045-07-00-01</Name>
 					<Title>Draadraster</Title>
 					<ogc:Filter>
-                        <ogc:And>
-    						<ogc:PropertyIsEqualTo>
-							    <ogc:PropertyName>bgt-type</ogc:PropertyName>
-							    <ogc:Literal>niet-bgt</ogc:Literal>
-						    </ogc:PropertyIsEqualTo>
-						    <ogc:PropertyIsEqualTo>
-							    <ogc:PropertyName>plus-type</ogc:PropertyName>
-							    <ogc:Literal>draadraster</ogc:Literal>
-						    </ogc:PropertyIsEqualTo>
-                        </ogc:And>
+						<ogc:PropertyIsEqualTo>
+							<ogc:PropertyName>plus-type</ogc:PropertyName>
+							<ogc:Literal>draadraster</ogc:Literal>
+						</ogc:PropertyIsEqualTo>
 					</ogc:Filter>
 					<MinScaleDenominator>0</MinScaleDenominator>
 					<MaxScaleDenominator>5000</MaxScaleDenominator>
@@ -159,16 +151,10 @@
 					<Name>0045-08-00-01</Name>
 					<Title>Faunaraster</Title>
 					<ogc:Filter>
-                        <ogc:And>
-    						<ogc:PropertyIsEqualTo>
-							    <ogc:PropertyName>bgt-type</ogc:PropertyName>
-							    <ogc:Literal>niet-bgt</ogc:Literal>
-						    </ogc:PropertyIsEqualTo>
-						    <ogc:PropertyIsEqualTo>
-							    <ogc:PropertyName>plus-type</ogc:PropertyName>
-							    <ogc:Literal>faunaraster</ogc:Literal>
-						    </ogc:PropertyIsEqualTo>
-                        </ogc:And>
+						<ogc:PropertyIsEqualTo>
+							<ogc:PropertyName>plus-type</ogc:PropertyName>
+							<ogc:Literal>faunaraster</ogc:Literal>
+						</ogc:PropertyIsEqualTo>
 					</ogc:Filter>
 					<MinScaleDenominator>0</MinScaleDenominator>
 					<MaxScaleDenominator>5000</MaxScaleDenominator>
