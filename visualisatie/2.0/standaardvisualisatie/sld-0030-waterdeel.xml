@@ -18,6 +18,20 @@
 						</ogc:PropertyIsEqualTo>
 					</ogc:Filter>
 					<PolygonSymbolizer>
+						<Fill>
+							<GraphicFill>
+								<Graphic>
+									<Mark>
+										<WellKnownName>shape://slash</WellKnownName>
+										<Stroke>
+											<CssParameter name="stroke">#73e9ff</CssParameter>
+											<CssParameter name="stroke-width">1</CssParameter>
+										</Stroke>
+									</Mark>
+									<Size>8</Size>
+								</Graphic>
+							</GraphicFill>
+						</Fill>
 						<Stroke>
 							<CssParameter name="stroke">#73e9ff</CssParameter>
 							<CssParameter name="stroke-width">1</CssParameter>
