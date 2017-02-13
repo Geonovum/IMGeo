@@ -13,7 +13,7 @@
 					<MaxScaleDenominator>1000</MaxScaleDenominator>
 					<TextSymbolizer>
 						<Label>
-							<ogc:PropertyName>nummeraanduidingreeks</ogc:PropertyName>
+							<ogc:PropertyName>tekst</ogc:PropertyName>
 						</Label>
 						<Font>
 							<CssParameter name="font-family">Arial</CssParameter>
