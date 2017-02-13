@@ -27,6 +27,24 @@
 					</LineSymbolizer>
 				</Rule>
 				<Rule>
+					<Name>0041-07-00-02</Name>
+					<Title>Duiker</Title>
+					<ogc:Filter>
+						<ogc:PropertyIsEqualTo>
+							<ogc:PropertyName>plus-type</ogc:PropertyName>
+							<ogc:Literal>duiker</ogc:Literal>
+						</ogc:PropertyIsEqualTo>
+					</ogc:Filter>
+					<MinScaleDenominator>0</MinScaleDenominator>
+					<MaxScaleDenominator>5000</MaxScaleDenominator>
+					<LineSymbolizer>
+						<Stroke>
+							<CssParameter name="stroke">#CC0000</CssParameter>
+							<CssParameter name="stroke-width">2</CssParameter>
+						</Stroke>
+					</LineSymbolizer>
+				</Rule>
+				<Rule>
 					<Name>0041-99-00-01</Name>
 					<Title>Transitie</Title>
 					<ogc:Filter>
