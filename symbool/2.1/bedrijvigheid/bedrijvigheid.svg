@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="25px" width="25px" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<clipPath id="clipPath4024" clipPathUnits="userSpaceOnUse"><rect clip-path="none" transform="matrix(0.70710678,-0.70710678,0.70710678,0.70710678,0,0)" height="15.272" width="15.274" stroke="#693380" y="13.667" x="-7.5726" stroke-width="0.99999" fill="none"/></clipPath>
+</defs>
+<path d="m12.5,1.6995,10.799,10.799-10.8,10.802-10.799-10.801,10.8-10.8m0-1.414-0.707,0.707-10.8,10.8-0.707,0.707,0.707,0.707,10.798,10.801,0.707,0.707,0.707-0.707,10.801-10.802,0.707-0.707-0.707-0.707-10.799-10.799-0.707-0.707z" fill="#FFF"/>
+<rect clip-path="none" fill-opacity="0.2" transform="matrix(0.70710678,-0.70710678,0.70710678,0.70710678,0,0)" height="15.272" width="15.274" stroke="#693380" y="10.042" x="-7.6369" stroke-width="0.99999" fill="#693380"/>
+<polygon clip-path="url(#clipPath4024)" transform="translate(-2.6091849,-2.5181889)" points="18.951,8.472,19.951,8.472,19.951,15.549,18.951,16.533" fill="#693380"/>
+<path d="M13.076,7.2868h-7.0772v9.95h1.567v-1.285l3.527-3.313,1.219,2.064,1.19-1.19v-6.2262h-0.426zm-2.826,2.391v-1.391h2.251v1.391h-2.251zm-1-1.391v1.391h-2.251v-1.391h2.251zm-2.251,3.822v-1.431h2.251v1.431h-2.251zm3.251,0v-1.431h2.251v1.431h-2.251z" clip-path="url(#clipPath4024)" fill="#693380"/>
+<polygon clip-path="url(#clipPath4024)" transform="translate(-2.6091849,-2.5181889)" points="21.137,18.062,20.117,16.782,18.046,18.852,16.815,16.742,14.715,18.842,13.475,16.742,11.174,18.902,11.174,21.303,21.157,21.303" fill="#693380"/>
+</svg>
