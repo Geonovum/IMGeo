@@ -186,7 +186,7 @@
 					<ogc:Filter>
 						<ogc:PropertyIsEqualTo>
 							<ogc:PropertyName>bgt-functie</ogc:PropertyName>
-							<ogc:Literal>OV-baan</ogc:Literal>
+							<ogc:Literal>ov-baan</ogc:Literal>
 						</ogc:PropertyIsEqualTo>
 					</ogc:Filter>
 					<MinScaleDenominator>0</MinScaleDenominator>
@@ -206,7 +206,7 @@
 					<ogc:Filter>
 						<ogc:PropertyIsEqualTo>
 							<ogc:PropertyName>bgt-functie</ogc:PropertyName>
-							<ogc:Literal>OV-baan</ogc:Literal>
+							<ogc:Literal>ov-baan</ogc:Literal>
 						</ogc:PropertyIsEqualTo>
 					</ogc:Filter>
 					<MinScaleDenominator>0</MinScaleDenominator>

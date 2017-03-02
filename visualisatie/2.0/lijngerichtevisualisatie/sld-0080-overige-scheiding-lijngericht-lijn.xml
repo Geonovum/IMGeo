@@ -12,10 +12,16 @@
 					<Name>0080-01-00-01</Name>
 					<Title>Damwand</Title>
 					<ogc:Filter>
-						<ogc:PropertyIsEqualTo>
-							<ogc:PropertyName>plus-type</ogc:PropertyName>
-							<ogc:Literal>damwand</ogc:Literal>
-						</ogc:PropertyIsEqualTo>
+						<ogc:And>
+							<ogc:PropertyIsEqualTo>
+								<ogc:PropertyName>bgt-type</ogc:PropertyName>
+								<ogc:Literal>niet-bgt</ogc:Literal>
+							</ogc:PropertyIsEqualTo>
+							<ogc:PropertyIsEqualTo>
+								<ogc:PropertyName>plus-type</ogc:PropertyName>
+								<ogc:Literal>damwand</ogc:Literal>
+							</ogc:PropertyIsEqualTo>
+						</ogc:And>
 					</ogc:Filter>
 					<MinScaleDenominator>0</MinScaleDenominator>
 					<MaxScaleDenominator>5000</MaxScaleDenominator>
@@ -30,10 +36,16 @@
 					<Name>0080-01-00-01</Name>
 					<Title>Geluidsscherm</Title>
 					<ogc:Filter>
-						<ogc:PropertyIsEqualTo>
-							<ogc:PropertyName>plus-type</ogc:PropertyName>
-							<ogc:Literal>geluidsscherm</ogc:Literal>
-						</ogc:PropertyIsEqualTo>
+						<ogc:And>
+							<ogc:PropertyIsEqualTo>
+								<ogc:PropertyName>bgt-type</ogc:PropertyName>
+								<ogc:Literal>niet-bgt</ogc:Literal>
+							</ogc:PropertyIsEqualTo>
+							<ogc:PropertyIsEqualTo>
+								<ogc:PropertyName>plus-type</ogc:PropertyName>
+								<ogc:Literal>geluidsscherm</ogc:Literal>
+							</ogc:PropertyIsEqualTo>
+						</ogc:And>
 					</ogc:Filter>
 					<MinScaleDenominator>0</MinScaleDenominator>
 					<MaxScaleDenominator>5000</MaxScaleDenominator>
@@ -48,10 +60,16 @@
 					<Name>0080-03-00-01</Name>
 					<Title>Hek</Title>
 					<ogc:Filter>
-						<ogc:PropertyIsEqualTo>
-							<ogc:PropertyName>plus-type</ogc:PropertyName>
-							<ogc:Literal>hek</ogc:Literal>
-						</ogc:PropertyIsEqualTo>
+						<ogc:And>
+							<ogc:PropertyIsEqualTo>
+								<ogc:PropertyName>bgt-type</ogc:PropertyName>
+								<ogc:Literal>niet-bgt</ogc:Literal>
+							</ogc:PropertyIsEqualTo>
+							<ogc:PropertyIsEqualTo>
+								<ogc:PropertyName>plus-type</ogc:PropertyName>
+								<ogc:Literal>hek</ogc:Literal>
+							</ogc:PropertyIsEqualTo>
+						</ogc:And>
 					</ogc:Filter>
 					<MinScaleDenominator>0</MinScaleDenominator>
 					<MaxScaleDenominator>5000</MaxScaleDenominator>
@@ -66,10 +84,16 @@
 					<Name>0080-04-00-01</Name>
 					<Title>Kademuur</Title>
 					<ogc:Filter>
-						<ogc:PropertyIsEqualTo>
-							<ogc:PropertyName>plus-type</ogc:PropertyName>
-							<ogc:Literal>kademuur</ogc:Literal>
-						</ogc:PropertyIsEqualTo>
+						<ogc:And>
+							<ogc:PropertyIsEqualTo>
+								<ogc:PropertyName>bgt-type</ogc:PropertyName>
+								<ogc:Literal>niet-bgt</ogc:Literal>
+							</ogc:PropertyIsEqualTo>
+							<ogc:PropertyIsEqualTo>
+								<ogc:PropertyName>plus-type</ogc:PropertyName>
+								<ogc:Literal>kademuur</ogc:Literal>
+							</ogc:PropertyIsEqualTo>
+						</ogc:And>
 					</ogc:Filter>
 					<MinScaleDenominator>0</MinScaleDenominator>
 					<MaxScaleDenominator>5000</MaxScaleDenominator>
@@ -84,10 +108,16 @@
 					<Name>0080-05-00-01</Name>
 					<Title>Muur</Title>
 					<ogc:Filter>
-						<ogc:PropertyIsEqualTo>
-							<ogc:PropertyName>plus-type</ogc:PropertyName>
-							<ogc:Literal>muur</ogc:Literal>
-						</ogc:PropertyIsEqualTo>
+						<ogc:And>
+							<ogc:PropertyIsEqualTo>
+								<ogc:PropertyName>bgt-type</ogc:PropertyName>
+								<ogc:Literal>niet-bgt</ogc:Literal>
+							</ogc:PropertyIsEqualTo>
+							<ogc:PropertyIsEqualTo>
+								<ogc:PropertyName>plus-type</ogc:PropertyName>
+								<ogc:Literal>muur</ogc:Literal>
+							</ogc:PropertyIsEqualTo>
+						</ogc:And>
 					</ogc:Filter>
 					<MinScaleDenominator>0</MinScaleDenominator>
 					<MaxScaleDenominator>5000</MaxScaleDenominator>
@@ -102,10 +132,16 @@
 					<Name>0080-06-00-01</Name>
 					<Title>Walbescherming</Title>
 					<ogc:Filter>
-						<ogc:PropertyIsEqualTo>
-							<ogc:PropertyName>plus-type</ogc:PropertyName>
-							<ogc:Literal>walbescherming</ogc:Literal>
-						</ogc:PropertyIsEqualTo>
+						<ogc:And>
+							<ogc:PropertyIsEqualTo>
+								<ogc:PropertyName>bgt-type</ogc:PropertyName>
+								<ogc:Literal>niet-bgt</ogc:Literal>
+							</ogc:PropertyIsEqualTo>
+							<ogc:PropertyIsEqualTo>
+								<ogc:PropertyName>plus-type</ogc:PropertyName>
+								<ogc:Literal>walbescherming</ogc:Literal>
+							</ogc:PropertyIsEqualTo>
+						</ogc:And>
 					</ogc:Filter>
 					<MinScaleDenominator>0</MinScaleDenominator>
 					<MaxScaleDenominator>5000</MaxScaleDenominator>
@@ -120,10 +156,16 @@
 					<Name>0080-07-00-01</Name>
 					<Title>Draadraster</Title>
 					<ogc:Filter>
-						<ogc:PropertyIsEqualTo>
-							<ogc:PropertyName>plus-type</ogc:PropertyName>
-							<ogc:Literal>draadraster</ogc:Literal>
-						</ogc:PropertyIsEqualTo>
+                        <ogc:And>
+    						<ogc:PropertyIsEqualTo>
+							    <ogc:PropertyName>bgt-type</ogc:PropertyName>
+							    <ogc:Literal>niet-bgt</ogc:Literal>
+						    </ogc:PropertyIsEqualTo>
+						    <ogc:PropertyIsEqualTo>
+							    <ogc:PropertyName>plus-type</ogc:PropertyName>
+							    <ogc:Literal>draadraster</ogc:Literal>
+						    </ogc:PropertyIsEqualTo>
+                        </ogc:And>
 					</ogc:Filter>
 					<MinScaleDenominator>0</MinScaleDenominator>
 					<MaxScaleDenominator>5000</MaxScaleDenominator>
@@ -138,10 +180,16 @@
 					<Name>0080-08-00-01</Name>
 					<Title>Faunaraster</Title>
 					<ogc:Filter>
-						<ogc:PropertyIsEqualTo>
-							<ogc:PropertyName>plus-type</ogc:PropertyName>
-							<ogc:Literal>faunaraster</ogc:Literal>
-						</ogc:PropertyIsEqualTo>
+                        <ogc:And>
+    						<ogc:PropertyIsEqualTo>
+							    <ogc:PropertyName>bgt-type</ogc:PropertyName>
+							    <ogc:Literal>niet-bgt</ogc:Literal>
+						    </ogc:PropertyIsEqualTo>
+						    <ogc:PropertyIsEqualTo>
+							    <ogc:PropertyName>plus-type</ogc:PropertyName>
+							    <ogc:Literal>faunaraster</ogc:Literal>
+						    </ogc:PropertyIsEqualTo>
+                        </ogc:And>
 					</ogc:Filter>
 					<MinScaleDenominator>0</MinScaleDenominator>
 					<MaxScaleDenominator>5000</MaxScaleDenominator>

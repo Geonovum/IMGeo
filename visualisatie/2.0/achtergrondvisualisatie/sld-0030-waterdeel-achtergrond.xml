@@ -20,9 +20,6 @@
 					<MinScaleDenominator>0</MinScaleDenominator>
 					<MaxScaleDenominator>5000</MaxScaleDenominator>
 					<PolygonSymbolizer>
-						<Fill>
-							<CssParameter name="fill">##f3f5f6</CssParameter>
-						</Fill>
 						<Stroke>
 							<CssParameter name="stroke">#80bde3</CssParameter>
 							<CssParameter name="stroke-width">1</CssParameter>

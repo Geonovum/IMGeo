@@ -19,10 +19,10 @@
 					</ogc:Filter>
 					<PolygonSymbolizer>
 						<Fill>
-							<CssParameter name="fill">#C3DBB6</CssParameter>
+							<CssParameter name="fill">#80bde3</CssParameter>
 						</Fill>
 						<Stroke>
-							<CssParameter name="stroke">#C3DBB6</CssParameter>
+							<CssParameter name="stroke">#80bde3</CssParameter>
 							<CssParameter name="stroke-width">2</CssParameter>
 						</Stroke>
 					</PolygonSymbolizer>
