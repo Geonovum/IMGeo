@@ -41,7 +41,7 @@ gerealiseerd:
 -   **Pastelvisualisatie**: een visualisatie voor het gebruik van de
     BGT/IMGeo-inhoud als achtergrondkaart, die aansluit bij de behoefte van
     civiel-technische ingenieursbureaus en de kabels- en leidingenketen om
-    informatie over haar infrastructuur af te beelden op de BGT/IMGeo-inhoud.
+    informatie over haar bouwwerken, kunstwerken en infrastructuur af te beelden op de BGT/IMGeo-inhoud.
 
 Alleen met betrekking tot de visualisatie van teksten wordt in de
 gegevenscatalogus iets gezegd. Dit is nodig omdat deze zaken al door de
