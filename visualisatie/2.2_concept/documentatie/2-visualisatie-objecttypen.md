@@ -1,8 +1,7 @@
-Visualisatie van de objecttypen
-===============================
+# Visualisatie van de objecttypen
 
-Transport
----------
+
+## Transport
 
 ### Wegdeel 
 
@@ -19,9 +18,9 @@ getekend:
 Voor specifieke toepassingen kan het wenselijk zijn om de verschillende wegdelen
 over de standaard visualisatie af te beelden.
 
-### [./media/image1.png](./media/image1.png)
+[Figuur: Wegdelen gevisualiseerd op basis van het attribuut "bgt-functie".](media/fig-wegdelen-gevisualiseerd-op-basis-van-het-attribuut-bgt-functie.png)
 
-OndersteunendWegdeel
+### OndersteunendWegdeel
 
 Het objecttype “Ondersteunend Wegdeel” wordt gevisualiseerd op basis van het
 attribuut “bgt-functie”. De objecten krijgen ook een lijnsymbool mee in dezelfde
@@ -41,9 +40,9 @@ objecttype 2 maal in de visualisatie getekend:
 De visualisatie van het objecttype is gelijk voor de standaard- en
 achtergrondvisualisatie.
 
-1.  Terreindeel
+## Terreindeel
 
-    1.  OnbegroeidTerreindeel
+### OnbegroeidTerreindeel
 
 Het objecttype “OnbegroeidTerreindeel” wordt gevisualiseerd op basis van het
 attribuut “bgt-fysiekvoorkomen”. De objecten met de attribuutwaarden “Erf”,
@@ -66,18 +65,18 @@ tussen de objecten blijven.
 De vlakpatronen voor de standaardvisualisatie worden meegeleverd als Scalable
 Vector Graphics (SVG) bestanden.
 
-1.  Water
+## Water
 
-    1.  Waterdeel en Ondersteunend Waterdeel
+### Waterdeel en Ondersteunend Waterdeel
 
 Het objecttype “Waterdeel” wordt gevisualiseerd op basis van het attribuut
 “bgt-type”. De objecten krijgen ook een lijnsymbool mee in dezelfde kleur als
 het vlaksymbool om te voorkomen, dat er dunne, witte lijnen tussen de objecten
 blijven.
 
-1.  Bouwwerk
+## Bouwwerk
 
-    1.  Pand
+### Pand
 
 Het objecttype “Pand” wordt gevisualiseerd in alle visualisaties. In de
 standaard visualisatie krijgen de objecten zowel een vlaksymbool als een
@@ -118,9 +117,7 @@ Het objecttype “Scheiding” wordt gevisualiseerd op basis van het attribuut
 “bgt-type” of “plus-type”. In de achtergrondvisualisatie wordt het objecttype
 niet gevisualiseerd.
 
-Functioneel gebied
-------------------
-
+## Functioneel gebied
 Het objecttype “Functioneel gebied” is onderdeel van de standaardvisualisatie.
 Het objecttype “Functioneel gebied” wordt voor de standaardvisualisatie
 gevisualiseerd op basis van het attribuut “bgt-type” of “plus-type” door middel
@@ -164,9 +161,9 @@ verschillende attributen.
 Het objecttype “Waterschap” wordt gevisualiseerd zonder gebruik te maken van de
 verschillende attributen.
 
-1.  Vegetatie-object
+## Vegetatie-object
 
-    1.  Vegetatie-object
+### Vegetatie-object
 
 Het objecttype “Vegetatie-object” wordt alleen in de standaardvisualisatie
 gevisualiseerd op basis van het attribuut “plus-type”. De bomen krijgen een
