@@ -2,20 +2,33 @@ var respecConfig = {
   specStatus: "GN-WV",
   specType: "ST",
   //canonicalURI: "WV",
-  publishDate: "2018-01-01",
+  publishDate: "2018-01-12",
   editors: [
+    {
+      name: "Edward Mac Gillavry",
+      company: "Webmapper|Geonovum"
+      
+    },
+    {
+     
+      name: "Arnoud de Boer",
+      company: "Geonovum",
+      companyURL: "http://www.geonovum.nl/",
+      mailto: "l.vdbrink@geonovum.nl",
+      note: ""    
+    },
     {
       name: "Arnoud de Boer",
       company: "Geonovum",
       companyURL: "http://www.geonovum.nl/",
       mailto: "a.deboer@geonovum.nl",
       note: ""    
-    }  
+    }
   ],
-  shortName: "berichtenverkeer",
-  pubDomain: "b5210574-ae81-49fc-a50b-a14b18a65cc0", // Aanpassen na verplaatsing naar nieuwe Github repos 
+  shortName: "visualisatie",
+  pubDomain: "IMGeo", // Aanpassen na verplaatsing naar nieuwe Github repos 
   //previousURI: "https://www.geonovum.nl/BRO",
-  github: "https://github.com/adbgnm/b5210574-ae81-49fc-a50b-a14b18a65cc0",
+  github: "https://github.com/IMGeo/visualisatie",
   previousPublishDate: "2017-01-01",
   //previousStatus: "GN-WV",
   //localBiblio: {
