@@ -28,7 +28,7 @@ var respecConfig = {
   shortName: "visualisatie",
   pubDomain: "IMGeo", // Aanpassen na verplaatsing naar nieuwe Github repos 
   //previousURI: "https://www.geonovum.nl/BRO",
-  github: "https://github.com/IMGeo/visualisatie",
+  github: "https://github.com/Geonovum/IMGeo/visualisatie",
   previousPublishDate: "2017-01-01",
   //previousStatus: "GN-WV",
   //localBiblio: {
