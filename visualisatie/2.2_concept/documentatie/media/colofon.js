@@ -11,7 +11,7 @@ var respecConfig = {
     },
     {
      
-      name: "Arnoud de Boer",
+      name: "Linda van den Brink",
       company: "Geonovum",
       companyURL: "http://www.geonovum.nl/",
       mailto: "l.vdbrink@geonovum.nl",
