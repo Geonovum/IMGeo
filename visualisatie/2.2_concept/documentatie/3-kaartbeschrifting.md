@@ -1,5 +1,4 @@
-Kaartbeschrifting
-=================
+# Kaartbeschrifting
 
 In de BGT worden teksten opgenomen en gevisualiseerd ten behoeve van de
 oriëntatie. De teksten zijn opgenomen als individuele puntobjecten met als
@@ -14,9 +13,7 @@ visualisatie wordt gebruik gemaakt van het lettertype 'Arial'. In de
 achtergrondvisualisatie wordt gebruik gemaakt van het lettertype
 'RijksoverheidSansTextTT' en 'RijksoverheidSansHeadingTT'.
 
-OpenbareRuimteLabel 
---------------------
-
+## OpenbareRuimteLabel 
 In de visualisatie van de BGT worden namen gepresenteerd van alle openbare
 ruimten
 
@@ -40,9 +37,7 @@ De locaties van de puntobjecten worden ingewonnen op schaal 1:2000.
 
 ![](media/2a67e08159d0d0b32b43784bd15b544e.png)
 
-Nummeraanduidingreeks 
-----------------------
-
+## Nummeraanduidingreeks 
 In de visualisatie van de BGT worden nummeraanduidingen gepresenteerd behorend
 bij panden zoals gedefinieerd in de BAG voor de verblijfsobjecten in die panden.
 Dit is bedoeld ter oriëntatie. De nummeraanduidingen van verblijfsobjecten in
