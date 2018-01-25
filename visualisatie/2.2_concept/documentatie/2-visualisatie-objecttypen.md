@@ -18,7 +18,7 @@ getekend:
 Voor specifieke toepassingen kan het wenselijk zijn om de verschillende wegdelen
 over de standaard visualisatie af te beelden.
 
-[Figuur: Wegdelen gevisualiseerd op basis van het attribuut "bgt-functie".](media/fig-wegdelen-gevisualiseerd-op-basis-van-het-attribuut-bgt-functie.png)
+![Figuur: Wegdelen gevisualiseerd op basis van het attribuut "bgt-functie".](media/fig-wegdelen-gevisualiseerd-op-basis-van-het-attribuut-bgt-functie.png)
 
 ### OndersteunendWegdeel
 
