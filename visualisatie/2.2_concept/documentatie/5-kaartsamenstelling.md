@@ -4,6 +4,9 @@ Kaartsamenstelling
 Naast de beschrijving van visualisatie van de objecttypen geeft onderstaande
 tabel aan, hoe de objecttypen geordend moeten worden om een kaart te realiseren:
 
+Tabel 1: Overzicht van de tekenvolgorde van de objecttypen voor de verschillende
+visualisaties.
+
 | Teken- volgorde | Objecttype               | Visualisatie |             |               |        |
 |-----------------|--------------------------|--------------|-------------|---------------|--------|
 |                 |                          | Standaard    | Achtergrond | Omtrekgericht | Pastel |
@@ -29,9 +32,6 @@ tabel aan, hoe de objecttypen geordend moeten worden om een kaart te realiseren:
 | 20              | Nummeraanduidingreeks    | x            | x           | x             | x      |
 | 21              | Openbareruimtelabel      | x            | x           | x             | x      |
 | 22              | Functioneel gebied       | x            |             |               |        |
-
-Tabel 1: Overzicht van de tekenvolgorde van de objecttypen voor de verschillende
-visualisaties.
 
 De serie 1-17 wordt indien van toepassing voor de betreffende visualisatie
 herhaald voor iedere set objecten met dezelfde domeinwaarde voor het attribuut
