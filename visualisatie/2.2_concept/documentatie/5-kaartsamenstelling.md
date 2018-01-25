@@ -7,9 +7,8 @@ tabel aan, hoe de objecttypen geordend moeten worden om een kaart te realiseren:
 Tabel 1: Overzicht van de tekenvolgorde van de objecttypen voor de verschillende
 visualisaties.
 
-| Teken- volgorde | Objecttype               | Visualisatie |             |               |        |
+| Teken- volgorde | Objecttype               | Standaard    | Achtergrond | Omtrekgericht | Pastel |
 |-----------------|--------------------------|--------------|-------------|---------------|--------|
-|                 |                          | Standaard    | Achtergrond | Omtrekgericht | Pastel |
 | 1               | Ongeclassificeerd Object | x            | x           | x             | x      |
 | 2               | Ondersteunend Waterdeel  | x            | x           | x             | x      |
 | 3               | Waterdeel                | x            | x           | x             | x      |
