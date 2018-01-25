@@ -5,7 +5,7 @@
 De Handreiking Visualisatieregels beschrijft hoe BGT/IMGeo objecten op een kaart
 weergegeven kunnen worden.
 
-In deze versie 2.1 van de Handreiking is de Lijngerichte visualisatie vervangen
+In deze versie 2.2 van de Handreiking is de "Lijngerichte visualisatie" vervangen
 door de “Pastelvisualisatie”.
 
 ## Verschillende visualisaties
