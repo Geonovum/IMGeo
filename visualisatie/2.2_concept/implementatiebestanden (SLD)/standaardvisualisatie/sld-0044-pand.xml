@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<StyledLayerDescriptor version="1.0.0" xmlns="http://www.opengis.net/sld" xmlns:ogc="http://www.opengis.net/ogc"
+  xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.0.0/StyledLayerDescriptor.xsd">
+	<NamedLayer>
+		<Name>Pand</Name>
+		<UserStyle>
+			<Title>Visualisatie van de panden</Title>
+			<Abstract>Deze stylesheet bevat de regels voor de visualisatie van het objecttype Pand</Abstract>
+			<FeatureTypeStyle>
+				<Rule>
+					<Name>0044-01-00-01</Name>
+					<Title>Pand: 0-1000</Title>
+					<MinScaleDenominator>0</MinScaleDenominator>
+					<MaxScaleDenominator>1000</MaxScaleDenominator>
+					<PolygonSymbolizer>
+						<Fill>
+							<CssParameter name="fill">#cc0000</CssParameter>
+						</Fill>
+						<Stroke>
+							<CssParameter name="stroke">#D73939</CssParameter>
+							<CssParameter name="stroke-width">1</CssParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>0044-01-00-02</Name>
+					<Title>Pand: 1000-2500</Title>
+					<MinScaleDenominator>1001</MinScaleDenominator>
+					<MaxScaleDenominator>2500</MaxScaleDenominator>
+					<PolygonSymbolizer>
+						<Fill>
+							<CssParameter name="fill">#cc0000</CssParameter>
+						</Fill>
+						<Stroke>
+							<CssParameter name="stroke">#D73939</CssParameter>
+							<CssParameter name="stroke-width">0.5</CssParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>0044-01-00-03</Name>
+					<Title>Pand: 2500-</Title>
+					<MinScaleDenominator>2501</MinScaleDenominator>
+					<PolygonSymbolizer>
+						<Fill>
+							<CssParameter name="fill">#cc0000</CssParameter>
+						</Fill>
+						<Stroke>
+							<CssParameter name="stroke">#D73939</CssParameter>
+							<CssParameter name="stroke-width">0.25</CssParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+			</FeatureTypeStyle>
+		</UserStyle>
+	</NamedLayer>
+</StyledLayerDescriptor>
