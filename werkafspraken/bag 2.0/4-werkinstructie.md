@@ -1,4 +1,4 @@
 Werkinstructie
 ==============
 
-![](media/3857770941ba7f92f89602717fae302c.emf)
+![](media/46589bc79eb6a1c6299357773fcc2128.png)
