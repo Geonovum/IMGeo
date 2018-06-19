@@ -1,5 +1,4 @@
-1 Aanleiding
-============
+# Aanleiding
 
 De afbakeningsregels voor Pand zijn in BAG 2.0 aangepast, o.a. door het
 schrappen van de uitzonderingen. Als gevolg daarvan zullen bepaalde objecten die
