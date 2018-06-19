@@ -18,27 +18,27 @@ onderscheiden:
     neemt de BGT bronhouder een nieuw BGT Pand op, én indien het OverigBouwwerk
     van het type:
 
-    1.  **Windturbine**, **open loods** of **opslagtank** wijzigt BGT bronhouder
-        de relatieve hoogteligging van het OverigBouwwerk naar één hoger dan het
-        nieuwe BGT Pand.
+>   **Windturbine**, **open loods** of **opslagtank** wijzigt BGT bronhouder de
+>   relatieve hoogteligging van het OverigBouwwerk naar één hoger dan het nieuwe
+>   BGT Pand.
 
-    2.  **Schuur** of **bunker** hoeft BGT bronhouder geen wijziging op dit
-        OverigBouwwerk door te voeren.
+>   **Schuur** of **bunker** hoeft BGT bronhouder geen wijziging op dit
+>   OverigBouwwerk door te voeren.
 
-    3.  **Niet ingevuld/leeg** beëindigd BGT bronhouder het OverigBouwwerk. De
-        eventueel gekoppelde gegevens in de eigen omgeving aan het
-        OverigBouwwerk worden gekoppeld aan het nieuwe Pand.
+>   **Niet ingevuld/leeg** beëindigd BGT bronhouder het OverigBouwwerk. De
+>   eventueel gekoppelde gegevens in de eigen omgeving aan het OverigBouwwerk
+>   worden gekoppeld aan het nieuwe Pand.
 
-3.  **Op de plek van het BAG-Pand is geen Pand of OverigBouwwerk aanwezig** In
+1.  **Op de plek van het BAG-Pand is geen Pand of OverigBouwwerk aanwezig** In
     In dat geval neemt de BGT bronhouder een nieuw Pand op, én een nieuw
     OverigBouwwerk conform de huidige regels van IMGeo, waarbij een
     OverigBouwwerk van type:
 
-    1.  **Windturbine**, **open loods** of **opslagtank verplicht** wordt
-        opgenomen op een relatieve hoogteligging één hoger dan het nieuwe Pand.
+>   **Windturbine**, **open loods** of **opslagtank verplicht** wordt opgenomen
+>   op een relatieve hoogteligging één hoger dan het nieuwe Pand.
 
-    2.  **Schuur** of **bunker optioneel** wordt opgenomen op dezelfde relatieve
-        hoogteligging als het nieuwe Pand.
+>   **Schuur** of **bunker optioneel** wordt opgenomen op dezelfde relatieve
+>   hoogteligging als het nieuwe Pand.
 
 Beslisboom
 ----------
