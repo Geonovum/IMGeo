@@ -1,14 +1,16 @@
-**2 Werkafspraak**
+Werkafspraak
+============
 
 De volgende werkafspraak geldt voor de BGT keten voor het behandelen van
 mutaties vanuit de BAG als gevolg van toepassing van de BAG 2.0
 afbakeningsregels door BAG:
 
-*Bij opvoeren van nieuwe panden in de BAG, neemt BGT bronhouder altijd deze
-panden over in de BGT. Daarnaast legt BGT bronhouder de typering van het
-OverigBouwwerk conform het huidige spelregels van IMGeo in een extra laag vast.*
+>   Bij opvoeren van nieuwe panden in de BAG, neemt BGT bronhouder altijd deze
+>   panden over in de BGT. Daarnaast legt BGT bronhouder de typering van het
+>   OverigBouwwerk conform het huidige spelregels van IMGeo in een extra laag
+>   vast.
 
-Ofwel:
+Deze werkafspraak betekent het volgende:
 
 1.  Als BAG een nieuw Pand opvoert, dan neemt BGT bronhouder dit object altijd
     binnen de geldende actualiteitseisen als Pand op in de BGT.
@@ -31,5 +33,5 @@ Deze werkafspraak geldt voor de volgende objecten:
 -   Overige objecten: parkeergarage, parkeergarage, publieke lift / trappenhuis,
     wachtruime perron en loopbrug.
 
-In bijlage 4 wordt een werkinstructie gegeven hoe BGT bronhouder bovenstaande
-werkafspraak toe kan passen.
+In 4 Werkinstructie wordt een werkinstructie gegeven hoe BGT bronhouder
+bovenstaande werkafspraak toe kan passen.

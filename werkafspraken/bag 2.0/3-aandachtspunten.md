@@ -1,5 +1,5 @@
-3 Aandachtspunten
-=================
+Aandachtspunten
+===============
 
 1.  Door de nieuwe afbakeningsregels en het schrappen van uitzonderingen in BAG
     2.0 worden méér objecten als pand afgebakend. Een OverigBouwwerk in de BGT
