@@ -53,4 +53,4 @@ Overzichttabel
 In onderstaande overzichtstabel is per objecttype, aanleiding en doorwerking in
 BAG beschreven hoe BGT bronhouder de gegevens in de BGT dient over te nemen.
 
-![](media/46589bc79eb6a1c6299357773fcc2128.png)
+![](media/31c793076c1f59508c59094cd7066220.emf)
