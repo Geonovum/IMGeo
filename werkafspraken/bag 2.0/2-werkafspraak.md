@@ -3,7 +3,8 @@ Werkafspraak
 
 De volgende werkafspraak geldt voor de BGT keten voor het behandelen van
 mutaties vanuit de BAG als gevolg van toepassing van de BAG 2.0
-afbakeningsregels door BAG:
+afbakeningsregels door BAG (zie [Catalogus BAG
+2018](https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018)):
 
 >   Bij opvoeren van nieuwe panden in de BAG, neemt BGT bronhouder altijd deze
 >   panden over in de BGT. Daarnaast legt BGT bronhouder de typering van het
@@ -52,9 +53,11 @@ andersom.
 
 **Alleen objecten die voldoen aan criteria BAG 2.0 worden Pand.** Niet alle
 overige bouwwerken in de BGT zullen als Pand worden afgebakend. Objecten die
-niet voldoen aan de definities en afbakeningscriteria van BAG worden niet als
-Pand opgenomen. Bijvoorbeeld, kleine windturbines die niet betreedbaar zijn, en
-waar geen persoon in kan staan.
+niet voldoen aan de definities en afbakeningscriteria van BAG (zie [Catalogus
+BAG
+2018](https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018))
+worden niet als Pand opgenomen. Bijvoorbeeld, kleine windturbines die niet
+betreedbaar zijn, en waar geen persoon in kan staan.
 
 **Pand op maaiveldniveau, OverigeBouwwerken naar inrichtende laag** Panden
 worden altijd op maaiveldniveau in de BGT opgenomen. Bij het opnemen van
@@ -64,12 +67,14 @@ verplicht/opdelend OverigBouwwerk dient op een andere relatieve hoogte dan het
 Pand te worden gelegd, voor een optioneel/inrichtend
 
 **Alleen BAG 2.0 bij nieuwe gevallen/vergunningen en terugmeldingen**
-Kwaliteitskader BAG 2.0 2018 adviseert BAG bronhouders om alleen de BAG 2.0
-afbakeningsregels toe te passen bij nieuwe gevallen/vergunningen en bij
-terugmeldingen. Er wordt niet met terugwerkende kracht getracht om alle panden
-conform BAG 2.0 op te voeren. Het is dus niet de bedoeling om via
-mutatiesignalering uit luchtfoto’s de BAG (en dus BGT) met panden conform BAG
-2.0 te vullen.
+[Kwaliteitskader BAG 2.0
+2018](https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/27/kwaliteitskader-bag-2018)
+adviseert BAG bronhouders om alleen de BAG 2.0 afbakeningsregels toe te passen
+bij nieuwe gevallen/vergunningen en bij terugmeldingen (in verband met impact).
+Er wordt niet met terugwerkende kracht getracht om alle panden conform BAG 2.0
+op te voeren. Het is dus niet de bedoeling om via mutatiesignalering uit
+luchtfoto’s de BAG (en dus BGT) met panden conform BAG 2.0 te vullen, indien de
+bronhouder dit voor zijn eigen processen nodig acht mag het overigens wel.
 
 **Verplicht vs. optioneel** Bij vergunningverlening mogen Panden met status
 ‘plan’ worden opgenomen in de BGT; vanaf status ‘Bouw gestart’ *moeten* Panden
