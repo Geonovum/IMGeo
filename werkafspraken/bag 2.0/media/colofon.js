@@ -19,8 +19,7 @@ var respecConfig = {
     },
     {
       company: "SVB-BGT",
-      companyURL: "http://www.svb-bgt.nl/",
-      mailto: "a.deboer@geonovum.nl",    
+      companyURL: "http://www.svb-bgt.nl/"   
     },    
     {
       company: "Kadaster",
