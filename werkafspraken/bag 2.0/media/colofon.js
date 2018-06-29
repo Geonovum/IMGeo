@@ -1,16 +1,32 @@
 var respecConfig = {
-  specStatus: "GN-WV",
+  specStatus: "GN-VV",
   specType: "WA",
   //canonicalURI: "WV",
-  publishDate: "2018-06-19",
+  publishDate: "2018-07-01",
   editors: [    
     {
-      name: "Arnoud de Boer",
-      company: "Geonovum",
+      name: "Geonovum",
       companyURL: "http://www.geonovum.nl/",
-      mailto: "a.deboer@geonovum.nl",
-      note: ""    
-    }  
+      mailto: "imgeo@geonovum.nl",    
+    },
+    {
+      name: "Ministerie BZK",
+      companyURL: "https://www.geobasisregistraties.nl/"
+    },
+    {
+      name: "VNG Realisatie",
+      companyURL: "https://www.vngrealisatie.nl/",          
+    },
+    {
+      name: "SVB-BGT",
+      companyURL: "http://www.svb-bgt.nl/",
+      mailto: "a.deboer@geonovum.nl",    
+    },    
+    {
+      name: "Kadaster",
+      companyURL: "https://www.kadaster.nl/bag",
+    }
+    
   ],
   shortName: "IMGeo",
   pubDomain: "IMGeo",
