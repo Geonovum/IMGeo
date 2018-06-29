@@ -5,25 +5,25 @@ var respecConfig = {
   publishDate: "2018-07-01",
   editors: [    
     {
-      name: "Geonovum",
+      company: "Geonovum",
       companyURL: "http://www.geonovum.nl/",
       mailto: "imgeo@geonovum.nl",    
     },
     {
-      name: "Ministerie BZK",
+      company: "Ministerie BZK",
       companyURL: "https://www.geobasisregistraties.nl/"
     },
     {
-      name: "VNG Realisatie",
+      company: "VNG Realisatie",
       companyURL: "https://www.vngrealisatie.nl/",          
     },
     {
-      name: "SVB-BGT",
+      company: "SVB-BGT",
       companyURL: "http://www.svb-bgt.nl/",
       mailto: "a.deboer@geonovum.nl",    
     },    
     {
-      name: "Kadaster",
+      company: "Kadaster",
       companyURL: "https://www.kadaster.nl/bag",
     }
     
