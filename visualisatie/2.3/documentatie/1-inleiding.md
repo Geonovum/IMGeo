@@ -26,6 +26,17 @@ verplichte objecten die zijn vastgelegd in de Basisregistratie Grootschalige
 Topografie (BGT) en de overige objecten die zijn vastgelegd in het
 Informatiemodel Grootschalige Topografie (IMGeo).
 
+Inbedding
+---------
+
+De visualisatie van de Basisregistratie Grootschalige Topografie (BGT) die hier
+wordt gepresenteerd sluit aan bij het [Huisstijlhandboek Cartografie voor te
+drukken en printen
+media](https://www.rijkshuisstijl.nl/communicatiemiddelen/cartografie/print-en-drukwerk)
+v.3 van 1 Logo en de [Handreiking
+Webcartografie](https://www.geonovum.nl/geo-standaarden/geo-voor-web/webcartografie-handreiking)
+van Geonovum.
+
 De verschillende BGT-visualisaties
 ----------------------------------
 
@@ -106,28 +117,12 @@ als het gevisualiseerd wordt.
 Voor de visualisaties in deze handreiking zijn de volgende templates
 beschikbaar:
 
-Daarnaast zijn er technische bestanden, die direct ingelezen kunnen worden in
-geo-webservices en diverse GIS pakketten, beschikbaar in Styled Layer Descriptor
-(SLD) formaat. De iconen zijn gepubliceerd in Scalable Vector Graphics (SVG)
-formaat en zijn tevens in EPS en PNG formaat beschikbaar.
+Technische bestanden
+--------------------
 
-Het kan zijn dat voor het visualiseren van een groep objecten meerdere symbolen
-gebruikt worden, bijvoorbeeld een vlak-, lijn- of puntsymbool in combinatie met
-een tekstsymbool. In deze gevallen wordt er op meerdere sheets een
-visualisatieregel opgenomen: één voor vlak, lijn, of punt, en één voor de tekst.
-
-Inbedding
----------
-
-De visualisatie van de Basisregistratie Grootschalige Topografie (BGT) die hier
-wordt gepresenteerd sluit aan bij het [Huisstijlhandboek Cartografie voor te
-drukken en printen
-media](https://www.rijkshuisstijl.nl/communicatiemiddelen/cartografie/print-en-drukwerk)
-v.3 van 1 Logo en de [Handreiking
-Webcartografie](https://www.geonovum.nl/geo-standaarden/geo-voor-web/webcartografie-handreiking)
-van Geonovum.
-
-De template is gebaseerd op de [Styled Layer Descriptor
+Naast de templates met de visualisatieregel zijn er technische bestanden, die
+direct ingelezen kunnen worden in geo-webservices en diverse GIS pakketten. Deze
+visulisatieregels zijn beschikbaar conform de [Styled Layer Descriptor
 (SLD)](http://www.opengeospatial.org/standards/sld) 1.1. standaard van het Open
 Geospatial Consortium (OGC)[^1]. Dit is een open standaard en wordt ondersteund
 door een breed scala aan geografische informatiesystemen (GIS) en services,
@@ -138,3 +133,13 @@ internationale standaarden voor visualisatie.
 [^1]: OGC Styled Layer Descriptor Profile of the Web Map Service Implementation
 Specification, \#05-078r4,
 http://portal.opengeospatial.org/files/?artifact_id=22364
+
+De iconen zijn gepubliceerd in Scalable Vector Graphics (SVG) formaat en zijn
+tevens in EPS en PNG formaat beschikbaar. Het kan zijn dat voor het visualiseren
+van een groep objecten meerdere symbolen gebruikt worden, bijvoorbeeld een
+vlak-, lijn- of puntsymbool in combinatie met een tekstsymbool. In deze gevallen
+wordt er op meerdere sheets een visualisatieregel opgenomen: één voor vlak,
+lijn, of punt, en één voor de tekst.
+
+Voor de visualisaties in deze handreiking zijn de volgende technische bestanden
+beschikbaar:
