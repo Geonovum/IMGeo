@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   viewBox="0 0 32 32"
+   id="svg2"
+   inkscape:version="0.48.0 r9654"
+   width="100%"
+   height="100%"
+   sodipodi:docname="griend.svg"
+   inkscape:export-filename="/media/Storage/projecten/2012/03_pdok_apeldoorn/04_implementatie/top10nl/griend.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
+  <defs
+     id="defs18" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1366"
+     inkscape:window-height="693"
+     id="namedview16"
+     showgrid="false"
+     inkscape:zoom="14.04182"
+     inkscape:cx="3.1811487"
+     inkscape:cy="17.31278"
+     inkscape:window-x="0"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2" />
+  <metadata
+     id="metadata4">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <rect
+     style="color:#000000;fill:#8ca800;fill-rule:nonzero;enable-background:accumulate"
+     height="32"
+     width="32"
+     y="0.00058929686"
+     x="-0.0048487792"
+     id="rect10" />
+  <path
+     inkscape:connector-curvature="0"
+     id="path3804"
+     style="font-size:24px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#0084a8;fill-opacity:1;stroke:none;font-family:ESRI ArcGIS TDN;-inkscape-font-specification:ESRI ArcGIS TDN Bold"
+     d="m 7.1485502,5.14056 1.152,0 0,3.552 C 9.0045452,8.4365674 9.5405444,7.7965681 9.9085498,6.77256 10.196544,5.9725699 10.340544,5.1005708 10.34055,4.15656 l 0.984,0 c -7e-6,1.3120104 -0.208007,2.5440092 -0.624,3.696 -0.560006,1.4720066 -1.3600054,2.344006 -2.3999998,2.616 l 0,5.376 -1.152,0 0,-5.4 c -1.024002,-0.303994 -1.800002,-1.1839934 -2.328,-2.64 -0.416001,-1.1199908 -0.624,-2.3359896 -0.624,-3.648 l 0.936,0 0,0.024 c -1e-6,0.9120108 0.143998,1.7600099 0.432,2.544 0.367998,0.9920082 0.895997,1.6320075 1.584,1.92 l 0,-3.504" />
+  <path
+     d="m 22.127066,18.64056 1.152,0 0,3.552 c 0.703995,-0.255993 1.239995,-0.895992 1.608,-1.92 0.287994,-0.79999 0.431994,-1.671989 0.432,-2.616 l 0.984,0 c -7e-6,1.31201 -0.208007,2.544009 -0.624,3.696 -0.560006,1.472007 -1.360005,2.344006 -2.4,2.616 l 0,5.376 -1.152,0 0,-5.4 c -1.024002,-0.303994 -1.800002,-1.183993 -2.328,-2.64 -0.416001,-1.119991 -0.624,-2.33599 -0.624,-3.648 l 0.936,0 0,0.024 c -1e-6,0.912011 0.143998,1.76001 0.432,2.544 0.367998,0.992008 0.895997,1.632007 1.584,1.92 l 0,-3.504"
+     style="font-size:24px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#0084a8;fill-opacity:1;stroke:none;font-family:ESRI ArcGIS TDN;-inkscape-font-specification:ESRI ArcGIS TDN Bold"
+     id="path3807"
+     inkscape:connector-curvature="0" />
+</svg>
