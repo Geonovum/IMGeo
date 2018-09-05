@@ -7,8 +7,8 @@ Visualisatieregels voor de BGT
 Om de BGT op een eenduidige manier te presenteren aan gebruikers, zijn er
 visualisatieregels gedefinieerd. Denk hierbij bijvoorbeeld aan (kleuren van)
 vlakvullingen, lijnstijlen, symbologie, etc. Deze visualisatieregels worden
-vastgelegd in deze handreiking en implementatiebestanden (SLD’s) en kunnen
-worden toegepast in een view service.
+vastgelegd in deze handreiking en implementatiebestanden, en kunnen worden
+toegepast in een view service.
 
 De visualisatie is geen onderdeel van een informatiemodel, maar is een apart
 aspect. De gegevenscatalogus bevat de objectdefinities; de visualisatie van deze
@@ -22,9 +22,11 @@ bronhouders in acht moeten worden genomen wil uiteindelijk een te genereren
 kaartbeeld van de BGT landelijk op een uniforme wijze worden gepresenteerd.
 
 Er is bij het vaststellen van de visualisatie geen onderscheid gemaakt tussen
-verplichte objecten die zijn vastgelegd in de Basisregistratie Grootschalige
-Topografie (BGT) en de overige objecten die zijn vastgelegd in het
-Informatiemodel Grootschalige Topografie (IMGeo).
+verplichte objecten die zijn vastgelegd in de [Basisregistratie Grootschalige
+Topografie
+(BGT)](https://www.geonovum.nl/geo-standaarden/bgt-imgeo/gegevenscatalogus-bgt-111)
+en de overige objecten die zijn vastgelegd in het [Informatiemodel Geografie
+(IMGeo)](https://www.geonovum.nl/geo-standaarden/bgt-imgeo/gegevenscatalogus-imgeo-versie-211).
 
 Inbedding
 ---------

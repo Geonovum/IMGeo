@@ -21,8 +21,8 @@ over de standaard visualisatie af te beelden.
 
 ![Figuur: Wegdelen gevisualiseerd op basis van het attribuut "bgt-functie".](media/a8fca65ceb2cea0b2f7df5062f20e114.png)
 
-Figuur: Wegdelen gevisualiseerd op basis van het attribuut "bgt-functie" conform
-de regels van de standaardvisualisatie.
+*Figuur: Wegdelen gevisualiseerd op basis van het attribuut "bgt-functie"
+conform de regels van de standaardvisualisatie.*
 
 ### OndersteunendWegdeel
 
