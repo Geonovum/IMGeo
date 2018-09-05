@@ -142,7 +142,7 @@ afhankelijkheid van een specifieke softwareleverancier en wordt aangesloten bij
 internationale standaarden voor visualisatie.
 
 De iconen zijn gepubliceerd in [Scalable Vector Graphics
-(SVG)](https://www.w3.org/TR/SVG2/) formaat en zijn tevens in EPS en PNG formaat
+(SVG)](https://www.w3.org/TR/SVG2/) formaat en zijn tevens in PNG formaat
 beschikbaar. Het kan zijn dat voor het visualiseren van een groep objecten
 meerdere symbolen gebruikt worden, bijvoorbeeld een vlak-, lijn- of puntsymbool
 in combinatie met een tekstsymbool. In deze gevallen wordt er op meerdere sheets
