@@ -4,33 +4,33 @@ Kaartsamenstelling
 Naast de beschrijving van visualisatie van de objecttypen geeft onderstaande
 tabel aan, hoe de objecttypen geordend moeten worden om een kaart te realiseren:
 
-Tabel 1: Overzicht van de tekenvolgorde van de objecttypen voor de verschillende
-visualisaties.
+*Tabel: Overzicht van de tekenvolgorde van de objecttypen voor de verschillende
+visualisaties.*
 
-| Teken- volgorde | Objecttype               | Standaard | Achtergrond | Omtrekgericht | Pastel |
-|-----------------|--------------------------|-----------|-------------|---------------|--------|
-| 1               | Ongeclassificeerd Object | x         | x           | x             | x      |
-| 2               | Ondersteunend Waterdeel  | x         | x           | x             | x      |
-| 3               | Waterdeel                | x         | x           | x             | x      |
-| 4               | Onbegroeid Terreindeel   | x         | x           |               | x      |
-| 5               | Begroeid Terreindeel     | x         | x           |               | x      |
-| 6               | Tunneldeel               | x         | x           | x             | x      |
-| 7               | Overbruggingsdeel        | x         | x           | x             | x      |
-| 8               | Ondersteunend Wegdeel    | x         | x           | x             | x      |
-| 9               | Wegdeel                  | x         | x           | x             | x      |
-| 10              | Spoor                    | x         | x           | x             | x      |
-| 11              | Pand                     | x         | x           | x             | x      |
-| 12              | GebouwInstallatie        | x         | x           | x             | x      |
-| 13              | Overigbouwwerk           | x         | x           | x             | x      |
-| 14              | Kunstwerkdeel            | x         | x           | x             | x      |
-| 15              | Scheiding                | x         |             | x             | x      |
-| 16              | OverigeScheiding         |           |             | x             | x      |
-| 17              | VegetatieObject          | x         |             |               |        |
-| 18              | Openbare ruimte          | x         |             |               |        |
-| 19              | Registratief gebied      | x         |             |               |        |
-| 20              | Nummeraanduidingreeks    | x         | x           | x             | x      |
-| 21              | Openbareruimtelabel      | x         | x           | x             | x      |
-| 22              | Functioneel gebied       | x         |             |               |        |
+| Teken- volgorde | Objecttype               | Standaard | Achtergrond | Omtrekgericht | Pastel | Plan |
+|-----------------|--------------------------|-----------|-------------|---------------|--------|------|
+| 1               | Ongeclassificeerd Object | x         | x           | x             | x      | x    |
+| 2               | Ondersteunend Waterdeel  | x         | x           | x             | x      | x    |
+| 3               | Waterdeel                | x         | x           | x             | x      | x    |
+| 4               | Onbegroeid Terreindeel   | x         | x           | \-            | x      | x    |
+| 5               | Begroeid Terreindeel     | x         | x           | \-            | x      | x    |
+| 6               | Tunneldeel               | x         | x           | x             | x      | x    |
+| 7               | Overbruggingsdeel        | x         | x           | x             | x      | x    |
+| 8               | Ondersteunend Wegdeel    | x         | x           | x             | x      | x    |
+| 9               | Wegdeel                  | x         | x           | x             | x      | x    |
+| 10              | Spoor                    | x         | x           | x             | x      | x    |
+| 11              | Pand                     | x         | x           | x             | x      | x    |
+| 12              | GebouwInstallatie        | x         | x           | x             | x      | x    |
+| 13              | Overigbouwwerk           | x         | x           | x             | x      | x    |
+| 14              | Kunstwerkdeel            | x         | x           | x             | x      | x    |
+| 15              | Scheiding                | x         | \-          | x             | x      | x    |
+| 16              | OverigeScheiding         | \-        | \-          | x             | x      | x    |
+| 17              | VegetatieObject          | x         | \-          | \-            | \-     | \-   |
+| 18              | Openbare ruimte          | x         | \-          | \-            | \-     | \-   |
+| 19              | Registratief gebied      | x         | \-          | \-            | \-     | \-   |
+| 20              | Nummeraanduidingreeks    | x         | x           | x             | x      | x    |
+| 21              | Openbareruimtelabel      | x         | x           | x             | x      | x    |
+| 22              | Functioneel gebied       | x         | \-          | \-            | \-     | \-   |
 
 De serie 1-17 wordt indien van toepassing voor de betreffende visualisatie
 herhaald voor iedere set objecten met dezelfde domeinwaarde voor het attribuut
@@ -43,7 +43,8 @@ Specifieke tekeninstructies
 
 ### Achtergrondvisualisatie
 
-Voor de visualisatie worden dezelfde SLD’s toegepast op meerdere kaartlagen:
+Voor de achtergrondvisualisatie worden dezelfde SLD’s toegepast op meerdere
+kaartlagen:
 
 | Tekenvolgorde | Objecttype              | SLD                                 |
 |---------------|-------------------------|-------------------------------------|
