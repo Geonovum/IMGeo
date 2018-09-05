@@ -1,28 +1,23 @@
 var respecConfig = {
-  specStatus: "GN-WV",
-  specType: "ST",
+  specStatus: "GN-DEF",
+  specType: "HR",
   //canonicalURI: "WV",
-  publishDate: "2018-01-12",
+  publishDate: "2018-09-05",
   editors: [
     {
       name: "Edward Mac Gillavry",
       company: "Webmapper|Geonovum"
       
     },
-    {
-     
+    {     
       name: "Linda van den Brink",
       company: "Geonovum",
-      companyURL: "http://www.geonovum.nl/",
-      mailto: "l.vdbrink@geonovum.nl",
-      note: ""    
+      companyURL: "http://www.geonovum.nl/",          
     },
     {
       name: "Arnoud de Boer",
       company: "Geonovum",
-      companyURL: "http://www.geonovum.nl/",
-      mailto: "a.deboer@geonovum.nl",
-      note: ""    
+      companyURL: "http://www.geonovum.nl/",         
     }
   ],
   shortName: "visualisatie",
