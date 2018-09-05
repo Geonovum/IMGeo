@@ -106,9 +106,8 @@ De template bevat de volgende onderdelen:
     worden afgeraden in het kader van de richtlijn voor goede webcartografie.
 
 Voor elke visualisatie is er een Excel bestand met daarin de visualisatieregels
-voor alle objecttypen, zie [Implementatiebestanden](#implementatiebestanden).
-Bij elke regel is een voorbeeld opgenomen van hoe het object eruit komt te zien
-als het gevisualiseerd wordt.
+voor alle objecttypen. Bij elke regel is een voorbeeld opgenomen van hoe het
+object eruit komt te zien als het gevisualiseerd wordt.
 
 ![](media/0b9a496ee75f595d6e047b06b8b1a9a8.png)
 
@@ -124,15 +123,11 @@ Naast de templates met de visualisatieregel zijn er technische bestanden, die
 direct ingelezen kunnen worden in geo-webservices en diverse GIS pakketten. Deze
 visulisatieregels zijn beschikbaar conform de [Styled Layer Descriptor
 (SLD)](http://www.opengeospatial.org/standards/sld) 1.1. standaard van het Open
-Geospatial Consortium (OGC)[^1]. Dit is een open standaard en wordt ondersteund
-door een breed scala aan geografische informatiesystemen (GIS) en services,
-waarmee kaarten op het Web kunnen worden gepubliceerd. Hierdoor is er geen
+Geospatial Consortium (OGC). Dit is een open standaard en wordt ondersteund door
+een breed scala aan geografische informatiesystemen (GIS) en services, waarmee
+kaarten op het Web kunnen worden gepubliceerd. Hierdoor is er geen
 afhankelijkheid van een specifieke softwareleverancier en wordt aangesloten bij
 internationale standaarden voor visualisatie.
-
-[^1]: OGC Styled Layer Descriptor Profile of the Web Map Service Implementation
-Specification, \#05-078r4,
-http://portal.opengeospatial.org/files/?artifact_id=22364
 
 De iconen zijn gepubliceerd in Scalable Vector Graphics (SVG) formaat en zijn
 tevens in EPS en PNG formaat beschikbaar. Het kan zijn dat voor het visualiseren
