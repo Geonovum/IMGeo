@@ -74,7 +74,8 @@ presentaties van BGT\|IMGeo gegevens, elk met hun eigen doel en gebruik:
     informatie over haar bouwwerken, kunstwerken en infrastructuur af te beelden
     op de BGT/IMGeo-inhoud.
 
-6.  **Planvisualisatie:**
+6.  **Planvisualisatie:** een visualisatie voor het gebruik van de
+    planinformatie-inhoud.
 
 Visualisatieregels
 ------------------
@@ -116,6 +117,15 @@ object eruit komt te zien als het gevisualiseerd wordt.
 Voor de visualisaties in deze handreiking zijn de volgende templates
 beschikbaar:
 
+| **Visualisatie**            | **Template**                                             |
+|-----------------------------|----------------------------------------------------------|
+| Standaardvisualisatie       | Visualisatieregels_IMGeo_BGT_standaardvisualisatie.xls   |
+| Achtergrondvisualisatie     | Visualisatieregels_IMGeo_BGT_icoonvisualisatie.xls       |
+| Icoonvisualisatie           | Visualisatieregels_IMGeo_BGT_achtergrondvisualisatie.xls |
+| Omtrekgerichte visualisatie | Visualisatieregels_IMGeo_BGT_omtrekgerichtevisualisatie  |
+| Pastelvisualisatie          | Visualisatieregels_IMGeo_BGT_pastelvisualisatie.xls      |
+| Planvisualisatie            | Visualisatieregels_IMGeo_BGT_planvisualisatie.xls        |
+
 Technische bestanden
 --------------------
 
@@ -129,12 +139,28 @@ kaarten op het Web kunnen worden gepubliceerd. Hierdoor is er geen
 afhankelijkheid van een specifieke softwareleverancier en wordt aangesloten bij
 internationale standaarden voor visualisatie.
 
-De iconen zijn gepubliceerd in Scalable Vector Graphics (SVG) formaat en zijn
-tevens in EPS en PNG formaat beschikbaar. Het kan zijn dat voor het visualiseren
-van een groep objecten meerdere symbolen gebruikt worden, bijvoorbeeld een
-vlak-, lijn- of puntsymbool in combinatie met een tekstsymbool. In deze gevallen
-wordt er op meerdere sheets een visualisatieregel opgenomen: één voor vlak,
-lijn, of punt, en één voor de tekst.
+De iconen zijn gepubliceerd in [Scalable Vector Graphics
+(SVG)](https://www.w3.org/TR/SVG2/) formaat en zijn tevens in EPS en PNG formaat
+beschikbaar. Het kan zijn dat voor het visualiseren van een groep objecten
+meerdere symbolen gebruikt worden, bijvoorbeeld een vlak-, lijn- of puntsymbool
+in combinatie met een tekstsymbool. In deze gevallen wordt er op meerdere sheets
+een visualisatieregel opgenomen: één voor vlak, lijn, of punt, en één voor de
+tekst.
 
 Voor de visualisaties in deze handreiking zijn de volgende technische bestanden
 beschikbaar:
+
+| **Visualisatie**            | **Implementatiebestanden**                                              |
+|-----------------------------|-------------------------------------------------------------------------|
+| Standaardvisualisatie       | sld-standaardvisualisatie.zip png-svg-patronen.zip png-svg-symbolen.zip |
+| Achtergrondvisualisatie     | sld-achtergrondvisualisatie.zip                                         |
+| Icoonvisualisatie           | sld-icoonvisualisatie.zip png-svg-symbolen.zip                          |
+| Omtrekgerichte visualisatie | sld-omtrekgerichtevisualisatie.zip                                      |
+| Pastelvisualisatie          | sld-pastelvisualisatie.zip                                              |
+| Planvisualisatie            | sld-planvisualisatie.zip                                                |
+
+Let op: de lettertypen die voor de teksten worden gebruikt in de SLD’s worden
+niet meegeleverd. Het gaat hierbij om 'Arial', 'RijksoverheidSansTextTT' en
+'RijksoverheidSansHeadingTT'. Het lettertype ‘Rijksoverheid Sans’ is te
+downloaden via de website over de
+[Rijkshuisstijl](https://www.rijkshuisstijl.nl/basiselementen/lettertype/rijksoverheid-sans).
