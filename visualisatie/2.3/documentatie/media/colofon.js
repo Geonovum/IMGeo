@@ -1,6 +1,6 @@
 var respecConfig = {
   specStatus: "GN-DEF",
-  specType: "HR",
+  specType: "ST",
   //canonicalURI: "WV",
   publishDate: "2018-09-05",
   editors: [
