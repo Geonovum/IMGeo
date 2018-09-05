@@ -119,14 +119,14 @@ object eruit komt te zien als het gevisualiseerd wordt.
 Voor de visualisaties in deze handreiking zijn de volgende templates
 beschikbaar:
 
-| **Visualisatie**            | **Template**                                             |
-|-----------------------------|----------------------------------------------------------|
-| Standaardvisualisatie       | Visualisatieregels_IMGeo_BGT_standaardvisualisatie.xls   |
-| Achtergrondvisualisatie     | Visualisatieregels_IMGeo_BGT_icoonvisualisatie.xls       |
-| Icoonvisualisatie           | Visualisatieregels_IMGeo_BGT_achtergrondvisualisatie.xls |
-| Omtrekgerichte visualisatie | Visualisatieregels_IMGeo_BGT_omtrekgerichtevisualisatie  |
-| Pastelvisualisatie          | Visualisatieregels_IMGeo_BGT_pastelvisualisatie.xls      |
-| Planvisualisatie            | Visualisatieregels_IMGeo_BGT_planvisualisatie.xls        |
+| **Visualisatie**            | **Template**                                                                                                                                                                                                         |
+|-----------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Standaardvisualisatie       | [Visualisatieregels_IMGeo_BGT_standaardvisualisatie.xls](https://github.com/Geonovum/IMGeo/blob/master/visualisatie/2.3/visualisatieregels%20(XLS)/Visualisatieregels_IMGeo_BGT_standaardvisualisatie.xls)           |
+| Achtergrondvisualisatie     | [Visualisatieregels_IMGeo_BGT_achtergrond.xls](https://github.com/Geonovum/IMGeo/blob/master/visualisatie/2.3/visualisatieregels%20(XLS)/Visualisatieregels_IMGeo_BGT_achtergrondvisualisatie.xls)                   |
+| Icoonvisualisatie           | [Visualisatieregels_IMGeo_BGT_icoon.xls](https://github.com/Geonovum/IMGeo/blob/master/visualisatie/2.3/visualisatieregels%20(XLS)/Visualisatieregels_IMGeo_BGT_icoonvisualisatie.xls)                               |
+| Omtrekgerichte visualisatie | [Visualisatieregels_IMGeo_BGT_omtrekgerichtevisualisatie.xls](https://github.com/Geonovum/IMGeo/blob/master/visualisatie/2.3/visualisatieregels%20(XLS)/Visualisatieregels_IMGeo_BGT_omtrekgerichtevisualisatie.xls) |
+| Pastelvisualisatie          | [Visualisatieregels_IMGeo_BGT_pastelvisualisatie.xls](https://github.com/Geonovum/IMGeo/blob/master/visualisatie/2.3/visualisatieregels%20(XLS)/Visualisatieregels_IMGeo_BGT_pastelvisualisatie.xls)                 |
+| Planvisualisatie            | [Visualisatieregels_IMGeo_BGT_planvisualisatie.xls](https://github.com/Geonovum/IMGeo/blob/master/visualisatie/2.3/visualisatieregels%20(XLS)/Visualisatieregels_IMGeo_BGT_planvisualisatie.xls)                     |
 
 Technische bestanden
 --------------------
@@ -152,14 +152,14 @@ tekst.
 Voor de visualisaties in deze handreiking zijn de volgende technische bestanden
 beschikbaar:
 
-| **Visualisatie**            | **Implementatiebestanden**                                              |
-|-----------------------------|-------------------------------------------------------------------------|
-| Standaardvisualisatie       | sld-standaardvisualisatie.zip png-svg-patronen.zip png-svg-symbolen.zip |
-| Achtergrondvisualisatie     | sld-achtergrondvisualisatie.zip                                         |
-| Icoonvisualisatie           | sld-icoonvisualisatie.zip png-svg-symbolen.zip                          |
-| Omtrekgerichte visualisatie | sld-omtrekgerichtevisualisatie.zip                                      |
-| Pastelvisualisatie          | sld-pastelvisualisatie.zip                                              |
-| Planvisualisatie            | sld-planvisualisatie.zip                                                |
+| **Visualisatie**            | **Implementatiebestanden**                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+|-----------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Standaardvisualisatie       | [sld-standaardvisualisatie.zip](https://github.com/Geonovum/IMGeo/blob/master/visualisatie/2.3/implementatiebestanden%20(SLD)/standaardvisualisatie/sld-standaardvisualisatie.zip) [png-svg-patronen.zip](https://github.com/Geonovum/IMGeo/blob/master/visualisatie/2.3/implementatiebestanden%20(SLD)/patronen/png-svg-patronen.zip) [png-svg-symbolen.zip](https://github.com/Geonovum/IMGeo/blob/master/visualisatie/2.3/implementatiebestanden%20(SLD)/symbolen/png-svg-symbolen.zip) |
+| Achtergrondvisualisatie     | [sld-achtergrondvisualisatie.zip](https://github.com/Geonovum/IMGeo/blob/master/visualisatie/2.3/implementatiebestanden%20(SLD)/achtergrondvisualisatie/sld-achtergrondvisualisatie.zip)                                                                                                                                                                                                                                                                                                   |
+| Icoonvisualisatie           | [sld-icoonvisualisatie.zip](https://github.com/Geonovum/IMGeo/blob/master/visualisatie/2.3/implementatiebestanden%20(SLD)/icoonvisualisatie/sld-icoonvisualisatie.zip) [png-svg-symbolen.zip](https://github.com/Geonovum/IMGeo/blob/master/visualisatie/2.3/implementatiebestanden%20(SLD)/symbolen/png-svg-symbolen.zip)                                                                                                                                                                 |
+| Omtrekgerichte visualisatie | [sld-omtrekgerichtevisualisatie.zip](https://github.com/Geonovum/IMGeo/blob/master/visualisatie/2.3/implementatiebestanden%20(SLD)/omtrekgerichtevisualisatie/sld-omtrekgerichtevisualisatie.zip)                                                                                                                                                                                                                                                                                          |
+| Pastelvisualisatie          | [sld-pastelvisualisatie.zip](https://github.com/Geonovum/IMGeo/blob/master/visualisatie/2.3/implementatiebestanden%20(SLD)/pastelvisualisatie/sld-pastelvisualisatie.zip)                                                                                                                                                                                                                                                                                                                  |
+| Planvisualisatie            | [sld-planvisualisatie.zip](https://github.com/Geonovum/IMGeo/blob/master/visualisatie/2.3/implementatiebestanden%20(SLD)/planvisualisatie/sld-planvisualisatie.zip)                                                                                                                                                                                                                                                                                                                        |
 
 Let op: de lettertypen die voor de teksten worden gebruikt in de SLD’s worden
 niet meegeleverd. Het gaat hierbij om 'Arial', 'RijksoverheidSansTextTT' en
