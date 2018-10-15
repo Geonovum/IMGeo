@@ -1,8 +1,8 @@
 var respecConfig = {
-  specStatus: "GN-VV",
+  specStatus: "GN-DEF",
   specType: "HR",
   //canonicalURI: "WV",
-  publishDate: "2018-09-06",
+  publishDate: "2018-10-15",
   editors: [
     {
       name: "Edward Mac Gillavry",
