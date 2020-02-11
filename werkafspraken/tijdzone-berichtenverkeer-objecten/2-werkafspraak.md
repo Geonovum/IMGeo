@@ -19,10 +19,10 @@ Basisregistratie Adressen en Gebouwen – 2018
 
 van 1 juli 2018, ofwel:
 
-   ' Voor het ontstaan, wijzigen en vervallen van BAG- en IMGeo-objecten geldt de
-    Nederlandse wettelijke tijd. Daarbij wordt in de winter de wintertijd
-    aangehouden, ofewel Midden-Europese Tijd, en in de zomer de zomertijd, ofewel
-    Midden-Europese Zomertijd. Om dubbele tijdstippen te voorkomen mag in de nacht
-    van zomertijd naar wintertijd (ofewel de nacht van zaterdag op zondag in het
-    laatste weekend van oktober wanneer de klok een uur teruggaat ) geen tijdstip
-    worden toegekend aan (versies van) objecten.
+*Voor het ontstaan, wijzigen en vervallen van BAG- en IMGeo-objecten geldt de
+Nederlandse wettelijke tijd. Daarbij wordt in de winter de wintertijd
+aangehouden, ofewel Midden-Europese Tijd, en in de zomer de zomertijd, ofewel
+Midden-Europese Zomertijd. Om dubbele tijdstippen te voorkomen mag in de nacht
+van zomertijd naar wintertijd (ofewel de nacht van zaterdag op zondag in het
+laatste weekend van oktober wanneer de klok een uur teruggaat ) geen tijdstip
+worden toegekend aan (versies van) objecten.*
