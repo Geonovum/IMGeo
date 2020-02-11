@@ -43,18 +43,18 @@ afdoende:
 -   bor-fysiekVoorkomen – voor het registreren en uitwisselen van fysiek
     voorkomens die wel in de openbare ruimte voorkomen, maar nog niet opgenomen
     zijn in IMGeo. Denk hier bijvoorbeeld aan: hout, metaal, basalt en
-    kunststof. In tabel X-bor-fysiekVoorkomen zijn de vaste waarden opgenomen
-    die uitgewisseld kunnen worden.
+    kunststof. 
 
 -   bor-functie: voor het registreren van extra functies. Op deze manier kunnen nu 
 alle wegfuncties binnen IMBOR tussen de BOR-omgeving en de Geovoorziening uitgewisseld worden. 
-In tabel X-bor-functie zijn de vaste
-waarden opgenomen die uitgewisseld kunnen worden.
+
 
 -   bor-type: voor het registreren en uitwisselen van extra types.
 Op deze manier kan de geometrie van ongeveer 200 IMBOR-objecttypes uitgewisseld
-worden. In tabel X-bor-type zijn de vaste waarden opgenomen die uitgewisseld
-kunnen worden.
+worden. 
+
+In de bijlage zijn de IMBOR-classificaties voor bor-fysiekVoorkomen, bor-functie en bor-type opgenomen
+    die binnen het Geo-BOR berichtenverkeer uitgewisseld kunnen worden.
 
 ![](media/ebd2a3e6b8089d4f21a53489f2cf81e6.png)
 
@@ -70,18 +70,17 @@ Wegdeel:
     codeSpace="http://www.geostandaarden.nl/imgeo/def/2.1#FunctieWegPlus"  
     >verkeersdrempel</stuf-geo:plus-functie>
 
-Deze waardenlijsten zijn voor IMGeo in RDF-formaat beschikbaar in het technische
-register van Geonovum, zie
-<https://register.geostandaarden.nl/waardelijst/imgeo/20140401/imgeo.rdf>.
+Deze waardenlijsten zijn voor IMGeo in RDF-formaat beschikbaar in het [technisch
+register van Geonovum](https://register.geostandaarden.nl/waardelijst/imgeo/).
 
 Voor de aanvullende elementen van IMBOR-classificaties wordt hetzelfde principe
 gehanteerd: in de XML-elementen van bor-fysiekVoorkomen, bor-functie, en
-bor-type wordt verwezen naar de bijbehorende BOR-waardelijst in hetattribuut,
+bor-type wordt verwezen naar de bijbehorende BOR-waardelijst in het attribuut,
 bijvoorbeeld:
 
     <geo-bor:bor-functie  
     codeSpace="http://register.geostandaarden.nl/imgeo/geobor/1.0\#FunctieWegBOR"  
-    >woonstraat</stuf-geo:plus-functie>
+    >woonstraat\</stuf-geo:plus-functie>
 
 De waardenlijsten voor de IMBOR-classificaties die uitgewisseld kunnen worden in
 de aanvullende elementen bor-fysiekvoorkomen, bor-functie en bor-type zijn
