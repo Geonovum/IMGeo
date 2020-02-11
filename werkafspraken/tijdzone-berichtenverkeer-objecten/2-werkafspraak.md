@@ -17,7 +17,7 @@ voor Tijdgeldigheid zoals opgenomen in paragraaf 4.7.3. van de [Catalogus
 Basisregistratie Adressen en Gebouwen – 2018](https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018)
 van 1 juli 2018, ofwel:
 
-*Voor het ontstaan, wijzigen en vervallen van BAG- en IMGeo-objecten geldt de
+*Voor het ontstaan, wijzigen en vervallen van objecten geldt de
 Nederlandse wettelijke tijd. Daarbij wordt in de winter de wintertijd
 aangehouden, ofewel Midden-Europese Tijd, en in de zomer de zomertijd, ofewel
 Midden-Europese Zomertijd. Om dubbele tijdstippen te voorkomen mag in de nacht
