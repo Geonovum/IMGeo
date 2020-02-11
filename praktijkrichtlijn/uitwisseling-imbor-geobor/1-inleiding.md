@@ -8,7 +8,7 @@ IMBOR-classificaties zonder gegevensverlies te kunnen uitwisselen tussen Geo- en
 BOR-afdeling binnen een organisatie middels het StUF-Geo BOR berichtenverkeer
 kan de werkafspraak ‘Uitbreiding domeinwaarden en attributen’ worden toegepast.
 
-Deze praktijkrichtlijn beschrijft hoe met het mechanisme van
+Deze werkafspraak beschrijft hoe met het mechanisme van
 StUF:aanvullendeElementen extra attributen en domeinwaarden aan IMGeo-objecten
 kunnen worden toegevoegd in de uitwisseling. Bijvoorbeeld bij een Wegdeel kan
 naast de IMGeo-classificaties ‘gesloten verharding’ en ‘asfalt’ het soort asfalt
