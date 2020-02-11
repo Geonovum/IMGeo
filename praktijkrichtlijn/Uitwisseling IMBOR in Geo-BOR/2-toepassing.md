@@ -46,14 +46,12 @@ afdoende:
     kunststof. In tabel X-bor-fysiekVoorkomen zijn de vaste waarden opgenomen
     die uitgewisseld kunnen worden.
 
--   bor-functie: voor het registreren van extra functies.
-
-Op deze manier kunnen nu alle wegfuncties binnen IMBOR tussen de BOR-omgeving en
-de Geovoorziening uitgewisseld worden. In tabel X-bor-functie zijn de vaste
+-   bor-functie: voor het registreren van extra functies. Op deze manier kunnen nu 
+alle wegfuncties binnen IMBOR tussen de BOR-omgeving en de Geovoorziening uitgewisseld worden. 
+In tabel X-bor-functie zijn de vaste
 waarden opgenomen die uitgewisseld kunnen worden.
 
 -   bor-type: voor het registreren en uitwisselen van extra types.
-
 Op deze manier kan de geometrie van ongeveer 200 IMBOR-objecttypes uitgewisseld
 worden. In tabel X-bor-type zijn de vaste waarden opgenomen die uitgewisseld
 kunnen worden.
