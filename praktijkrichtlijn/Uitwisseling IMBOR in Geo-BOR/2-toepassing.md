@@ -66,9 +66,9 @@ fysiekVoorkomen, functie en bor-type verwezen naar een waardelijst (ookwel
 codelist) in het XML-attribuut codeSpace. Bijvoorbeeld voor plus-functie van een
 Wegdeel:
 
-\<stuf-geo:plus-functie  
-**codeSpace="http://www.geostandaarden.nl/imgeo/def/2.1\#FunctieWegPlus"**  
-\>verkeersdrempel\</stuf-geo:plus-functie\>
+    <span color="blue"\<stuf-geo:plus-functie</span>  
+    <span color="red">**codeSpace="http://www.geostandaarden.nl/imgeo/def/2.1\#FunctieWegPlus"**</span>  
+    <span color="blue">\></span>verkeersdrempel<span color="blue">\</stuf-geo:plus-functie\></span>
 
 Deze waardenlijsten zijn voor IMGeo in RDF-formaat beschikbaar in het technische
 register van Geonovum, zie
@@ -79,9 +79,9 @@ gehanteerd: in de XML-elementen van bor-fysiekVoorkomen, bor-functie, en
 bor-type wordt verwezen naar de bijbehorende BOR-waardelijst in hetattribuut,
 bijvoorbeeld:
 
-\<geo-bor:bor-functie  
-codeSpace="http://register.geostandaarden.nl/imgeo/geobor/1.0\#FunctieWegBOR"  
-\>woonstraat\</stuf-geo:plus-functie\>
+    \<geo-bor:bor-functie  
+    codeSpace="http://register.geostandaarden.nl/imgeo/geobor/1.0\#FunctieWegBOR"  
+    \>woonstraat\</stuf-geo:plus-functie\>
 
 De waardenlijsten voor de IMBOR-classificaties die uitgewisseld kunnen worden in
 de aanvullende elementen bor-fysiekvoorkomen, bor-functie en bor-type zijn
