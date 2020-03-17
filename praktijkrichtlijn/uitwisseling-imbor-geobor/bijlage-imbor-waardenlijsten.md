@@ -10,7 +10,6 @@ IMBOR-classificaties zonder IMGeo-supertype
 | Bak                     | bor-type            | bladkorf                                      |
 | Bak                     | bor-type            | zandkist                                      |
 | Bak                     | bor-type            | zoutbak                                       |
-| BegroeidTerreindeel     | bor-fysiekVoorkomen | haagvak                                       |
 | BegroeidTerreindeel     | bor-type            | graft                                         |
 | BegroeidTerreindeel     | bor-type            | steilwand                                     |
 | Bord                    | bor-type            | APV-bord                                      |
@@ -292,6 +291,7 @@ IMBOR-classificaties met IMGeo-supertype
 
 | **OBJECTTYPE**        | **CODELIST**        | **VALUE**             | **BROADER (=SUPERTYPE)** |                     |
 |-----------------------|---------------------|-----------------------|--------------------------|---------------------|
+| BegroeidTerreindeel   | bor-fysiekVoorkomen | haagvak               | bgt-fysiekVoorkomen      | groenvoorziening    |
 | OnbegroeidTerreindeel | bor-fysiekVoorkomen | glas                  | bgt-fysiekVoorkomen      | open verharding     |
 | OnbegroeidTerreindeel | bor-fysiekVoorkomen | basalt                | bgt-fysiekVoorkomen      | open verharding     |
 | OnbegroeidTerreindeel | bor-fysiekVoorkomen | natuursteen           | bgt-fysiekVoorkomen      | open verharding     |
