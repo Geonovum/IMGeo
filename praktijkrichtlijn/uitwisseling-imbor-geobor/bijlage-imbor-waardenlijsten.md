@@ -290,7 +290,7 @@ IMBOR-classificaties zonder IMGeo-supertype
 IMBOR-classificaties met IMGeo-supertype
 ----------------------------------------
 
-| **Objecttype**        | **Attribuut**       | **Waarde**            | **Subtype van         ** |                     |
+| **Objecttype**        | **Attribuut**       | **Waarde**            | **Subtype van**          |                     |
 |-----------------------|---------------------|-----------------------|--------------------------|---------------------|
 | OnbegroeidTerreindeel | bor-fysiekVoorkomen | glas                  | bgt-fysiekVoorkomen      | open verharding     |
 | OnbegroeidTerreindeel | bor-fysiekVoorkomen | basalt                | bgt-fysiekVoorkomen      | open verharding     |
