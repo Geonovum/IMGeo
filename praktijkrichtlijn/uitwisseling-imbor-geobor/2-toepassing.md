@@ -72,7 +72,7 @@ Wegdeel:
     </stuf-geo:plus-functie>
 
 Deze waardenlijsten zijn voor IMGeo in RDF-formaat beschikbaar in het [technisch
-register van Geonovum](https://register.geostandaarden.nl/waardelijst/geoboro/).
+register van Geonovum](https://register.geostandaarden.nl/waardelijst/geobor/).
 
 Voor de aanvullende elementen van IMBOR-classificaties wordt hetzelfde principe
 gehanteerd: in de XML-elementen van bor-fysiekVoorkomen, bor-functie, en
@@ -80,9 +80,9 @@ bor-type wordt verwezen naar de bijbehorende BOR-waardelijst in het attribuut,
 bijvoorbeeld:
 
     <geo-bor:bor-functie  
-    codeSpace="http://register.geostandaarden.nl/imgeo/geobor/1.0\#FunctieWegBOR">
+    codeSpace="http://register.geostandaarden.nl/geobor/2020/id/waarde/FunctieWegBOR">
     woonstraat
-    </stuf-geo:plus-functie>
+    </geo-bor:bor-functie>
 
 De waardenlijsten voor de IMBOR-classificaties die uitgewisseld kunnen worden in
 de aanvullende elementen bor-fysiekvoorkomen, bor-functie en bor-type zijn
