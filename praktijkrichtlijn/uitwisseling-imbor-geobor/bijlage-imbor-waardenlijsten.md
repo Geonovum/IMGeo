@@ -4,7 +4,7 @@ Bijlage IMBOR waardenlijsten
 IMBOR-classificaties zonder IMGeo-supertype
 -------------------------------------------
 
-| **OBJECTTYPE**          | **CODELIST**        | **VALUE**                                     |
+| **Objecttype**          | **Attribuut**       | **Waarde**                                     |
 |-------------------------|---------------------|-----------------------------------------------|
 | Bak                     | bor-type            | asbak                                         |
 | Bak                     | bor-type            | bladkorf                                      |
@@ -290,7 +290,7 @@ IMBOR-classificaties zonder IMGeo-supertype
 IMBOR-classificaties met IMGeo-supertype
 ----------------------------------------
 
-| **OBJECTTYPE**        | **CODELIST**        | **VALUE**             | **BROADER (=SUPERTYPE)** |                     |
+| **Objecttype**        | **Attribuut**       | **Waarde**            | **Subtype van         ** |                     |
 |-----------------------|---------------------|-----------------------|--------------------------|---------------------|
 | OnbegroeidTerreindeel | bor-fysiekVoorkomen | glas                  | bgt-fysiekVoorkomen      | open verharding     |
 | OnbegroeidTerreindeel | bor-fysiekVoorkomen | basalt                | bgt-fysiekVoorkomen      | open verharding     |
