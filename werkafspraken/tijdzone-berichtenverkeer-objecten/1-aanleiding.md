@@ -7,5 +7,5 @@ nergens expliciet vastgelegd welke tijdzone moet worden gehanteerd voor
 berichten (*StUF:tijdstipBericht*) en de formele historie van objecten
 (*tijdstipRegistratie, eindRegistratie* en *LV-publicatiedatum*).
 
-Deze werkafspraak legt de eerdere afspraken over toepassing van tijdstippen in
-berichtenverkeer expliciet vast.
+Deze werkafspraak legt de eerdere afspraken over toepassing van tijdzone in tijdstippen in
+berichtenverkeer en bij objecten expliciet vast.
