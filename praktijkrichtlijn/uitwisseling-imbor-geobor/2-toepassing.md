@@ -40,16 +40,16 @@ Attributen
 Voor de uitwisseling van IMBOR-classificaties zijn echter de volgende attributen
 afdoende:
 
--   bor-fysiekVoorkomen – voor het registreren en uitwisselen van fysiek
+-   _bor-fysiekVoorkomen_: voor het registreren en uitwisselen van fysiek
     voorkomens die wel in de openbare ruimte voorkomen, maar nog niet opgenomen
     zijn in IMGeo. Denk hier bijvoorbeeld aan: hout, metaal, basalt en
     kunststof. 
 
--   bor-functie: voor het registreren van extra functies. Op deze manier kunnen nu 
+-   _bor-functie_: voor het registreren van extra functies. Op deze manier kunnen nu 
 alle wegfuncties binnen IMBOR tussen de BOR-omgeving en de Geovoorziening uitgewisseld worden. 
 
 
--   bor-type: voor het registreren en uitwisselen van extra types.
+-   _bor-type_: voor het registreren en uitwisselen van extra types.
 Op deze manier kan de geometrie van ongeveer 200 IMBOR-objecttypes uitgewisseld
 worden. 
 
@@ -72,7 +72,7 @@ Wegdeel:
     </stuf-geo:plus-functie>
 
 Deze waardenlijsten zijn voor IMGeo in RDF-formaat beschikbaar in het [technisch
-register van Geonovum](https://register.geostandaarden.nl/waardelijst/imgeo/).
+register van Geonovum](https://register.geostandaarden.nl/waardelijst/geoboro/).
 
 Voor de aanvullende elementen van IMBOR-classificaties wordt hetzelfde principe
 gehanteerd: in de XML-elementen van bor-fysiekVoorkomen, bor-functie, en
