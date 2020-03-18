@@ -1,13 +1,13 @@
 var respecConfig = {
-  specStatus: "GN-VV",
+  specStatus: "GN-DEF",
   specType: "PR",
   //canonicalURI: "WV",
-  //publishDate: "2018-07-01",
+  publishDate: "2020-03-18",
   editors: [    
     {
-      company: "Geonovum",
+      name: "Geonovum",
       companyURL: "http://www.geonovum.nl/",
-      mailto: "imgeo@geonovum.nl",    
+      mailto: "imgeo@geonovum.nl",       
     },    
   ],
   shortName: "IMGeo",
