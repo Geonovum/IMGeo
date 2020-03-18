@@ -72,7 +72,7 @@ Wegdeel:
     </stuf-geo:plus-functie>
 
 Deze waardenlijsten zijn voor IMGeo in RDF-formaat beschikbaar in het [technisch
-register van Geonovum](https://register.geostandaarden.nl/waardelijst/geobor/).
+register van Geonovum](https://register.geostandaarden.nl/waardelijst/imgeo/).
 
 Voor de aanvullende elementen van IMBOR-classificaties wordt hetzelfde principe
 gehanteerd: in de XML-elementen van bor-fysiekVoorkomen, bor-functie, en
@@ -86,4 +86,5 @@ bijvoorbeeld:
 
 De waardenlijsten voor de IMBOR-classificaties die uitgewisseld kunnen worden in
 de aanvullende elementen bor-fysiekvoorkomen, bor-functie en bor-type zijn
-beschikbaar in het technische register van Geonovum.
+beschikbaar in het [technisch
+register van Geonovum](https://register.geostandaarden.nl/waardelijst/geobor/).
