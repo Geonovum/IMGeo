@@ -4,3 +4,28 @@ img {
   width: auto;
   height: auto;
 }
+
+#logo {
+ width: 132px;
+ height: 67px;  
+}
+
+table, th, td {
+    background-color: #F2F2F2;
+    border-collapse: collapse;
+    font-size: 0.9em;
+    
+}
+table {
+    border: 1px solid #000000;
+    width: 100%;
+}
+caption {
+    font-style: italic;
+    text-align: left;
+}
+th, td {
+    border: 1px inset #CCCCCC;
+    hyphens: auto;
+    padding: 0.25em;
+}
