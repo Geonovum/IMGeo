@@ -17,7 +17,7 @@ table {
 }
 table td, table th {
   border: 1px solid #AAAAAA;
-  font-size: 0.6em;
+  font-size: 0.75em;
 }
 table tr:nth-child(even) {
   background: #CCCCCC;
