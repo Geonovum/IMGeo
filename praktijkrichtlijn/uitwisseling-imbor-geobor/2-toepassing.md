@@ -85,5 +85,5 @@ bijvoorbeeld:
 
 De waardenlijsten voor de IMBOR-classificaties die uitgewisseld kunnen worden in
 de aanvullende elementen bor-fysiekvoorkomen, bor-functie en bor-type zijn
-beschikbaar in het technische register van Geonovum, zie <https://register.geostandaarden.nl/waardelijst/imgeo/geobor/imbor/2020/geobor-imbor.rdf>
+beschikbaar in het technische register van Geonovum, zie <https://register.geostandaarden.nl/waardelijst/imgeo/geobor/imbor/20200908/geobor-imbor.rdf>
 
