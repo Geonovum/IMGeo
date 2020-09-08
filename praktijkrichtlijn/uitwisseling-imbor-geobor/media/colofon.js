@@ -1,5 +1,5 @@
 var respecConfig = {
-  specStatus: "GN-DEF",
+  specStatus: "GN-WV",
   specType: "PR",
   //canonicalURI: "WV",
   //publishDate: "2018-07-01",
@@ -14,7 +14,7 @@ var respecConfig = {
   pubDomain: "IMGeo",
   //previousURI: "https://www.geonovum.nl/BRO",
   github: "https://github.com/Geonovum/IMGeo",
-  previousPublishDate: "2020-03-18",
+  previousPublishDate: "2020-09-08",
   previousStatus: "GN-DEF",
   //localBiblio: {
   //  "ISO19136": {
