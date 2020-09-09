@@ -2,7 +2,7 @@ var respecConfig = {
   specStatus: "GN-DEF",
   specType: "WA",
   //canonicalURI: "WV",
-  publishDate: "2020-09-01",
+  publishDate: "2020-02-20",
   editors: [    
     {
       company: "Geonovum",
