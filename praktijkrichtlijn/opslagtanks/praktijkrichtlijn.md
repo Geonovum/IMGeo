@@ -69,7 +69,7 @@ De volgende hulpbronnen kunnen worden geraadpleegd bij het opnemen van
 bovengrondse opslagtanks bij de implementatie van BGT 1.2 \| IMGeo 2.2:
 
 1.  **Luchtfoto’s:** de meeste bronhouders laten jaarlijks een nieuwe
-    luchtopname opname t.b.v. mutatiesignalering
+    luchtopname maken ten behoeve van mutatiesignalering voor bijhouding van de BGT en eigen beheerkaart.
 
 2.  **BRT:** de kleinschalige topografische kaart kan worden gebruikt om
     ontbrekende opslagtanks op te sporen.
