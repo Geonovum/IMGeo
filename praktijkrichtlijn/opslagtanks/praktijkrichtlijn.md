@@ -45,15 +45,18 @@ de gasvoorziening mogen optioneel in IMGeo worden opgenomen.
 IMGeo beschrijft geen eisen en regels voor de opname van ondergrondse
 opslagtanks.
 
-## Welke opslagtanks neem ik niet op in IMGeo?
+## Welke objecten neem ik niet als opslagtank in IMGeo op?
 
-Een opslagtank 
-1. die geen opslag faciliteert van vloeistoffen, gassen of energie,
-zoals een graansilo bij een landbouwbedrijf of voedersilo bij een veehouderij, of
-2. die niet aangemerkt kan worden als bouwwerk, zoals een jerrycan of
-gastank voor een barbecues en (camping)kooktoestel.
+Een object 
+1. die niet aangemerkt kan worden als bouwwerk, zoals een jerrycan of
+gastank voor een barbecues en (camping)kooktoestel, of
+2. die geen opslag faciliteert van vloeistoffen, gassen of energie,
+zoals een graansilo bij een landbouwbedrijf of voedersilo bij een veehouderij
 
-is geen IMGeo inhoud.
+wordt niet als opslagtank in IMGeo opgenomen.
+
+Een voedersilo kan als OverigBouwwerk met type 'voedersilo' worden opgenomen in IMGeo.
+Een graansilo kan als Pand in de BGT of OverigBouwwerk in IMGeo voorkomen.
 
 ## Beslisboom
 
