@@ -50,8 +50,8 @@ opslagtanks.
 Een opslagtank 
 1. die geen opslag faciliteert van vloeistoffen, gassen of energie,
 zoals een graansilo bij een landbouwbedrijf of voedersilo bij een veehouderij, of
-2. die niet aangemerkt kan worden als bouwwerk, zoals jerrycans en
-gastanks voor barbecues en (camping)kookstellen.
+2. die niet aangemerkt kan worden als bouwwerk, zoals een jerrycan of
+gastank voor een barbecues en (camping)kooktoestel.
 
 is geen IMGeo inhoud.
 
@@ -67,7 +67,7 @@ bovengrondse opslagtanks.
 
 
 De volgende hulpbronnen kunnen worden geraadpleegd bij het opnemen van
-bovengrondse opslagtanks bij de implementatie van BGT 1.2 \| IMGeo 2.2:
+bovengrondse opslagtanks bij de implementatie van BGT 1.2 | IMGeo 2.2:
 
 1.  **Luchtfoto’s:** de meeste bronhouders laten jaarlijks een nieuwe
     luchtopname maken ten behoeve van mutatiesignalering voor bijhouding van de BGT en eigen beheerkaart.
