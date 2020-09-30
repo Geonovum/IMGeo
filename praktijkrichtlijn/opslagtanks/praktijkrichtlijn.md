@@ -1,7 +1,7 @@
 # Praktijkrichtlijn Opslagtanks in BGT 1.2 | IMGeo 2.2
 
 In de BGT worden bovengrondse opslagtanks opgenomen. In BGT 1.1.1 | IMGeo 2.1.1
-was dit beperkt tot enkel de bovengrondse opslagtanks voor vloeistoffen, in BGT
+was dit beperkt tot enkel de opslagtanks voor vloeistoffen, in BGT
 1.2 | IMGeo 2.2 is dit uitgebreid met opslagtanks voor gassen en energie. Aan
 bronhouders wordt gevraagd om deze opslagtanks voor gassen en energie op te
 nemen in de BGT. Deze praktijkrichtlijn beschrijft enkele regels om de
