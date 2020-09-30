@@ -26,7 +26,7 @@ Elke opslagtank
 
 2.  die een opslagfaciliteit is voor vloeistoffen, gassen of energie, en
 
-3.  die zich bevinden in de openbare ruimte of op particuliere terreinen waar
+3.  die zich bevindt in de openbare ruimte of op een particuliere terrein waar
     deze informatie voorziet in een betere of zelfs noodzakelijke, wettelijk
     geregelde dienstverlening door bronhouders en gebruikers (zie
     [Dekking](https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#dekking) in de
