@@ -47,11 +47,13 @@ opslagtanks.
 
 ## Welke opslagtanks neem ik niet op in IMGeo?
 
-
-Opslagtanks die geen opslag faciliteren van vloeistoffen, gassen of energie,
-zoals een graansilo bij een landbouwbedrijf of voedersilo bij een veehouderij,
-en opslagtanks die aangemerkt kunnen worden als bouwwerk, zoals jerrycans en
+Een opslagtank 
+1. die geen opslag faciliteert van vloeistoffen, gassen of energie,
+zoals een graansilo bij een landbouwbedrijf of voedersilo bij een veehouderij, of
+2. die niet aangemerkt kan worden als bouwwerk, zoals jerrycans en
 gastanks voor barbecues en (camping)kookstellen.
+
+is geen IMGeo inhoud.
 
 ## Beslisboom
 
