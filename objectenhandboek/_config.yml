@@ -4,6 +4,8 @@ description: Praktijkhandleiding voor toepassing van de BGT|IMGeo standaarden bi
 safe: true
 lsi: false
 source: objectenhandboek
+baseurl: "/IMGeo/objectenhandboek"
+production_url : http://Geonovum.github.io/IMGeo/objectenhandboek
 
 plugins:
   - jemoji
