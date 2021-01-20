@@ -1,6 +1,9 @@
 title: IMGeo objectenhandboek
 lang: nl
 description: Praktijkhandleiding voor toepassing van de BGT|IMGeo standaarden bij de objectafbakening
+safe: true
+lsi: false
+source: objectenhandboek
 
 plugins:
   - jemoji
