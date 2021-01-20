@@ -1,21 +1,21 @@
-Praktijkrichtlijn Opslagtanks in BGT 1.\| IMGeo 2.2
+# Praktijkrichtlijn Opslagtanks in BGT 1.2 | IMGeo 2.2
 
-In de BGT worden bovengrondse opslagtanks opgenomen. In BGT 1.1.1 \| IMGeo 2.1.1
-was dit beperkt tot enkel de bovengrondse opslagtanks voor vloeistoffen, in BGT
-1.2\| IMGeo 2.2 is dit uitgebreid met opslagtanks voor gassen en energie. Aan
+In de BGT worden bovengrondse opslagtanks opgenomen. In BGT 1.1.1 | IMGeo 2.1.1
+was dit beperkt tot enkel de opslagtanks voor vloeistoffen, in BGT
+1.2 | IMGeo 2.2 is dit uitgebreid met opslagtanks voor gassen en energie. Aan
 bronhouders wordt gevraagd om deze opslagtanks voor gassen en energie op te
 nemen in de BGT. Deze praktijkrichtlijn beschrijft enkele regels om de
 uitvoering hiervan te verduidelijken.
 
-Wat is een opslagtank in de BGT?
-================================
+## Wat is een opslagtank in de BGT?
+
 
 Opslagtank is een type OverigBouwwerk in de BGT met de volgende definitie:
 
 >   *Opslagfaciliteit voor vloeistoffen, gassen of energie.*
 
-Welke opslagtanks moet ik opnemen in de BGT?
-============================================
+## Welke opslagtanks moet ik opnemen in de BGT?
+
 
 Alleen bovengrondse opslagtanks worden opgenomen in de BGT.
 
@@ -26,7 +26,7 @@ Elke opslagtank
 
 2.  die een opslagfaciliteit is voor vloeistoffen, gassen of energie, en
 
-3.  die zich bevinden in de openbare ruimte of op particuliere terreinen waar
+3.  die zich bevindt in de openbare ruimte of op een particuliere terrein waar
     deze informatie voorziet in een betere of zelfs noodzakelijke, wettelijk
     geregelde dienstverlening door bronhouders en gebruikers (zie
     [Dekking](https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#dekking) in de
@@ -37,8 +37,7 @@ behoort tot de verplichte inhoud van de BGT.
 De BGT stelt geen eisen aan de minimale of maximale afmetingen van een
 opslagtank.
 
-Welke opslagtanks mag ik opnemen in IMGeo?
-==========================================
+## Welke opslagtanks mag ik opnemen in IMGeo?
 
 Opslagtanks op overige particuliere terreinen bijvoorbeeld bij een woonhuis voor
 de gasvoorziening mogen optioneel in IMGeo worden opgenomen.
@@ -46,30 +45,35 @@ de gasvoorziening mogen optioneel in IMGeo worden opgenomen.
 IMGeo beschrijft geen eisen en regels voor de opname van ondergrondse
 opslagtanks.
 
-Welke opslagtanks neem ik niet op in IMGeo?
-===========================================
+## Welke objecten neem ik niet als opslagtank in IMGeo op?
 
-Opslagtanks die geen opslag faciliteren van vloeistoffen, gassen of energie,
-zoals een graansilo bij een landbouwbedrijf of voedersilo bij een veehouderij,
-en opslagtanks die aangemerkt kunnen worden als bouwwerk, zoals jerrycans en
-gastanks voor barbecues en (camping)kookstellen.
+Een object 
+1. die niet aangemerkt kan worden als bouwwerk, zoals een jerrycan of
+gastank voor een barbecues en (camping)kooktoestel, of
+2. die geen opslag faciliteert van vloeistoffen, gassen of energie,
+zoals een graansilo bij een landbouwbedrijf of voedersilo bij een veehouderij
 
-Beslisboom
-==========
+wordt niet als opslagtank in IMGeo opgenomen.
+
+Een voedersilo kan als OverigBouwwerk met type 'voedersilo' worden opgenomen in IMGeo.
+Een graansilo kan als Pand in de BGT of OverigBouwwerk in IMGeo voorkomen.
+
+## Beslisboom
+
 
 Onderstaande beslisboom is bedoeld als hulpmiddel bij de afbakening van
 bovengrondse opslagtanks.
 
 ![](media/507a50d91d43ff102505c9a8257ece79.png)
 
-Hulpbronnen
-===========
+## Hulpbronnen
+
 
 De volgende hulpbronnen kunnen worden geraadpleegd bij het opnemen van
-bovengrondse opslagtanks bij de implementatie van BGT 1.2 \| IMGeo 2.2:
+bovengrondse opslagtanks bij de implementatie van BGT 1.2 | IMGeo 2.2:
 
 1.  **Luchtfoto’s:** de meeste bronhouders laten jaarlijks een nieuwe
-    luchtopname opname t.b.v. mutatiesignalering
+    luchtopname maken ten behoeve van mutatiesignalering voor bijhouding van de BGT en eigen beheerkaart.
 
 2.  **BRT:** de kleinschalige topografische kaart kan worden gebruikt om
     ontbrekende opslagtanks op te sporen.
