@@ -1,0 +1,20 @@
+img {
+  max-width: 100%;
+}
+
+blockquote {
+ margin-left: 20px !important;
+ font-family:  'Esteban', serif !important;
+ font-style: italic;
+ border-color: transparent !important;
+ border-style: none !important;
+}
+
+blockquote:before {
+    display: block;
+    height: 0;
+    content: "“";   
+    margin-left: -0.95em;
+    font: italic 400%/1 Esteban, serif;
+    color: #999;
+}
