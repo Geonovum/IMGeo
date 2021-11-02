@@ -8,7 +8,7 @@ via het machtigingenportaal:
 geïnterpreteerd als de voor de aanlevering verantwoordelijke bronhouder (de
 ‘machtigende bronhouder’).*
 
-*In het element \<organisatie\> in de StUF:stuurgegevens van de zender wordt ter
+*In het element &lt;organisatie&gt; in de StUF:stuurgegevens van de zender wordt ter
 identificatie*
 
 -   *van de aanbiedende niet-bronhouder (gemachtigde marktpartij) het KvK-nummer
