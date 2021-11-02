@@ -4,6 +4,26 @@ Scenario’s
 Mutaties leveren
 ----------------
 
+sequenceDiagram
+
+Alice-\>\>Bob: Hello Bob, how are you?
+
+alt is sick
+
+Bob-\>\>Alice: Not so good :(
+
+else is well
+
+Bob-\>\>Alice: Feeling fresh like a daisy
+
+end
+
+opt Extra response
+
+Bob-\>\>Alice: Thanks for asking
+
+end
+
 Actualiseren
 ------------
 
@@ -38,6 +58,8 @@ onderstaande sequentiediagram weergegeven.
 
 ![Afbeelding met tafel Automatisch gegenereerde beschrijving](media/7f3e03b351bb23efc162868cb0271d8a.png)
 
+Afbeelding met tafel Automatisch gegenereerde beschrijving
+
 1.  Vooraankondigen
 
 Een vooraankondiging is een optionele processtap, die tot doel dient andere
@@ -63,6 +85,8 @@ bronhouder.
 
 ![https://www.websequencediagrams.com/index.php?png=msc9XTHRK](media/6417c40b3ace86bcb278048bd2d1d141.png)
 
+https://www.websequencediagrams.com/index.php?png=msc9XTHRK
+
 1.  Aanleveren mutatie
 
 Medewerker Bronhouder maakt een levering aan in het Portaal BRAVO en uploadt één
@@ -71,6 +95,8 @@ levering compleet, waarop de Medewerker SVB-BGT de levering in het Portaal BRAVO
 oppakt.
 
 ![https://www.websequencediagrams.com/index.php?png=mscmOVo9s](media/a9dbac951b78730782edde3af3a72477.png)
+
+https://www.websequencediagrams.com/index.php?png=mscmOVo9s
 
 1.  Registreren mutatie
 
@@ -92,6 +118,8 @@ mutatiebericht.
 
 ![https://www.websequencediagrams.com/index.php?png=mscgzFZZ9](media/a67767f3adda8655508ff56843058a47.png)
 
+https://www.websequencediagrams.com/index.php?png=mscgzFZZ9
+
 1.  Terugkoppelen mutatie
 
 Medewerker Bronhouder ontvangt een e-mail met de verwerkingsstatus van de
@@ -99,6 +127,8 @@ levering, en kan vervolgens in het Portaal BRAVO het verwerkingsverslag
 downloaden.
 
 ![https://www.websequencediagrams.com/index.php?png=msceTo90W](media/2ec4e625e57cd8ded900137bed640956.png)
+
+https://www.websequencediagrams.com/index.php?png=msceTo90W
 
 1.  Actualiseren na mutatie
 
@@ -120,12 +150,16 @@ van het actualisatiebericht in de eigen applicatie.
 
 ![https://www.websequencediagrams.com/index.php?png=mscDTGHIV](media/85e0c3ee6cf1efe7eaf6a912db85896a.png)
 
+https://www.websequencediagrams.com/index.php?png=mscDTGHIV
+
 1.  Automatisch berichtenverkeer
 
 Het volledige proces van mutatie leveren via automatisch berichtenverkeer is in
 onderstaande sequentiediagram weergegeven.
 
 ![Afbeelding met tafel Automatisch gegenereerde beschrijving](media/a8277747a486a31554e57091d8f3023c.png)
+
+Afbeelding met tafel Automatisch gegenereerde beschrijving
 
 1.  Vooraankondigen mutatie
 
@@ -144,6 +178,8 @@ gegevens doorgezonden naar elk Berichtensysteem Geraakte bronhouder.
 
 ![https://www.websequencediagrams.com/index.php?png=mscp1bGuf](media/69a50cc0886ba761f1c256a128eeae5d.png)
 
+https://www.websequencediagrams.com/index.php?png=mscp1bGuf
+
 1.  Aanleveren mutatie
 
 Door Berichtensysteem Bronhouder wordt een ophaalVerzoek (opvDi01) gestuurd aan
@@ -152,6 +188,8 @@ bestand wordt opgehaald door Berichtensysteem BRAVO en de verwerking wordt
 gestart.
 
 ![https://www.websequencediagrams.com/index.php?png=mscshPuV9](media/4305f515e317f2b6329589488f1a2d72.png)
+
+https://www.websequencediagrams.com/index.php?png=mscshPuV9
 
 1.  Registreren mutatie
 
@@ -178,6 +216,8 @@ resultaat door Berichtensysteem SVB-BGT teruggekoppeld aan een bronhouder (zie
 
 ![https://www.websequencediagrams.com/index.php?png=msc0eQfla](media/fcb1baf1e91703f1c8f00b8c8c716a36.png)
 
+https://www.websequencediagrams.com/index.php?png=msc0eQfla
+
 1.  Terugkoppelen mutatie
 
 Door Berichtensysteem BRAVO wordt een mutatieRepons (mtbDu01) gestuurd aan
@@ -185,6 +225,8 @@ Berichtensysteem Bronhouder met de status van verwerking en een URL naar het
 verwerkingsverslag.
 
 ![https://www.websequencediagrams.com/index.php?png=mscq0kkJo](media/58538fcea1b23fd45a89efe7657a98b6.png)
+
+https://www.websequencediagrams.com/index.php?png=mscq0kkJo
 
 1.  Actualiseren
 
@@ -204,3 +246,5 @@ gewijzigd in het mutatiebericht van Bronhouder zodat de andere bronhouder(s) de
 herkomst van de mutatie te kunnen herleiden.
 
 ![https://www.websequencediagrams.com/index.php?png=mscTqfJgE](media/3eb9325499e54a9cd1319fcfd43ca79c.png)
+
+https://www.websequencediagrams.com/index.php?png=mscTqfJgE
