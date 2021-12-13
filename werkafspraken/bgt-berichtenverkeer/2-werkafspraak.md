@@ -28,11 +28,13 @@ Hoofdstuk 4 Mutatieleveren wijzigen de volgende scenario’s:
 §4.1 Vooraankondigen: afbeelding sequentiediagram en toelichtende tekst wordt
 vervangen door:
 
+<div class="mermaid">
 **sequenceDiagram**  
     participant Alice  
     participant Bob  
     Alice**-\>\>**Bob**:** Hi Bob  
     Bob**-\>\>**Alice**:** Hi Alice
+</div>
 
 §4.1.2 Aanlevern mutatie: afbeelding sequentiediagram en toelichtende tekst
 wordt vervangen door:
