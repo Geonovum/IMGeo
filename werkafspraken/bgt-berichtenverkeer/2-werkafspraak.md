@@ -1,91 +1,59 @@
 Werkafspraak
 ============
 
-De volgende werkafspraak geldt voor de BGT keten voor het behandelen van
-mutaties vanuit de BAG als gevolg van toepassing van de BAG 2.0
-afbakeningsregels door BAG (zie [Catalogus BAG
-2018](https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018)):
+De volgende werkafspraak geldt voor de BGT keten voor de uitwisseling van
+berichten tussen bronhouder en de Landelijke Voorziening BGT:
 
->   Bij opvoeren van nieuwe panden in de BAG, neemt BGT bronhouder altijd deze
->   panden over in de BGT. Daarnaast legt BGT bronhouder de typering van het
->   OverigBouwwerk conform het huidige spelregels van IMGeo in een extra laag
->   vast.
+1.  Bronhouder levert mutaties direct aan Landelijke Voorziening BGT van het
+    Kadaster, zonder tussenkomst van het system BRAVO van SVB-BGT.
 
-Toelichting
------------
+2.  Bronhouder actualiseert via de Landelijke Voorziening BGT van het Kadaster,
+    zonder tussenkomst van het system BRAVO van SVB-BGT.
 
-Deze werkafspraak betekent het volgende:
+3.  Vooraankondigingsberichten komen te vervallen.
 
-1.  Als BAG een nieuw Pand opvoert, dan neemt BGT bronhouder dit object altijd
-    binnen de geldende actualiteitseisen als Pand op in de BGT.
+Omdat de opbouwfase van de BGT is afgerond wordt in deze werkafspraak ook
+geregeld dat :
 
-2.  Als dit bouwwerk conform het huidige IMGeo als OverigBouwwerk met bepaalde
-    typering in de verplichte BGT voorkomt, dan moet BGT bronhouder ook een
-    OverigBouwwerk met dit type opnemen.
+1.  De scenario’s voor het initieel leveren van BGT gegevens komen te vervallen.
 
-3.  Als dit bouwwerk conform het huidige IMGeo als OverigBouwwerk met bepaalde
-    typering in het optionele deel van IMGeo voorkomt, dan mag BGT bronhouder
-    ook een OverigBouwwerk met dit type opnemen.
+Deze werkafspraak betekent dat de [Standaard BGT
+berichtenverkeer](https://www.geonovum.nl/uploads/standards/downloads/20141224_BGT_Berichtenverkeer_v1.0_def.pdf)
+op de volgende punten wijzigt:
 
-Deze werkafspraak geldt voor de volgende objecten:
+Hoofdstuk 3Initieel leveren vervalt in zijn geheel.
 
--   Verplichte BGT: **windturbine**, **open loods** (of open frontstal),
-    **opslagtank** (of silo)
+Hoofdstuk 4 Mutatieleveren wijzigen de volgende scenario’s:
 
--   Optionele IMGeo: **schuur**, **bunker**
+§4.1 Vooraankondigen: afbeelding sequentiediagram en toelichtende tekst wordt
+vervangen door:
 
--   Niet-IMGeo objecten: parkeergarage, publieke lift / trappenhuis, wachtruime
-    perron en loopbrug.
+**sequenceDiagram**  
+    participant Alice  
+    participant Bob  
+    Alice**-\>\>**Bob**:** Hi Bob  
+    Bob**-\>\>**Alice**:** Hi Alice
 
-In de bijlage is een werkinstructie opgenomen hoe BGT bronhouder bovenstaande
-werkafspraak toe kan passen.
+§4.1.2 Aanlevern mutatie: afbeelding sequentiediagram en toelichtende tekst
+wordt vervangen door:
 
-Aandachtspunten
----------------
+§4.1.3 Registreren mutatie vervalt
 
-Hieronder worden enige aandachtspunten beschreven bij de toepassing van deze
-werkafspraak.
+§4.1.4 Terugkoppelen mutatie: afbeelding sequentiediagram en toelichtende tekst
+wordt vervangen door:
 
-**Meer objecten worden pand met BAG 2.0** Door de nieuwe afbakeningsregels en
-het schrappen van uitzonderingen in BAG 2.0 worden méér objecten als pand
-afgebakend. Een OverigBouwwerk in de BGT kan dus een Pand worden, en niet
-andersom.
+§4.1.5 Actualiseren na mutatie: afbeelding sequentiediagram en toelichtende
+tekst wordt vervangen door:
 
-**Alleen objecten die voldoen aan criteria BAG 2.0 worden Pand.** Niet alle
-overige bouwwerken in de BGT zullen als Pand worden afgebakend. Objecten die
-niet voldoen aan de definities en afbakeningscriteria van BAG (zie [Catalogus
-BAG
-2018](https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018))
-worden niet als Pand opgenomen. Bijvoorbeeld, kleine windturbines die niet
-betreedbaar zijn, en waar geen persoon in kan staan.
+Afbeelding sequentiediagram wordt vervangen door onderstaande afbeelding:
 
-**Pand op maaiveldniveau, OverigeBouwwerken naar inrichtende laag** Panden
-worden altijd op maaiveldniveau in de BGT opgenomen. Bij het opnemen van
-typeringen van OverigeBouwwerken in de extra laag, kunnen overlap-conflicten
-ontstaan als verplichte OverigeBouwwerken en Panden op elkaar liggen. Een
-verplicht/opdelend OverigBouwwerk dient op een andere relatieve hoogte dan het
-Pand te worden gelegd, voor een optioneel/inrichtend
+§4.3 Afbeelding sequentiediagram wordt vervangen door onderstaande afbeelding:
 
-**Alleen BAG 2.0 bij nieuwe gevallen/vergunningen en terugmeldingen**
-[Kwaliteitskader BAG 2.0
-2018](https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/27/kwaliteitskader-bag-2018)
-adviseert BAG bronhouders om alleen de BAG 2.0 afbakeningsregels toe te passen
-bij nieuwe gevallen/vergunningen en bij terugmeldingen (in verband met impact).
-Er wordt niet met terugwerkende kracht getracht om alle panden conform BAG 2.0
-op te voeren. Het is dus niet de bedoeling om via mutatiesignalering uit
-luchtfoto’s de BAG (en dus BGT) met panden conform BAG 2.0 te vullen, indien de
-bronhouder dit voor zijn eigen processen nodig acht mag het overigens wel.
+In Hoofdstuk 1 Introductie wordt alle tekst die in verband kan worden gebracht
+met het aanleveren van mutaties, actualiseren van gegevens en vooraankondigen
+van mutaties via het SVB-BGT buiten werking gesteld.
 
-**Verplicht vs. optioneel** Bij vergunningverlening mogen Panden met status
-‘plan’ worden opgenomen in de BGT; vanaf status ‘Bouw gestart’ *moeten* Panden
-met status ‘bestaand’ worden opgenomen in de BGT. Idem geldt voor OverigBouwwerk
-van het type ‘windturbine’, ‘open loods’, ‘opslagtank’ dat deze tot de
-verplichte inhoud van de BGT toe behoren; ‘schuur’ en ‘bunker’ zijn vrijwillige,
-optionele IMGeo inhoud. Deze werkafspraak ontslaat BGT bronhouder niet van de
-verplichting om BGT-gegevens conform het huidige model te leveren aan de LV-BGT.
+De wijzigingen zijn doorgevoerd in de online werkversie van het document.
 
-**BAG als bron voor Panden** Deze werkafspraak gaat er van uit dat BGT
-bronhouder de panden muteert op aangeven van BAG. Als in een organisatie andere
-afspraken zijn gemaakt dat ontstaan van panden begint BGT, blijft gelden dat BGT
-bronhouder zowel de Panden overneemt als de OverigeBouwwerken conform huidig
-IMGeo.
+In het document zijn de scenario’s . De opbouwfase van de BGT is afgerond; deze
+scenario’s worden dus niet meer ondersteund.
