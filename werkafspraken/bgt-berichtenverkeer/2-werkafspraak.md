@@ -107,6 +107,7 @@ sequenceDiagram   
     activate Berichtensysteem LV BGT
 	Berichtensysteem LV BGT-->>Berichtensysteem Bronhouder: mutatierespons (mtbDu01)	
     Note over Berichtensysteem Bronhouder ,  Berichtensysteem LV BGT: Bronhouder downloadt verwerkingsverslag.
+    Berichtensysteem LV BGT-->>Berichtensysteem Bronhouder: verwerkingsverslag (PDF+GML)	
     deactivate Berichtensysteem LV BGT
     alt Als mutatie raakt aan interessegebied Geabonneerde bronhouder
     Berichtensysteem LV BGT-->>Berichtensysteem Geabonneerde bronhouder: ophaalverzoek (opvDi01)
