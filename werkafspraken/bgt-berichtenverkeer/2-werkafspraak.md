@@ -69,7 +69,7 @@ sequenceDiagram   
     participant Medewerker Geabonneerde  bronhouder    
     participant Medewerker Bronhouder  
     participant Portaal LV BGT   
-    Note over Medewerker Bronhouder, Portaal LV BGT: aanmaken vooraankondiging
+    Note over Medewerker Bronhouder, Portaal LV BGT: Medewerker Bronhouder maakt vooraankondiging aan in Portaal LV-BGT
     alt Als vooraankondiging raakt aan interessegebied van Geabonneerde bronhouder
     activate Portaal LV BGT    
     Portaal LV BGT-->>Medewerker Geabonneerde  bronhouder: notificatie actualisatie (email)
