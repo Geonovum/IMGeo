@@ -7,7 +7,7 @@ vanaf 1 juli 2023 stuurt LV-BGT in de stuurgegevens van het bericht als ontvange
 De volgende werkafspraak geldt voor de BGT keten voor de uitwisseling van
 berichten tussen bronhouder en de Landelijke Voorziening BGT (LV-BGT):
 
->   *Het portaal en berichtensysteem BRAVO van SVB-BGT wordt geschrapt in het
+>   Het portaal en berichtensysteem BRAVO van SVB-BGT wordt geschrapt in het
 >   BGT berichtenverkeer. De communicatie / uitwisseling tussen bronhouders en
 >   LV-BGT is in het vervolg rechtstreeks, zonder tussenkomst van het systeem
 >   BRAVO van SVB-BGT.*
@@ -113,7 +113,7 @@ sequenceDiagram   
 	Note over Berichtensysteem LV BGT: Controle en registratie door LV BGT 
     activate Berichtensysteem LV BGT
     Berichtensysteem LV BGT-->>Berichtensysteem Bronhouder: mutatierespons (mtbDu01)	
-    Note over Berichtensysteem Bronhouder ,  Berichtensysteem LV BGT: Bronhouder downloadt verwerkingsverslag.
+    Note over Berichtensysteem Bronhouder,  Berichtensysteem LV BGT: Bronhouder downloadt verwerkingsverslag.
     Berichtensysteem LV BGT-->>Berichtensysteem Bronhouder: verwerkingsverslag (PDF+GML)	
     deactivate Berichtensysteem LV BGT
     alt Als mutatie raakt aan interessegebied Geabonneerde bronhouder
@@ -138,3 +138,9 @@ gegevens komen te vervallen:
 3.  Bericht actualisatiebericht na assemblage (mtoDi01) vervalt.
 
 Het gewijzigde berichtenverkeer wordt samengevat in het volgende document.
+
+**Ingangsdatum**
+
+Deze werkafspraak treedt per 1 november 2022 inwerking.
+Tot 1 juli 2023 stuurt LV-BGT in de stuurgegevens van het bericht als ontvanger de gegevens van SVB-BGT.
+Vanaf 1 juli 2023 stuurt LV-BGT in de stuurgegevens van het bericht als ontvanger de eigen gegevens.
