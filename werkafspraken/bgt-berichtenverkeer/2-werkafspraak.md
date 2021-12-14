@@ -75,9 +75,13 @@ sequenceDiagram   
     Portaal LV BGT-->>Medewerker Geabonneerde  bronhouder: notificatie vooraankondiging (email)
     end
     deactivate Portaal LV BGT
-    Medewerker Bronhouder-->>Portaal LV BGT: mutatiebericht (ZIP: mtbSVBDi01)   
+    Note over Medewerker Bronhouder, Portaal LV BGT: Bronhouder maakt levering aan in Portaal.
     activate Portaal LV BGT
-    Portaal LV BGT-->>Medewerker Bronhouder: verwerkingsverslag (PDF+GML)
+    Medewerker Bronhouder-->>Portaal LV BGT: mutatiebericht (ZIP: mtbSVBDi01)
+    deactivate Portaal LV BGT   
+    Note over Portaal LV BGT: Controle en registratie door LV BGT     
+    activate Portaal LV BGT  
+    Portaal LV BGT-->>Medewerker Bronhouder: verwerkingsverslag (PDF+GML)    
     deactivate Portaal LV BGT
     alt Als mutatie raakt aan interessegebied van Geabonneerde bronhouder
     Portaal LV BGT-->>Medewerker Geabonneerde  bronhouder: notificatie actualisatie (email)
@@ -104,8 +108,11 @@ sequenceDiagram   
     Berichtensysteem Bronhouder-->>Berichtensysteem LV BGT: ophaalverzoek (opvDi01)
     activate Berichtensysteem LV BGT
 	Note over Berichtensysteem Bronhouder ,  Berichtensysteem LV BGT: LV-BGT haalt mutatiebericht op.
-	Berichtensysteem Bronhouder-->>Berichtensysteem LV BGT: mutatiebericht (ZIP: mtbSVBDi01)    
-	Berichtensysteem LV BGT-->>Berichtensysteem Bronhouder: mutatierespons (mtbDu01)	
+	Berichtensysteem Bronhouder-->>Berichtensysteem LV BGT: mutatiebericht (ZIP: mtbSVBDi01)  
+    deactivate Berichtensysteem LV BGT   
+	Note over Berichtensysteem LV BGT: Controle en registratie door LV BGT 
+    activate Berichtensysteem LV BGT
+    Berichtensysteem LV BGT-->>Berichtensysteem Bronhouder: mutatierespons (mtbDu01)	
     Note over Berichtensysteem Bronhouder ,  Berichtensysteem LV BGT: Bronhouder downloadt verwerkingsverslag.
     Berichtensysteem LV BGT-->>Berichtensysteem Bronhouder: verwerkingsverslag (PDF+GML)	
     deactivate Berichtensysteem LV BGT
