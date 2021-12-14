@@ -1,115 +1,132 @@
 Werkafspraak
 ============
 
+tot 1 juli 2023 stuurt LV-BGT in de stuurgegevens van het bericht als ontvanger de gegevens van SVB-BGT
+vanaf 1 juli 2023 stuurt LV-BGT in de stuurgegevens van het bericht als ontvanger de eigen gegevens.
+
 De volgende werkafspraak geldt voor de BGT keten voor de uitwisseling van
-berichten tussen bronhouder en de Landelijke Voorziening BGT:
+berichten tussen bronhouder en de Landelijke Voorziening BGT (LV-BGT):
 
-1.  Bronhouder levert mutaties direct aan Landelijke Voorziening BGT van het
-    Kadaster, zonder tussenkomst van het system BRAVO van SVB-BGT.
+>   *Het portaal en berichtensysteem BRAVO van SVB-BGT wordt geschrapt in het
+>   BGT berichtenverkeer. De communicatie / uitwisseling tussen bronhouders en
+>   LV-BGT is in het vervolg rechtstreeks, zonder tussenkomst van het systeem
+>   BRAVO van SVB-BGT.*
 
-2.  Bronhouder actualiseert via de Landelijke Voorziening BGT van het Kadaster,
-    zonder tussenkomst van het system BRAVO van SVB-BGT.
+Dit betekent de volgende wijzigingen voor het BGT berichtenverkeer:
 
-3.  Vooraankondigingsberichten komen te vervallen.
+**Aanleveren van mutaties en terugkoppeling van werking**
+
+1.  Bronhouder levert mutaties rechtstreeks aan LV-BGT van het Kadaster.
+
+2.  Bronhouder levert een mutatiebericht van het type mtbSVBDi01 aan LV-BGT. Het
+    mutatiebericht tussen SVB-BGT en LV-BGT (mtbLVDi01) vervalt in de Standaard
+    BGT berichtenverkeer.
+
+3.  Bronhouder neemt in de stuurgegevens van het ophaalverzoek (opvDi01) en
+    mutatiebericht (mtbSVBDi01) de gegevens van SVB-BGT of LV-BGT op als \<ontvanger\>.
+
+4.  LV-BGT stuurt het verwerkingsresultaat middels emailnotificatie of
+    geautomatiseerd reponsbericht (mtbDu01) rechtstreeks naar bronhouder.
+
+5.  LV-BGT neemt in de stuurgegevens van het responsbericht (mtbDu01) de
+    gegevens van bronhouder op als \<ontvanger\>.
+
+**Actualiseren**
+
+1.  Bronhouder actualiseert rechtstreeks via de LV-BGT. Bronhouder kan via het
+    Portaal LV-BGT een interessegebied aanmaken of uploaden (GML).
+
+2.  LV-BGT notificeert geraakte bronhouder rechtstreeks van mutaties binnen zijn
+    interessegebied, middels een email of geautomatiseerd bericht.
+
+3.  LV-BGT neemt in de stuurgegevens van het ophaalverzoek (opvDi01) en
+    mutatiebericht (mtbSVBDi01) de gegevens van bronhouder op als \<ontvanger\>.
+
+**Vooraankondigen**
+
+1.  Bronhouder maakt vooraankondiging aan via Portaal LV-BGT of stuurt
+    vooraankondigingsbericht aan Berichtensysteem LV-BGT.
+
+2.  Bronhouder neemt in de stuurgegevens van het ophaalverzoek (opvDi01) en
+    mutatiebericht (mtbSVBDi01) de gegevens van SVB-BGT of LV-BGT  op als \<ontvanger\>.
+
+3.  Bronhouder neemt in de stuurgegevens van het vooraankondigingsbericht
+    (vavDi01) de gegevens van LV-BGT op als \<ontvanger\>.
+
+4.  LV-BGT ontvangt en verwerkt het vooraankondigingsbericht (vavDi01).
+
+5.  LV-BGT notificeert geraakte bronhouder rechtstreeks van vooraankondiging(en)
+    binnen zijn interessegebied, middels een email of geautomatiseerd bericht.
+
+6.  LV-BGT neemt in de stuurgegevens van het vooraankondigingsbericht (vavDi01)
+    de gegevens van geraakte bronhouder op als \<ontvanger\>.
+
+De gewijzigde uitwisseling tussen bronhouder en LV-BGT voor *handmatige
+upload/downloa*d wordt weergegeven in onderstaand sequentiediagram.
+
+<div class="mermaid">
+sequenceDiagram          
+    participant Medewerker Geabonneerde  bronhouder    
+    participant Medewerker Bronhouder  
+    participant Portaal LV BGT   
+    Note over Medewerker Bronhouder, Portaal LV BGT: aanmaken vooraankondiging
+    alt Als vooraankondiging raakt aan bronhouder
+    activate Portaal LV BGT    
+    Portaal LV BGT-->>Medewerker Geabonneerde  bronhouder: notificatie actualisatie (email)
+    end
+    deactivate Portaal LV BGT
+    Medewerker Bronhouder-->>Portaal LV BGT: mutatiebericht (ZIP: mtbSVBDi01)   
+    activate Portaal LV BGT
+    Portaal LV BGT-->>Medewerker Bronhouder: verwerkingsverslag (PDF+GML)
+    deactivate Portaal LV BGT
+    alt Als mutatie raakt aan bronhouder
+    Portaal LV BGT-->>Medewerker Geabonneerde  bronhouder: notificatie actualisatie (email)
+    activate Portaal LV BGT
+    Portaal LV BGT-->>Medewerker Geabonneerde  bronhouder: actualisatiebericht (ZIP: mtbSVBDi01)
+    deactivate Portaal LV BGT
+    end
+</div>
+
+De gewijzigde uitwisseling tussen bronhouder en LV-BGT voor *automatisch
+berichtenverkeer* wordt weergegeven in onderstaand sequentiediagram.
+
+<div class="mermaid">
+sequenceDiagram          
+    participant Berichtensysteem Geabonneerde  bronhouder    
+    participant Berichtensysteem Bronhouder  
+    participant Berichtensysteem LV BGT   
+    Berichtensysteem Bronhouder-->>Berichtensysteem LV BGT: vooraankondigingsbericht (vavDi01)
+    alt Als vooraankondiging raakt aan bronhouder
+    activate Berichtensysteem LV BGT    
+    Berichtensysteem LV BGT-->>Berichtensysteem Geabonneerde  bronhouder: vooraankondigingsbericht (vavDi01)
+    end
+    deactivate Berichtensysteem LV BGT
+    Berichtensysteem Bronhouder-->>Berichtensysteem LV BGT: ophaalverzoek (opvDi01)
+	Berichtensysteem Bronhouder-->>Berichtensysteem LV BGT: mutatiebericht (ZIP: mtbSVBDi01)
+	Note over Berichtensysteem Bronhouder ,  Berichtensysteem LV BGT: LV-BGT haalt mutatiebericht op.	   
+    activate Berichtensysteem LV BGT
+	Berichtensysteem LV BGT-->>Berichtensysteem Bronhouder: mtbDu01 (PDF+GML)	
+    Note over Berichtensysteem Bronhouder ,  Berichtensysteem LV BGT: Bronhouder downloadt verwerkingsverslag (PDF+GML)
+    deactivate Berichtensysteem LV BGT
+    alt Als mutatie raakt aan interessegebied bronhouder
+    Portaal LV BGT-->>Medewerker Geabonneerde  bronhouder: ophaalverzoek (opvDi01)
+    activate Portaal LV BGT
+    Portaal LV BGT-->>Medewerker Geabonneerde  bronhouder: mutatiebericht (ZIP: mtbSVBDi01)
+	Note over Berichtensysteem Geabonneerde Bronhouder, Berichtensysteem LV BGT: Geabonneerde Bronhouder haal mutatiebericht op (PDF+GML)
+    deactivate Portaal LV BGT
+    end
+</div>
+
+**Vervallen initieel leveren**
 
 Omdat de opbouwfase van de BGT is afgerond wordt in deze werkafspraak ook
-geregeld dat :
+geregeld dat alle berichten en scenario’s voor het initieel leveren van BGT
+gegevens komen te vervallen:
 
-1.  De scenario’s voor het initieel leveren van BGT gegevens komen te vervallen.
+1.  Processtap Assembleren vervalt in het BGT berichtenverkeer.
 
-Deze werkafspraak betekent dat de [Standaard BGT
-berichtenverkeer](https://www.geonovum.nl/uploads/standards/downloads/20141224_BGT_Berichtenverkeer_v1.0_def.pdf)
-op de volgende punten wijzigt:
+2.  Scenario’s in hoofdstuk 3 Initieel leveren vervallen in zijn geheel.
 
-Hoofdstuk 3Initieel leveren vervalt in zijn geheel.
+3.  Bericht actualisatiebericht na assemblage (mtoDi01) vervalt.
 
-Hoofdstuk 4 Mutatieleveren wijzigen de volgende scenario’s:
-
-§4.1 Vooraankondigen: afbeelding sequentiediagram en toelichtende tekst wordt
-vervangen door:
-
-<div class="mermaid">
-sequenceDiagram          
-    participant Medewerker Geraakte bronhouder    
-    participant Medewerker Bronhouder  
-    participant Uploadloket LV BGT   
-    Note over Medewerker Bronhouder, Uploadloket LV BGT: aanmaken vooraankondiging
-    alt Als vooraankondiging raakt aan bronhouder
-    activate Uploadloket LV BGT    
-    Uploadloket LV BGT-->>Medewerker Geraakte bronhouder: notificatie actualisatie (email)
-    end
-    deactivate Uploadloket LV BGT
-    Medewerker Bronhouder-->>Uploadloket LV BGT: mutatiebericht (ZIP: mtbSVBDi01)   
-    activate Uploadloket LV BGT
-    Uploadloket LV BGT-->>Medewerker Bronhouder: verwerkingsverslag (PDF+GML)
-    deactivate Uploadloket LV BGT
-    alt Als vooraankondiging raakt aan bronhouder
-    Uploadloket LV BGT-->>Medewerker Geraakte bronhouder: notificatie actualisatie (email)
-    activate Uploadloket LV BGT
-    Uploadloket LV BGT-->>Medewerker Geraakte bronhouder: actualisatiebericht na mutatie (ZIP: mtbSVBDi01)
-    deactivate Uploadloket LV BGT
-    end
-</div>
-
-§4.1.1 Vooraankondigen mutatie: afbeelding sequentiediagram en toelichtende tekst
-wordt vervangen door:
-
-<div class="mermaid">
-sequenceDiagram          
-    participant Medewerker Geraakte bronhouder    
-    participant Medewerker Bronhouder  
-    participant Uploadloket LV BGT   
-    Note over Medewerker Bronhouder, Uploadloket LV BGT: aanmaken vooraankondiging
-    alt Als vooraankondiging raakt aan bronhouder
-    activate Uploadloket LV BGT    
-    Uploadloket LV BGT-->>Medewerker Geraakte bronhouder: notificatie actualisatie (email)
-    end
-    deactivate Uploadloket LV BGT    
-</div>
-
-§4.1.2 Aanleveren mutatie: afbeelding sequentiediagram en toelichtende tekst
-wordt vervangen door:
-
-<div class="mermaid">
-sequenceDiagram          
-    participant Medewerker Geraakte bronhouder    
-    participant Medewerker Bronhouder  
-    participant Uploadloket LV BGT       
-    Medewerker Bronhouder-->>Uploadloket LV BGT: mutatiebericht (ZIP: mtbSVBDi01)   
-    activate Uploadloket LV BGT
-    Uploadloket LV BGT-->>Medewerker Bronhouder: verwerkingsverslag (PDF+GML)
-    deactivate Uploadloket LV BGT    
-</div>
-
-§4.1.3 Registreren mutatie vervalt.
-
-§4.1.4 Terugkoppelen mutatie: wordt samengevoegd met §4.1.2.
-
-§4.1.5 Actualiseren na mutatie: afbeelding sequentiediagram en toelichtende
-tekst wordt vervangen door:
-
-<div class="mermaid">
-sequenceDiagram          
-    participant Medewerker Geraakte bronhouder    
-    participant Medewerker Bronhouder  
-    participant Uploadloket LV BGT      
-    alt Als vooraankondiging raakt aan bronhouder
-    Uploadloket LV BGT-->>Medewerker Geraakte bronhouder: notificatie actualisatie (email)
-    activate Uploadloket LV BGT
-    Uploadloket LV BGT-->>Medewerker Geraakte bronhouder: actualisatiebericht na mutatie (ZIP: mtbSVBDi01)
-    deactivate Uploadloket LV BGT
-    end
-</div>
-
-Afbeelding sequentiediagram wordt vervangen door onderstaande afbeelding:
-
-§4.3 Afbeelding sequentiediagram wordt vervangen door onderstaande afbeelding:
-
-In Hoofdstuk 1 Introductie wordt alle tekst die in verband kan worden gebracht
-met het aanleveren van mutaties, actualiseren van gegevens en vooraankondigen
-van mutaties via het SVB-BGT buiten werking gesteld.
-
-De wijzigingen zijn doorgevoerd in de online werkversie van het document.
-
-In het document zijn de scenario’s . De opbouwfase van de BGT is afgerond; deze
-scenario’s worden dus niet meer ondersteund.
+Het gewijzigde berichtenverkeer wordt samengevat in het volgende document.

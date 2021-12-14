@@ -3,14 +3,18 @@ Impact
 
 De volgende impact wordt voorzien voor de schakels in de BGT keten.
 
-**Bronhouder** moet dubbel registreren, dus dubbelwerk. Dubbelwerk wordt
-verwacht opgelost te worden met IMGeo 3.0 c.q. de integrale objectenregistratie.
+**Bronhouder** dient de stuurgegevens voor automatisch berichtenverkeer in de
+bronhoudersoftware opnieuw te (laten) configureren.
 
-**Softwareleverancier** heeft geen impact, als bronhoudersoftware werkt conform
-de (topologische) eisen van IMGeo.
+**Softwareleverancier** dient -op verzoek van bronhouder- de stuurgegevens voor
+automatisch berichtenverkeer opnieuw te configureren.
 
-**SVB-BGT/LV-BGT** heeft geen impact. De techniek van de BGT keten kan deze
-werkafspraak aan.
+**SVB-BGT** zet systeem BRAVO uit.
 
-**Gebruiker** wordt geconfronteerd met dubbele objecten op dezelfde locatie.
-Communicatie wenselijk.
+**LV-BGT** implementeert het zenden en ontvangen van de berichten van voorheen
+BRAVO/SVB-BGT in de LV-BGT.
+
+**LV-BGT** realiseert een portaal voor het handmatig aanmaken van
+interessegebieden voor actualisaties en vooraankondigingen.
+
+**(Afnemer** heeft geen impact.)
