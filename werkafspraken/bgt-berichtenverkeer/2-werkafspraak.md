@@ -69,7 +69,7 @@ sequenceDiagram   
     participant Medewerker Geabonneerde  bronhouder    
     participant Medewerker Bronhouder  
     participant Portaal LV BGT    
-    Note over Medewerker Bronhouder, Portaal LV BGT: Bronhouder maakt vooraankondiging aan in portaal.
+    Note over Medewerker Bronhouder, Portaal LV BGT: Bronhouder maakt vooraankondiging aan in portaal
     activate Portaal LV BGT
     alt Als vooraankondiging raakt aan interessegebied van Geabonneerde bronhouder    
     Portaal LV BGT-->>Medewerker Geabonneerde  bronhouder: notificatie vooraankondiging (email)
@@ -107,19 +107,19 @@ sequenceDiagram   
     deactivate Berichtensysteem LV BGT    
     Berichtensysteem Bronhouder-->>Berichtensysteem LV BGT: ophaalverzoek (opvDi01)
     activate Berichtensysteem LV BGT
-	Note over Berichtensysteem Bronhouder ,  Berichtensysteem LV BGT: LV-BGT haalt mutatiebericht op.
+	Note over Berichtensysteem Bronhouder ,  Berichtensysteem LV BGT: LV-BGT haalt mutatiebericht op
 	Berichtensysteem Bronhouder-->>Berichtensysteem LV BGT: mutatiebericht (ZIP: mtbSVBDi01)  
     deactivate Berichtensysteem LV BGT   
 	Note over Berichtensysteem LV BGT: Controle en registratie door LV BGT 
     activate Berichtensysteem LV BGT
     Berichtensysteem LV BGT-->>Berichtensysteem Bronhouder: mutatierespons (mtbDu01)	
-    Note over Berichtensysteem Bronhouder,  Berichtensysteem LV BGT: Bronhouder downloadt verwerkingsverslag.
+    Note over Berichtensysteem Bronhouder,  Berichtensysteem LV BGT: Bronhouder downloadt verwerkingsverslag
     Berichtensysteem LV BGT-->>Berichtensysteem Bronhouder: verwerkingsverslag (PDF+GML)	
     deactivate Berichtensysteem LV BGT
     alt Als mutatie raakt aan interessegebied Geabonneerde bronhouder
     Berichtensysteem LV BGT-->>Berichtensysteem Geabonneerde bronhouder: ophaalverzoek (opvDi01)
     activate Berichtensysteem LV BGT
-    Note over Berichtensysteem Geabonneerde bronhouder, Berichtensysteem LV BGT: Geabonneerde bronhouder haal mutatiebericht op.
+    Note over Berichtensysteem Geabonneerde bronhouder, Berichtensysteem LV BGT: Geabonneerde bronhouder haal mutatiebericht op
 	Berichtensysteem LV BGT-->>Berichtensysteem Geabonneerde bronhouder: mutatiebericht (ZIP: mtbSVBDi01)	
     deactivate Berichtensysteem LV BGT
     end
