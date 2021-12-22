@@ -131,7 +131,6 @@ sequenceDiagram   
     activate Portaal LV BGT  
     Portaal LV BGT-->>Medewerker Bronhouder: verwerkingsverslag (PDF+GML)    
     deactivate Portaal LV BGT
-    end
 </div>
 
 ### Actualiseren
@@ -296,7 +295,7 @@ Dit is hetzelfde bestand met mutaties dat Bronhouder ter registratie heeft
 aangeleverd. De logistieke gegevens in de \<StUF:stuurgegevens\> worden niet
 gewijzigd in het mutatiebericht van Bronhouder zodat de andere bronhouder(s) de
 herkomst van de mutatie te kunnen herleiden.
-</div>
+</details>
 
 _N.B. Mocht hieronder geen afbeelding zichtbaar zijn, ververs de pagina dan met CTRL+F5._
 
@@ -305,7 +304,6 @@ sequenceDiagram   
     participant Berichtensysteem Geabonneerde bronhouder    
     participant Berichtensysteem Bronhouder  
     participant Berichtensysteem LV BGT 
-
     alt Als mutatie raakt aan interessegebied Geabonneerde bronhouder
     Berichtensysteem LV BGT-->>Berichtensysteem Geabonneerde bronhouder: ophaalverzoek (opvDi01)
     activate Berichtensysteem LV BGT
