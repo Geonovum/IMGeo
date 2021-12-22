@@ -286,7 +286,7 @@ interessegebied van andere bronhouder(s).
 Indien rakend en de andere bronhouder(s) is/zijn aangesloten op Berichtensysteem
 LV-BGT via automatisch berichtenverkeer, dan wordt door Berichtensysteem LV-BGT
 een ophaalVerzoek (opvDi01) gestuurd aan elk Berichtensysteem Geraakte
-bronhouder voor het ophalen van actualisatiebericht (mtbSVBDi01)[^2].
+bronhouder voor het ophalen van actualisatiebericht (mtbSVBDi01).
 Berichtensysteem Geraakte bronhouder haalt het gezipte bestand op en verwerkt de
 gegevens in de eigen registratie.
 
