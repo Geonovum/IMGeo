@@ -9,6 +9,8 @@ berichten tussen bronhouder en de Landelijke Voorziening BGT (LV-BGT):
 >   LV-BGT is in het vervolg rechtstreeks, zonder tussenkomst van het systeem
 >   BRAVO van SVB-BGT.*
 
+Deze werkafspraak treedt per 1 november 2022 inwerking. 
+
 Dit betekent de volgende wijzigingen voor het BGT berichtenverkeer:
 
 **Vooraankondigen**
