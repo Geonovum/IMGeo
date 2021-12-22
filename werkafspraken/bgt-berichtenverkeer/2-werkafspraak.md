@@ -19,7 +19,7 @@ Dit betekent de volgende wijzigingen voor het BGT berichtenverkeer:
     vooraankondigingsbericht aan Berichtensysteem LV-BGT.
 
 2.  Bronhouder neemt in de stuurgegevens van het vooraankondigingsbericht
-    (vavDi01) de gegevens van SVB-BGT of LV-BGT op als \<ontvanger\>.
+    (vavDi01) de gegevens van SVB-BGT of LV-BGT op als &lt;ontvanger&gt;.
 
 3.  LV-BGT ontvangt en verwerkt het vooraankondigingsbericht (vavDi01).
 
@@ -27,9 +27,9 @@ Dit betekent de volgende wijzigingen voor het BGT berichtenverkeer:
     binnen zijn interessegebied, middels een email of geautomatiseerd bericht.
 
 5.  LV-BGT neemt in de stuurgegevens van het vooraankondigingsbericht (vavDi01)
-    de gegevens van geraakte bronhouder op als \<ontvanger\>.
+    de gegevens van geraakte bronhouder op als &lt;ontvanger&gt;.
 	
-6. Tot 1 juli 2023 stuurt LV-BGT in de stuurgegevens van het bericht als \<zender\> de gegevens van SVB-BGT. Vanaf 1 juli 2023 stuurt LV-BGT in de stuurgegevens van het bericht als \<zender\> de eigen stuurgegevens.
+6. Tot 1 juli 2023 stuurt LV-BGT in de stuurgegevens van het bericht als &lt;zender&gt; de gegevens van SVB-BGT. Vanaf 1 juli 2023 stuurt LV-BGT in de stuurgegevens van het bericht als &lt;zender&gt; de eigen stuurgegevens.
 
 **Aanleveren van mutaties en terugkoppeling van werking**
 
@@ -40,15 +40,15 @@ Dit betekent de volgende wijzigingen voor het BGT berichtenverkeer:
     BGT berichtenverkeer.
 
 3.  Bronhouder neemt in de stuurgegevens van het ophaalverzoek (opvDi01) en
-    mutatiebericht (mtbSVBDi01) de gegevens van SVB-BGT of LV-BGT op als \<ontvanger\>.
+    mutatiebericht (mtbSVBDi01) de gegevens van SVB-BGT of LV-BGT op als &lt;ontvanger&gt;.
 
 4.  LV-BGT stuurt het verwerkingsresultaat middels emailnotificatie of
     geautomatiseerd reponsbericht (mtbDu01) rechtstreeks naar bronhouder.
 
 5.  LV-BGT neemt in de stuurgegevens van het responsbericht (mtbDu01) de
-    gegevens van bronhouder op als \<ontvanger\>.
+    gegevens van bronhouder op als &lt;ontvanger&gt;.
 	
-6. Tot 1 juli 2023 stuurt LV-BGT in de stuurgegevens van het bericht als \<zender\> de gegevens van SVB-BGT. Vanaf 1 juli 2023 stuurt LV-BGT in de stuurgegevens van het bericht als \<zender\> de eigen stuurgegevens.
+6. Tot 1 juli 2023 stuurt LV-BGT in de stuurgegevens van het bericht als &lt;zender&gt; de gegevens van SVB-BGT. Vanaf 1 juli 2023 stuurt LV-BGT in de stuurgegevens van het bericht als &lt;zender&gt; de eigen stuurgegevens.
 
 **Actualiseren**
 
@@ -59,9 +59,9 @@ Dit betekent de volgende wijzigingen voor het BGT berichtenverkeer:
     interessegebied, middels een email of geautomatiseerd bericht.
 
 3.  LV-BGT neemt in de stuurgegevens van het ophaalverzoek (opvDi01) en
-    mutatiebericht (mtbSVBDi01) de gegevens van bronhouder op als \<ontvanger\>.
+    mutatiebericht (mtbSVBDi01) de gegevens van bronhouder op als &lt;ontvanger&gt;.
 
-4. Tot 1 juli 2023 stuurt LV-BGT in de stuurgegevens van het bericht als \<zender\> de gegevens van SVB-BGT. Vanaf 1 juli 2023 stuurt LV-BGT in de stuurgegevens van het bericht als \<zender\> de eigen stuurgegevens.
+4. Tot 1 juli 2023 stuurt LV-BGT in de stuurgegevens van het bericht als &lt;zender&gt; de gegevens van SVB-BGT. Vanaf 1 juli 2023 stuurt LV-BGT in de stuurgegevens van het bericht als &lt;zender&gt; de eigen stuurgegevens.
 
 
 De gewijzigde uitwisseling tussen bronhouder en LV-BGT voor **handmatige upload/download** wordt weergegeven in onderstaand sequentiediagram.
