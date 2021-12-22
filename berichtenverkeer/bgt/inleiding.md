@@ -11,17 +11,15 @@ Introductie
 
 In het kader van de wet Basisregistratie Grootschalige Topografie (BGT) leveren
 de bronhouders gegevens van grootschalige topografische objecten aan de
-Landelijk Voorziening BGT (LV-BGT) van het Kadaster. Bronhouders leveren deze
-gegevens aan de LV-BGT via het Samenwerkingsverband van bronhouders BGT
-(SVB-BGT).
+Landelijk Voorziening BGT (LV-BGT) van het Kadaster.
 
-Het geheel aan centrale (SVB-BGT, LV-BGT) en decentrale systemen (bronhouders en
+Het geheel aan centrale (LV-BGT, PDOK) en decentrale systemen (bronhouders en
 gebruikers) vormt gezamenlijk de BGT-infrastructuur en wordt de ‘BGT-keten’
 genoemd.
 
-![2f Ketensamenwerking BGT DEF RGB.jpg](media/a86cada2cdfd1edff3427a371ffbe2a3.jpg)
+![](media/ebe8e3def00fa87112b5c119debcdd54.png)
 
-2f Ketensamenwerking BGT DEF RGB.jpg
+Ketensamenwerking BGT
 
 ### Begrippenkader BGT berichtenverkeer
 
@@ -29,7 +27,7 @@ De Basisregistratie Grootschalige Topografie (BGT) wordt gevormd door een
 verzameling **gegevens** waarvan bij wet bepaald is dat deze een
 basisregistratie vormen. Het hier gegeven begrippenkader heeft alleen betrekking
 op deze gegevens. Bij het uitwisselen van gegevens is in dit begrippenkader
-alleen de uitwisseling tussen bronhouder, SVB-BGT en LV-BGT van toepassing.
+alleen de uitwisseling tussen bronhouder en LV-BGT van toepassing.
 
 Het uitwisselen van gegevens vindt altijd plaats in de vorm van **berichten**.
 In de Standaard BGT Berichtenverkeer ligt vast welke berichten er zijn en hoe
@@ -44,11 +42,11 @@ Het feitelijke elektronische transport van de berichten vindt plaats door middel
 van **bestanden**. Ieder bestand bevat altijd precies één bericht. Ieder bestand
 is gecomprimeerd tot een ZIP-archief.
 
-Een bronhouder verzendt berichten met gegevens aan SVB-BGT via het Portaal
-BRAVO. De **levering** van gegevens bestaat uit één of meerdere bestanden. Deze
-bestanden worden via een handmatige upload functie in het Portaal BRAVO naar
-SVB-BGT verzonden. Als alternatieve werkwijze kan een bronhouder de bestanden
-leveren via automatisch berichtenverkeer op basis van de Digikoppeling
+Een bronhouder verzendt berichten met gegevens aan het Kadaster via de LV-BGT.
+De **levering** van gegevens bestaat uit één of meerdere bestanden. Deze
+bestanden worden via een handmatige upload functie in het portaal Mijn Kadaster
+naar LV-BGT verzonden. Als alternatieve werkwijze kan een bronhouder de
+bestanden leveren via automatisch berichtenverkeer op basis van de Digikoppeling
 standaard.
 
 De eerste levering van gegevens voor een stuk grondgebied wordt de **initiële
@@ -69,14 +67,14 @@ BGT.
 
 ### Reikwijdte van dit document
 
-Dit document beschrijft het berichtenverkeer tussen een bronhouder, het SVB-BGT
-en de LV-BGT voor uitwisseling van BGT\|IMGeo gegevens. Dit kan in ieder geval
-via handmatige upload/download en optioneel via automatisch berichtenverkeer.
+Dit document beschrijft het berichtenverkeer tussen een bronhouder en de LV-BGT
+voor uitwisseling van BGT\|IMGeo gegevens. Dit kan in ieder geval via handmatige
+upload/download en optioneel via automatisch berichtenverkeer.
 
 De reikwijdte van dit document beperkt zich tot de uitwisseling tussen
-bronhouders, het SVB-BGT en de LV-BGT. De distributie naar en uitwisseling met
-gebruikers, door middel van de gemeenschappelijke geo-leveringsvoorziening PDOK,
-valt buiten de reikwijdte van dit document.
+bronhouders en de LV-BGT. De distributie naar en uitwisseling met gebruikers,
+door middel van de gemeenschappelijke geo-leveringsvoorziening PDOK, valt buiten
+de reikwijdte van dit document.
 
 Dit document beschrijft de reguliere werkwijze van het BGT berichtenverkeer.
 Alternatieve werkwijzen voor onder andere terugvalscenario’s zijn in dit
@@ -87,9 +85,9 @@ Leeswijzer
 ----------
 
 In dit document wordt de standaard van het BGT berichtenverkeer voor
-uitwisseling van BGT\|IMGeo gegevens van een bronhouder via SVB-BGT naar de
-LV-BGT vastgelegd. Dit document beschrijft het BGT berichtenverkeer; de StUF-Geo
-IMGeo berichten in dit berichtenverkeer zijn functioneel beschreven in een
+uitwisseling van BGT\|IMGeo gegevens van een bronhouder naar de LV-BGT
+vastgelegd. Dit document beschrijft het BGT berichtenverkeer; de StUF-Geo IMGeo
+berichten in dit berichtenverkeer zijn functioneel beschreven in een
 berichtencatalogus (bron: [StUFGeo]). Op deze twee documenten is de technische
 implementatie in de vorm van berichtenschema’s (XSD’s) en servicebeschrijvingen
 (WSDL’s) gebaseerd. De inhoud van de berichten wordt bepaald door de

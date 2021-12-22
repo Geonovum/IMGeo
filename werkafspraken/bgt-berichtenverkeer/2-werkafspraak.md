@@ -1,9 +1,6 @@
 Werkafspraak
 ============
 
-tot 1 juli 2023 stuurt LV-BGT in de stuurgegevens van het bericht als ontvanger de gegevens van SVB-BGT
-vanaf 1 juli 2023 stuurt LV-BGT in de stuurgegevens van het bericht als ontvanger de eigen gegevens.
-
 De volgende werkafspraak geldt voor de BGT keten voor de uitwisseling van
 berichten tussen bronhouder en de Landelijke Voorziening BGT (LV-BGT):
 
@@ -13,6 +10,24 @@ berichten tussen bronhouder en de Landelijke Voorziening BGT (LV-BGT):
 >   BRAVO van SVB-BGT.*
 
 Dit betekent de volgende wijzigingen voor het BGT berichtenverkeer:
+
+**Vooraankondigen**
+
+1.  Bronhouder maakt vooraankondiging aan via Portaal LV-BGT of stuurt
+    vooraankondigingsbericht aan Berichtensysteem LV-BGT.
+
+2.  Bronhouder neemt in de stuurgegevens van het vooraankondigingsbericht
+    (vavDi01) de gegevens van SVB-BGT of LV-BGT op als \<ontvanger\>.
+
+3.  LV-BGT ontvangt en verwerkt het vooraankondigingsbericht (vavDi01).
+
+4.  LV-BGT notificeert geraakte bronhouder rechtstreeks van vooraankondiging(en)
+    binnen zijn interessegebied, middels een email of geautomatiseerd bericht.
+
+5.  LV-BGT neemt in de stuurgegevens van het vooraankondigingsbericht (vavDi01)
+    de gegevens van geraakte bronhouder op als \<ontvanger\>.
+	
+6. Tot 1 juli 2023 stuurt LV-BGT in de stuurgegevens van het bericht als \<zender\> de gegevens van SVB-BGT. Vanaf 1 juli 2023 stuurt LV-BGT in de stuurgegevens van het bericht als \<zender\> de eigen stuurgegevens.
 
 **Aanleveren van mutaties en terugkoppeling van werking**
 
@@ -30,6 +45,8 @@ Dit betekent de volgende wijzigingen voor het BGT berichtenverkeer:
 
 5.  LV-BGT neemt in de stuurgegevens van het responsbericht (mtbDu01) de
     gegevens van bronhouder op als \<ontvanger\>.
+	
+6. Tot 1 juli 2023 stuurt LV-BGT in de stuurgegevens van het bericht als \<zender\> de gegevens van SVB-BGT. Vanaf 1 juli 2023 stuurt LV-BGT in de stuurgegevens van het bericht als \<zender\> de eigen stuurgegevens.
 
 **Actualiseren**
 
@@ -42,27 +59,12 @@ Dit betekent de volgende wijzigingen voor het BGT berichtenverkeer:
 3.  LV-BGT neemt in de stuurgegevens van het ophaalverzoek (opvDi01) en
     mutatiebericht (mtbSVBDi01) de gegevens van bronhouder op als \<ontvanger\>.
 
-**Vooraankondigen**
+4. Tot 1 juli 2023 stuurt LV-BGT in de stuurgegevens van het bericht als \<zender\> de gegevens van SVB-BGT. Vanaf 1 juli 2023 stuurt LV-BGT in de stuurgegevens van het bericht als \<zender\> de eigen stuurgegevens.
 
-1.  Bronhouder maakt vooraankondiging aan via Portaal LV-BGT of stuurt
-    vooraankondigingsbericht aan Berichtensysteem LV-BGT.
 
-2.  Bronhouder neemt in de stuurgegevens van het ophaalverzoek (opvDi01) en
-    mutatiebericht (mtbSVBDi01) de gegevens van SVB-BGT of LV-BGT  op als \<ontvanger\>.
+De gewijzigde uitwisseling tussen bronhouder en LV-BGT voor **handmatige upload/download** wordt weergegeven in onderstaand sequentiediagram.
 
-3.  Bronhouder neemt in de stuurgegevens van het vooraankondigingsbericht
-    (vavDi01) de gegevens van LV-BGT op als \<ontvanger\>.
-
-4.  LV-BGT ontvangt en verwerkt het vooraankondigingsbericht (vavDi01).
-
-5.  LV-BGT notificeert geraakte bronhouder rechtstreeks van vooraankondiging(en)
-    binnen zijn interessegebied, middels een email of geautomatiseerd bericht.
-
-6.  LV-BGT neemt in de stuurgegevens van het vooraankondigingsbericht (vavDi01)
-    de gegevens van geraakte bronhouder op als \<ontvanger\>.
-
-De gewijzigde uitwisseling tussen bronhouder en LV-BGT voor *handmatige
-upload/downloa*d wordt weergegeven in onderstaand sequentiediagram.
+_N.B. Mocht hieronder geen afbeelding zichtbaar zijn, ververs de pagina dan met CTRL+F5._
 
 <div class="mermaid">
 sequenceDiagram          
@@ -91,8 +93,9 @@ sequenceDiagram   
     end
 </div>
 
-De gewijzigde uitwisseling tussen bronhouder en LV-BGT voor *automatisch
-berichtenverkeer* wordt weergegeven in onderstaand sequentiediagram.
+De gewijzigde uitwisseling tussen bronhouder en LV-BGT voor **automatisch berichtenverkeer** wordt weergegeven in onderstaand sequentiediagram.
+
+_N.B. Mocht hieronder geen afbeelding zichtbaar zijn, ververs de pagina dan met CTRL+F5._
 
 <div class="mermaid">
 sequenceDiagram          
@@ -138,9 +141,3 @@ gegevens komen te vervallen:
 3.  Bericht actualisatiebericht na assemblage (mtoDi01) vervalt.
 
 Het gewijzigde berichtenverkeer wordt samengevat in het volgende document.
-
-**Ingangsdatum**
-
-Deze werkafspraak treedt per 1 november 2022 inwerking.
-Tot 1 juli 2023 stuurt LV-BGT in de stuurgegevens van het bericht als ontvanger de gegevens van SVB-BGT.
-Vanaf 1 juli 2023 stuurt LV-BGT in de stuurgegevens van het bericht als ontvanger de eigen gegevens.

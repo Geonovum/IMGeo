@@ -1,9 +1,20 @@
 Aanleiding
 ==========
 
-In het kader van de overgang van de functionaliteit van het system BRAVO van het
-SVB-BGT naar het Kadaster is een aanpassing van het BGT berichtenverkeer
-noodzakelijk.
+In de opbouwfase van de BGT leverden bronhouders via het systeem BRAVO van het
+SVB-BGT hun initiële levering en mutatielevering aan de Landelijke Voorziening
+BGT (LV-BGT).
 
-Om de impact op de IT zo laag mogelijk te houden worden de wijzigingen middels
-een werkafspraak doorgevoerd.
+Met de afbouw van het bureau SVB-BGT wordt de functionaliteit van het systeem
+BRAVO overgedragen aan het Kadaster. Dit betekent dat bronhouder per 1 november
+2022 direct aanlevert aan de LV-BGT, zonder tussenkomst van BRAVO.
+
+Dit heeft gevolgen voor het BGT berichtenverkeer zoals dat nu in de Standaard
+BGT berichtenverkeer is vastgelegd. Middels deze werkafspraak worden de
+wijzigingen in het BGT berichtenverkeer vastgelegd, waarbij het uitgangspunt is
+dat de impact op de bronhouders en hun software zo laag mogelijk wordt gehouden.
+
+![](media/ebe8e3def00fa87112b5c119debcdd54.png)
+
+*Figuur. In het BGT berichtenverkeer zal de schakel SVB-BGT per 1 november 2022
+komen te vervallen.*
