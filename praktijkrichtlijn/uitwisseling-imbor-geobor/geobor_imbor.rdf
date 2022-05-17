@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--  Geonovum (adb) Codelijst Aanvullende elementen Geo-BOR versie 20200907 gebaseerd op IMBOR 2020 08.2  -->
+<!--  Geonovum (adb) Codelijst Aanvullende elementen Geo-BOR versie 20220517 gebaseerd op IMBOR 2020 08.2  -->
 <RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:imgeo="http://definities.geostandaarden.nl/imgeo/geobor/imbor/2020#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
 <ConceptScheme xmlns="http://www.w3.org/2004/02/skos/core#" rdf:about="http://definities.geostandaarden.nl/imgeo/geobor/imbor/2020#FunctieOndersteunendWegdeelBOR">
 <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
@@ -322,15 +322,15 @@
 <hasTopConcept rdf:resource="https://definities.geostandaarden.nl/imgeo/doc/begrip/Wegdeel"/>
 <inScheme rdf:resource="http://definities.geostandaarden.nl/imgeo/geobor/imbor/2020#FunctieWegBOR"/>
 </Concept>
-<ConceptScheme xmlns="http://www.w3.org/2004/02/skos/core#" rdf:about="http://definities.geostandaarden.nl/imgeo/geobor/imbor/2020#FunctieWegdeelBOR">
+<ConceptScheme xmlns="http://www.w3.org/2004/02/skos/core#" rdf:about="http://definities.geostandaarden.nl/imgeo/geobor/imbor/2020#FunctieWegBOR">
 <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
 </ConceptScheme>
-<Concept xmlns="http://www.w3.org/2004/02/skos/core#" rdf:about="http://definities.geostandaarden.nl/imgeo/geobor/imbor/2020#FunctieWegdeelBOR_achterpad">
+<Concept xmlns="http://www.w3.org/2004/02/skos/core#" rdf:about="http://definities.geostandaarden.nl/imgeo/geobor/imbor/2020#FunctieWegBOR_achterpad">
 <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
 <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">achterpad</prefLabel>
 <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Pad dat achteraan ligt, vaak aan de achterzijde van woningen waartoe het toegang verleent.</definition>
 <hasTopConcept rdf:resource="https://definities.geostandaarden.nl/imgeo/doc/begrip/Wegdeel"/>
-<inScheme rdf:resource="http://definities.geostandaarden.nl/imgeo/geobor/imbor/2020#FunctieWegdeelBOR"/>
+<inScheme rdf:resource="http://definities.geostandaarden.nl/imgeo/geobor/imbor/2020#FunctieWegBOR"/>
 </Concept>
 <ConceptScheme xmlns="http://www.w3.org/2004/02/skos/core#" rdf:about="http://definities.geostandaarden.nl/imgeo/geobor/imbor/2020#FysiekVoorkomenBegroeidTerreinBOR">
 <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
@@ -2291,15 +2291,15 @@
 <hasTopConcept rdf:resource="https://definities.geostandaarden.nl/imgeo/doc/begrip/VegetatieObject"/>
 <inScheme rdf:resource="http://definities.geostandaarden.nl/imgeo/geobor/imbor/2020#TypeVegetatieObjectBOR"/>
 </Concept>
-<ConceptScheme xmlns="http://www.w3.org/2004/02/skos/core#" rdf:about="http://definities.geostandaarden.nl/imgeo/geobor/imbor/2020#TypeVegetatieobjectBOR">
+<ConceptScheme xmlns="http://www.w3.org/2004/02/skos/core#" rdf:about="http://definities.geostandaarden.nl/imgeo/geobor/imbor/2020#TypeVegetatieObjectBOR">
 <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
 </ConceptScheme>
-<Concept xmlns="http://www.w3.org/2004/02/skos/core#" rdf:about="http://definities.geostandaarden.nl/imgeo/geobor/imbor/2020#TypeVegetatieobjectBOR_vegetatiedak">
+<Concept xmlns="http://www.w3.org/2004/02/skos/core#" rdf:about="http://definities.geostandaarden.nl/imgeo/geobor/imbor/2020#TypeVegetatieObjectBOR_vegetatiedak">
 <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
 <prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">vegetatiedak</prefLabel>
 <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string" xml:lang="nl">Vegetatie die is aangelegd op het platte dak van een gebouw.</definition>
 <hasTopConcept rdf:resource="https://definities.geostandaarden.nl/imgeo/doc/begrip/Vegetatieobject"/>
-<inScheme rdf:resource="http://definities.geostandaarden.nl/imgeo/geobor/imbor/2020#TypeVegetatieobjectBOR"/>
+<inScheme rdf:resource="http://definities.geostandaarden.nl/imgeo/geobor/imbor/2020#TypeVegetatieObjectBOR"/>
 </Concept>
 <ConceptScheme xmlns="http://www.w3.org/2004/02/skos/core#" rdf:about="http://definities.geostandaarden.nl/imgeo/geobor/imbor/2020#TypeWaterdeelBOR">
 <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
