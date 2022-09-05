@@ -5,8 +5,7 @@ var respecConfig = {
   publishDate: "2022-09-05",
   editors: [    
     {
-      company: "Geonovum",
-      companyURL: "http://www.geonovum.nl/",
+      name: "Geonovum",      
       mailto: "imgeo@geonovum.nl",    
     }    
   ],
