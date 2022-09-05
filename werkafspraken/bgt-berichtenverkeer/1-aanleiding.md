@@ -13,8 +13,3 @@ Dit heeft gevolgen voor het BGT berichtenverkeer zoals dat nu in de Standaard
 BGT berichtenverkeer is vastgelegd. Middels deze werkafspraak worden de
 wijzigingen in het BGT berichtenverkeer vastgelegd, waarbij het uitgangspunt is
 dat de impact op de bronhouders en hun software zo laag mogelijk wordt gehouden.
-
-![](media/ebe8e3def00fa87112b5c119debcdd54.png)
-
-*Figuur. In het BGT berichtenverkeer zal de schakel SVB-BGT per 1 november 2022
-komen te vervallen.*
