@@ -2,7 +2,7 @@ var respecConfig = {
   specStatus: "GN-VV",
   specType: "WA",
   //canonicalURI: "WV",
-  publishDate: "2022-09-05",
+  publishDate: "2023-03-01",
   editors: [    
     {
       name: "Geonovum",      
@@ -13,8 +13,8 @@ var respecConfig = {
   pubDomain: "IMGeo",
   //previousURI: "https://www.geonovum.nl/BRO",
   github: "https://github.com/Geonovum/IMGeo",
-  previousPublishDate: "2022-03-08",
-  previousStatus: "GN-CV",
+  previousPublishDate: "2022-09-04",
+  previousStatus: "GN-VV",
   //localBiblio: {
   //  "ISO19136": {
   //    "href": "https://www.iso.org/standard/32554.html",
