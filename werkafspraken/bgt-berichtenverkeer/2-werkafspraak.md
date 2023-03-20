@@ -1,134 +1,94 @@
-Werkafspraak
-============
+# Werkafspraak
 
 De volgende werkafspraak geldt voor de BGT keten voor de uitwisseling van
-berichten tussen bronhouder en de Landelijke Voorziening BGT (LV-BGT):
+berichten tussen bronhouder en de Landelijke Voorziening BGT (LV BGT):
 
->   Het portaal en berichtensysteem BRAVO van SVB-BGT wordt geschrapt in het
->   BGT berichtenverkeer. De communicatie / uitwisseling tussen bronhouders en
->   LV-BGT is in het vervolg rechtstreeks, zonder tussenkomst van het systeem
->   BRAVO van SVB-BGT.*
+>   Het portaal en berichtensysteem BRAVO van SVB-BGT wordt geschrapt in het BGT
+>   berichtenverkeer. De communicatie / uitwisseling tussen bronhouders en LV
+>   BGT is in het vervolg rechtstreeks, zonder tussenkomst van het systeem BRAVO
+>   van SVB-BGT.
 
-Deze werkafspraak treedt per 1 november 2022 inwerking. 
+>   Bronhouder of dataleverancier levert de berichten aan het LV BGT
+>   berichtensysteem en/of portaal aan. In de stuurgegevens van een bericht aan
+>   het LV BGT berichtensysteem of portaal dient bronhouder of dataleverancier
+>   de code ‘K0001’ op te nemen in het element «organisatie» van «ontvanger».
+
+Deze werkafspraak treedt in werking 3 maanden na de datum waarop het nieuwe LV
+BGT berichtensysteem en portaal beschikbaar is gekomen voor aansluiting door
+bronhouders en dataleveranciers op het nieuwe LV BGT berichtensysteem en
+portaal. (zie [impact](#impact) voor meer informatie over de releasedatum,
+implementatie en overgangsperiode).
 
 Dit betekent de volgende wijzigingen voor het BGT berichtenverkeer:
 
 **Vooraankondigen**
 
-1.  Bronhouder maakt vooraankondiging aan via Portaal LV-BGT of stuurt
-    vooraankondigingsbericht aan Berichtensysteem LV-BGT.
+1.  Bronhouder maakt vooraankondiging aan via Portaal LV BGT of stuurt
+    vooraankondigingsbericht aan Berichtensysteem LV BGT.
 
 2.  Bronhouder neemt in de stuurgegevens van het vooraankondigingsbericht
-    (vavDi01) de gegevens van SVB-BGT of LV-BGT op als &lt;ontvanger&gt;.
+    (vavDi01) de gegevens van SVB-BGT of LV BGT op als «ontvanger»
 
-3.  LV-BGT ontvangt en verwerkt het vooraankondigingsbericht (vavDi01).
+3.  LV BGT ontvangt en verwerkt het vooraankondigingsbericht (vavDi01).
 
-4.  LV-BGT notificeert geraakte bronhouder rechtstreeks van vooraankondiging(en)
+4.  LV BGT notificeert geraakte bronhouder rechtstreeks van vooraankondiging(en)
     binnen zijn interessegebied, middels een email of geautomatiseerd bericht.
 
-5.  LV-BGT neemt in de stuurgegevens van het vooraankondigingsbericht (vavDi01)
-    de gegevens van geraakte bronhouder op als &lt;ontvanger&gt;.
-	
-6. Tot 1 juli 2023 stuurt LV-BGT in de stuurgegevens van het bericht als &lt;zender&gt; de gegevens van SVB-BGT. Vanaf 1 juli 2023 stuurt LV-BGT in de stuurgegevens van het bericht als &lt;zender&gt; de eigen stuurgegevens.
+5.  LV BGT neemt in de stuurgegevens van het vooraankondigingsbericht (vavDi01)
+    de gegevens van geraakte bronhouder op als «ontvanger».
+
+6.  Tot 1 juli 2023 stuurt LV BGT in de stuurgegevens van het bericht als
+    «zender» de gegevens van SVB-BGT. Vanaf 1 juli 2023 stuurt LV BGT in de
+    stuurgegevens van het bericht als «zender» de eigen stuurgegevens.
 
 **Aanleveren van mutaties en terugkoppeling van werking**
 
-1.  Bronhouder levert mutaties rechtstreeks aan LV-BGT van het Kadaster.
+1.  Bronhouder levert mutaties rechtstreeks aan LV BGT van het Kadaster.
 
-2.  Bronhouder levert een mutatiebericht van het type mtbSVBDi01 aan LV-BGT. Het
-    mutatiebericht tussen SVB-BGT en LV-BGT (mtbLVDi01) vervalt in de Standaard
+2.  Bronhouder levert een mutatiebericht van het type mtbSVBDi01 aan LV BGT. Het
+    mutatiebericht tussen SVB-BGT en LV BGT (mtbLVDi01) vervalt in de Standaard
     BGT berichtenverkeer.
 
 3.  Bronhouder neemt in de stuurgegevens van het ophaalverzoek (opvDi01) en
-    mutatiebericht (mtbSVBDi01) de gegevens van SVB-BGT of LV-BGT op als &lt;ontvanger&gt;.
+    mutatiebericht (mtbSVBDi01) de gegevens van SVB-BGT of LV BGT op als
+    «ontvanger».
 
-4.  LV-BGT stuurt het verwerkingsresultaat middels emailnotificatie of
+4.  LV BGT stuurt het verwerkingsresultaat middels emailnotificatie of
     geautomatiseerd reponsbericht (mtbDu01) rechtstreeks naar bronhouder.
 
-5.  LV-BGT neemt in de stuurgegevens van het responsbericht (mtbDu01) de
-    gegevens van bronhouder op als &lt;ontvanger&gt;.
-	
-6. Tot 1 juli 2023 stuurt LV-BGT in de stuurgegevens van het bericht als &lt;zender&gt; de gegevens van SVB-BGT. Vanaf 1 juli 2023 stuurt LV-BGT in de stuurgegevens van het bericht als &lt;zender&gt; de eigen stuurgegevens.
+5.  LV BGT neemt in de stuurgegevens van het responsbericht (mtbDu01) de
+    gegevens van bronhouder op als «ontvanger».
+
+6.  Tot 1 juli 2023 stuurt LV BGT in de stuurgegevens van het bericht als
+    «zender» de gegevens van SVB-BGT. Vanaf 1 juli 2023 stuurt LV BGT in de
+    stuurgegevens van het bericht als «zender» de eigen stuurgegevens.
 
 **Actualiseren**
 
-1.  Bronhouder actualiseert rechtstreeks via de LV-BGT. Bronhouder kan via het
-    Portaal LV-BGT een interessegebied aanmaken of uploaden (GML).
+1.  Bronhouder actualiseert rechtstreeks via de LV BGT. Bronhouder kan via het
+    Portaal LV BGT een interessegebied aanmaken of uploaden (GML).
 
-2.  LV-BGT notificeert geraakte bronhouder rechtstreeks van mutaties binnen zijn
+2.  LV BGT notificeert geraakte bronhouder rechtstreeks van mutaties binnen zijn
     interessegebied, middels een email of geautomatiseerd bericht.
 
-3.  LV-BGT neemt in de stuurgegevens van het ophaalverzoek (opvDi01) en
-    mutatiebericht (mtbSVBDi01) de gegevens van bronhouder op als &lt;ontvanger&gt;.
+3.  LV BGT neemt in de stuurgegevens van het ophaalverzoek (opvDi01) en
+    mutatiebericht (mtbSVBDi01) de gegevens van bronhouder op als «ontvanger».
 
-4. Tot 1 juli 2023 stuurt LV-BGT in de stuurgegevens van het bericht als &lt;zender&gt; de gegevens van SVB-BGT. Vanaf 1 juli 2023 stuurt LV-BGT in de stuurgegevens van het bericht als &lt;zender&gt; de eigen stuurgegevens.
+4.  Tot 1 juli 2023 stuurt LV BGT in de stuurgegevens van het bericht als
+    «zender&gt; de gegevens van SVB-BGT. Vanaf 1 juli 2023 stuurt LV BGT in de
+    stuurgegevens van het bericht als «zender» de eigen stuurgegevens.
 
+De gewijzigde uitwisseling tussen bronhouder en LV BGT voor **handmatige
+upload/download** wordt weergegeven in onderstaand sequentiediagram.
 
-De gewijzigde uitwisseling tussen bronhouder en LV-BGT voor **handmatige upload/download** wordt weergegeven in onderstaand sequentiediagram.
+*N.B. Mocht hieronder geen afbeelding zichtbaar zijn, ververs de pagina dan met
+CTRL+F5.*
 
-_N.B. Mocht hieronder geen afbeelding zichtbaar zijn, ververs de pagina dan met CTRL+F5._
+De gewijzigde uitwisseling tussen bronhouder en LV BGT voor **automatisch
+berichtenverkeer** wordt weergegeven in onderstaand sequentiediagram.
 
-<div class="mermaid">
-sequenceDiagram          
-    participant Medewerker Geabonneerde  bronhouder    
-    participant Medewerker Bronhouder  
-    participant Portaal LV BGT    
-    Note over Medewerker Bronhouder, Portaal LV BGT: Bronhouder maakt vooraankondiging aan in portaal
-    activate Portaal LV BGT
-    alt Als vooraankondiging raakt aan interessegebied van Geabonneerde bronhouder    
-    Portaal LV BGT-->>Medewerker Geabonneerde  bronhouder: notificatie vooraankondiging (email)
-    end
-    deactivate Portaal LV BGT
-    Note over Medewerker Bronhouder, Portaal LV BGT: Bronhouder maakt levering aan in Portaal.
-    activate Portaal LV BGT
-    Medewerker Bronhouder-->>Portaal LV BGT: mutatiebericht (ZIP: mtbSVBDi01)
-    deactivate Portaal LV BGT   
-    Note over Portaal LV BGT: Controle en registratie door LV BGT     
-    activate Portaal LV BGT  
-    Portaal LV BGT-->>Medewerker Bronhouder: verwerkingsverslag (PDF+GML)    
-    deactivate Portaal LV BGT
-    alt Als mutatie raakt aan interessegebied van Geabonneerde bronhouder
-    Portaal LV BGT-->>Medewerker Geabonneerde  bronhouder: notificatie actualisatie (email)
-    activate Portaal LV BGT
-    Portaal LV BGT-->>Medewerker Geabonneerde  bronhouder: actualisatiebericht (ZIP: mtbSVBDi01)
-    deactivate Portaal LV BGT
-    end
-</div>
-
-De gewijzigde uitwisseling tussen bronhouder en LV-BGT voor **automatisch berichtenverkeer** wordt weergegeven in onderstaand sequentiediagram.
-
-_N.B. Mocht hieronder geen afbeelding zichtbaar zijn, ververs de pagina dan met CTRL+F5._
-
-<div class="mermaid">
-sequenceDiagram          
-    participant Berichtensysteem Geabonneerde bronhouder    
-    participant Berichtensysteem Bronhouder  
-    participant Berichtensysteem LV BGT    
-    Berichtensysteem Bronhouder-->>Berichtensysteem LV BGT: vooraankondigingsbericht (vavDi01)
-    activate Berichtensysteem LV BGT  
-    alt Als vooraankondiging raakt aan interessegebied van Geabonneerde bronhouder  
-    Berichtensysteem LV BGT-->>Berichtensysteem Geabonneerde bronhouder: vooraankondigingsbericht (vavDi01)
-    end
-    deactivate Berichtensysteem LV BGT    
-    Berichtensysteem Bronhouder-->>Berichtensysteem LV BGT: ophaalverzoek (opvDi01)
-    activate Berichtensysteem LV BGT
-	Note over Berichtensysteem Bronhouder ,  Berichtensysteem LV BGT: LV-BGT haalt mutatiebericht op
-	Berichtensysteem Bronhouder-->>Berichtensysteem LV BGT: mutatiebericht (ZIP: mtbSVBDi01)  
-    deactivate Berichtensysteem LV BGT   
-	Note over Berichtensysteem LV BGT: Controle en registratie door LV BGT 
-    activate Berichtensysteem LV BGT
-    Berichtensysteem LV BGT-->>Berichtensysteem Bronhouder: mutatierespons (mtbDu01)	
-    Note over Berichtensysteem Bronhouder,  Berichtensysteem LV BGT: Bronhouder downloadt verwerkingsverslag
-    Berichtensysteem LV BGT-->>Berichtensysteem Bronhouder: verwerkingsverslag (PDF+GML)	
-    deactivate Berichtensysteem LV BGT
-    alt Als mutatie raakt aan interessegebied Geabonneerde bronhouder
-    Berichtensysteem LV BGT-->>Berichtensysteem Geabonneerde bronhouder: ophaalverzoek (opvDi01)
-    activate Berichtensysteem LV BGT
-    Note over Berichtensysteem Geabonneerde bronhouder, Berichtensysteem LV BGT: Geabonneerde bronhouder haal mutatiebericht op
-	Berichtensysteem LV BGT-->>Berichtensysteem Geabonneerde bronhouder: mutatiebericht (ZIP: mtbSVBDi01)	
-    deactivate Berichtensysteem LV BGT
-    end
-</div>
+*N.B. Mocht hieronder geen afbeelding zichtbaar zijn, ververs de pagina dan met
+CTRL+F5.*
 
 **Vervallen initieel leveren**
 
