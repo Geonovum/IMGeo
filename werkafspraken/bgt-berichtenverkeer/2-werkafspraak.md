@@ -21,7 +21,14 @@ implementatie en overgangsperiode).
 
 ## Wijzigingen in het berichtenverkeer
 
-Dit betekent de volgende wijzigingen voor het BGT berichtenverkeer:
+De gewijzigde uitwisseling tussen bronhouder en LV BGT voor **handmatige
+upload/download** wordt weergegeven in onderstaand sequentiediagram.
+
+![](media/a052494ad6b12e21e873d13cb4867a66.png)De gewijzigde uitwisseling tussen
+bronhouder en LV BGT voor **automatisch berichtenverkeer** wordt weergegeven in
+onderstaand sequentiediagram.
+
+![](media/8adcd138fdda36462f93532fcfd03706.png)
 
 ### Vooraankondigen
 
@@ -80,14 +87,7 @@ Dit betekent de volgende wijzigingen voor het BGT berichtenverkeer:
     «zender&gt; de gegevens van SVB-BGT. Vanaf 1 juli 2023 stuurt LV BGT in de
     stuurgegevens van het bericht als «zender» de eigen stuurgegevens.
 
-De gewijzigde uitwisseling tussen bronhouder en LV BGT voor **handmatige
-upload/download** wordt weergegeven in onderstaand sequentiediagram.
-
-![](media/a052494ad6b12e21e873d13cb4867a66.png)De gewijzigde uitwisseling tussen
-bronhouder en LV BGT voor **automatisch berichtenverkeer** wordt weergegeven in
-onderstaand sequentiediagram.
-
-![](media/8adcd138fdda36462f93532fcfd03706.png)
+### 
 
 ### Vervallen: initieel leveren
 
