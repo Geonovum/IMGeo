@@ -19,9 +19,11 @@ bronhouders en dataleveranciers op het nieuwe LV BGT berichtensysteem en
 portaal. (zie [impact](#impact) voor meer informatie over de releasedatum,
 implementatie en overgangsperiode).
 
+## Wijzigingen in het berichtenverkeer
+
 Dit betekent de volgende wijzigingen voor het BGT berichtenverkeer:
 
-**Vooraankondigen**
+### Vooraankondigen
 
 1.  Bronhouder maakt vooraankondiging aan via Portaal LV BGT of stuurt
     vooraankondigingsbericht aan Berichtensysteem LV BGT.
@@ -41,7 +43,7 @@ Dit betekent de volgende wijzigingen voor het BGT berichtenverkeer:
     «zender» de gegevens van SVB-BGT. Vanaf 1 juli 2023 stuurt LV BGT in de
     stuurgegevens van het bericht als «zender» de eigen stuurgegevens.
 
-**Aanleveren van mutaties en terugkoppeling van werking**
+### Aanleveren van mutaties en terugkoppeling van werking
 
 1.  Bronhouder levert mutaties rechtstreeks aan LV BGT van het Kadaster.
 
@@ -63,7 +65,7 @@ Dit betekent de volgende wijzigingen voor het BGT berichtenverkeer:
     «zender» de gegevens van SVB-BGT. Vanaf 1 juli 2023 stuurt LV BGT in de
     stuurgegevens van het bericht als «zender» de eigen stuurgegevens.
 
-**Actualiseren**
+### Actualiseren
 
 1.  Bronhouder actualiseert rechtstreeks via de LV BGT. Bronhouder kan via het
     Portaal LV BGT een interessegebied aanmaken of uploaden (GML).
@@ -81,16 +83,13 @@ Dit betekent de volgende wijzigingen voor het BGT berichtenverkeer:
 De gewijzigde uitwisseling tussen bronhouder en LV BGT voor **handmatige
 upload/download** wordt weergegeven in onderstaand sequentiediagram.
 
-*N.B. Mocht hieronder geen afbeelding zichtbaar zijn, ververs de pagina dan met
-CTRL+F5.*
+![](media/a052494ad6b12e21e873d13cb4867a66.png)De gewijzigde uitwisseling tussen
+bronhouder en LV BGT voor **automatisch berichtenverkeer** wordt weergegeven in
+onderstaand sequentiediagram.
 
-De gewijzigde uitwisseling tussen bronhouder en LV BGT voor **automatisch
-berichtenverkeer** wordt weergegeven in onderstaand sequentiediagram.
+![](media/8adcd138fdda36462f93532fcfd03706.png)
 
-*N.B. Mocht hieronder geen afbeelding zichtbaar zijn, ververs de pagina dan met
-CTRL+F5.*
-
-**Vervallen initieel leveren**
+### Vervallen: initieel leveren
 
 Omdat de opbouwfase van de BGT is afgerond wordt in deze werkafspraak ook
 geregeld dat alle berichten en scenario’s voor het initieel leveren van BGT
