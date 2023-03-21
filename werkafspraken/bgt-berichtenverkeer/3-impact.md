@@ -16,12 +16,13 @@ De volgende impact wordt voorzien voor de schakels in de BGT keten.
 -   **LV BGT** realiseert een portaal voor het handmatig aanmaken van
     interessegebieden voor actualisaties en vooraankondigingen.
 
--   **LV BGT** implementeert de functionaliteit van het zenden en ontvangen van
-    de berichten van bronhouder conform BRAVO-functionaliteit as-is in de
-    LV-BGT. Dat betekent dat: 1) het element «gebruiker» in de stuurgegevens van
-    een bericht wordt eruit gefilterd; 2) er wordt enkel een identiteitscheck op
-    basis van stuurgegevens in het automatisch berichtenverkeer uitgevoerd; niet
-    via handmatige aanlevering via het portaal.
+-   **LV BGT** implementeert de huidige functionaliteit in BRAVO inzake het
+    zenden en ontvangen van de berichten van bronhouder in het nieuwe LV BGT
+    berichtensysteem en portaal. Dat betekent dat: 1) het element «gebruiker» in
+    de stuurgegevens van een bericht wordt eruit gefilterd; 2) er enkel een
+    identiteitscheck op basis van stuurgegevens in het automatisch
+    berichtenverkeer wordt uitgevoerd; tot nadere berichtgeving niet via
+    handmatige aanlevering via het portaal.
 
 -   **(Afnemer** heeft geen impact.)
 

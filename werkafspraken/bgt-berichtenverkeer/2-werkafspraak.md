@@ -9,15 +9,17 @@ berichten tussen bronhouder en de Landelijke Voorziening BGT (LV BGT):
 >   van SVB-BGT.
 
 >   Bronhouder of dataleverancier levert de berichten aan het LV BGT
->   berichtensysteem en/of portaal aan. In de stuurgegevens van een bericht aan
->   het LV BGT berichtensysteem of portaal dient bronhouder of dataleverancier
->   de code ‘K0001’ op te nemen in het element «organisatie» van «ontvanger».
+>   berichtensysteem en/of portaal aan (al dan niet via broker) In de
+>   stuurgegevens van een bericht aan het LV BGT berichtensysteem of portaal
+>   dient bronhouder of dataleverancier de code ‘K0001’ op te nemen in het
+>   element «organisatie» van «ontvanger».
 
-Deze werkafspraak treedt in werking 3 maanden na de datum waarop het nieuwe LV
-BGT berichtensysteem en portaal beschikbaar is gekomen voor aansluiting door
-bronhouders en dataleveranciers op het nieuwe LV BGT berichtensysteem en
-portaal. (zie [impact](#impact) voor meer informatie over de releasedatum,
-implementatie en overgangsperiode).
+Deze werkafspraak treedt in werking bij het beschikbaar komen van het nieuwe LV
+BGT berichtensysteem en portaal. In een overgangsperiode van 3 maanden
+
+beschikbaar is gekomen voor aansluiting door bronhouders en dataleveranciers op
+het nieuwe LV BGT berichtensysteem en portaal. (zie [impact](#impact) voor meer
+informatie over de releasedatum, implementatie en overgangsperiode).
 
 ## Wijzigingen in het berichtenverkeer
 
@@ -46,9 +48,10 @@ onderstaand sequentiediagram.
 5.  LV BGT neemt in de stuurgegevens van het vooraankondigingsbericht (vavDi01)
     de gegevens van geraakte bronhouder op als «ontvanger».
 
-6.  Tot 1 juli 2023 stuurt LV BGT in de stuurgegevens van het bericht als
-    «zender» de gegevens van SVB-BGT. Vanaf 1 juli 2023 stuurt LV BGT in de
-    stuurgegevens van het bericht als «zender» de eigen stuurgegevens.
+6.  Tot 3 maanden na de releasedatum stuurt LV BGT in de stuurgegevens van het
+    bericht als «zender» de gegevens van SVB-BGT. Vanaf 3 maanden na de
+    releasedatum stuurt LV BGT in de stuurgegevens van het bericht als «zender»
+    de eigen stuurgegevens.
 
 ### Aanleveren van mutaties en terugkoppeling van werking
 
@@ -62,15 +65,17 @@ onderstaand sequentiediagram.
     mutatiebericht (mtbSVBDi01) de gegevens van SVB-BGT of LV BGT op als
     «ontvanger».
 
-4.  LV BGT stuurt het verwerkingsresultaat middels emailnotificatie of
-    geautomatiseerd reponsbericht (mtbDu01) rechtstreeks naar bronhouder.
+4.  LV BGT stuurt het verwerkingsresultaat middels emailnotificatie (bij
+    handmatige upload/download) of in een mtbDu01-reponsbericht (bij automatisch
+    berichtenverkeer) rechtstreeks naar bronhouder.
 
 5.  LV BGT neemt in de stuurgegevens van het responsbericht (mtbDu01) de
     gegevens van bronhouder op als «ontvanger».
 
-6.  Tot 1 juli 2023 stuurt LV BGT in de stuurgegevens van het bericht als
-    «zender» de gegevens van SVB-BGT. Vanaf 1 juli 2023 stuurt LV BGT in de
-    stuurgegevens van het bericht als «zender» de eigen stuurgegevens.
+6.  Tot 3 maanden na de releasedatum stuurt LV BGT in de stuurgegevens van het
+    bericht als «zender» de gegevens van SVB-BGT. Vanaf 3 maanden na de
+    releasedatum stuurt LV BGT in de stuurgegevens van het bericht als «zender»
+    de eigen stuurgegevens.
 
 ### Actualiseren
 
@@ -83,9 +88,10 @@ onderstaand sequentiediagram.
 3.  LV BGT neemt in de stuurgegevens van het ophaalverzoek (opvDi01) en
     mutatiebericht (mtbSVBDi01) de gegevens van bronhouder op als «ontvanger».
 
-4.  Tot 1 juli 2023 stuurt LV BGT in de stuurgegevens van het bericht als
-    «zender&gt; de gegevens van SVB-BGT. Vanaf 1 juli 2023 stuurt LV BGT in de
-    stuurgegevens van het bericht als «zender» de eigen stuurgegevens.
+4.  Tot 3 maanden na de releasedatum stuurt LV BGT in de stuurgegevens van het
+    bericht als «zender» de gegevens van SVB-BGT. Vanaf 3 maanden na de
+    releasedatum stuurt LV BGT in de stuurgegevens van het bericht als «zender»
+    de eigen stuurgegevens.
 
 ### 
 
