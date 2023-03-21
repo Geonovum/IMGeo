@@ -9,17 +9,16 @@ berichten tussen bronhouder en de Landelijke Voorziening BGT (LV BGT):
 >   van SVB-BGT.
 
 >   Bronhouder of dataleverancier levert de berichten aan het LV BGT
->   berichtensysteem en/of portaal aan (al dan niet via broker) In de
+>   berichtensysteem en/of portaal aan (al dan niet via broker). In de
 >   stuurgegevens van een bericht aan het LV BGT berichtensysteem of portaal
 >   dient bronhouder of dataleverancier de code ‘K0001’ op te nemen in het
 >   element «organisatie» van «ontvanger».
 
-Deze werkafspraak treedt in werking bij het beschikbaar komen van het nieuwe LV
-BGT berichtensysteem en portaal. In een overgangsperiode van 3 maanden
-
-beschikbaar is gekomen voor aansluiting door bronhouders en dataleveranciers op
-het nieuwe LV BGT berichtensysteem en portaal. (zie [impact](#impact) voor meer
-informatie over de releasedatum, implementatie en overgangsperiode).
+Onderdeel 1 van deze werkafspraak treedt in werking bij het beschikbaar komen
+van het nieuwe LV BGT berichtensysteem en portaal. Onderdeel 2 van deze
+werkafspraak treedt in werking vanaf 3 maanden na de releasedatum van het nieuwe
+LV BGT berichtensysteem en portaal (zie [impact](#impact) voor meer informatie
+over de releasedatum, implementatie en overgangsperiode).
 
 ## Wijzigingen in het berichtenverkeer
 
