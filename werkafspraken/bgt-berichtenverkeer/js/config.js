@@ -3,34 +3,36 @@ let respecConfig = {
   useLabel: true,
   license: "cc0",
   specStatus: "WV",
-  specType: "HR",
-  pubDomain: "dk",
-  shortName: "template",
-  publishDate: "2022-06-24",
-  publishVersion: "0.0.2",
+  specType: "WA",
+  pubDomain: "imgeo",
+  shortName: "imgeo/werkspraken/bgt-berichtenverkeer",
+  //publishDate: "2022-06-24",
+  //publishVersion: "0.9.9",
   
-  previousVersion: "0.0.1",
-  previousPublishDate: "2014-05-01",
-  previousMaturity: "EO",
-  title: "titleText",
-  content: {"ch01": "informative", "ch02": "", "mermaid": ""},
+  previousVersion: "0.9.9",
+  previousPublishDate: "2023-03-21",
+  previousMaturity: "VV",
+  title: "BGT berichtenverkeer",
+  content: {"1-aanleiding": "informative", "2-werkafspraak": "", "3-impact": "informative", "4-registratie": "informative"},
   editors:
     [
       {
-        name: "Logius Standaarden",
-        company: "Logius",
-        companyURL: "https://github.com/Logius-standaarden",
+        name: "Geonovum",
+        company: "Geonovum",
+        companyURL: "https://www.geonovum.nl/geo-standaarden/bgt-imgeo",
+		mailto: "imgeo@geonovum.nl",
       }
     ],
   authors:
     [
       {
-        name: "Logius Standaarden",
-        company: "Logius",
-        companyURL: "https://github.com/Logius-standaarden",
+        name: "Geonovum",
+        company: "Geonovum",
+        companyURL: "https://www.geonovum.nl/geo-standaarden/bgt-imgeo",
+		mailto: "imgeo@geonovum.nl",
       }
     ],
-  github: "https://github.com/Logius-standaarden/ReSpec-template",
+  github: "https://github.com/Geonovum/IMGeo",
 
 
   // Create PDF and link to file in header (optional):

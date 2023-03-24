@@ -2,7 +2,7 @@
 var organisationConfig = {
     nl_organisationName: "Geonovum",
     //nl_organisationStylesURL: "https://gitdocumentatie.logius.nl/publicatie/respec/style/",
-    nl_organisationPublishURL: "https://gitdocumentatie.logius.nl/publicatie/",
+    nl_organisationPublishURL: "https://docs.geostandaarden.nl",
     logos: [{
         src: "https://tools.geostandaarden.nl/respec/style/logos/Geonovum.svg",
     alt: "Geonovum",
