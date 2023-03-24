@@ -25,11 +25,148 @@ over de releasedatum, implementatie en overgangsperiode).
 De gewijzigde uitwisseling tussen bronhouder en LV BGT voor **handmatige
 upload/download** wordt weergegeven in onderstaand sequentiediagram.
 
-![](media/a052494ad6b12e21e873d13cb4867a66.png)De gewijzigde uitwisseling tussen
-bronhouder en LV BGT voor **automatisch berichtenverkeer** wordt weergegeven in
-onderstaand sequentiediagram.
+\<figure id="HandmUpDownload"\>
 
-![](media/8adcd138fdda36462f93532fcfd03706.png)
+\`\`\`mermaid
+
+sequenceDiagram
+
+participant Medewerker Geabonneerde bronhouder
+
+participant Medewerker Bronhouder
+
+participant Portaal LV BGT
+
+Note over Medewerker Bronhouder, Portaal LV BGT: Bronhouder maakt
+vooraankondiging aan in portaal
+
+activate Portaal LV BGT
+
+alt Als vooraankondiging raakt aan interessegebied van Geabonneerde bronhouder
+
+Portaal LV BGT--\>\>Medewerker Geabonneerde bronhouder: notificatie
+vooraankondiging (email)
+
+end
+
+deactivate Portaal LV BGT
+
+Note over Medewerker Bronhouder, Portaal LV BGT: Bronhouder maakt levering aan
+in Portaal.
+
+activate Portaal LV BGT
+
+Medewerker Bronhouder--\>\>Portaal LV BGT: mutatiebericht (ZIP: mtbSVBDi01)
+
+deactivate Portaal LV BGT
+
+Note over Portaal LV BGT: Controle en registratie door LV BGT
+
+activate Portaal LV BGT
+
+Portaal LV BGT--\>\>Medewerker Bronhouder: verwerkingsverslag (PDF+GML)
+
+deactivate Portaal LV BGT
+
+alt Als mutatie raakt aan interessegebied van Geabonneerde bronhouder
+
+Portaal LV BGT--\>\>Medewerker Geabonneerde bronhouder: notificatie actualisatie
+(email)
+
+activate Portaal LV BGT
+
+Portaal LV BGT--\>\>Medewerker Geabonneerde bronhouder: actualisatiebericht
+(ZIP: mtbSVBDi01)
+
+deactivate Portaal LV BGT
+
+end
+
+\`\`\`
+
+\<figcaption\>BGT Berichtenverkeer: handmatige upload/download\</figcaption\>
+
+\</figure\>
+
+De gewijzigde uitwisseling tussen bronhouder en LV BGT voor **automatisch
+berichtenverkeer** wordt weergegeven in onderstaand sequentiediagram.
+
+\<figure id="AutomVerkeer"\>
+
+\`\`\`mermaid
+
+\-sequenceDiagram
+
+participant Berichtensysteem Geabonneerde bronhouder
+
+participant Berichtensysteem Bronhouder
+
+participant Berichtensysteem LV BGT
+
+Berichtensysteem Bronhouder--\>\>Berichtensysteem LV BGT:
+vooraankondigingsbericht (vavDi01)
+
+activate Berichtensysteem LV BGT
+
+alt Als vooraankondiging raakt aan interessegebied van Geabonneerde bronhouder
+
+Berichtensysteem LV BGT--\>\>Berichtensysteem Geabonneerde bronhouder:
+vooraankondigingsbericht (vavDi01)
+
+end
+
+deactivate Berichtensysteem LV BGT
+
+Berichtensysteem Bronhouder--\>\>Berichtensysteem LV BGT: ophaalverzoek
+(opvDi01)
+
+activate Berichtensysteem LV BGT
+
+Note over Berichtensysteem Bronhouder , Berichtensysteem LV BGT: LV-BGT haalt
+mutatiebericht op
+
+Berichtensysteem Bronhouder--\>\>Berichtensysteem LV BGT: mutatiebericht (ZIP:
+mtbSVBDi01)
+
+deactivate Berichtensysteem LV BGT
+
+Note over Berichtensysteem LV BGT: Controle en registratie door LV BGT
+
+activate Berichtensysteem LV BGT
+
+Berichtensysteem LV BGT--\>\>Berichtensysteem Bronhouder: mutatierespons
+(mtbDu01)
+
+Note over Berichtensysteem Bronhouder, Berichtensysteem LV BGT: Bronhouder
+downloadt verwerkingsverslag
+
+Berichtensysteem LV BGT--\>\>Berichtensysteem Bronhouder: verwerkingsverslag
+(PDF+GML)
+
+deactivate Berichtensysteem LV BGT
+
+alt Als mutatie raakt aan interessegebied Geabonneerde bronhouder
+
+Berichtensysteem LV BGT--\>\>Berichtensysteem Geabonneerde bronhouder:
+ophaalverzoek (opvDi01)
+
+activate Berichtensysteem LV BGT
+
+Note over Berichtensysteem Geabonneerde bronhouder, Berichtensysteem LV BGT:
+Geabonneerde bronhouder haal mutatiebericht op
+
+Berichtensysteem LV BGT--\>\>Berichtensysteem Geabonneerde bronhouder:
+mutatiebericht (ZIP: mtbSVBDi01)
+
+deactivate Berichtensysteem LV BGT
+
+end
+
+\`\`\`
+
+\<figcaption\>BGT Berichtenverkeer: automatisch berichtenverkeer\</figcaption\>
+
+\</figure\>
 
 ### Vooraankondigen
 
@@ -91,8 +228,6 @@ onderstaand sequentiediagram.
     bericht als «zender» de gegevens van SVB-BGT. Vanaf 3 maanden na de
     releasedatum stuurt LV BGT in de stuurgegevens van het bericht als «zender»
     de eigen stuurgegevens.
-
-### 
 
 ### Vervallen: initieel leveren
 

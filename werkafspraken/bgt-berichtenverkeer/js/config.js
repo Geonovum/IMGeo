@@ -6,14 +6,16 @@ let respecConfig = {
   specType: "WA",
   pubDomain: "imgeo",
   shortName: "bgt-berichtenverkeer",
+  maxTocLevel: 1,
   //publishDate: "2022-06-24",
   //publishVersion: "0.9.9",
+  cvContact: "imgeo@geonovum.nl",
   
   previousVersion: "0.9.9",
-  previousPublishDate: "20230321",
+  previousPublishDate: "2023-03-21",
   previousMaturity: "VV",
   title: "BGT berichtenverkeer",
-  content: {"1-aanleiding": "informative", "2-werkafspraak": "", "3-impact": "informative", "4-registratie": "informative"},
+  content: {"1-aanleiding": "", "2-werkafspraak": "", "3-impact": "", "4-registratie": "informative"},
   editors:
     [
       {
