@@ -1,7 +1,7 @@
 // Plaats dit bestand op een centrale locatie voor hergebruik in meerdere documenten.
 var organisationConfig = {
     nl_organisationName: "Geonovum",
-    //nl_organisationStylesURL: "https://gitdocumentatie.logius.nl/publicatie/respec/style/",
+    nl_organisationStylesURL: "https://tools.geostandaarden.nl/respec/style/",
     nl_organisationPublishURL: "https://docs.geostandaarden.nl",
     logos: [{
         src: "https://tools.geostandaarden.nl/respec/style/logos/Geonovum.svg",
