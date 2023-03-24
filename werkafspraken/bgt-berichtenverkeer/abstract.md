@@ -1,0 +1,1 @@
+Dit document beschrijft een werkafspraak voor het BGT berichtenverkeer als gevolg van de overgang van de functionaliteit van systeem BRAVO naar Kadaster. 
