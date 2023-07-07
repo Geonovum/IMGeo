@@ -25,7 +25,7 @@ Rechtsonder: BGT Pand op relatieve hoogteligging 1.
 **![Afbeelding met kaart, plein, schermopname Automatisch gegenereerde
 beschrijving](media/03a9707550edf9a0caee26b892287b7d.png)**
 
-|  BGT-identificatie                     | tijdstipregistratie | BAG-identificatie | bronhouder | relatievehoogte |
+| BGT-identificatie                      | tijdstipregistratie | BAG-identificatie | bronhouder | relatievehoogte |
 |----------------------------------------|---------------------|-------------------|------------|-----------------|
 | G1783.a7c60324ef6449d2a055fe6d0503bd62 | 3-5-2023 16:38      | 11783100000001188 | G1783      | 0               |
 | G1783.6860512d15a94050b8be7f33a726174c | 3-5-2023 16:38      | 1783100000001188  | G1783      | 1               |
@@ -148,9 +148,8 @@ hoogteligging 1 met de BGT Pand geometrie op relatieve hoogteligging 1.
 | G0342.7b37d6d219244ff1922b7272133f709d | 28-4-2021 12:21:57  | -                 | G0342      | 1                |
 | G0342.ba24aa3e3ef1469ba80cac9f0401290d | 28-4-2021 12:21:57  | -                 | G0342      | 1                |
 
-## 
+## Gubbelstraat, Maastricht
 
-**Gubbelstraat, Maastricht**  
 In onderstaand voorbeeld is een BAG Pand opgedeeld in meerdere BGT Panden. Alle
 BGT panden hebben dezelfde BAG-identificatie. Per BGT Pand is eigen
 nummeraanduidingreeks opgenomen. Één pand bestaat uit multivlakgeometrie,
@@ -165,63 +164,23 @@ Linksonder: BGT Pand op maaiveld
 
 Rechtsonder: BAG Pand op BGT achtergrondvisualisatie.
 
-## ![](media/52ad68465e7f67763986c5c80cada626.png)
+![](media/52ad68465e7f67763986c5c80cada626.png)
 
-G0935.2940d986293c447f8f4041afcbdd5dd3, 14-12-2017 11:41:22 (West-Europa
-(standaardtijd))
-
-G0935.e5700b97bdfe4663a5d13aa71d0731cc, 4-10-2018 12:10:53
-
-G0935.f9e0d9bacdd64167937eea48b3efdaeb, 4-10-2018 12:10:54
-
-G0935.0c92759765734782825f5b603f4fe49b, 4-10-2018 12:10:53
-
-G0935.90f3d1a9ca224259b75a3ae7294951fd, 4-10-2018 12:10:53
-
-G0935.f06f189aca5e4666ab4b0b6e16cfa9ef, 4-10-2018 12:10:59
-
-G0935.a38780be9b9d4149b6ec5d876fe5bc09, 4-10-2018 12:10:57
-
-G0935.8394d55a05a54137aaa83046e54fff32, 4-10-2018 12:10:57
-
-G0935.a166d70ee36f42279d62fc564ed2ccc8, 4-10-2018 12:10:54 (West-Europa
-(zomertijd))
-
-0935100000021156
-
-G0935.fe47f91397bd46c1b089341703ba89da, 30-9-2022 11:03:58 (West-Europa
-(zomertijd))
-
-G0935.128a43192b1f44ca8450d058db288a84, 14-12-2017 11:42:32 (West-Europa
-(standaardtijd))
-
-G0935.6ec6eb17d0b64ae48850dfd58f8f3f75, 14-12-2017 11:40:15 (West-Europa
-(standaardtijd))
-
-G0935.1e55ee8e165c4528992e095bba1e792b, 14-12-2017 11:40:38 (West-Europa
-(standaardtijd))
-
-G0935
-
-0935100000021156
-
-## 
-
-| BGT lokaalID                           | tijdstipregistratie  | BAG-identificatie | bronhouder | relatievehoogte |
-|----------------------------------------|----------------------|-------------------|------------|-----------------|
-| G0935.2940d986293c447f8f4041afcbdd5dd3 |  14-12-2017 11:41:22 | 0935100000021156  | G0935      | 0               |
-| G0935.e5700b97bdfe4663a5d13aa71d0731cc |  14-12-2017 11:41:23 | 0935100000021156  | G0935      | 0               |
-| G0935.f9e0d9bacdd64167937eea48b3efdaeb |  14-12-2017 11:41:24 | 0935100000021156  | G0935      | 0               |
-| G0935.0c92759765734782825f5b603f4fe49b |  14-12-2017 11:41:25 | 0935100000021156  | G0935      | 0               |
-| G0935.90f3d1a9ca224259b75a3ae7294951fd |  14-12-2017 11:41:26 | 0935100000021156  | G0935      | 0               |
-| G0935.f06f189aca5e4666ab4b0b6e16cfa9ef |  14-12-2017 11:41:27 | 0935100000021156  | G0935      | 0               |
-| G0935.a38780be9b9d4149b6ec5d876fe5bc09 |  14-12-2017 11:41:28 | 0935100000021156  | G0935      | 0               |
-| G0935.8394d55a05a54137aaa83046e54fff32 |  14-12-2017 11:41:29 | 0935100000021156  | G0935      | 0               |
-| G0935.a166d70ee36f42279d62fc564ed2ccc8 |  14-12-2017 11:41:30 | 0935100000021156  | G0935      | 0               |
-| G0935.fe47f91397bd46c1b089341703ba89da |  14-12-2017 11:41:31 | 0935100000021156  | G0935      | 0               |
-| G0935.128a43192b1f44ca8450d058db288a84 |  14-12-2017 11:41:32 | 0935100000021156  | G0935      | 0               |
-| G0935.6ec6eb17d0b64ae48850dfd58f8f3f75 |  14-12-2017 11:41:33 | 0935100000021156  | G0935      | 0               |
-| G0935.1e55ee8e165c4528992e095bba1e792b |  14-12-2017 11:41:34 | 0935100000021156  | G0935      | 0               |
+| BGT lokaalID                           | tijdstipregistratie | BAG-identificatie | bronhouder | relatievehoogte |
+|----------------------------------------|---------------------|-------------------|------------|-----------------|
+| G0935.2940d986293c447f8f4041afcbdd5dd3 | 14-12-2017 11:41:22 | 0935100000021156  | G0935      | 0               |
+| G0935.e5700b97bdfe4663a5d13aa71d0731cc | 14-12-2017 11:41:23 | 0935100000021156  | G0935      | 0               |
+| G0935.f9e0d9bacdd64167937eea48b3efdaeb | 14-12-2017 11:41:24 | 0935100000021156  | G0935      | 0               |
+| G0935.0c92759765734782825f5b603f4fe49b | 14-12-2017 11:41:25 | 0935100000021156  | G0935      | 0               |
+| G0935.90f3d1a9ca224259b75a3ae7294951fd | 14-12-2017 11:41:26 | 0935100000021156  | G0935      | 0               |
+| G0935.f06f189aca5e4666ab4b0b6e16cfa9ef | 14-12-2017 11:41:27 | 0935100000021156  | G0935      | 0               |
+| G0935.a38780be9b9d4149b6ec5d876fe5bc09 | 14-12-2017 11:41:28 | 0935100000021156  | G0935      | 0               |
+| G0935.8394d55a05a54137aaa83046e54fff32 | 14-12-2017 11:41:29 | 0935100000021156  | G0935      | 0               |
+| G0935.a166d70ee36f42279d62fc564ed2ccc8 | 14-12-2017 11:41:30 | 0935100000021156  | G0935      | 0               |
+| G0935.fe47f91397bd46c1b089341703ba89da | 14-12-2017 11:41:31 | 0935100000021156  | G0935      | 0               |
+| G0935.128a43192b1f44ca8450d058db288a84 | 14-12-2017 11:41:32 | 0935100000021156  | G0935      | 0               |
+| G0935.6ec6eb17d0b64ae48850dfd58f8f3f75 | 14-12-2017 11:41:33 | 0935100000021156  | G0935      | 0               |
+| G0935.1e55ee8e165c4528992e095bba1e792b | 14-12-2017 11:41:34 | 0935100000021156  | G0935      | 0               |
 
 ## Westerplein, Berkel en Rodenrijs
 
@@ -267,7 +226,7 @@ Rechtsonder: BGT omtrekgerichte visualisatie d.d. 6 juli 2023
 | G1963.6c40f8703f694c2497bf15cfdee9f487 | 24-11-2022 13:32:54 | 0585100001327593  | G1963      | 0               |
 | G0585.8abeacd5439b75760000000a1017e0f0 | 1-8-2022 15:17:15   | 0585100001327593  | G1963      | 0               |
 
-**Van der Merckstraat, ’s-Gravendeel**
+## Van der Merckstraat, ’s-Gravendeel
 
 In onderstaand voorbeeld komt de afbakening van BGT en BAG panden niet overeen.
 Er zijn meerdere BGT Panden met gelijke BAG-identificatie, maar deze vallen niet
@@ -283,9 +242,9 @@ Rechtsonder: BAG Panden op BGT achtergrondvisualisatie
 
 ![](media/0d40017eab5ffd5f2d5cd8eac189aa0e.png)
 
-| BGT-identificatie                          | tijdstipregistratie     | BAG-identificatie       | bronhouder | relatievehoogte |
-|--------------------------------------------|-------------------------|-------------------------|------------|-----------------|
-| G0585.8abeacd5439b75760000000a1319984d     | 5-7-2022 14:49:50       | 0585100001329562        | G1963      | 0               |
-| **G1963.a7910dfdb00847769c94bf1577df897a** | **24-11-2022 13:32:54** | **0585100001329562(!)** | **G1963**  | **0**           |
-| G1963.093b81dc0a3a4982a42b5ecad7aac28b     | 24-11-2022 13:32:54     | 0585100001332225        | G1963      | 0               |
-| G0585.8abeacd5439b75760000000a1319927d     | 5-7-2022 14:49:50       | 0585100001332225        | G1963      | 0               |
+| BGT-identificatie                        | tijdstipregistratie   | BAG-identificatie     | bronhouder | relatievehoogte |
+|------------------------------------------|-----------------------|-----------------------|------------|-----------------|
+| G0585.8abeacd5439b75760000000a1319984d   | 5-7-2022 14:49:50     | 0585100001329562      | G1963      | 0               |
+| *G1963.a7910dfdb00847769c94bf1577df897a* | *24-11-2022 13:32:54* | *0585100001329562(!)* | *G1963*    | *0*             |
+| G1963.093b81dc0a3a4982a42b5ecad7aac28b   | 24-11-2022 13:32:54   | 0585100001332225      | G1963      | 0               |
+| G0585.8abeacd5439b75760000000a1319927d   | 5-7-2022 14:49:50     | 0585100001332225      | G1963      | 0               |

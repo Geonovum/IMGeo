@@ -1,4 +1,4 @@
-Bijlage **Pilot BGT pand afbakening voor WOZ**
+# Bijlage Pilot BGT pand afbakening voor WOZ
 
 Op basis van de gedachte, dat beheergrenzen in de BGT toegestaan zijn, hebben
 twee gemeenten na vooroverleg met Geonovum en samen met hun softwareleverancier
