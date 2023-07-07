@@ -67,7 +67,7 @@ Rechtsboven: BGT Standaardvisualisatie.
 
 Linksonder: BGT Pand op maaiveld.
 
-Rechtsonder: BGT Panden op relatieve hoogteligging 1.
+Rechtsonder: BGT Pand op relatieve hoogteligging -1.
 
 ![](media/0038d8e8fa79c65dca480111267ba939.png)
 
