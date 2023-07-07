@@ -61,8 +61,6 @@ het nader opdelen van een begroeidterreindeel van het type bosplantsoen voor
 eigen beheer. Voor gebruikers is in PDOK geen onderscheid zichtbaar, behalve een
 andere geometrie en BGT-identificatie.*
 
-## 
-
 ## Gewenste situatie
 
 ### Enkelvoudige bijhouding geometrie, aansluiting WOZ op BGT
@@ -96,7 +94,7 @@ kwaliteitsdashboard worden deze opgedeelde panden niet gesignaleerd. Er zijn dus
 geen technische belemmeringen om panddelen, maar middels het wijzigingsverzoek
 wordt gevraagd om deze werkwijze te formaliseren.
 
-## Uniformiteit
+### Uniformiteit
 
 Bronhouders delen nu naar eigen inzicht en behoefte panden in BGT nader op in
 delen voor overbouw, onderbouw en andere ‘inpandige’ onderdelen. Het IMGeo kent
