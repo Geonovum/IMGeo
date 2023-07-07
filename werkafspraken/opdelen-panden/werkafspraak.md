@@ -41,9 +41,7 @@ opgenomen conform onderstaande tabel.
 | Zwembad buiten (prive)   | OverigBouwwerk    | bassin             | 0 | opdelend                                                                                                             |
 | Balkon                   | GebouwInstallatie | luifel             | 1 |                                                                                                                      |
 
-### 
-
-### BAG identificatie en Nummeraanduidingreeks
+### BAG identificatie en nummeraanduidingreeks
 
 Bij elk pand(deel) in de BGT moet een geldige identificatie van het bijbehorende
 pand in de BAG worden opgenomen. Nummeraanduidingreeksen (reeksen van
