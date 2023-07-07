@@ -85,11 +85,14 @@ pand met geometrie op relatieve hoogteligging 1 en twee afzonderlijke panden met
 geometrie op relatieve hoogteligging 2. De BGT panden hebben dezelfde
 BAG-identificatie.
 
+N.B. Alleen het object in het midden is nader geanalyseerd. Objecten boven en
+onder zijn vergelikbaar.
+
 Linksboven: Luchtfoto
 
 Rechtsboven: BGT Pand op maaiveld
 
-Linksonder: BGT Panden op relatieve hoogteligging 1.
+Linksonder: BGT Pand op relatieve hoogteligging 1.
 
 Rechtsonder: BGT Panden op relatieve hoogteligging 2.
 
