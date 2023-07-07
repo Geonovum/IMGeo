@@ -58,8 +58,6 @@ kleine, middelgrote en/of grote gemeente?*
 *VRAAG: Welke capaciteit/kosten vereist het nader opdelen van panden in de BGT
 voor een kleine, middelgrote en/of grote gemeente?*
 
-## 
-
 ## Samenvatting impact op organisaties en systemen
 
 ### Organisaties
@@ -76,7 +74,11 @@ Het nader opdelen van Panden in de BGT is **optioneel!**
 
 #### BGT bronhoudersoftware
 
-geen technische impact
+geen technische impact?
+
+BAG-BGT software?
+
+WOZ software?
 
 #### BRAVO/LV BGT
 
@@ -88,4 +90,4 @@ aanpassen visualisatie en geaggregeerd informatieproduct?
 
 #### Kwaliteitsdashboard
 
-geen technische impact
+geen technische impact?
