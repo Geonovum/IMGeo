@@ -1,8 +1,8 @@
 # Bijlage Pilot BGT pand afbakening voor WOZ
 
 Op basis van de gedachte, dat beheergrenzen in de BGT toegestaan zijn, hebben
-twee gemeenten na vooroverleg met Geonovum en samen met hun softwareleverancier
-in mei 2023 een kleine pilot uitgevoerd .
+vijf samenwerkende gemeenten na vooroverleg met Geonovum en samen met hun softwareleverancier
+in mei 2023 een pilot uitgevoerd .
 
 Voor de pilot zijn in een kleine wijk de BGT panden opgedeeld ten behoeve van de
 WOZ. In overleg met hun WOZ afdeling hebben ze bepaald welke pand delen relevant
