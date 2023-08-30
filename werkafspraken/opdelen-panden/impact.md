@@ -37,9 +37,9 @@ van het nader opdelen van panden in de BGT?*
 
 ### Nadelen, risico’s
 
-1.  Gebruikers worden geconfronteerd met mogelijk heel veel mutaties die panden
+1.  Gebruikers en afnemers worden geconfronteerd met mogelijk heel veel mutaties die panden
     opdelen in panddelen, en moeten eventueel zelf de gegevens samenvoegen tot
-    één BGT Pand.
+    één BGT Pand of hun eigen koppelingen bijwerken.
 
 2.  Opdelen in panddelen voor WOZ vereist goede WOZ-kennis van BGT beheerder.
 
@@ -47,10 +47,13 @@ van het nader opdelen van panden in de BGT?*
 
 4.  Mogelijk effect op indicatoren/ kwaliteitsanalyses in kwaliteitsdashboard.
 
+**VRAAG:** in 1.3.1. zeg je dat in het kwalitietsdashboard deze panden niet gesignaleerd worden?
+
+
 ## Kwantitatief
 
 *VRAAG: Wat zijn de kosten die gebruikers zelf zouden moeten maken om opgedeeld
-panden weer te aggregeren tot één pand?*
+panden weer te aggregeren tot één pand?* **(VRAAG: als dit nodig is)**
 
 *VRAAG: Wat zijn de financiële baten van het nader opdelen van panden voor een
 kleine, middelgrote en/of grote gemeente?*
@@ -75,6 +78,8 @@ Het nader opdelen van Panden in de BGT is **optioneel!**
 #### BGT bronhoudersoftware
 
 geen technische impact?
+
+Koppeling met WOZ applicatie realiseren, voor gestroomlijnd mutatieproces. Hierbij zou al gebruik gemaakt kunnen worden van bestaand koppelvlak.
 
 BAG-BGT software?
 
