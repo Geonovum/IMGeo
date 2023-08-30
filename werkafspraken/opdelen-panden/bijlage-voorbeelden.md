@@ -3,7 +3,7 @@
 ## Overzichtskaart
 
 Onderstaande afbeelding toont een overzicht van panden in de BGT die nader zijn
-opgedeeld door ca. 20-25 gemeenten/bronhouders.
+opgedeeld. Ca. 20-25 gemeenten/bronhouders doen dit opdelen structureel.
 
 ![Afbeelding met tekening, schets, Lijnillustraties, kunst Automatisch
 gegenereerde beschrijving](media/6704da6e29edd6eeafdf8672887b8eb8.png)
@@ -86,7 +86,7 @@ geometrie op relatieve hoogteligging 2. De BGT panden hebben dezelfde
 BAG-identificatie.
 
 N.B. Alleen het object in het midden is nader geanalyseerd. Objecten boven en
-onder zijn vergelikbaar.
+onder zijn vergelijkbaar.
 
 Linksboven: Luchtfoto
 
