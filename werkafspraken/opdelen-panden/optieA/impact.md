@@ -1,93 +1,21 @@
 # Impact
 
-## Nul-alternatief
+**Bronhouders** die nu panden in de BGT nader hebben opgedeeld, dienen deze om
+te zetten naar één BGT Pand per status (bestaand of plan) per BAG pand.
 
-*VRAAG: Wat is de positieve of negatieve impact van het nul-alternatief:*
+Dit betekent dat
 
-1.  *niks doen of*
+-   Delen van een Pand op andere relatieve hoogteligging dan maaiveld worden uit
+    de LV BGT verwijdert.
 
-2.  *het niet-toestaan van nadere opdeling van panden in de BGT.*
+-   Delen van een Pand op dezelfde relatieve hoogteligging worden samengevoegd
+    tot één BGT pand.
 
-## Kwalitatief
+Er is **geen technische impact** op bronhoudersoftware.
 
-*VRAAG: Wat zijn de voordelen en nadelen, kansen en risico’s van het toestaan
-van het nader opdelen van panden in de BGT?*
+Een keuze voor controle ‘aan de poort’ of ‘achteraf’ wordt nog gemaakt, d.w.z.
+in het kader van KTH wordt
 
-### Voordelen, kansen
+Of een controle aan LV BGT toegevoegd die opgedeelde panden tegenhoudt
 
-1.  Enkelvoudige bijhouding/eenmalig inwinnen van geometrie leidt tot
-    kostenreductie.
-
-2.  Verbetering kwaliteit WOZ-data met BGT leidt tot eerlijkere, betere
-    WOZ-aanslagen.
-
-3.  Gebruik en terugmelding WOZ leidt tot verbetering kwaliteit BGT.
-
-4.  Mechanisme nader opdelen van panden is ook toepasbaar voor bovenbouw en
-    onderbouw.
-
-5.  Pandgeometrie maaiveld, bovenbouw en onderbouw in BGT geeft de volledige
-    BAG-contour.
-
-6.  Bronhoudersoftware hoeft niet te worden aangepast, een werkafspraak met
-    nieuwe inwinregels volstaat.
-
-7.  Het opstellen van een volledige mapping tussen BGT en WOZ leidt tot een
-    complete beeld van BGT objecten voor de WOZ.
-
-### Nadelen, risico’s
-
-1.  Gebruikers worden geconfronteerd met mogelijk heel veel mutaties die panden
-    opdelen in panddelen, en moeten eventueel zelf de gegevens samenvoegen tot
-    één BGT Pand.
-
-2.  Opdelen in panddelen voor WOZ vereist goede WOZ-kennis van BGT beheerder.
-
-3.  Afhankelijkheid van WOZ-afdeling voor goede afstemming op de WOZ-behoefte.
-
-4.  Mogelijk effect op indicatoren/ kwaliteitsanalyses in kwaliteitsdashboard.
-
-## Kwantitatief
-
-*VRAAG: Wat zijn de kosten die gebruikers zelf zouden moeten maken om opgedeeld
-panden weer te aggregeren tot één pand?*
-
-*VRAAG: Wat zijn de financiële baten van het nader opdelen van panden voor een
-kleine, middelgrote en/of grote gemeente?*
-
-*VRAAG: Welke capaciteit/kosten vereist het nader opdelen van panden in de BGT
-voor een kleine, middelgrote en/of grote gemeente?*
-
-## Samenvatting impact op organisaties en systemen
-
-### Organisaties
-
-#### Gebruikers
-
-Indien gewenst, zelf samenvoegen van panden of via informatieproduct?
-
-#### Bronhouders
-
-Het nader opdelen van Panden in de BGT is **optioneel!**
-
-### Systemen
-
-#### BGT bronhoudersoftware
-
-geen technische impact?
-
-BAG-BGT software?
-
-WOZ software?
-
-#### BRAVO/LV BGT
-
-geen technische impact?
-
-#### BGT distributie (PDOK)
-
-aanpassen visualisatie en geaggregeerd informatieproduct?
-
-#### Kwaliteitsdashboard
-
-geen technische impact?
+Of een indicator aan het kwaliteitsdashboard BGT toegevoegd.
