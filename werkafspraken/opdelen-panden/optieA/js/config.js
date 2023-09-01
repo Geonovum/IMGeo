@@ -53,16 +53,7 @@ let respecConfig = {
   //-- de namen van de auteur(s) ------------------------------------------------------
   //-- vul in: per auteur: name:, company:, companyURL: -------------------------------
   authors:
-    [
-    {  name: "Michel van de Spijker",
-	   company: "Gemeente Best",
-	   companyURL: "https://www.gemeentebest.nl/"
-	},
-	{
-        name: "Silvy Horbach",
-        company: "Geonovum",
-        companyURL: "https://www.geonovum.nl",
-      },
+    [    
 	  
 	  {
         name: "Arnoud de Boer",
