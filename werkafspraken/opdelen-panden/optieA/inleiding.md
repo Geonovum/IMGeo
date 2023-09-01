@@ -9,6 +9,23 @@ registratie van over/onderbouw) of panden nader op te delen in panddelen
 (bijvoorbeeld een serre, aanbouw, etc. voor aansluiting met de
 WOZ-deelobjecten). Zie bijlage 1 voor voorbeelden.
 
+Er is discussie ontstaan of het opdelen van panden in de BGT een juiste en
+wenselijke situatie is.
+
+Twee regels in de BGT\|IMGeo standaarden lijken elkaar op dit onderwerp tegen te
+spreken:
+
+-   De BGT-standaard stelt dat opdelen van objecten 'voor eigen beheer' is
+    toegestaan.
+
+-   De BGT-standaard hanteert de definitie van Pand uit de BAG, waarmee wordt
+    verondersteld dat voor elk object Pand in de BAG er precies één object Pand
+    in de BGT met grondvlakgeometrie wordt opgenomen.
+
+Door deze tegenspraak is er onduidelijkheid over de juiste toepassing van de
+BGT\|IMGeo standaarden. Om deze onduidelijkheid bij inconsistenties op te
+lossen, kan Geonovum een 'werkafspraak' maken.
+
 De wenselijkheid van het nader opdelen van panden in de BGT dient in bredere
 context besproken en interbestuurlijk besloten te worden. In een voorfase dienen
 oplossingsrichtingen bepaald te worden, en de haalbaarheid en uitvoerbaarheid
