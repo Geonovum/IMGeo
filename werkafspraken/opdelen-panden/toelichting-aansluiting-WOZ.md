@@ -45,8 +45,6 @@ opgenomen conform onderstaande tabel.
 | Tuinhuis (geen BAG pand) | 1840         | OverigBouwwerk                      | niet-bgt: schuur                | 0          |
 | Zwembad buiten (prive)   | 1890         | OverigBouwwerk                      | bassin                          | 0          |
 
-### 
-
 ### Topologie
 
 De objecten die de grondvlakgeometrie van een BGT pand nader opdelen in
