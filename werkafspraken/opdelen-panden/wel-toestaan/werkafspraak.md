@@ -1,5 +1,3 @@
-# Werkafspraak
-
 De volgende werkafspraak geldt voor de BGT keten voor het opdelen van panden in
 de BGT:
 
