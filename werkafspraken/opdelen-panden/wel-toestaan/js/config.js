@@ -74,10 +74,10 @@ let respecConfig = {
   //neem hier de URL van de github repository op waar het respec document in staat
   github: "https://github.com/Geonovum/IMGeo",
   // Create PDF and link to file in header (optional):
-  alternateFormats: [
-      {
-          label: "pdf",
-          uri: "template.pdf",
-      },
-  ],
+  //alternateFormats: [
+  //    {
+  //        label: "pdf",
+   //       uri: "template.pdf",
+   //   },
+ // ],
 };
