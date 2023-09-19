@@ -3,6 +3,7 @@ let respecConfig = {
   useLabel: true,
   // title is verplicht! Neem hier de titel van het document op ----------------------
   title: "Opdelen panden in de BGT",
+  subtitle: "Niet toestaan",
   //-- specStatus is verplicht! (activeer 1 van de volgende) --------------------------
   //specStatus: "wv",                   // Werkversie
   specStatus: "cv",               // Consultatieversie
@@ -26,7 +27,7 @@ let respecConfig = {
   //licence: "cc0",                 // Public Domain Dedication
   licence: "cc-by",                 // Attribution, met bronvermelding
   //-- shortName is verplicht! (komt in de URL: kies logische afkorting)--------------
-  shortName: "IMGeo/werkafspraken/opdelen-panden",
+  shortName: "IMGeo/werkafspraken/opdelen-panden/niet-toestaan",
   
   //edDraftURI = De URI van de draft version. Deze wordt automatisch afgeleid van de github URI; maar kan hier overschreven worden. 
 	//edDraftURI: ["https://geonovum.github.io", "/", "shortName"],
