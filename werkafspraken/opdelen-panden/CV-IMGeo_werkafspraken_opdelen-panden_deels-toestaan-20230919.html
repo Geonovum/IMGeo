@@ -1,0 +1,1393 @@
+<!DOCTYPE html><html lang="nl"><head>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta content="text/html; charset=utf-8" http-equiv="content-type">
+<meta name="generator" content="ReSpec 34.1.4">
+<style>
+dfn{cursor:pointer}
+.dfn-panel{position:absolute;z-index:35;min-width:300px;max-width:500px;padding:.5em .75em;margin-top:.6em;font-family:"Helvetica Neue",sans-serif;font-size:small;background:#fff;color:#000;box-shadow:0 1em 3em -.4em rgba(0,0,0,.3),0 0 1px 1px rgba(0,0,0,.05);border-radius:2px}
+.dfn-panel:not(.docked)>.caret{position:absolute;top:-9px}
+.dfn-panel:not(.docked)>.caret::after,.dfn-panel:not(.docked)>.caret::before{content:"";position:absolute;border:10px solid transparent;border-top:0;border-bottom:10px solid #fff;top:0}
+.dfn-panel:not(.docked)>.caret::before{border-bottom:9px solid #a2a9b1}
+.dfn-panel *{margin:0}
+.dfn-panel b{display:block;color:#000;margin-top:.25em}
+.dfn-panel ul a[href]{color:#333}
+.dfn-panel>div{display:flex}
+.dfn-panel a.self-link{font-weight:700;margin-right:auto}
+.dfn-panel .marker{padding:.1em;margin-left:.5em;border-radius:.2em;text-align:center;white-space:nowrap;font-size:90%;color:#040b1c}
+.dfn-panel .marker.dfn-exported{background:#d1edfd;box-shadow:0 0 0 .125em #1ca5f940}
+.dfn-panel .marker.idl-block{background:#8ccbf2;box-shadow:0 0 0 .125em #0670b161}
+.dfn-panel a:not(:hover){text-decoration:none!important;border-bottom:none!important}
+.dfn-panel a[href]:hover{border-bottom-width:1px}
+.dfn-panel ul{padding:0}
+.dfn-panel li{margin-left:1em}
+.dfn-panel.docked{position:fixed;left:.5em;top:unset;bottom:2em;margin:0 auto;max-width:calc(100vw - .75em * 2 - .5em - .2em * 2);max-height:30vh;overflow:auto}
+</style>
+  
+  
+  
+  
+  
+  
+  
+<script>document.title = respecConfig.title</script>
+<title>Opdelen panden in de BGT</title>
+  
+<title>Default</title>
+  
+<link rel="shortcut icon" type="image/x-icon" href="https://tools.geostandaarden.nl/respec/style/logos/Geonovum.ico">
+  
+
+<style id="respec-mainstyle">
+@keyframes pop{
+0%{transform:scale(1,1)}
+25%{transform:scale(1.25,1.25);opacity:.75}
+100%{transform:scale(1,1)}
+}
+:is(h1,h2,h3,h4,h5,h6,a) abbr{border:none}
+dfn{font-weight:700}
+a.internalDFN{color:inherit;border-bottom:1px solid #99c;text-decoration:none}
+a.externalDFN{color:inherit;border-bottom:1px dotted #ccc;text-decoration:none}
+a.bibref{text-decoration:none}
+.respec-offending-element:target{animation:pop .25s ease-in-out 0s 1}
+.respec-offending-element,a[href].respec-offending-element{text-decoration:red wavy underline}
+@supports not (text-decoration:red wavy underline){
+.respec-offending-element:not(pre){display:inline-block}
+.respec-offending-element{background:url(data:image/gif;base64,R0lGODdhBAADAPEAANv///8AAP///wAAACwAAAAABAADAEACBZQjmIAFADs=) bottom repeat-x}
+}
+#references :target{background:#eaf3ff;animation:pop .4s ease-in-out 0s 1}
+cite .bibref{font-style:normal}
+a[href].orcid{padding-left:4px;padding-right:4px}
+a[href].orcid>svg{margin-bottom:-2px}
+.toc a,.tof a{text-decoration:none}
+a .figno,a .secno{color:#000}
+ol.tof,ul.tof{list-style:none outside none}
+.caption{margin-top:.5em;font-style:italic}
+table.simple{border-spacing:0;border-collapse:collapse;border-bottom:3px solid #005a9c}
+.simple th{background:#005a9c;color:#fff;padding:3px 5px;text-align:left}
+.simple th a{color:#fff;padding:3px 5px;text-align:left}
+.simple th[scope=row]{background:inherit;color:inherit;border-top:1px solid #ddd}
+.simple td{padding:3px 10px;border-top:1px solid #ddd}
+.simple tr:nth-child(even){background:#f0f6ff}
+.section dd>p:first-child{margin-top:0}
+.section dd>p:last-child{margin-bottom:0}
+.section dd{margin-bottom:1em}
+.section dl.attrs dd,.section dl.eldef dd{margin-bottom:0}
+#issue-summary>ul{column-count:2}
+#issue-summary li{list-style:none;display:inline-block}
+details.respec-tests-details{margin-left:1em;display:inline-block;vertical-align:top}
+details.respec-tests-details>*{padding-right:2em}
+details.respec-tests-details[open]{z-index:999999;position:absolute;border:thin solid #cad3e2;border-radius:.3em;background-color:#fff;padding-bottom:.5em}
+details.respec-tests-details[open]>summary{border-bottom:thin solid #cad3e2;padding-left:1em;margin-bottom:1em;line-height:2em}
+details.respec-tests-details>ul{width:100%;margin-top:-.3em}
+details.respec-tests-details>li{padding-left:1em}
+.self-link:hover{opacity:1;text-decoration:none;background-color:transparent}
+aside.example .marker>a.self-link{color:inherit}
+.header-wrapper{display:flex;align-items:baseline;position:relative;left:-.5em}
+:is(h2,h3,h4,h5,h6):not(#toch2)+a.self-link{color:inherit;order:-1;position:relative;left:-.7em;font-size:1rem;opacity:.5}
+:is(h2,h3,h4,h5,h6)+a.self-link::before{content:"§";text-decoration:none;color:var(--heading-text)}
+:is(h2,h3)+a.self-link{top:-.2em}
+:is(h4,h5,h6)+a.self-link::before{color:#000}
+@media (max-width:767px){
+dd{margin-left:0}
+}
+@media print{
+.removeOnSave{display:none}
+}
+</style>
+<style id="respec-nlgov">
+img.license{float:left;padding-right:5px}
+</style>
+<style>
+ul.index{columns:30ch;column-gap:1.5em}
+ul.index li{list-style:inherit}
+ul.index li span{color:inherit;cursor:pointer;white-space:normal}
+#index-defined-here ul.index li{font-size:.9rem}
+ul.index code{color:inherit}
+#index-defined-here .print-only{display:none}
+@media print{
+#index-defined-here .print-only{display:initial}
+}
+</style>
+<meta name="description" content="Dit is een BGT werkafspraak">
+<style>
+
+  .sidelabel {
+    position: fixed;
+    -webkit-transform-origin: top right;
+    right: 100%;
+    top: 0;
+    -webkit-transform: rotate(-90deg);
+    padding: 4px 50px 4px 10px;
+    color: white;
+    white-space: nowrap;
+    z-index: 1;
+    background-color: #045D9F;
+  }
+</style>
+<script type="text/javascript">
+   /* Any custom mermaid.js scripts will go here. */
+  </script>
+<style>
+
+  /* Any custom mermaid.js scripts will go here. */
+  }
+</style>
+<script id="initialUserConfig" type="application/json">{
+  "nl_organisationName": "Geonovum",
+  "nl_organisationPublishURL": "https://docs.geostandaarden.nl/",
+  "logos": [
+    {
+      "src": "https://tools.geostandaarden.nl/respec/style/logos/Geonovum.svg",
+      "alt": "Geonovum",
+      "id": "Geonovum",
+      "height": 67,
+      "width": 132,
+      "url": "https://www.geonovum.nl/geo-standaarden"
+    }
+  ],
+  "postProcess": [
+    null
+  ],
+  "latestVersion": [
+    "nl_organisationPublishURL",
+    "pubDomain",
+    "/",
+    "shortName",
+    "/"
+  ],
+  "thisVersion": [
+    "nl_organisationPublishURL",
+    "pubDomain",
+    "/",
+    "specStatus",
+    "-",
+    "specType",
+    "-",
+    "shortName",
+    "-",
+    "publishDate"
+  ],
+  "prevVersion": [
+    "nl_organisationPublishURL",
+    "pubDomain",
+    "/",
+    "previousMaturity",
+    "-",
+    "specType",
+    "-",
+    "shortName",
+    "-",
+    "previousPublishDate"
+  ],
+  "useLogo": true,
+  "useLabel": true,
+  "license": "cc-by",
+  "addSectionLinks": true,
+  "localizationStrings": {
+    "en": {
+      "wv": "Editor's draft",
+      "cv": "Candidate recommendation",
+      "vv": "Proposed recommendation",
+      "def": "Recommendation",
+      "basis": "Document",
+      "no": "Norm",
+      "st": "Standard",
+      "im": "Information model",
+      "pr": "Practical guideline",
+      "hr": "Guide",
+      "wa": "Work process agreement",
+      "al": "General",
+      "bd": "Governance documentation",
+      "bp": "Best practice"
+    },
+    "nl": {
+      "wv": "Werkversie",
+      "cv": "Consultatieversie",
+      "vv": "Versie ter vaststelling",
+      "def": "Vastgestelde versie",
+      "basis": "Document",
+      "no": "Norm",
+      "st": "Standaard",
+      "im": "Informatiemodel",
+      "pr": "Praktijkrichtlijn",
+      "hr": "Handreiking",
+      "wa": "Werkafspraak",
+      "al": "Algemeen",
+      "bd": "Beheerdocumentatie",
+      "bp": "Best practice"
+    }
+  },
+  "sotdText": {
+    "nl": {
+      "sotd": "Status van dit document",
+      "def": "Dit is de definitieve versie van dit document. Wijzigingen naar aanleiding van consultaties zijn doorgevoerd.",
+      "wv": "Dit is een werkversie die op elk moment kan worden gewijzigd, verwijderd of vervangen door andere documenten. Het is geen stabiel document.",
+      "cv": "Dit is een consultatieversie. Commentaar over dit document kan gestuurd worden naar ",
+      "vv": "Dit is de definitieve conceptversie van dit document. Wijzigingen naar aanleiding van consultaties zijn doorgevoerd.",
+      "basis": "Dit is een document zonder officiële status."
+    },
+    "en": {
+      "sotd": "Status of this document",
+      "def": "This is the definitive version of this document. Edits resulting from consultations have been applied.",
+      "wv": "This is a working draft that can be changed, removed or replaced by other documents at any time. It is not a stable document.",
+      "cv": "This is a stable draft, published for public comment. Comments regarding this document may be sent to ",
+      "vv": "This is the final draft of this document. Edits resulting from consultations have been applied.",
+      "basis": "This document has no official standing."
+    }
+  },
+  "labelColor": {
+    "def": "#045D9F",
+    "wv": "#FF0000",
+    "cv": "#045D9F",
+    "vv": "#045D9F",
+    "basis": "#80CC28"
+  },
+  "licenses": {
+    "cc0": {
+      "name": "Creative Commons 0 Public Domain Dedication",
+      "short": "CC0",
+      "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "image": "https://tools.geostandaarden.nl/respec/style/logos/CC-Licentie.svg"
+    },
+    "cc-by": {
+      "name": "Creative Commons Attribution 4.0 International Public License",
+      "short": "CC-BY",
+      "url": "https://creativecommons.org/licenses/by/4.0/legalcode",
+      "image": "https://tools.geostandaarden.nl/respec/style/logos/cc-by.svg"
+    },
+    "cc-by-nd": {
+      "name": "Creative Commons Naamsvermelding-GeenAfgeleideWerken 4.0 Internationaal",
+      "short": "CC-BY-ND",
+      "url": "https://creativecommons.org/licenses/by-nd/4.0/legalcode.nl",
+      "image": "https://tools.geostandaarden.nl/respec/style/logos/cc-by-nd.svg"
+    }
+  },
+  "localBiblio": {
+    "SemVer": {
+      "href": "https://semver.org",
+      "title": "Semantic Versioning 2.0.0",
+      "authors": [
+        "T. Preston-Werner"
+      ],
+      "date": "June 2013"
+    }
+  },
+  "title": "Opdelen panden in de BGT",
+  "subtitle": "Deels toestaan",
+  "specStatus": "cv",
+  "specType": "WA",
+  "pubDomain": "imgeo",
+  "licence": "cc-by",
+  "shortName": "IMGeo/werkafspraken/opdelen-panden/deels-toestaan",
+  "editors": [
+    {
+      "name": "Arnoud de Boer",
+      "company": "Geonovum",
+      "companyURL": "https://www.geonovum.nl"
+    }
+  ],
+  "authors": [
+    {
+      "name": "Silvy Horbach",
+      "company": "Geonovum",
+      "companyURL": "https://www.geonovum.nl"
+    },
+    {
+      "name": "Arnoud de Boer",
+      "company": "Geonovum",
+      "companyURL": "https://www.geonovum.nl"
+    }
+  ],
+  "github": "https://github.com/Geonovum/IMGeo",
+  "alternateFormats": [
+    {
+      "label": "pdf",
+      "uri": "template.pdf"
+    }
+  ]
+}</script>
+<link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/2016/base.css"></head>
+
+<body class="h-entry informative"><div class="head">
+    <a class="logo" href="https://www.geonovum.nl/geo-standaarden"><img alt="Geonovum" height="67" id="Geonovum" src="https://tools.geostandaarden.nl/respec/style/logos/Geonovum.svg" width="132">
+  </a> <h1 id="title" class="title">Opdelen panden in de BGT</h1>
+    <h2 id="subtitle" class="subtitle">Deels toestaan</h2>
+    <h2>
+      Geonovum Werkafspraak<br>
+      Consultatieversie
+      <time class="dt-published" datetime="2023-09-19">19 september 2023</time>
+    </h2>
+    <dl>
+      
+      
+      <dt>Laatste werkversie:</dt><dd><a href="https://geonovum.github.io/IMGeo/werkafspraken/opdelen-panden/deels-toestaan/">https://geonovum.github.io/IMGeo/werkafspraken/opdelen-panden/deels-toestaan/</a></dd>
+      
+      
+      
+      
+      
+      <dt>Redacteur:</dt>
+      <dd class="editor p-author h-card vcard">
+    <span class="p-name fn">Arnoud de Boer</span> (<a class="p-org org h-org" href="https://www.geonovum.nl">Geonovum</a>)
+  </dd>
+      
+      <dt>Auteurs:</dt><dd class="editor p-author h-card vcard">
+    <span class="p-name fn">Silvy Horbach</span> (<a class="p-org org h-org" href="https://www.geonovum.nl">Geonovum</a>)
+  </dd><dd class="editor p-author h-card vcard">
+    <span class="p-name fn">Arnoud de Boer</span> (<a class="p-org org h-org" href="https://www.geonovum.nl">Geonovum</a>)
+  </dd>
+      <dt>Doe mee:</dt><dd>
+    <a href="https://github.com/Geonovum/IMGeo/">GitHub Geonovum/IMGeo</a>
+  </dd><dd>
+    <a href="https://github.com/Geonovum/IMGeo/issues/">Dien een melding in</a>
+  </dd><dd>
+    <a href="https://github.com/Geonovum/IMGeo/commits/">Revisiehistorie</a>
+  </dd><dd>
+    <a href="https://github.com/Geonovum/IMGeo/pulls/">Pull requests</a>
+  </dd>
+    </dl>
+    
+    
+   <!--  <p>
+          Dit document is ook beschikbaar in dit niet-normatieve formaat:
+          <a rel="alternate" href="template.pdf">pdf</a>
+        </p> -->
+    <p class="copyright">
+          Dit document valt onder de volgende licentie: 
+          <a rel="license" href="https://creativecommons.org/licenses/by/4.0/legalcode" class="subfoot"><img class="license" src="https://tools.geostandaarden.nl/respec/style/logos/cc-by.svg" alt="Logo Creative Commons Attribution 4.0 International Public License"><br> Creative Commons Attribution 4.0 International Public License</a>
+        </p>
+    <hr title="Separator for header">
+  </div>
+  <section id="abstract" class="introductory">
+  
+  <h2>Samenvatting</h2>
+  
+  <p>  In de BGT|IMGeo standaarden is een technische vrijheid geconstateerd die het mogelijk maakt om panden nader op te delen in meerdere objecten/geometrieën.</p>
+  <p>Onder het BGT werkveld wordt de wenselijke van het opdelen van panden in de BGT getoetst middels drie conceptwerkafspraken:
+<li><a href="https://docs.geostandaarden.nl/imgeo/werkafspraken/opdelen-panden/niet-toestaan/" target="_blank"><strong>Niet-toestaan:</strong></a> het opdelen van panden in de BGT wordt niet toegestaan, ook niet voor overbouw/onderbouw.</li>
+<li><a href="https://docs.geostandaarden.nl/imgeo/werkafspraken/opdelen-panden/deels-toestaan/" target="_blank"><strong>Deels toestaan:</strong></a> het opdelen van panden in de BGT wordt alleen toegestaan voor opname van overbouw en onderbouw.</li>
+<li><a href="https://docs.geostandaarden.nl/imgeo/werkafspraken/opdelen-panden/wel-toestaan/" target="_blank"><strong>Wel toestaan:</strong></a> het opdelen van panden in de BGT wordt -onder condities- wel toegestaan.</li><?p>
+<p>Dit document is één van deze concept-werkafspraken.</p>
+  
+  <p>
+</section>
+  <section id="sotd" class="introductory"><h2>Status van dit document</h2>  
+  <p>Dit is een consultatieversie. Commentaar over dit document kan tot 1 november 2023 gestuurd worden via dit <a href="https://fd10.formdesk.com/geonovum/Werkafspraak" target="_blank">consultatieformulier</a>.</p>
+  
+  
+  </section><nav id="toc"><h2 class="introductory" id="inhoudsopgave">Inhoudsopgave</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">Samenvatting</a></li><li class="tocline"><a class="tocxref" href="#sotd">Status van dit document</a></li><li class="tocline"><a class="tocxref" href="#inleiding"><bdi class="secno">1. </bdi>Inleiding</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#aanleiding"><bdi class="secno">1.1 </bdi>Aanleiding</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#opdelen-voor-beheer"><bdi class="secno">1.1.1 </bdi>Opdelen voor beheer</a></li><li class="tocline"><a class="tocxref" href="#panden-in-de-bgt"><bdi class="secno">1.1.2 </bdi>Panden in de BGT</a></li></ol></li><li class="tocline"><a class="tocxref" href="#leeswijzer"><bdi class="secno">1.2 </bdi>Leeswijzer</a></li></ol></li><li class="tocline"><a class="tocxref" href="#werkafspraak"><bdi class="secno">2. </bdi>Werkafspraak</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#algemene-toelichting-en-aanvullende-eisen"><bdi class="secno">2.1 </bdi>Algemene toelichting en aanvullende eisen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#opname-in-de-bgt"><bdi class="secno">2.1.1 </bdi>Opname in de BGT</a></li><li class="tocline"><a class="tocxref" href="#bag-identificatie-en-nummeraanduidingreeks"><bdi class="secno">2.1.2 </bdi>BAG identificatie en nummeraanduidingreeks</a></li><li class="tocline"><a class="tocxref" href="#luifels-en-overkappingen"><bdi class="secno">2.1.3 </bdi>Luifels en overkappingen</a></li></ol></li><li class="tocline"><a class="tocxref" href="#nadere-toelichting-en-aanvullende-eisen-voor-overbouw-en-onderbouw"><bdi class="secno">2.2 </bdi>Nadere toelichting en aanvullende eisen voor overbouw en onderbouw</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#waarom-overbouw-en-onderbouw-in-de-bgt"><bdi class="secno">2.2.1 </bdi>Waarom overbouw en onderbouw in de BGT?</a></li><li class="tocline"><a class="tocxref" href="#mogen-dus-optioneel"><bdi class="secno">2.2.2 </bdi>Mogen, dus optioneel</a></li><li class="tocline"><a class="tocxref" href="#uitstekende-delen"><bdi class="secno">2.2.3 </bdi>Uitstekende delen</a></li><li class="tocline"><a class="tocxref" href="#betreedbare-delen"><bdi class="secno">2.2.4 </bdi>Betreedbare delen</a></li><li class="tocline"><a class="tocxref" href="#per-relatieve-hoogte-een-object"><bdi class="secno">2.2.5 </bdi>Per relatieve hoogte één object</a></li><li class="tocline"><a class="tocxref" href="#topologie"><bdi class="secno">2.2.6 </bdi>Topologie</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#impact"><bdi class="secno">3. </bdi>Impact</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#organisaties"><bdi class="secno">3.1 </bdi>Organisaties</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#gebruikers"><bdi class="secno">3.1.1 </bdi>Gebruikers</a></li><li class="tocline"><a class="tocxref" href="#bronhouders"><bdi class="secno">3.1.2 </bdi>Bronhouders</a></li></ol></li><li class="tocline"><a class="tocxref" href="#systemen"><bdi class="secno">3.2 </bdi>Systemen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#bgt-bronhoudersoftware"><bdi class="secno">3.2.1 </bdi>BGT bronhoudersoftware</a></li><li class="tocline"><a class="tocxref" href="#geobag-software"><bdi class="secno">3.2.2 </bdi>GeoBAG software</a></li><li class="tocline"><a class="tocxref" href="#geobor-software"><bdi class="secno">3.2.3 </bdi>GeoBOR software</a></li><li class="tocline"><a class="tocxref" href="#bravo-en-landelijke-voorziening-bgt-centrale-registratie"><bdi class="secno">3.2.4 </bdi>BRAVO en Landelijke Voorziening BGT (centrale registratie)</a></li><li class="tocline"><a class="tocxref" href="#pdok-centrale-distributie"><bdi class="secno">3.2.5 </bdi>PDOK (centrale distributie)</a></li><li class="tocline"><a class="tocxref" href="#kwaliteitsdashboard"><bdi class="secno">3.2.6 </bdi>Kwaliteitsdashboard</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#registratie"><bdi class="secno">4. </bdi>Registratie</a></li><li class="tocline"><a class="tocxref" href="#bijlagen"><bdi class="secno">5. </bdi>Bijlagen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#bijlage-voorbeelden-huidige-situatie"><bdi class="secno">5.1 </bdi>Bijlage Voorbeelden huidige situatie</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#overzichtskaart"><bdi class="secno">5.1.1 </bdi>Overzichtskaart</a></li><li class="tocline"><a class="tocxref" href="#achterweg-naaldwijk-westland"><bdi class="secno">5.1.2 </bdi>Achterweg, Naaldwijk (Westland)</a></li><li class="tocline"><a class="tocxref" href="#borgstee-assen"><bdi class="secno">5.1.3 </bdi>Borgstee, Assen</a></li><li class="tocline"><a class="tocxref" href="#homeruslaan-assen"><bdi class="secno">5.1.4 </bdi>Homeruslaan, Assen</a></li><li class="tocline"><a class="tocxref" href="#zuwestraat-baarn"><bdi class="secno">5.1.5 </bdi>Zuwestraat, Baarn</a></li><li class="tocline"><a class="tocxref" href="#burg-grothestraat-soest"><bdi class="secno">5.1.6 </bdi>Burg Grothestraat, Soest</a></li><li class="tocline"><a class="tocxref" href="#gubbelstraat-maastricht"><bdi class="secno">5.1.7 </bdi>Gubbelstraat, Maastricht</a></li><li class="tocline"><a class="tocxref" href="#westerplein-berkel-en-rodenrijs"><bdi class="secno">5.1.8 </bdi>Westerplein, Berkel en Rodenrijs</a></li><li class="tocline"><a class="tocxref" href="#arent-van-lierstraat-puttershoek"><bdi class="secno">5.1.9 </bdi>Arent van Lierstraat, Puttershoek</a></li><li class="tocline"><a class="tocxref" href="#van-der-merckstraat-s-gravendeel"><bdi class="secno">5.1.10 </bdi>Van der Merckstraat, ’s-Gravendeel</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#tof"><bdi class="secno">6. </bdi>Lijst met figuren</a></li><li class="tocline"><a class="tocxref" href="#index"><bdi class="secno">A. </bdi>Index</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#index-defined-here"><bdi class="secno">A.1 </bdi>Begrippen gedefinieerd door deze specificatie</a></li><li class="tocline"><a class="tocxref" href="#index-defined-elsewhere"><bdi class="secno">A.2 </bdi>Begrippen gedefinieerd door verwijzing</a></li></ol></li></ol></nav>
+  
+  <section class="informative" id="inleiding"><div class="header-wrapper"><h2 id="x1-inleiding"><bdi class="secno">1. </bdi>Inleiding</h2><a class="self-link" href="#inleiding" aria-label="Permalink for Section 1."></a></div><p><em>Dit onderdeel is niet normatief.</em></p>
+<section id="aanleiding"><div class="header-wrapper"><h3 id="x1-1-aanleiding"><bdi class="secno">1.1 </bdi>Aanleiding</h3><a class="self-link" href="#aanleiding" aria-label="Permalink for Section 1.1"></a></div>
+<p>In de BGT|IMGeo standaarden en de implementatie daarvan in bronhoudersoftware
+en Landelijk Voorziening BGT (LV BGT) is een technische vrijheid geconstateerd
+die het mogelijk maakt om panden nader op te delen in meerdere
+objecten/geometrieën. Ongeveer 25 bronhouders benutten deze technische vrijheid
+structureel om delen van panden op andere relatieve hoogteligging op te nemen
+(voor registratie van over/onderbouw) of panden nader op te delen in panddelen
+(bijvoorbeeld een serre, aanbouw, e.d. voor aansluiting met de
+WOZ-deelobjecten). Zie bijlage 1 voor voorbeelden.</p>
+<p>Er is discussie ontstaan of het opdelen van panden in de BGT een juiste en
+wenselijke situatie is.</p>
+<p>Twee regels in de BGT|IMGeo standaarden lijken elkaar op dit onderwerp tegen te
+spreken:</p>
+<ul>
+<li><p>De BGT-standaard stelt dat opdelen van objecten 'voor eigen beheer' is
+toegestaan.</p>
+</li>
+<li><p>De BGT-standaard hanteert de definitie van Pand uit de BAG, waarmee wordt
+verondersteld dat voor elk object Pand in de BAG er precies één object Pand
+in de BGT met grondvlakgeometrie wordt opgenomen.</p>
+</li>
+</ul>
+<p>Door deze tegenspraak is er onduidelijkheid over de juiste toepassing van de
+BGT|IMGeo standaarden. Om deze onduidelijkheid bij inconsistenties op te
+lossen, kan Geonovum een 'werkafspraak' instellen.</p>
+<section id="opdelen-voor-beheer"><div class="header-wrapper"><h4 id="x1-1-1-opdelen-voor-beheer"><bdi class="secno">1.1.1 </bdi>Opdelen voor beheer</h4><a class="self-link" href="#opdelen-voor-beheer" aria-label="Permalink for Section 1.1.1"></a></div>
+<p>Voor eigen beheer mag een bronhouder objecten nader opdelen in afzonderlijke
+aangrenzende objecten met gelijke attribuutwaarden (zie IMGeo-catalogus
+<a href="https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#plus-en-beheertopografie">§2.1</a>
+en
+<a href="https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#imgeo-objecten-in-de-bgt">§2.3</a>).</p>
+<p>Voor met name terreindelen en wegdelen delen bronhouders objecten nader op voor
+de aansluiting met hun eigen beheersysteem (BOR). Zo kunnen aan opgedeelde BGT
+geometrieën bijvoorbeeld andere maairegiems of nadere classificaties van
+verhardingssoorten worden gekoppeld in het eigen beheersysteem.</p>
+<p><figure id="fig-generatedID"><img src="media/1f040a35065eeb51d8dd16c0a230d850.png" alt="Afbeelding met schermopname, kaart Automatisch gegenereerde
+beschrijving"><figcaption><a class="self-link" href="#fig-generatedID">Figuur <bdi class="figno">1</bdi></a> <span class="fig-title"></span></figcaption></figure><em>Figuur. Voorbeeld van
+het nader opdelen van een begroeidterreindeel van het type bosplantsoen voor
+eigen beheer. Voor gebruikers is in PDOK geen onderscheid zichtbaar, behalve een
+andere geometrie en BGT-identificatie.</em></p>
+</section><section id="panden-in-de-bgt"><div class="header-wrapper"><h4 id="x1-1-2-panden-in-de-bgt"><bdi class="secno">1.1.2 </bdi>Panden in de BGT</h4><a class="self-link" href="#panden-in-de-bgt" aria-label="Permalink for Section 1.1.2"></a></div>
+<p>Vanaf de status ‘bouw gestart’ (zie BGT-catalogus
+<a href="https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#objectafbakening-pand-panddelen">§10.7</a>)
+moet een pand in de BAG worden opgenomen in de BGT; in IMGeo mag optioneel een
+pand vanaf status ‘bouwvergunning verleend’ worden opgenomen als planinformatie.
+De geometrie van een pand in de BAG is het bovenaanzicht, en de geometrie van
+een pand in de BGT is het grondvlak (maaiveld). Het uitgangspunt is dat voor elk
+pand in de BAG een pand in de BGT aanwezig moet zijn, ofwel de populatie van
+panden moet gelijk zijn.</p>
+<p>NOTE: De populatie verschilt in tijd door verschillen in actualiteitseisen en
+door discrepanties in het proces.</p>
+<p>Reeds langer zien we dat panden in de BGT worden opgedeeld in meerdere
+‘panddelen’. Panddelen zijn delen van eenzelfde BAG Pand, die met een eigen BGT
+identificatie en eigen (aangrenzende) geometrie, maar gelijke BAG-identificatie
+worden opgenomen.</p>
+<p>Ongeveer 25 bronhouders delen nu structureel panden in de BGT op hun eigen
+manier nader op, omdat de BGT|IMGeo standaarden hier onvoldoende spelregels
+voor kennen, zie de voorbeelden in bijlage 1.</p>
+<p>Er is variatie te zien in hoe deze bronhouders dit doen: bepaalde bronhouders
+nemen de gehele BAG-bovenaanzichtcontour op als overbouw (+1) en andere
+bronhouders nemen alleen de uitstekende delen op, soms ook nog in aparte
+objecten. Inzake uniformiteit is deze variatie onwenselijk; nadere eisen en
+regels zijn nodig.</p>
+<p>De panddelen worden veelal toegepast voor opname van overbouw en onderbouw in de
+BGT: het panddeel krijgt dan een relatieve hoogteligging van resp. +1 of -1.
+Overbouw en onderbouw zijn formeel nu geen onderdeel van de BGT, maar de LV BGT
+controleert bij registratie hier niet op. Ook zien we dat panden op maaiveld
+nader worden opgedeeld in meerdere BGT panden, waarbij deze panddelen aan elkaar
+grenzen met dezelfde BAG identificatie, een eigen BGT identificatie en veelal
+eigen nummeraanduidingreeks(en). Bronhouders passen dit toe voor aansluiting van
+de BGT op de WOZ-deelobjecten.</p>
+</section></section><section id="leeswijzer"><div class="header-wrapper"><h3 id="x1-2-leeswijzer"><bdi class="secno">1.2 </bdi>Leeswijzer</h3><a class="self-link" href="#leeswijzer" aria-label="Permalink for Section 1.2"></a></div>
+<p>Hoofdstuk 2 geeft de inhoud van de werkafspraak, en een nadere toelichting
+hierop. Hoofdstuk 3 beschrijft de impact van de werkafspraak op bronhouders,
+gebruikers, software van bronhouders/gebruikers en de centrale ketensystemen
+BRAVO, LV BGT en PDOK. Hoofdstuk 4 beschrijft de registratie inzake knelpunt van
+deze werkafspraak in het meldingensysteem van Geonovum, zodat de werkafspraak in
+een volgende versie van de standaard kan worden opgelost.</p>
+</section></section>
+  <section id="werkafspraak"><div class="header-wrapper"><h2 id="x2-werkafspraak"><bdi class="secno">2. </bdi>Werkafspraak</h2><a class="self-link" href="#werkafspraak" aria-label="Permalink for Section 2."></a></div>
+      <section><p>De volgende werkafspraak geldt voor de BGT keten voor het opdelen van panden in
+de BGT:</p>
+<p><em>Voor overbouw en onderbouw van een pand uit de BAG mogen de uitstekende
+betreedbare delen als apart Pand-object(en) op andere relatieve hoogteligging
+dan de grondvlakgeometrie van het Pand worden geregistreerd in de Landelijke
+Voorziening BGT.</em></p>
+</section>
+	  <section id="algemene-toelichting-en-aanvullende-eisen"><div class="header-wrapper"><h3 id="x2-1-algemene-toelichting-en-aanvullende-eisen"><bdi class="secno">2.1 </bdi>Algemene toelichting en aanvullende eisen</h3><a class="self-link" href="#algemene-toelichting-en-aanvullende-eisen" aria-label="Permalink for Section 2.1"></a></div>
+<section id="opname-in-de-bgt"><div class="header-wrapper"><h4 id="x2-1-1-opname-in-de-bgt"><bdi class="secno">2.1.1 </bdi>Opname in de BGT</h4><a class="self-link" href="#opname-in-de-bgt" aria-label="Permalink for Section 2.1.1"></a></div>
+<p>De verplichting dat voor ieder pand in de BAG vanaf status ‘bouw gestart’ de
+grondvlakgeometrie van dit pand in de BGT moet worden opgenomen, blijft met deze
+werkafspraak ongewijzigd.</p>
+<p>De afspraken in deze werkafspraak gelden ook voor de opname van een BAG-pand
+vanaf status ‘bouwvergunning verleend’ als planinformatie in BGT.</p>
+<p>Het is toegestaan om één actueel BGT Pand met status ‘bestaand’ en één actueel
+Pand met status ‘plan’ tegelijkertijd in de LV BGT geregistreerd te hebben, o.m.
+voor (grotere) verbouwingen.</p>
+</section><section id="bag-identificatie-en-nummeraanduidingreeks"><div class="header-wrapper"><h4 id="x2-1-2-bag-identificatie-en-nummeraanduidingreeks"><bdi class="secno">2.1.2 </bdi>BAG identificatie en nummeraanduidingreeks</h4><a class="self-link" href="#bag-identificatie-en-nummeraanduidingreeks" aria-label="Permalink for Section 2.1.2"></a></div>
+<p>Bij elk pand(deel) in de BGT moet een geldige identificatie van het bijbehorende
+pand in de BAG worden opgenomen. Nummeraanduidingreeksen (reeksen van
+huisnummers van verblijfsobjecten) worden conform de huidige regels opgenomen,
+en mogen niet dubbel worden opgenomen. Wel is het toegestaan om een
+nummeraanduidingreeks te splitsen in meerdere nummeraanduidingreeksen en deze
+toe, als dit de vindbaarheid van objecten en leesbaarheid van informatie via de
+kaart vergroot.</p>
+</section><section id="luifels-en-overkappingen"><div class="header-wrapper"><h4 id="x2-1-3-luifels-en-overkappingen"><bdi class="secno">2.1.3 </bdi>Luifels en overkappingen</h4><a class="self-link" href="#luifels-en-overkappingen" aria-label="Permalink for Section 2.1.3"></a></div>
+<p>Luifels en overkappingen dienen respectievelijk als GebouwInstallatie en
+OverigBouwwerk conform de geldige regels worden opgenomen, waarbij volgens de
+definitie geldt dat een luifel vast zit aan (de gevel van) een pand en een
+overkapping een vrijstaand bouwwerk is.</p>
+</section></section>
+	  <section id="nadere-toelichting-en-aanvullende-eisen-voor-overbouw-en-onderbouw"><div class="header-wrapper"><h3 id="x2-2-nadere-toelichting-en-aanvullende-eisen-voor-overbouw-en-onderbouw"><bdi class="secno">2.2 </bdi>Nadere toelichting en aanvullende eisen voor overbouw en onderbouw</h3><a class="self-link" href="#nadere-toelichting-en-aanvullende-eisen-voor-overbouw-en-onderbouw" aria-label="Permalink for Section 2.2"></a></div>
+<section id="waarom-overbouw-en-onderbouw-in-de-bgt"><div class="header-wrapper"><h4 id="x2-2-1-waarom-overbouw-en-onderbouw-in-de-bgt"><bdi class="secno">2.2.1 </bdi>Waarom overbouw en onderbouw in de BGT?</h4><a class="self-link" href="#waarom-overbouw-en-onderbouw-in-de-bgt" aria-label="Permalink for Section 2.2.1"></a></div>
+<p>Voor het in samenhang bijhouden van BAG en BGT geometrie is belangrijk om niet
+alleen de grondvlakgeometrie, maar ook de uitstekende delen voor overbouw en
+onderbouw te registreren. De overbouw en onderbouw moet nu nog apart
+geregistreerd worden door bronhouder in het eigen systeem. Het opnemen van
+overbouw en onderbouw in de BGT maakt het eenvoudiger voor</p>
+<p>Informatie over overbouw en onderbouw is relevant voor diverse gebruikers. Door
+het opnemen van overbouw en onderbouw in de BGT komt meer informatie voor
+gebruikers beschikbaar dan in de BAG nu aanwezig is: in de BGT wordt expliciet
+gemaakt of er sprake is van overbouw of onderbouw; BAG kent enkel de volledige
+samengestelde contour van het bovenaanzicht.</p>
+<p>Met de opname van overbouw en onderbouw in de BGT worden de eerste stappen
+richting 3D gebouwinformatie gezet.</p>
+</section><section id="mogen-dus-optioneel"><div class="header-wrapper"><h4 id="x2-2-2-mogen-dus-optioneel"><bdi class="secno">2.2.2 </bdi>Mogen, dus optioneel</h4><a class="self-link" href="#mogen-dus-optioneel" aria-label="Permalink for Section 2.2.2"></a></div>
+<p>De werkafspraak regelt dat bronhouders optioneel overbouw en onderbouw van een
+pand mogen opnemen en registreren in de Landelijke Voorziening BGT. Er geldt dus
+geen verplichting: bronhouders maken hun eigen afweging of het opnemen van
+overbouw en onderbouw in hun BGT van toegevoegde waarde is.</p>
+</section><section id="uitstekende-delen"><div class="header-wrapper"><h4 id="x2-2-3-uitstekende-delen"><bdi class="secno">2.2.3 </bdi>Uitstekende delen</h4><a class="self-link" href="#uitstekende-delen" aria-label="Permalink for Section 2.2.3"></a></div>
+<p>Enkel de <strong>uitstekende delen</strong> van het pand ten opzicht van de
+grondvlakgeometrie mogen worden opgenomen in een BGT Pand voor onderbouw en
+onderbouw. Het is niet de bedoeling om een hele verdieping af te bakenen.</p>
+<p><figure id="fig-generatedID-0"><img src="media/1d420e144dcf606e3ea9862012afd981.png" alt="Afbeelding met tekst, schermopname, Lettertype, Rechthoek Automatisch
+gegenereerde beschrijving"><figcaption><a class="self-link" href="#fig-generatedID-0">Figuur <bdi class="figno">2</bdi></a> <span class="fig-title"></span></figcaption></figure></p>
+<p>GOED: 1 BAG Pand is opgedeeld in 3 BGT panden:</p>
+<ul>
+<li><p>1 object met grondvlakgeometrie op rel.hoogte 0</p>
+</li>
+<li><p>1 object voor onderbouw op rel.hoogte -1</p>
+</li>
+<li><p>1 object voor overbouw op rel.hoogte +1</p>
+</li>
+</ul>
+<p><figure id="fig-generatedID-1"><img src="media/541a1f9a9c0537907fa6689e6915399f.png" alt="Afbeelding met tekst, schermopname, plein, Rechthoek Automatisch gegenereerde
+beschrijving"><figcaption><a class="self-link" href="#fig-generatedID-1">Figuur <bdi class="figno">3</bdi></a> <span class="fig-title"></span></figcaption></figure></p>
+<p>FOUT: 1 BAG Pand is opgedeeld in 2 BGT panden:</p>
+<ul>
+<li>Het object voor overbouw bevat niet enkel de uitstekende delen maar bevat
+ook de grondvlakgeometrie.</li>
+</ul>
+</section><section id="betreedbare-delen"><div class="header-wrapper"><h4 id="x2-2-4-betreedbare-delen"><bdi class="secno">2.2.4 </bdi>Betreedbare delen</h4><a class="self-link" href="#betreedbare-delen" aria-label="Permalink for Section 2.2.4"></a></div>
+<p>Enkel het <strong>betreedbare deel</strong> van overbouw of onderbouw dient als Pand te
+worden afgebakend. Het niet -betreedbare deel kan optioneel als
+Gebouw-installatie in IMGeo worden opgenomen, vergelijkbaar met een luifel.</p>
+</section><section id="per-relatieve-hoogte-een-object"><div class="header-wrapper"><h4 id="x2-2-5-per-relatieve-hoogte-een-object"><bdi class="secno">2.2.5 </bdi>Per relatieve hoogte één object</h4><a class="self-link" href="#per-relatieve-hoogte-een-object" aria-label="Permalink for Section 2.2.5"></a></div>
+<p>Uitstekende delen op <strong>dezelfde relatieve hoogte</strong> worden in één BGT Pand-object
+met <em>multivlak</em>geometrie opgenomen. Het is niet de bedoeling om elk afzonderlijk
+deel op dezelfde relatieve hoogte in een apart BGT Pand object op te nemen.</p>
+<p><figure id="fig-generatedID-2"><img src="media/71c9320904bf4ca74d5f07b55fda2f0c.png" alt="Afbeelding met tekst, schermopname, Lettertype, Rechthoek Automatisch
+gegenereerde beschrijving"><figcaption><a class="self-link" href="#fig-generatedID-2">Figuur <bdi class="figno">4</bdi></a> <span class="fig-title"></span></figcaption></figure></p>
+<p>GOED: 1 BAG Pand is opgedeeld in 3 BGT panden:</p>
+<ul>
+<li><p>1 object met grondvlakgeometrie op rel.hoogte 0</p>
+</li>
+<li><p>1 object voor overbouw op rel. hoogte +1</p>
+</li>
+<li><p>1 object voor overbouw op rel. hoogte +2.</p>
+</li>
+</ul>
+<p><figure id="fig-generatedID-3"><img src="media/52a221d5887ec4144161fdb01d0a397a.png" alt=""><figcaption><a class="self-link" href="#fig-generatedID-3">Figuur <bdi class="figno">5</bdi></a> <span class="fig-title"></span></figcaption></figure></p>
+<p>GOED: 1 BAG Pand is opgedeeld in 2 BGT panden:</p>
+<ul>
+<li><p>1 object met grondvlakgeometrie op rel.hoogte 0</p>
+</li>
+<li><p>1 object met multivlakgeometrie voor overbouw op rel.hoogte +1</p>
+</li>
+</ul>
+<p><figure id="fig-generatedID-4"><img src="media/6ac059ab8c288652a088e766d12f7f64.png" alt="Afbeelding met tekst, schermopname, Lettertype, Rechthoek Automatisch
+gegenereerde beschrijving"><figcaption><a class="self-link" href="#fig-generatedID-4">Figuur <bdi class="figno">6</bdi></a> <span class="fig-title"></span></figcaption></figure></p>
+<p>FOUT: 1 BAG Pand is opgedeeld in 3 BGT panden:</p>
+<ul>
+<li>De objecten voor overbouw op gelijke relatieve hoogte worden opgenomen in
+één Pand-object met multivlakgeometrie.</li>
+</ul>
+</section><section id="topologie"><div class="header-wrapper"><h4 id="x2-2-6-topologie"><bdi class="secno">2.2.6 </bdi>Topologie</h4><a class="self-link" href="#topologie" aria-label="Permalink for Section 2.2.6"></a></div>
+<p>De objecten voor overbouw en onderbouw moeten (weliswaar op andere relatieve
+hoogte) <strong>naadloos grenzen aan de grondvlakgeometrie</strong> van het Pand. Overlap en
+gaten tussen grondvlakgeometrie en overbouw/onderbouw is niet toegestaan.</p>
+<p><figure id="fig-generatedID-5"><img src="media/8d7495e2f01ab30cd2cc01367764f920.png" alt="Afbeelding met tekst, schermopname, Lettertype, Rechthoek Automatisch
+gegenereerde beschrijving"><figcaption><a class="self-link" href="#fig-generatedID-5">Figuur <bdi class="figno">7</bdi></a> <span class="fig-title"></span></figcaption></figure></p>
+<p>FOUT: 1 BAG Pand is opgedeeld in 3 BGT Panden</p>
+<ul>
+<li><p>De geometrie van het object voor overbouw overlapt met het object met
+grondvlakgeometrie.</p>
+</li>
+<li><p>De geometrie van object voor onderbouw grenst niet aan het object met
+grondvlakgeometrie.</p>
+</li>
+</ul>
+</section></section>
+  </section>
+  <section class="informative" id="impact"><div class="header-wrapper"><h2 id="x3-impact"><bdi class="secno">3. </bdi>Impact</h2><a class="self-link" href="#impact" aria-label="Permalink for Section 3."></a></div><p><em>Dit onderdeel is niet normatief.</em></p>
+<p>Dit hoofdstuk beschrijft de impact van de werkafspraak op organisaties en
+systemen.</p>
+<section id="organisaties"><div class="header-wrapper"><h3 id="x3-1-organisaties"><bdi class="secno">3.1 </bdi>Organisaties</h3><a class="self-link" href="#organisaties" aria-label="Permalink for Section 3.1"></a></div>
+<section id="gebruikers"><div class="header-wrapper"><h4 id="x3-1-1-gebruikers"><bdi class="secno">3.1.1 </bdi>Gebruikers</h4><a class="self-link" href="#gebruikers" aria-label="Permalink for Section 3.1.1"></a></div>
+<p>Gebruikers van het kaartproduct krijgen panden opgedeeld op de kaart te zien. In
+de standaardvisualisatie is dit nu ook het geval voor overige bouwwerken en
+luifels die grenzen aan panden: deze objecten hebben dezelfde visualisatie als
+een pand. In de visualisatie kunnen lijnen tussen aangrenzende objecten met
+dezelfde classificatie worden opgelost, zodat gebruikers aangesloten panden als
+‘één object’ zien krijgen.</p>
+<p>Gebruikers krijgen meer informatie dan nu in de BGT of in de BAG beschikbaar is:
+informatie over overbouw en onderbouw komt met deze werkafspraak deels of
+volledig beschikbaar in de BGT, en de BGT geeft meer informatie over de
+samenstelling van het Pand dan de BAG. De BAG bevat enkel de geometrie van het
+bovenaanzicht van een Pand en geen informatie over welke delen onder of boven
+het maaiveld zich bevinden. Dit heeft positieve impact op de
+informatievoorziening over gebouwen richting gebruikers, en kan worden gezien
+als een stap richting het landsdekkend beschikbaar maken van 3D-informatie over
+gebouwen.</p>
+</section><section id="bronhouders"><div class="header-wrapper"><h4 id="x3-1-2-bronhouders"><bdi class="secno">3.1.2 </bdi>Bronhouders</h4><a class="self-link" href="#bronhouders" aria-label="Permalink for Section 3.1.2"></a></div>
+<p>Het nader opdelen van Panden in de BGT is <strong>optioneel</strong>. Bronhouders maken hun
+eigen afweging of het opnemen van overbouw en onderbouw in hun BGT van
+toegevoegde waarde is. Voor bronhouders betekent dit dat er geen negatieve
+impact is.</p>
+</section></section><section id="systemen"><div class="header-wrapper"><h3 id="x3-2-systemen"><bdi class="secno">3.2 </bdi>Systemen</h3><a class="self-link" href="#systemen" aria-label="Permalink for Section 3.2"></a></div>
+<section id="bgt-bronhoudersoftware"><div class="header-wrapper"><h4 id="x3-2-1-bgt-bronhoudersoftware"><bdi class="secno">3.2.1 </bdi>BGT bronhoudersoftware</h4><a class="self-link" href="#bgt-bronhoudersoftware" aria-label="Permalink for Section 3.2.1"></a></div>
+<p>Er is geen technische impact voor BGT bronhoudersoftware. Deze systemen kunnen
+nader opgedeelde panden met de huidige techniek en uitwisselstandaarden
+ontvangen van en verzenden naar de Landelijke Voorziening BGT.</p>
+</section><section id="geobag-software"><div class="header-wrapper"><h4 id="x3-2-2-geobag-software"><bdi class="secno">3.2.2 </bdi>GeoBAG software</h4><a class="self-link" href="#geobag-software" aria-label="Permalink for Section 3.2.2"></a></div>
+<p>In de BGT komt informatie beschikbaar over de volledige geometrie bovenaanzicht,
+immers de vereniging van grondvlak, overbouw en onderbouw is de BAG-contour. Op
+basis van de BGT zal deze informatie wel geaggregeerd moeten worden tot één
+BAG-geometrie door het Geo- of BAG-systeem.</p>
+</section><section id="geobor-software"><div class="header-wrapper"><h4 id="x3-2-3-geobor-software"><bdi class="secno">3.2.3 </bdi>GeoBOR software</h4><a class="self-link" href="#geobor-software" aria-label="Permalink for Section 3.2.3"></a></div>
+<p>Geen impact.</p>
+</section><section id="bravo-en-landelijke-voorziening-bgt-centrale-registratie"><div class="header-wrapper"><h4 id="x3-2-4-bravo-en-landelijke-voorziening-bgt-centrale-registratie"><bdi class="secno">3.2.4 </bdi>BRAVO en Landelijke Voorziening BGT (centrale registratie)</h4><a class="self-link" href="#bravo-en-landelijke-voorziening-bgt-centrale-registratie" aria-label="Permalink for Section 3.2.4"></a></div>
+<p>Er is geen technische impact voor BGT bronhoudersoftware. Deze systemen kunnen
+nader opgedeelde panden met de huidige techniek en uitwisselstandaarden
+ontvangen van en verzenden naar bronhoudersoftware.</p>
+</section><section id="pdok-centrale-distributie"><div class="header-wrapper"><h4 id="x3-2-5-pdok-centrale-distributie"><bdi class="secno">3.2.5 </bdi>PDOK (centrale distributie)</h4><a class="self-link" href="#pdok-centrale-distributie" aria-label="Permalink for Section 3.2.5"></a></div>
+<p>Om de grenslijnen tussen overbouw, onderbouw en grondvlakgeometrie voor
+gebruikers in de visualisatie, wordt de mogelijkheid onderzocht van een
+aangepaste visualisatie of informatieproduct voor gebruikers.</p>
+</section><section id="kwaliteitsdashboard"><div class="header-wrapper"><h4 id="x3-2-6-kwaliteitsdashboard"><bdi class="secno">3.2.6 </bdi>Kwaliteitsdashboard</h4><a class="self-link" href="#kwaliteitsdashboard" aria-label="Permalink for Section 3.2.6"></a></div>
+<p>Er is geen technische impact voor de indicatoren van het BGT
+kwaliteitsdashboard.</p>
+</section></section></section>
+  <section class="informative" id="registratie"><div class="header-wrapper"><h2 id="x4-registratie"><bdi class="secno">4. </bdi>Registratie</h2><a class="self-link" href="#registratie" aria-label="Permalink for Section 4."></a></div><p><em>Dit onderdeel is niet normatief.</em></p>
+<p>Een melding over dit onderwerp is opgenomen in het registratiesysteem dat
+Geonovum voor het beheer van de BGT|IMGeo standaarden gebruikt. Het issue is
+bekend onder: «uitzoeken en/of opvoeren»</p>
+</section>
+  <section id="bijlagen"><div class="header-wrapper"><h2 id="x5-bijlagen"><bdi class="secno">5. </bdi>Bijlagen</h2><a class="self-link" href="#bijlagen" aria-label="Permalink for Section 5."></a></div>
+	<section class="informative" id="bijlage-voorbeelden-huidige-situatie"><div class="header-wrapper"><h3 id="x5-1-bijlage-voorbeelden-huidige-situatie"><bdi class="secno">5.1 </bdi>Bijlage Voorbeelden huidige situatie</h3><a class="self-link" href="#bijlage-voorbeelden-huidige-situatie" aria-label="Permalink for Section 5.1"></a></div><p><em>Dit onderdeel is niet normatief.</em></p>
+<section id="overzichtskaart"><div class="header-wrapper"><h4 id="x5-1-1-overzichtskaart"><bdi class="secno">5.1.1 </bdi>Overzichtskaart</h4><a class="self-link" href="#overzichtskaart" aria-label="Permalink for Section 5.1.1"></a></div>
+<p>Onderstaande afbeelding toont een overzicht van panden in de BGT die nader zijn
+opgedeeld. Ca. 20-25 gemeenten/bronhouders doen dit opdelen structureel.</p>
+<p><figure id="fig-generatedID-6"><img src="media/6704da6e29edd6eeafdf8672887b8eb8.png" alt="Afbeelding met tekening, schets, Lijnillustraties, kunst Automatisch
+gegenereerde beschrijving"><figcaption><a class="self-link" href="#fig-generatedID-6">Figuur <bdi class="figno">8</bdi></a> <span class="fig-title"></span></figcaption></figure></p>
+</section><section id="achterweg-naaldwijk-westland"><div class="header-wrapper"><h4 id="x5-1-2-achterweg-naaldwijk-westland"><bdi class="secno">5.1.2 </bdi>Achterweg, Naaldwijk (Westland)</h4><a class="self-link" href="#achterweg-naaldwijk-westland" aria-label="Permalink for Section 5.1.2"></a></div>
+<p>In onderstaand voorbeeld zijn de kassencomplexen opgedeeld in een pand op
+maaiveld en een pand op relatieve hoogteligging 1. Beide BGT panden hebben
+dezelfde BAG-identificatie.</p>
+<p>Linksboven: Luchtfoto</p>
+<p>Rechtsboven: BGT Standaardvisualisatie</p>
+<p>Linksonder: BGT Pand op maaiveld</p>
+<p>Rechtsonder: BGT Pand op relatieve hoogteligging 1.</p>
+<p><strong><figure id="fig-generatedID-7"><img src="media/03a9707550edf9a0caee26b892287b7d.png" alt="Afbeelding met kaart, plein, schermopname Automatisch gegenereerde
+beschrijving"><figcaption><a class="self-link" href="#fig-generatedID-7">Figuur <bdi class="figno">9</bdi></a> <span class="fig-title"></span></figcaption></figure></strong></p>
+<table class="simple">
+<thead>
+<tr>
+<th>BGT-identificatie</th>
+<th>tijdstipregistratie</th>
+<th>BAG-identificatie</th>
+<th>bronhouder</th>
+<th>relatievehoogte</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>G1783.a7c60324ef6449d2a055fe6d0503bd62</td>
+<td>3-5-2023 16:38</td>
+<td>11783100000001188</td>
+<td>G1783</td>
+<td>0</td>
+</tr>
+<tr>
+<td>G1783.6860512d15a94050b8be7f33a726174c</td>
+<td>3-5-2023 16:38</td>
+<td>1783100000001188</td>
+<td>G1783</td>
+<td>1</td>
+</tr>
+</tbody></table>
+</section><section id="borgstee-assen"><div class="header-wrapper"><h4 id="x5-1-3-borgstee-assen"><bdi class="secno">5.1.3 </bdi>Borgstee, Assen</h4><a class="self-link" href="#borgstee-assen" aria-label="Permalink for Section 5.1.3"></a></div>
+<p>In onderstaand voorbeeld is de overbouw van een pand opgenomen in twee aparte
+BGT Pand objecten met relatieve hoogteligging 1. Er is hier niet gekozen om de
+overbouw als één BGT Pand object met multivlakgeometrie op te nemen. Alleen de
+overstekende geometrie is opgenomen bij de panden op relatieve hoogteligging 1.
+Alle BGT panden hebben dezelfde BAG-identificatie.</p>
+<p>Linksboven: Luchtfoto</p>
+<p>Rechtsboven: BGT Standaardvisualisatie</p>
+<p>Linksonder: BGT Pand op maaiveld</p>
+<p>Rechtsonder: BGT Panden op relatieve hoogteligging 1.</p>
+<p><figure id="fig-generatedID-8"><img src="media/fec5c2362dc02d4154432b1a8780d5e8.png" alt=""><figcaption><a class="self-link" href="#fig-generatedID-8">Figuur <bdi class="figno">10</bdi></a> <span class="fig-title"></span></figcaption></figure></p>
+<table class="simple">
+<thead>
+<tr>
+<th>BGT-identificatie</th>
+<th>tijdstipregistratie</th>
+<th>BAG-identificatie</th>
+<th>bronhouder</th>
+<th>relatievehoogte</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>G0106.e0f677dc892149e5888614718f61112d</td>
+<td>15-1-2016 09:24:29</td>
+<td>0106100000000018</td>
+<td>G0106</td>
+<td>0</td>
+</tr>
+<tr>
+<td>G0106.d7f58d4311fa40eb8a41e2e98e698312 (links)</td>
+<td>4-1-2023 11:08:15</td>
+<td>0106100000000018</td>
+<td>G0106</td>
+<td>1</td>
+</tr>
+<tr>
+<td>G0106.9c01f9f7b639467ea1a80d54813598bb (rechtsonderin)</td>
+<td>4-1-2023 11:08:15</td>
+<td>0106100000000018</td>
+<td>G0106</td>
+<td>1</td>
+</tr>
+</tbody></table>
+</section><section id="homeruslaan-assen"><div class="header-wrapper"><h4 id="x5-1-4-homeruslaan-assen"><bdi class="secno">5.1.4 </bdi>Homeruslaan, Assen</h4><a class="self-link" href="#homeruslaan-assen" aria-label="Permalink for Section 5.1.4"></a></div>
+<p>In onderstaand voorbeeld is de onderbouw van een pand opgenomen in een apart BGT
+Pand met relatieve hoogteligging -1. Beide BGT panden hebben dezelfde
+BAG-identificatie. Als gevolg van de hierarchie is de onderbouw niet zichtbaar
+in de BGT standaardvisualisatie.</p>
+<p>Linksboven: Luchtfoto.</p>
+<p>Rechtsboven: BGT Standaardvisualisatie.</p>
+<p>Linksonder: BGT Pand op maaiveld.</p>
+<p>Rechtsonder: BGT Pand op relatieve hoogteligging -1.</p>
+<p><figure id="fig-generatedID-9"><img src="media/0038d8e8fa79c65dca480111267ba939.png" alt=""><figcaption><a class="self-link" href="#fig-generatedID-9">Figuur <bdi class="figno">11</bdi></a> <span class="fig-title"></span></figcaption></figure></p>
+<table class="simple">
+<thead>
+<tr>
+<th>BGT-identificatie</th>
+<th>tijdstipregistratie</th>
+<th>BAG-identificatie</th>
+<th>bronhouder</th>
+<th>relatievehoogte</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>G0106.ebb26acc9de34150a9b881b35430cd40</td>
+<td>26-1-2016 10:21:55</td>
+<td>0106100000001279</td>
+<td>G0106</td>
+<td>0</td>
+</tr>
+<tr>
+<td>G0106.c140a26d903942ea8d8a143e0b764128</td>
+<td>27-1-2023 12:50:18</td>
+<td>0106100000001279</td>
+<td>G0106</td>
+<td>1</td>
+</tr>
+</tbody></table>
+</section><section id="zuwestraat-baarn"><div class="header-wrapper"><h4 id="x5-1-5-zuwestraat-baarn"><bdi class="secno">5.1.5 </bdi>Zuwestraat, Baarn</h4><a class="self-link" href="#zuwestraat-baarn" aria-label="Permalink for Section 5.1.5"></a></div>
+<p>In onderstaand voorbeeld hebben de gebouwen per verdieping een eigen geometrie.
+Voor elke gebouw geldt dat voor dit BAG pand in de BGT vier Pand objecten zijn
+opgenomen: één pand met grondvlakgeometrie op relatieve hoogteligging 0, één
+pand met geometrie op relatieve hoogteligging 1 en twee afzonderlijke panden met
+geometrie op relatieve hoogteligging 2. De BGT panden hebben dezelfde
+BAG-identificatie.</p>
+<p>N.B. Alleen het object in het midden is nader geanalyseerd. Objecten boven en
+onder zijn vergelijkbaar.</p>
+<p>Linksboven: Luchtfoto</p>
+<p>Rechtsboven: BGT Pand op maaiveld</p>
+<p>Linksonder: BGT Pand op relatieve hoogteligging 1.</p>
+<p>Rechtsonder: BGT Panden op relatieve hoogteligging 2.</p>
+<p><figure id="fig-generatedID-10"><img src="media/fb9b7eeb665b34ec611a5f6e539789f6.png" alt=""><figcaption><a class="self-link" href="#fig-generatedID-10">Figuur <bdi class="figno">12</bdi></a> <span class="fig-title"></span></figcaption></figure></p>
+<table class="simple">
+<thead>
+<tr>
+<th>BGT-identificatie</th>
+<th>tijdstipregistratie</th>
+<th>BAG-identificatie</th>
+<th>bronhouder</th>
+<th>relatievehoogte</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>G0308.71dcf73021d94842acfad18b82bb06eb</td>
+<td>6-9-2018 15:31:54</td>
+<td>0308100000016010</td>
+<td>G0308</td>
+<td>0</td>
+</tr>
+<tr>
+<td>G0308.840054e04533472783e5a7cbe5cb5f79</td>
+<td>5-5-2023 11:56:17</td>
+<td>0308100000016010</td>
+<td>G0308</td>
+<td>1</td>
+</tr>
+<tr>
+<td>G0308.9f9284db5f794be29c130dc5908da85b</td>
+<td>5-5-2023 11:56:17</td>
+<td>0308100000016010</td>
+<td>G0308</td>
+<td>2</td>
+</tr>
+<tr>
+<td>G0308.ab4b706fd30e4697b7efbd7ecf6e5b37</td>
+<td>5-5-2023 11:56:17</td>
+<td>0308100000016010</td>
+<td>G0308</td>
+<td>2</td>
+</tr>
+</tbody></table>
+</section><section id="burg-grothestraat-soest"><div class="header-wrapper"><h4 id="x5-1-6-burg-grothestraat-soest"><bdi class="secno">5.1.6 </bdi>Burg Grothestraat, Soest</h4><a class="self-link" href="#burg-grothestraat-soest" aria-label="Permalink for Section 5.1.6"></a></div>
+<p>In onderstaand voorbeeld is de BAG bovenaanzichtgeometrie opgenomen in een apart
+BGT Pand object met relatieve hoogteligging 1. Er is hier niet gekozen om alleen
+de uitstekende overbouw als extra BGT Pand object op te nemen. Beide BGT panden
+hebben dezelfde BAG-identificatie.</p>
+<p>Linksboven: Luchtfoto</p>
+<p>Rechtsboven: BGT Standaardvisualisatie</p>
+<p>Linksonder: BGT Pand op maaiveld</p>
+<p>Rechtsonder: BGT Panden op relatieve hoogteligging 1.</p>
+<p><figure id="fig-generatedID-11"><img src="media/fb730b6b5cf1b7984f4489f71e33b645.png" alt=""><figcaption><a class="self-link" href="#fig-generatedID-11">Figuur <bdi class="figno">13</bdi></a> <span class="fig-title"></span></figcaption></figure></p>
+<table class="simple">
+<thead>
+<tr>
+<th>BGT-identificatie</th>
+<th>tijdstipregistratie</th>
+<th>BAG-identificatie</th>
+<th>bronhouder</th>
+<th>relatievehoogte</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>G0342.98b55e1c30c64251a2d5da1c7cd35b53</td>
+<td>15-8-2022 07:24:37</td>
+<td>0342100000027961</td>
+<td>G0106</td>
+<td>0</td>
+</tr>
+<tr>
+<td>G0342.cad54f4caf63486fa0e219221c36e315</td>
+<td>12-4-2023 13:29:50</td>
+<td>0342100000027961</td>
+<td>G0342</td>
+<td>1</td>
+</tr>
+</tbody></table>
+<p>Bij dit voorbeeld zien we dat de balkons zijn opgenomen in de
+standaardvisualisatie. Er zijn objecten GebouwInstallatie van het type luifel
+opgenomen, waarbij één Gebouwinstallatie volledig binnen de BAG contour valt. De
+gebouwinstallaties hebben geen BAG-identificatie.</p>
+<p>Linksboven: Luchtfoto</p>
+<p>Rechtsboven: 3D tekening van het betreffende gebouw.</p>
+<p>Linksonder: BGT Gebouwinstallaties van het type luifel op relatieve
+hoogteligging 1.</p>
+<p>Rechtsonder: BGT Gebouwinstallaties van het type luifel op relatieve
+hoogteligging 1 met de BGT Pand geometrie op relatieve hoogteligging 1.</p>
+<p><figure id="fig-generatedID-12"><img src="media/875fe0b8a316be23d46be8b997e2671c.png" alt=""><figcaption><a class="self-link" href="#fig-generatedID-12">Figuur <bdi class="figno">14</bdi></a> <span class="fig-title"></span></figcaption></figure></p>
+<p><strong>Gebouwinstallatie – luifel</strong></p>
+<table class="simple">
+<thead>
+<tr>
+<th>BGT lokaalID</th>
+<th>tijdstipregistratie</th>
+<th>BAG-identificatie</th>
+<th>bronhouder</th>
+<th>relatieve hoogte</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>G0342.7b37d6d219244ff1922b7272133f709d</td>
+<td>28-4-2021 12:21:57</td>
+<td>-</td>
+<td>G0342</td>
+<td>1</td>
+</tr>
+<tr>
+<td>G0342.ba24aa3e3ef1469ba80cac9f0401290d</td>
+<td>28-4-2021 12:21:57</td>
+<td>-</td>
+<td>G0342</td>
+<td>1</td>
+</tr>
+</tbody></table>
+</section><section id="gubbelstraat-maastricht"><div class="header-wrapper"><h4 id="x5-1-7-gubbelstraat-maastricht"><bdi class="secno">5.1.7 </bdi>Gubbelstraat, Maastricht</h4><a class="self-link" href="#gubbelstraat-maastricht" aria-label="Permalink for Section 5.1.7"></a></div>
+<p>In onderstaand voorbeeld is een BAG Pand opgedeeld in meerdere BGT Panden. Alle
+BGT panden hebben dezelfde BAG-identificatie. Per BGT Pand is eigen
+nummeraanduidingreeks opgenomen. Één pand bestaat uit multivlakgeometrie,
+waarbij de vlakken niet aan elkaar raken. Alle BGT panden hebben dezelfde
+BAG-identificatie.</p>
+<p>Linksboven: Luchtfoto</p>
+<p>Rechtsboven: BGT Standaardvisualisatie</p>
+<p>Linksonder: BGT Pand op maaiveld</p>
+<p>Rechtsonder: BAG Pand op BGT achtergrondvisualisatie.</p>
+<p><figure id="fig-generatedID-13"><img src="media/52ad68465e7f67763986c5c80cada626.png" alt=""><figcaption><a class="self-link" href="#fig-generatedID-13">Figuur <bdi class="figno">15</bdi></a> <span class="fig-title"></span></figcaption></figure></p>
+<table class="simple">
+<thead>
+<tr>
+<th>BGT lokaalID</th>
+<th>tijdstipregistratie</th>
+<th>BAG-identificatie</th>
+<th>bronhouder</th>
+<th>relatievehoogte</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>G0935.2940d986293c447f8f4041afcbdd5dd3</td>
+<td>14-12-2017 11:41:22</td>
+<td>0935100000021156</td>
+<td>G0935</td>
+<td>0</td>
+</tr>
+<tr>
+<td>G0935.e5700b97bdfe4663a5d13aa71d0731cc</td>
+<td>14-12-2017 11:41:23</td>
+<td>0935100000021156</td>
+<td>G0935</td>
+<td>0</td>
+</tr>
+<tr>
+<td>G0935.f9e0d9bacdd64167937eea48b3efdaeb</td>
+<td>14-12-2017 11:41:24</td>
+<td>0935100000021156</td>
+<td>G0935</td>
+<td>0</td>
+</tr>
+<tr>
+<td>G0935.0c92759765734782825f5b603f4fe49b</td>
+<td>14-12-2017 11:41:25</td>
+<td>0935100000021156</td>
+<td>G0935</td>
+<td>0</td>
+</tr>
+<tr>
+<td>G0935.90f3d1a9ca224259b75a3ae7294951fd</td>
+<td>14-12-2017 11:41:26</td>
+<td>0935100000021156</td>
+<td>G0935</td>
+<td>0</td>
+</tr>
+<tr>
+<td>G0935.f06f189aca5e4666ab4b0b6e16cfa9ef</td>
+<td>14-12-2017 11:41:27</td>
+<td>0935100000021156</td>
+<td>G0935</td>
+<td>0</td>
+</tr>
+<tr>
+<td>G0935.a38780be9b9d4149b6ec5d876fe5bc09</td>
+<td>14-12-2017 11:41:28</td>
+<td>0935100000021156</td>
+<td>G0935</td>
+<td>0</td>
+</tr>
+<tr>
+<td>G0935.8394d55a05a54137aaa83046e54fff32</td>
+<td>14-12-2017 11:41:29</td>
+<td>0935100000021156</td>
+<td>G0935</td>
+<td>0</td>
+</tr>
+<tr>
+<td>G0935.a166d70ee36f42279d62fc564ed2ccc8</td>
+<td>14-12-2017 11:41:30</td>
+<td>0935100000021156</td>
+<td>G0935</td>
+<td>0</td>
+</tr>
+<tr>
+<td>G0935.fe47f91397bd46c1b089341703ba89da</td>
+<td>14-12-2017 11:41:31</td>
+<td>0935100000021156</td>
+<td>G0935</td>
+<td>0</td>
+</tr>
+<tr>
+<td>G0935.128a43192b1f44ca8450d058db288a84</td>
+<td>14-12-2017 11:41:32</td>
+<td>0935100000021156</td>
+<td>G0935</td>
+<td>0</td>
+</tr>
+<tr>
+<td>G0935.6ec6eb17d0b64ae48850dfd58f8f3f75</td>
+<td>14-12-2017 11:41:33</td>
+<td>0935100000021156</td>
+<td>G0935</td>
+<td>0</td>
+</tr>
+<tr>
+<td>G0935.1e55ee8e165c4528992e095bba1e792b</td>
+<td>14-12-2017 11:41:34</td>
+<td>0935100000021156</td>
+<td>G0935</td>
+<td>0</td>
+</tr>
+</tbody></table>
+</section><section id="westerplein-berkel-en-rodenrijs"><div class="header-wrapper"><h4 id="x5-1-8-westerplein-berkel-en-rodenrijs"><bdi class="secno">5.1.8 </bdi>Westerplein, Berkel en Rodenrijs</h4><a class="self-link" href="#westerplein-berkel-en-rodenrijs" aria-label="Permalink for Section 5.1.8"></a></div>
+<p>In onderstaand voorbeeld is de overbouw (verbindingsbrug) van een BAG Pand
+opgenomen als afzonderlijk BGT Pand op relatieve hoogteligging 1. Alleen de
+overstekende/uitstekende geometrie is opgenomen bij dit BGT Pand. Beide BGT
+panden hebben dezelfde BAG-identificatie.</p>
+<p>Linksboven: Luchtfoto</p>
+<p>Rechtsboven: BGT Standaardvisualisatie</p>
+<p>Linksonder: BGT Pand op maaiveld</p>
+<p>Rechtsonder: BGT Pand op relatieve hoogteligging 1.</p>
+<p><figure id="fig-generatedID-14"><img src="media/67c18261559e6c8019af3dc692b84193.png" alt=""><figcaption><a class="self-link" href="#fig-generatedID-14">Figuur <bdi class="figno">16</bdi></a> <span class="fig-title"></span></figcaption></figure></p>
+<table class="simple">
+<thead>
+<tr>
+<th>BGT-identificatie</th>
+<th>tijdstipregistratie</th>
+<th>BAG-identificatie</th>
+<th>bronhouder</th>
+<th>relatievehoogte</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>G1621.b074b6999d3a438192a1387ea538c016</td>
+<td>21-2-2022 16:24:07</td>
+<td>1621100000033466</td>
+<td>G1621</td>
+<td>0</td>
+</tr>
+<tr>
+<td>G1621.29dcd82c215b4c41a8f2326b325f560b</td>
+<td>21-2-2022 16:24:07</td>
+<td>1621100000033466</td>
+<td>G1621</td>
+<td>1</td>
+</tr>
+</tbody></table>
+</section><section id="arent-van-lierstraat-puttershoek"><div class="header-wrapper"><h4 id="x5-1-9-arent-van-lierstraat-puttershoek"><bdi class="secno">5.1.9 </bdi>Arent van Lierstraat, Puttershoek</h4><a class="self-link" href="#arent-van-lierstraat-puttershoek" aria-label="Permalink for Section 5.1.9"></a></div>
+<p>In onderstaand voorbeeld is een BAG Pand opgedeeld in twee BGT Panden. Dit is de
+situatie van de BGT op 2 juli 2023. Op 3 juli is het BGT Pand samengevoegd tot
+één pand conform de BAG. In de BGT standaardvisualisatie en omtrekgerichte
+visualisatie zijn de tussenlijnen op 6 juli 2023 verdwenen.</p>
+<p>Linksboven: Luchtfoto</p>
+<p>Rechtsboven: BGT Standaardvisualisatie d.d. 6 juli 2023</p>
+<p>Linksonder: BGT Pand op maaiveld d.d. 2 juli 2023</p>
+<p>Rechtsonder: BGT omtrekgerichte visualisatie d.d. 6 juli 2023</p>
+<p><figure id="fig-generatedID-15"><img src="media/67ce61812e6e73af7da9ceeeaffea892.png" alt=""><figcaption><a class="self-link" href="#fig-generatedID-15">Figuur <bdi class="figno">17</bdi></a> <span class="fig-title"></span></figcaption></figure></p>
+<table class="simple">
+<thead>
+<tr>
+<th>BGT-identificatie</th>
+<th>tijdstipregistratie</th>
+<th>BAG-identificatie</th>
+<th>bronhouder</th>
+<th>relatievehoogte</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>G1963.6c40f8703f694c2497bf15cfdee9f487</td>
+<td>24-11-2022 13:32:54</td>
+<td>0585100001327593</td>
+<td>G1963</td>
+<td>0</td>
+</tr>
+<tr>
+<td>G0585.8abeacd5439b75760000000a1017e0f0</td>
+<td>1-8-2022 15:17:15</td>
+<td>0585100001327593</td>
+<td>G1963</td>
+<td>0</td>
+</tr>
+</tbody></table>
+</section><section id="van-der-merckstraat-s-gravendeel"><div class="header-wrapper"><h4 id="x5-1-10-van-der-merckstraat-s-gravendeel"><bdi class="secno">5.1.10 </bdi>Van der Merckstraat, ’s-Gravendeel</h4><a class="self-link" href="#van-der-merckstraat-s-gravendeel" aria-label="Permalink for Section 5.1.10"></a></div>
+<p>In onderstaand voorbeeld komt de afbakening van BGT en BAG panden niet overeen.
+Er zijn meerdere BGT Panden met gelijke BAG-identificatie, maar deze vallen niet
+samen met de BAG Panden.</p>
+<p>Linksboven: Luchtfoto</p>
+<p>Rechtsboven: BGT Standaardvisualisatie</p>
+<p>Linksonder: BGT Panden op maaiveld</p>
+<p>Rechtsonder: BAG Panden op BGT achtergrondvisualisatie</p>
+<p><figure id="fig-generatedID-16"><img src="media/0d40017eab5ffd5f2d5cd8eac189aa0e.png" alt=""><figcaption><a class="self-link" href="#fig-generatedID-16">Figuur <bdi class="figno">18</bdi></a> <span class="fig-title"></span></figcaption></figure></p>
+<table class="simple">
+<thead>
+<tr>
+<th>BGT-identificatie</th>
+<th>tijdstipregistratie</th>
+<th>BAG-identificatie</th>
+<th>bronhouder</th>
+<th>relatievehoogte</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>G0585.8abeacd5439b75760000000a1319984d</td>
+<td>5-7-2022 14:49:50</td>
+<td>0585100001329562</td>
+<td>G1963</td>
+<td>0</td>
+</tr>
+<tr>
+<td><em>G1963.a7910dfdb00847769c94bf1577df897a</em></td>
+<td><em>24-11-2022 13:32:54</em></td>
+<td><em>0585100001329562(!)</em></td>
+<td><em>G1963</em></td>
+<td><em>0</em></td>
+</tr>
+<tr>
+<td>G1963.093b81dc0a3a4982a42b5ecad7aac28b</td>
+<td>24-11-2022 13:32:54</td>
+<td>0585100001332225</td>
+<td>G1963</td>
+<td>0</td>
+</tr>
+<tr>
+<td>G0585.8abeacd5439b75760000000a1319927d</td>
+<td>5-7-2022 14:49:50</td>
+<td>0585100001332225</td>
+<td>G1963</td>
+<td>0</td>
+</tr>
+</tbody></table>
+</section></section>
+  </section>
+  <section id="tof"><div class="header-wrapper"><h2 id="x6-lijst-met-figuren"><bdi class="secno">6. </bdi>Lijst met figuren</h2><a class="self-link" href="#tof" aria-label="Permalink for Section 6."></a></div><ul class="tof">
+        <li class="tofline">
+    <a class="tocxref" href="#fig-generatedID"><span class="self-link">Figuur <bdi class="figno">1</bdi></span> <span class="fig-title"></span></a>
+  </li><li class="tofline">
+    <a class="tocxref" href="#fig-generatedID-0"><span class="self-link">Figuur <bdi class="figno">2</bdi></span> <span class="fig-title"></span></a>
+  </li><li class="tofline">
+    <a class="tocxref" href="#fig-generatedID-1"><span class="self-link">Figuur <bdi class="figno">3</bdi></span> <span class="fig-title"></span></a>
+  </li><li class="tofline">
+    <a class="tocxref" href="#fig-generatedID-2"><span class="self-link">Figuur <bdi class="figno">4</bdi></span> <span class="fig-title"></span></a>
+  </li><li class="tofline">
+    <a class="tocxref" href="#fig-generatedID-3"><span class="self-link">Figuur <bdi class="figno">5</bdi></span> <span class="fig-title"></span></a>
+  </li><li class="tofline">
+    <a class="tocxref" href="#fig-generatedID-4"><span class="self-link">Figuur <bdi class="figno">6</bdi></span> <span class="fig-title"></span></a>
+  </li><li class="tofline">
+    <a class="tocxref" href="#fig-generatedID-5"><span class="self-link">Figuur <bdi class="figno">7</bdi></span> <span class="fig-title"></span></a>
+  </li><li class="tofline">
+    <a class="tocxref" href="#fig-generatedID-6"><span class="self-link">Figuur <bdi class="figno">8</bdi></span> <span class="fig-title"></span></a>
+  </li><li class="tofline">
+    <a class="tocxref" href="#fig-generatedID-7"><span class="self-link">Figuur <bdi class="figno">9</bdi></span> <span class="fig-title"></span></a>
+  </li><li class="tofline">
+    <a class="tocxref" href="#fig-generatedID-8"><span class="self-link">Figuur <bdi class="figno">10</bdi></span> <span class="fig-title"></span></a>
+  </li><li class="tofline">
+    <a class="tocxref" href="#fig-generatedID-9"><span class="self-link">Figuur <bdi class="figno">11</bdi></span> <span class="fig-title"></span></a>
+  </li><li class="tofline">
+    <a class="tocxref" href="#fig-generatedID-10"><span class="self-link">Figuur <bdi class="figno">12</bdi></span> <span class="fig-title"></span></a>
+  </li><li class="tofline">
+    <a class="tocxref" href="#fig-generatedID-11"><span class="self-link">Figuur <bdi class="figno">13</bdi></span> <span class="fig-title"></span></a>
+  </li><li class="tofline">
+    <a class="tocxref" href="#fig-generatedID-12"><span class="self-link">Figuur <bdi class="figno">14</bdi></span> <span class="fig-title"></span></a>
+  </li><li class="tofline">
+    <a class="tocxref" href="#fig-generatedID-13"><span class="self-link">Figuur <bdi class="figno">15</bdi></span> <span class="fig-title"></span></a>
+  </li><li class="tofline">
+    <a class="tocxref" href="#fig-generatedID-14"><span class="self-link">Figuur <bdi class="figno">16</bdi></span> <span class="fig-title"></span></a>
+  </li><li class="tofline">
+    <a class="tocxref" href="#fig-generatedID-15"><span class="self-link">Figuur <bdi class="figno">17</bdi></span> <span class="fig-title"></span></a>
+  </li><li class="tofline">
+    <a class="tocxref" href="#fig-generatedID-16"><span class="self-link">Figuur <bdi class="figno">18</bdi></span> <span class="fig-title"></span></a>
+  </li>
+      </ul></section>
+  <section id="index" class="appendix"><div class="header-wrapper"><h2 id="a-index"><bdi class="secno">A. </bdi>Index</h2><a class="self-link" href="#index" aria-label="Permalink for Appendix A."></a></div>
+
+
+
+<section id="index-defined-here">
+    <div class="header-wrapper"><h3 id="a-1-begrippen-gedefinieerd-door-deze-specificatie"><bdi class="secno">A.1 </bdi>Begrippen gedefinieerd door deze specificatie</h3><a class="self-link" href="#index-defined-here" aria-label="Permalink for Appendix A.1"></a></div>
+    <ul class="index">
+    
+  </ul>
+  </section><section id="index-defined-elsewhere">
+    <div class="header-wrapper"><h3 id="a-2-begrippen-gedefinieerd-door-verwijzing"><bdi class="secno">A.2 </bdi>Begrippen gedefinieerd door verwijzing</h3><a class="self-link" href="#index-defined-elsewhere" aria-label="Permalink for Appendix A.2"></a></div>
+    <ul class="index">
+    
+  </ul>
+  </section></section><p role="navigation" id="back-to-top">
+    <a href="#title"><abbr title="Back to Top">↑</abbr></a>
+  </p><script id="respec-dfn-panel">(() => {
+// @ts-check
+if (document.respec) {
+  document.respec.ready.then(setupPanel);
+} else {
+  setupPanel();
+}
+
+function setupPanel() {
+  const listener = panelListener();
+  document.body.addEventListener("keydown", listener);
+  document.body.addEventListener("click", listener);
+}
+
+function panelListener() {
+  /** @type {HTMLElement} */
+  let panel = null;
+  return event => {
+    const { target, type } = event;
+
+    if (!(target instanceof HTMLElement)) return;
+
+    // For keys, we only care about Enter key to activate the panel
+    // otherwise it's activated via a click.
+    if (type === "keydown" && event.key !== "Enter") return;
+
+    const action = deriveAction(event);
+
+    switch (action) {
+      case "show": {
+        hidePanel(panel);
+        /** @type {HTMLElement} */
+        const dfn = target.closest("dfn, .index-term");
+        panel = document.getElementById(`dfn-panel-for-${dfn.id}`);
+        const coords = deriveCoordinates(event);
+        displayPanel(dfn, panel, coords);
+        break;
+      }
+      case "dock": {
+        panel.style.left = null;
+        panel.style.top = null;
+        panel.classList.add("docked");
+        break;
+      }
+      case "hide": {
+        hidePanel(panel);
+        panel = null;
+        break;
+      }
+    }
+  };
+}
+
+/**
+ * @param {MouseEvent|KeyboardEvent} event
+ */
+function deriveCoordinates(event) {
+  const target = /** @type HTMLElement */ (event.target);
+
+  // We prevent synthetic AT clicks from putting
+  // the dialog in a weird place. The AT events sometimes
+  // lack coordinates, so they have clientX/Y = 0
+  const rect = target.getBoundingClientRect();
+  if (
+    event instanceof MouseEvent &&
+    event.clientX >= rect.left &&
+    event.clientY >= rect.top
+  ) {
+    // The event probably happened inside the bounding rect...
+    return { x: event.clientX, y: event.clientY };
+  }
+
+  // Offset to the middle of the element
+  const x = rect.x + rect.width / 2;
+  // Placed at the bottom of the element
+  const y = rect.y + rect.height;
+  return { x, y };
+}
+
+/**
+ * @param {Event} event
+ */
+function deriveAction(event) {
+  const target = /** @type {HTMLElement} */ (event.target);
+  const hitALink = !!target.closest("a");
+  if (target.closest("dfn:not([data-cite]), .index-term")) {
+    return hitALink ? "none" : "show";
+  }
+  if (target.closest(".dfn-panel")) {
+    if (hitALink) {
+      return target.classList.contains("self-link") ? "hide" : "dock";
+    }
+    const panel = target.closest(".dfn-panel");
+    return panel.classList.contains("docked") ? "hide" : "none";
+  }
+  if (document.querySelector(".dfn-panel:not([hidden])")) {
+    return "hide";
+  }
+  return "none";
+}
+
+/**
+ * @param {HTMLElement} dfn
+ * @param {HTMLElement} panel
+ * @param {{ x: number, y: number }} clickPosition
+ */
+function displayPanel(dfn, panel, { x, y }) {
+  panel.hidden = false;
+  // distance (px) between edge of panel and the pointing triangle (caret)
+  const MARGIN = 20;
+
+  const dfnRects = dfn.getClientRects();
+  // Find the `top` offset when the `dfn` can be spread across multiple lines
+  let closestTop = 0;
+  let minDiff = Infinity;
+  for (const rect of dfnRects) {
+    const { top, bottom } = rect;
+    const diffFromClickY = Math.abs((top + bottom) / 2 - y);
+    if (diffFromClickY < minDiff) {
+      minDiff = diffFromClickY;
+      closestTop = top;
+    }
+  }
+
+  const top = window.scrollY + closestTop + dfnRects[0].height;
+  const left = x - MARGIN;
+  panel.style.left = `${left}px`;
+  panel.style.top = `${top}px`;
+
+  // Find if the panel is flowing out of the window
+  const panelRect = panel.getBoundingClientRect();
+  const SCREEN_WIDTH = Math.min(window.innerWidth, window.screen.width);
+  if (panelRect.right > SCREEN_WIDTH) {
+    const newLeft = Math.max(MARGIN, x + MARGIN - panelRect.width);
+    const newCaretOffset = left - newLeft;
+    panel.style.left = `${newLeft}px`;
+    /** @type {HTMLElement} */
+    const caret = panel.querySelector(".caret");
+    caret.style.left = `${newCaretOffset}px`;
+  }
+
+  // As it's a dialog, we trap focus.
+  // TODO: when <dialog> becomes a implemented, we should really
+  // use that.
+  trapFocus(panel, dfn);
+}
+
+/**
+ * @param {HTMLElement} panel
+ * @param {HTMLElement} dfn
+ * @returns
+ */
+function trapFocus(panel, dfn) {
+  /** @type NodeListOf<HTMLAnchorElement> elements */
+  const anchors = panel.querySelectorAll("a[href]");
+  // No need to trap focus
+  if (!anchors.length) return;
+
+  // Move focus to first anchor element
+  const first = anchors.item(0);
+  first.focus();
+
+  const trapListener = createTrapListener(anchors, panel, dfn);
+  panel.addEventListener("keydown", trapListener);
+
+  // Hiding the panel releases the trap
+  const mo = new MutationObserver(records => {
+    const [record] = records;
+    const target = /** @type HTMLElement */ (record.target);
+    if (target.hidden) {
+      panel.removeEventListener("keydown", trapListener);
+      mo.disconnect();
+    }
+  });
+  mo.observe(panel, { attributes: true, attributeFilter: ["hidden"] });
+}
+
+/**
+ *
+ * @param {NodeListOf<HTMLAnchorElement>} anchors
+ * @param {HTMLElement} panel
+ * @param {HTMLElement} dfn
+ * @returns
+ */
+function createTrapListener(anchors, panel, dfn) {
+  const lastIndex = anchors.length - 1;
+  let currentIndex = 0;
+  return event => {
+    switch (event.key) {
+      // Hitting "Tab" traps us in a nice loop around elements.
+      case "Tab": {
+        event.preventDefault();
+        currentIndex += event.shiftKey ? -1 : +1;
+        if (currentIndex < 0) {
+          currentIndex = lastIndex;
+        } else if (currentIndex > lastIndex) {
+          currentIndex = 0;
+        }
+        anchors.item(currentIndex).focus();
+        break;
+      }
+
+      // Hitting "Enter" on an anchor releases the trap.
+      case "Enter":
+        hidePanel(panel);
+        break;
+
+      // Hitting "Escape" returns focus to dfn.
+      case "Escape":
+        hidePanel(panel);
+        dfn.focus();
+        return;
+    }
+  };
+}
+
+/** @param {HTMLElement} panel */
+function hidePanel(panel) {
+  if (!panel) return;
+  panel.hidden = true;
+  panel.classList.remove("docked");
+}
+})()</script><div class="sidelabel">Geonovum Werkafspraak - Consultatieversie</div><script src="https://www.w3.org/scripts/TR/2021/fixup.js"></script></body></html>
