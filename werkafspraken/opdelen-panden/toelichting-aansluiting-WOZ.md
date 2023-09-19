@@ -30,8 +30,8 @@ pandobject worden afgebakend: woning, aanbouw, inpandige garage.
 Een carport, andere overkapping, berging (tuinhuis), zwembad, dakkapel of balkon
 worden niet als Pand in de BGT afgebakend.
 
-Deze geometrische afbakening van WOZ-deelobjecten *mogen* in de BGT worden
-opgenomen conform onderstaande tabel.
+Als een bronhouder de geometrische afbakening van WOZ-deelobjecten in de BGT wil
+opnemen, dan worden deze opgenomen conform onderstaande tabel.
 
 | **WOZ omschrijving**     | **WOZ code** | **BGT objecttype**                  | **BGT classificatie**           | **Niveau** |
 |--------------------------|--------------|-------------------------------------|---------------------------------|------------|

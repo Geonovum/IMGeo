@@ -15,9 +15,11 @@ Hieronder wordt de werkafspraak nader toegelicht:
 
 **binnen de daaraan gestelde kwaliteitseisen**
 
-Voor de volledigheid is de BGT-eis dat 100% van de panden op maaiveld en 98% van
-de panden op andere relatieve hoogteligging moeten zijn geregistreerd in de
-Landelijk Voorziening BGT.
+Voor de volledigheid is de BGT-eis dat 100% van de objecten op maaiveld en 98%
+van de objecten op andere relatieve hoogteligging moeten zijn geregistreerd in
+de Landelijk Voorziening BGT (zie
+[§4.1.3](https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#volledigheid) van
+de BGT catalogus).
 
 De BGT stelt als eis dat een BGT bronhouder een pand in de BAG binnen een
 termijn van 6 maanden in registratie van de BGT registreert. Andersom geldt dat
@@ -48,10 +50,10 @@ multivlak-geometrie in de BGT opgenomen.
 De regel "Voor eigen beheer mag een bronhouder objecten nader opdelen in
 afzonderlijke aangrenzende objecten met gelijke attribuutwaarden (zie
 IMGeo-catalogus §2.1 en §2.3)" is hiermee niet van toepassing voor het
-objecttype Pand. In algemene zin wordt verondersteld dat de regel "opdelen voor
-beheer" enkel van toepassing is voor objecten met daarin het woord "deel", dus
-o.a. Wegdeel, Waterdeel en BegroeidTerreindeel, en niet voor o.a. Scheiding,
-OverigBouwwerk, en FunctioneelGebied.
+objecttype Pand. Dit naar aanleiding van de veronderstelling dat de regel
+"opdelen voor beheer" enkel van toepassing is voor objecten met daarin het woord
+"deel", dus o.a. Wegdeel, Waterdeel en BegroeidTerreindeel, en niet voor o.a.
+Scheiding, OverigBouwwerk, en FunctioneelGebied.
 
 **actueel object**
 

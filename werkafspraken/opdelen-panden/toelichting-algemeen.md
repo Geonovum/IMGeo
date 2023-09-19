@@ -25,7 +25,7 @@ kaart vergroot.
 
 ### Luifels en overkappingen
 
-Luifels en overkappingen dienen als GebouwInstallatie of OverigBouwwerk conform
-de geldige regels worden opgenomen, waarbij in het algemeen geldt dat een luifel
-vast zit aan (de gevel van) een Pand (*of OverigBouwwerk*) en een overkapping
-een vrijstaand bouwwerk is.
+Luifels en overkappingen dienen respectievelijk als GebouwInstallatie en
+OverigBouwwerk conform de geldige regels worden opgenomen, waarbij volgens de
+definitie geldt dat een luifel vast zit aan (de gevel van) een pand en een
+overkapping een vrijstaand bouwwerk is.
