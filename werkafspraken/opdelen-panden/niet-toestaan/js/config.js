@@ -2,10 +2,10 @@ let respecConfig = {
   useLogo: true,
   useLabel: true,
   // title is verplicht! Neem hier de titel van het document op ----------------------
-  title: "Opdelen panden",
+  title: "Opdelen panden in de BGT",
   //-- specStatus is verplicht! (activeer 1 van de volgende) --------------------------
-  specStatus: "wv",                   // Werkversie
-  //specStatus: "cv",               // Consultatieversie
+  //specStatus: "wv",                   // Werkversie
+  specStatus: "cv",               // Consultatieversie
   //specStatus: "vv",               // Versie ter vaststelling
   //specStatus: "def",              // Vastgestelde versie
   //specStatus: "basis",            // Basis Document
@@ -26,7 +26,7 @@ let respecConfig = {
   //licence: "cc0",                 // Public Domain Dedication
   licence: "cc-by",                 // Attribution, met bronvermelding
   //-- shortName is verplicht! (komt in de URL: kies logische afkorting)--------------
-  shortName: "IMGeo/werkafspraken/opdelen panden in de BGT",
+  shortName: "IMGeo/werkafspraken/opdelen-panden",
   
   //edDraftURI = De URI van de draft version. Deze wordt automatisch afgeleid van de github URI; maar kan hier overschreven worden. 
 	//edDraftURI: ["https://geonovum.github.io", "/", "shortName"],
@@ -64,10 +64,10 @@ let respecConfig = {
   //neem hier de URL van de github repository op waar het respec document in staat
   github: "https://github.com/Geonovum/IMGeo",
   // Create PDF and link to file in header (optional):
-  alternateFormats: [
-      {
-          label: "pdf",
-          uri: "template.pdf",
-      },
-  ],
+  //alternateFormats: [
+      //{
+      //    label: "pdf",
+    //      uri: "template.pdf",
+    //  },
+ // ],
 };
