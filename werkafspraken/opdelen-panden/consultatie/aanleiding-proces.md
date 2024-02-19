@@ -44,7 +44,7 @@ spreken:
 1.  De BGT-standaard stelt dat opdelen van objecten 'voor eigen beheer' is
     toegestaan.
 
-    Voor eigen beheer mag een bronhouder objecten nader opdelen in afzonderlijke
+2.  Voor eigen beheer mag een bronhouder objecten nader opdelen in afzonderlijke
     aangrenzende objecten met gelijke attribuutwaarden (zie IMGeo-catalogus
     [§2.1](https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#plus-en-beheertopografie)
     en
@@ -55,11 +55,11 @@ spreken:
     classificaties van verhardingssoorten worden gekoppeld in het eigen
     beheersysteem.
 
-2.  De BGT-standaard hanteert de definitie van Pand uit de BAG, waarmee wordt
+3.  De BGT-standaard hanteert de definitie van Pand uit de BAG, waarmee wordt
     verondersteld dat voor elk object Pand in de BAG er precies één object Pand
     in de BGT met grondvlakgeometrie wordt opgenomen.
 
-    Vanaf de status ‘bouw gestart’ (zie BGT-catalogus
+4.  Vanaf de status ‘bouw gestart’ (zie BGT-catalogus
     [§10.7](https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#objectafbakening-pand-panddelen))
     moet een pand in de BAG worden opgenomen in de BGT[^1]. In IMGeo mag
     optioneel een pand vanaf status ‘bouwvergunning verleend’ worden opgenomen
@@ -133,16 +133,4 @@ gecombineerd overleg BAG BAO Agendaoverleg en BGT Begeleidingsgroep.
 
 ## Leeswijzer
 
-Hoofdstuk 2 geeft de inhoud van de werkafspraak, en een nadere toelichting
-hierop. Hoofdstuk 3 beschrijft de impact van de werkafspraak op bronhouders,
-gebruikers, software van bronhouders/gebruikers en de centrale ketensystemen
-BRAVO, LV BGT en PDOK. Hoofdstuk 4 beschrijft de registratie inzake knelpunt van
-deze werkafspraak in het meldingensysteem van Geonovum, zodat de werkafspraak in
-een volgende versie van de standaard kan worden opgelost.
-
-Voorfase met informele peilingen, werkbijeenkomsten, en het uitwerken van
-verschillende opties in werkafspraak. Dit is openbaar geconsulteerd
-
-Vervolgens zijn de resultaten van de consultatie en geuite behoeften
-geïnventariseerd, scenario’s uitgewerkt en impact geanalyseerd, waaruit
-conclusies zijn getrokken en aanbevelingen worden gedaan.
+…
