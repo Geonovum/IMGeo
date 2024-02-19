@@ -1,11 +1,14 @@
 # Samenvatting
 
+Dit rapport behandelt het resultaat van een consultatie over het onderwerp
+Opdelen van panden in de BGT.
+
 **Aanleiding, proces, consultatie**
 
-Dit rapport behandelt de technische vrijheid in de BGT\|IMGeo standaarden
-waarmee panden kunnen worden opgedeeld in meerdere objecten/geometrieën.
-Ongeveer een derde van de BGT bronhouders past deze vrijheid toe om panden nader
-op te delen, wat tot discussie heeft geleid over de wenselijkheid hiervan.
+Aanleiding is de technische vrijheid in de BGT\|IMGeo standaarden waarmee panden
+kunnen worden opgedeeld in meerdere objecten/geometrieën. Ongeveer een derde van
+de BGT bronhouders past deze vrijheid toe om panden nader op te delen, wat tot
+discussie heeft geleid over de wenselijkheid hiervan.
 
 Het opdelen van panden creëert variatie onder bronhouders, met name in de
 registratie van over/onderbouw en de aansluiting op WOZ-deelobjecten. Deze
