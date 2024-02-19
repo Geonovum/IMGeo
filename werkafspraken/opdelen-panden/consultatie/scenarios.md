@@ -1,305 +1,140 @@
-# Resultaat
-
-In dit hoofdstuk wordt de respons op de consultatie en eerste inventariatie op
-de respons beschreven. Het hoofdstuk is als volgt opgebouwd: in de eerste
-paragraaf worden de statistieken beschreven, in de drie opvolgende paragrafen
-worden per werkafspraak de argumenten (drivers) voor de voorkeurswerkafspraak
-beschreven, de laatste paragraaf geeft een samenvatting van genoemde impact.
-
-## Statistieken respons
-
-### Type respondent
-
-| bronhouder             | 67  | 55,4%  |
-|------------------------|-----|--------|
-| gebruiker              | 11  | 9,1%   |
-| bronhouder + gebruiker | 26  | 21,5%  |
-| softwareleverancier    | 7   | 5,8%   |
-| overig                 | 8   | 6,6%   |
-| *«geen keuze»*         | 2   | 1,7%   |
-|                        | 121 | 100,0% |
-
-### Type organisatie
-
-| Gemeente                        | 101 | 83,5%  |
-|---------------------------------|-----|--------|
-| Provincie                       | 1   | 0,8%   |
-| Marktpartij/softwareleverancier | 13  | 10,7%  |
-| Overige[^1]                     | 6   | 5,0%   |
-|                                 | 121 | 100,0% |
-
-[^1]: Onder de categorie ‘overige’ vallen de Waarderingskamer, VNG Realisatie, het
-    Kadaster, en een netbeheerder.
-
-### Voorkeurswerkafspraak
-
-| Niet toestaan   | 14  | 11,6%  |
-|-----------------|-----|--------|
-| Deels toestaan  | 40  | 33,1%  |
-| Wel toestaan    | 66  | 54,5%  |
-| *Geen voorkeur* | 1   | 0,8%   |
-|                 | 121 | 100,0% |
-
-### Voorkeurswerkafspraak vs. type respondent
-
-|                        | Niet-toestaan | Deels-toestaan | Wel-toestaan | *Geen voorkeur* |
-|------------------------|---------------|----------------|--------------|-----------------|
-| bronhouder             | 10            | 24             | 33           | 0               |
-| gebruiker              | 2             | 4              | 5            | 0               |
-| bronhouder + gebruiker | 1             | 5              | 19           | 1               |
-| softwareleverancier    | 0             | 3              | 4            | 0               |
-| overig                 | 1             | 4              | 3            | 0               |
-| *«geen keuze»*         | 0             | 0              | 2            | 0               |
-
-### Gemeenten
-
-Het respons dekt 108 van de 342 gemeenten. 3 gemeenten hebben namens de
-gemeenten waarvoor zij het beheer van BGT en/of WOZ uitvoeren ingediend.
-
-Van/namens 6 gemeenten hebben meerdere medewerkers een reactie ingediend, welke
-afwijken van de eigen collega. Bij deze respondenten is gevraagd om te komen,
-waar voor een deel gehoor aan is gegeven. Deze aanvullende input is verwerkt in
-onderstaande statistieken en kaart.
-
-|  **Gemeenten**        |     |        |
-|-----------------------|-----|--------|
-| Niet toestaan         | 18  | 16,7%  |
-| Deels toestaan        | 31  | 28,7%  |
-| Wel toestaan          | 57  | 52,8%  |
-|                       |     |        |
-| Niet & Wel toestaan   | 1   | 0,9%   |
-| Niet & Deels toestaan | 0   | 0,0%   |
-| Deels & Wel toestaan  | 1   | 0,9%   |
-|                       | 108 | 100,0% |
-
-![](media/a2bd0302cc08c6d736b693c31aae25be.png)
-
-## Voorkeurswerkafspraak Niet-toestaan
-
-### Respons
-
-14 van de 121 respondenten (12%) geven de voorkeur aan de werkafspraak
-‘Niet-toestaan’.
-
-10 respondenten typeerden zich als bronhouder, 2 respondenten als bronhouder én
-gebruiker, en 2 respondenten als gebruiker.
-
-12 respondenten zijn werkzaam bij een gemeente, 2 respondenten bij het Kadaster.
-
-### Drivers: waarom Niet-toestaan?
-
-Als redenen voor het toepassen van de werkspraak 'Niet-toestaan', die worden
-beschouwd als de *business drivers* voor het niet toestaan van het opdelen van
-panden in de Basisregistratie Grootschalige Topografie (BGT), worden door de
-respondenten de volgende argumenten genoemd:
-
-1.  Geen impact op bestaande informatieproducten o.b.v. de BGT (DKK)
-
-2.  Geen impact op IT: opdelen panden conform regels in een werkafspraak vraagt
-    aanvullende controles in bronhoudersoftware of LV BGT
-
-3.  Kost extra tijd, capaciteit: opdelen van panden is veel werk
-
-4.  Geen risico’s voor de kwaliteit: complexe registratie is foutgevoelig,
-    vrijwillig opdelen gaat ten koste van de uniformiteit van de BGT, foutief
-    gebruik BGT geometrie voor WOZ-berekening.
-
-5.  Opdelen in panddelen past niet bij scope BGT/SOR: overbouw/onderbouw in
-    aparte objecten is geen één objectbenadering van Pand, opdelen panden hoort
-    niet in de BGT thuis, maar door goede geometrische koppeling van WOZ met
-    BGT, werkafspraak is niet conform SOR.
-
-Ad 1) Opdelen van panden op maaiveldniveau heeft impact op de Kadastrale Kaart
-(DKK). Voor de DKK worden BGT panden op maaiveld groter dan 40m2 geselecteerd.
-Bij opdelen van panden op maaiveld worden dan minder/kleinere contouren van BGT
-panden op de DKK getoond. Dit is op te lossen door de huidige selectiescripts
-voor de DKK uit te breiden met een aanvullende selectie van BGT Panden kleiner
-dan 40m2 o.b.v. de BAG-identificaties van de eerder geselecteerde BGT Panden.
-
-Ad 2) Niet-toestaan van het opdelen van panden vereist ook aanvullende controles
-in bronhoudersoftware en/of LV BGT.
-
-Ad 3) Het opdelen van panden is optioneel, bronhouder/organisatie kiest zelf of
-extra tijd/capaciteit (lasten) opwegen tegen de baten en welke gegevens al
-beschikbaar zijn. kwaliteit handhaven kost meer tijd;
-
-Ad 4) Het nader op te stellen goede werkinstructies in een praktijkrichtlijn
-moeten de foutgevoeligheid bij registratie en daarmee de kwaliteit waarborgen,
-het model van BGT met vrijwillige en verplichte onderdelen (o.m. ‘nader opdelen
-voor eigen beheer’, en plus-topografie) kiest nu ook al op bepaalde onderdelen
-voor variatie in detail en volledigheid.
-
-Alleen geometrie van BGT geeft onvoldoende informatie over gebruiksoppervlakte,
-aanwezigheid liftkoker/trapgaten, vides e.d. die voor WOZ niet meegerekend
-worden.
-
-Zolang er landelijk geen verplichte registratie is, helpt een werkafspraak de
-BGT als geheel niet.
-
-Ad 5) Geen één objectbenadering voor Pand, omdat overbouw/onderbouw geen aparte
-objecten maar kenmerken zijn van een BGT-pand. In de WOZ kunnen niet meerdere
-panddelen worden gekoppeld aan hetzelfde WOZ-deelobject.
-
-Omdat op korte termijn geen geometrie in WOZ, en er geen SOR is, vult deze
-werkafspraak tijdelijk een behoefte in. Met deze werkafspraken Deel toestaan en
-Wel toestaan sorteert de BGT voor op andere oplossingen.
-
-## Voorkeurswerkafspraak Deels toestaan
-
-### Respons
-
-40 van de 121 respondenten (33%) geven de voorkeur aan de werkafspraak
-‘Deels-toestaan’.
-
-24 respondenten typeerden zich als bronhouder, 5 respondenten als bronhouder én
-gebruiker, en 4 respondenten als gebruiker. 3 respondenten als
-softwareleverancier en 4 als overige partij.
-
-32 respondenten zijn werkzaam bij een gemeente, 3 respondenten zijn
-softwareleverancier, 1 respondent namens het Kadaster, 1 respondent namens VNG,
-3 respondent van een overige (markt)partij.
-
-### Drivers: waarom Deels toestaan?
-
-Als redenen voor het toepassen van de werkspraak 'Deels-toestaan', die worden
-beschouwd als de *business drivers* voor het toestaan van het opnemen van
-overbouw en onderbouw in de Basisregistratie Grootschalige Topografie (BGT),
-worden door de respondenten de volgende argumenten genoemd:
-
-1.  Samenhang in bijhouding en registratie geometrie in BAG en BGT.
-
-2.  Betere controle op verschillen tussen geometrie in BAG en BGT.
-
-3.  Past bij scope BGT/SOR: stap richting 3D gebouwenregistratie en/of SOR.
-
-4.  Meer informatie over gebouwen voor gebruikers van de BGT (intern en extern).
-
-5.  houdt het onderscheid tussen registratie BAG en BGT zuiver.
-
-6.  Past bij de huidige manier van registreren; slaan al boven/onderbouw op in
-    BGT.
-
-Ad 1) geometrie voor BAG en BGT kan op één plek beheerd worden wat de
-consistentie ten goede komt. Het muteren op één geïntegreerde kaart is
-efficiënter. BAG en BGT zijn dan gemakkelijker gelijk te houden.
-
-Ad 2) Hierdoor kunnen verschillen tussen BAG en BGT panden geconstateerd worden.
-
-Ad 3) Als toelichting wordt meermaals genoemd dat dit als een goede (eerste)
-stap wordt gezien in de richting van 3D gebouwenregistratie en/of SOR.
-
-Ad 4) Verschillende gebruikers geven aan de extra informatie over over/onderbouw
-te kunnen benutten, o.m. voor het maken van de BRT, van berekening/handhaving op
-vergunningsvrije bouwruimte. In het algemeen wordt verondersteld dat het een
-completer kaartbeeld levert voor intern gebruik.
-
-Ad 5) Betere integratie van de BGT met WOZ wordt bereikt.
-
-Ad 6) Met de werkafspraak wordt de huidige werkwijze die ca. 1/3 van de
-bronhouder nu reeds toepast, formeel toegestaan.
-
-## Voorkeurswerkafspraak Wel toestaan
-
-### Respons
-
-66 van de 121 respondenten (55%) geven de voorkeur aan de werkafspraak
-‘Wels-toestaan’.
-
-33 respondenten typeren zich als bronhouder, 19 respondenten als bronhouder én
-gebruiker, en 5 respondenten als gebruiker. 4 respondenten als
-softwareleverancier en 3 als overige partij.
-
-57 respondenten zijn werkzaam bij een gemeente, 4 respondenten zijn
-softwareleverancier, 1 respondent namens de Waarderingskamer, 1 respondent
-namens een netbeheerder, 3 respondenten van een overige (markt)partij.
-
-### Drivers: waarom Wel toestaan?
-
-Als redenen voor het toepassen van de werkspraak 'Wel-toestaan', die worden
-beschouwd als de *business drivers* voor het toestaan van het geometrische
-afbakenen van WOZ-deelobjecten als panddelen in de Basisregistratie
-Grootschalige Topografie (BGT), worden de volgende argumenten genoemd:
-
-1.  Past bij huidige afspraken over ‘opdelen voor beheer’.
-
-2.  Samenhang in bijhouding en registratie geometrie voor BAG, BGT én WOZ.
-
-3.  Efficiënte inwinning door meervoudig gebruik geometrie in BGT.
-
-4.  Meer toegevoegde waarde BGT door toepassing in andere werkprocessen.
-
-5.  Mogelijk kwaliteit verhogend voor de BGT door meer gebruik = meer
-    terugmeldingen.
-
-6.  Past bij scope BGT/SOR: stap richting 3D gebouwenregistratie en/of SOR.
-
-7.  Extra informatie over gebouwen voor gebruikers van de BGT. (\*als in de LV!)
-
-8.  in eigen tempo toewerken naar geintegreerde bijhouding van registratie.
-
-Ad 1) dat panddelen gekoppeld kunnen worden;
-
-Ad 2) geometrie voor alle registraties kan op één plek beheerd worden wat de
-consistentie ten goede komt.
-
-Ad 3) Er hoeft geen aparte geometrie voor de WOZ-deelobjectenkaart meer
-ingewonnen/bijgehouden te worden.
-
-Ad 4) Meervoudig gebruik en aansluiting op WOZ heeft toegevoegde waarde voor
-gemeentelijke processen, en draagt bij aan de toegevoegde waarde van de BGT. De
-opties voor niet of deels toestaan beperkt gemeente in toekomstige keuzes.
-Makkelijk zelf afleiden van WOZ objectenkaart
-
-Ad 5) Meer gebruik van de BGT kan de kwaliteit van de BGT verhogen als gevolg
-van meer mutatiemeldingen. Ondanks dat het veel werk aan de voorkant is, levert
-de inspanning ook veel op in het proces, bv betere oppervlaktes, leveren minder
-bezwaren op en dus minder WOZ bezwaar afhandeling tijd.
-
-Ad 6) Overbouw/onderbouw is wel een stap richting 3D, maar niet de één
-objectbenadering van de SOR. Opdelen voor WOZ past bij het voorsorteren op
-aansluiting concept SOR-Gebouwzone. Het opdelen voor de WOZ wordt door bepaalde
-respondenten als een toekomstbestendige stap in gegevensverwerking en -onderhoud
-beoordeeld.
-
-Ad 7) Door de koppeling van WOZ-deelobjecten aan BAG-objecten, maar hopelijk ook
-andere BGT-objecten kan de WOZ-medewerker zicht krijgen op de volledigheid van
-de WOZ-deelobjecten. Meer transparantie/gegevens over de werkelijke situatie bij
-WOZ-waardebepaling biedt minder ruimte voor bezwaar. Handig voor afbakening
-appartementen. Beter en makkelijker opnemen van div bouwfases
-
-Ad 8) Het opdelen van panden is optioneel, bronhouder/organisatie kiest zelf of
-extra tijd/capaciteit (lasten) opwegen tegen de baten en welke gegevens al
-beschikbaar zijn. De opties voor niet of deels toestaan beperkt gemeente in
-toekomstige keuzes.
-
-## 
-
-## 
-
-## Impact
-
-Respondenten benoemen de volgende onderwerpen als mogelijke impact op data,
-software, en capaciteit.
-
-**Data**
-
--   Informatieverlies (of informatieuitbreiding)
-
--   Hogere kwaliteit door samenhang in bijhouding
-
--   Lagere kwaliteit bij onduidelijke afbakeningsregels
-
-**Software**
-
--   Aanvullende controles nodig ongeacht de keuze van één bepaalde werkafspraak.
-
--   Geen impact op GeoBAG koppelvlak.
-
-**Capaciteit**
-
--   Herstelactie op huidige populatie van BGT panden, die niet voldoen aan één
-    bepaalde werkafspraak.
-
--   Opdelen is veel werk, echter het is wel optioneel
-
-## 
+# Scenario’s
+
+Dit gedeelte introduceert drie scenario's die zijn ontwikkeld op basis van
+feedback uit de consultatie, en verkent de verschillende overwegingen met
+betrekking tot de voordelen, nadelen, kansen en risico's van deze scenario's.
+Het richt zich op de mogelijke vervolgstappen met betrekking tot het opdelen van
+panden in de Basisregistratie Grootschalige Topografie (BGT).
+
+## Scenario 1: Geen Formele Werkafspraak (Nul-alternatief, niks doen)
+
+Dit scenario behelst het niet instellen van een formele werkafspraak met
+betrekking tot het opdelen van panden in de Basisregistratie Grootschalige
+Topografie (BGT). Het impliceert ook het niet toevoegen van extra controles in
+de Landelijke Voorziening (LV) BGT of het kwaliteitsdashboard van de BGT.
+
+Een argument voor dit scenario is dat er momenteel geen technische problemen
+optreden, en dat de kwestie van het opdelen van panden slechts naar voren is
+gekomen omdat sommige gemeenten duidelijkheid wilden over hun bevoegdheden. In
+de praktijk zien we al geruime tijd dat overbouw/onderbouw voorkomt, maar tot nu
+toe heeft geen enkele afnemer gemeld dat dit problemen veroorzaakt bij het
+gebruik van de BGT.
+
+Het voordeel van dit scenario is dat er (voorlopig) geen impact is op
+bronhouders, gebruikers, software of gegevens: er wordt immers geen verplichting
+opgelegd om volgens een bepaalde methode te werken. Het nadeel is echter dat er
+een blijvende vrijheid tot implementatie bestaat, wat kan leiden tot
+niet-standaardisatie van gegevens in de BGT. Dit brengt het risico met zich mee
+dat de BGT-data inhoudelijk uiteenloopt, waardoor geautomatiseerde
+gegevensoverdracht bemoeilijkt wordt. Een te grote diversiteit aan benaderingen
+kan een transitie naar een meer uniforme aanpak in de toekomst moeilijker en
+kostbaarder maken.
+
+Bovendien biedt dit scenario geen kans om gezamenlijk stappen te zetten richting
+een Samenhangende Objectenregistratie (SOR[^1]) of naar een driedimensionale
+benadering (3D) van gebouwen.
+
+[^1]: Met SOR doelen we hier op de eisen en wensen zoals beschreven in het traject
+    om te komen tot één samenhangende objectenregistratie, zoals vastgelegd in
+    het document: <https://docs.geostandaarden.nl/disgeo/emso/>
+
+## Scenario 2: beperken van het opdelen van panden in de BGT
+
+Dit scenario introduceert een formele werkafspraak die het verbiedt om de
+grondvlakgeometrie van Basisregistratie Adressen en Gebouwen (BAG)-panden verder
+op te delen of andere geometrie dan de grondvlakgeometrie van BGT-panden aan te
+leveren aan de Landelijke Voorziening BGT. Bronhouders behouden echter de
+vrijheid om dergelijke opdelingen van panden of overbouw/onderbouw in hun eigen
+applicaties op te nemen in aparte lagen.
+
+Een voordeel van dit scenario is dat het duidelijkheid verschaft over de
+toepassing van de BGT\|IMGeo-standaarden, wat bijdraagt aan de uniformiteit van
+de BGT. Echter, het nadeel is dat dit scenario wel degelijk impact heeft op
+software, gegevens en de capaciteit van bronhouders. Gegevens die niet voldoen
+aan de eisen van de BGT moeten worden gecorrigeerd: overbouw/onderbouw moet
+worden verwijderd en grondvlakgeometrie van opgedeelde BAG-panden moet worden
+geaggregeerd. Voor sommige afnemers kan dit leiden tot verlies van informatie in
+de BGT.
+
+Daarnaast vereist dit scenario extra controles in de software, zowel decentraal
+in bronhoudersoftware als centraal bij de Landelijke Voorziening BGT en/of
+achteraf via indicatoren in het kwaliteitsdashboard, als dit technisch en
+procesmatig afgedwongen moet worden. Er bestaat een risico dat bronhouders
+panden blijven opdelen en gegevens over overbouw/onderbouw en opgedeelde
+grondvlakgeometrie van panden blijven aanleveren aan de LV-BGT als dit niet
+wordt afgedwongen in de software.
+
+Het risico bestaat ook dat overbouw/onderbouw of nadere opdeling van panden
+buiten het IMGeo om zullen worden gerealiseerd en beheerd. Dit kan resulteren in
+maatwerkoplossingen die schadelijk zijn voor de standaardisatie, en dit kan
+mogelijk later leiden tot grotere investeringen bij een transitie naar een
+andere gegevensstructuur vanwege de verscheidenheid aan data.
+
+Evenzo biedt dit scenario geen kans om gezamenlijk stappen te zetten richting de
+ideeën voor een Samenhangende Objectenregistratie (SOR) of naar een
+driedimensionale benadering (3D).
+
+## Scenario 3: gecontroleerd opdelen van panden met keuzevrijheid voor bronhouders
+
+Dit scenario omvat het instellen van een werkafspraak die het opdelen van panden
+in de BGT en de uitwisseling ervan met de Landelijke Voorziening BGT niet
+verbiedt, maar wel gecontroleerd toestaat. Het is een compromis dat tegemoetkomt
+aan de behoeften van gemeenten die hebben gereageerd op de consultatie.
+
+Uit de respons blijkt dat 75% van de gemeenten die hebben gereageerd op de
+consultatie behoefte heeft aan de mogelijkheid om overbouw/onderbouw bij panden
+in de BGT op te nemen en uit te wisselen. Meer dan de helft van deze gemeenten
+geeft aan ook de behoefte te hebben om panden verder op te delen in kleinere
+eenheden of panddelen, bijvoorbeeld voor aansluiting met WOZ-deelobjecten of
+voor een stap richting een driedimensionale benadering.
+
+Een nadeel van dit scenario is echter dat er geen uniforme aanpak is voor de
+afbakening van overbouw/onderbouw en panddelen.
+
+Sommige bronhouders nemen bijvoorbeeld alleen de uitstekende delen van
+overbouw/onderbouw op. Echter, een regel die stelt dat alleen de uitstekende
+delen moeten worden opgenomen op een andere relatieve hoogteligging dan het
+grondvlak, is niet in lijn met de afbakening van WOZ-deelobjecten. Dit komt
+doordat een WOZ-deelobject soms over de grondvlakgeometrie heen kan gaan, wat
+resulteert in onjuiste oppervlakteberekeningen, die essentieel zijn voor de WOZ.
+
+Evenzo, het opnemen van objecten zoals overbouw/onderbouw die zich op dezelfde
+relatieve hoogteligging bevinden in een multivlakgeometrie, past niet bij het
+afbakenen van afzonderlijke WOZ-deelobjecten die ook op dezelfde relatieve
+hoogteligging liggen. Dit beperkt de mogelijkheden om aan afzonderlijke
+WOZ-deelobjecten extra detailinformatie te koppelen op basis van een eigen
+identificatie.
+
+Het loslaten van het concept van multivlakgeometrie staat op zijn beurt weer
+haaks op de huidige situatie waarin de grondvlakgeometrie van een pand in de BGT
+altijd in een multivlakgeometrie wordt opgenomen, zoals bijvoorbeeld een pand op
+pilaren.
+
+Dit kan leiden tot inconsistenties, bijvoorbeeld in de afbakening van
+WOZ-deelobjecten. Om deze problemen aan te pakken, kan het nodig zijn om
+praktijkrichtlijnen op te stellen die regels bieden voor de opname en afbakening
+van overbouw/onderbouw en panddelen. Dit zou bronhouders de flexibiliteit geven
+om op eigen initiatief te beslissen hoe ze deze elementen willen opnemen, of ze
+nu eerst overbouw/onderbouw opnemen en later panden verder opdelen, of vice
+versa.
+
+Hoewel dit scenario kansen biedt voor meer flexibiliteit en stapsgewijze
+implementatie, bestaat het risico dat gebruikers verschillende informatie
+ontvangen. Dit kan met name een uitdaging vormen voor de Digitale Kadastrale
+Kaart, maar dit kan worden aangepakt door een extra naselectie van BGT-panden om
+toch alle benodigde panden in de DKK te tonen.
+
+Daarnaast biedt ook dit scenario directe mogelijkheid om gezamenlijke stappen te
+zetten richting de ideeën voor een Samenhangende Objectenregistratie (SOR) of
+naar een driedimensionale benadering (3D) van gebouwen.
+
+## Samenvatting
+
+|               | **Scenario 1**                                                          | **Scenario 2**                                                                                                                                             | **Scenario 3**                                                                                                                                                                                               |
+|---------------|-------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Voordelen** | Geen impact IT  Geen herstelactie op data Geen informatieverlies.       | Hoge uniformiteit.                                                                                                                                         | Voorziet wel in behoeften  Beperkte impact IT  Hogere uniformiteit, door praktijkrichtlijn. Geen informatieverlies.                                                                                          |
+| **Nadelen**   | Voorziet niet in behoeften  Lage(re) uniformiteit.                      | Voorziet niet in behoeften  Wel impact IT  Grote herstelactie op. Informatieverlies in BGT.                                                                | Minder grote herstelactie op bestaande data.                                                                                                                                                                 |
+| **Kansen**    |                                                                         | Eenvoudige dataconversie in toekomst door gestandaardiseerde data.                                                                                         | Efficiente inwinning door samenhang in bijhouding BAG, BGT en WOZ.  Meer toegevoegde waarde BGT door gebruik in ander werkproces.  Eenvoudigere dataconversie in toekomst door meer-gestandaardiseerde data. |
+| **Risico’s**  | Dataconversie in toekomst moeilijker, door niet-gestandaardiseerde data | Minder toegevoegde waarde BGT door ongeschikt voor gebruik in ander werkproces. Inefficiënte inwinning door geen bijhouding in samenhang van BAG, BGT, WOZ |                                                                                                                                                                                                              |
+
+Impact
