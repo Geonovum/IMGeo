@@ -11,7 +11,8 @@ op basis van deze consultatie tot het volgende advies.
 
 Gezien de interesse van de stakeholders in flexibiliteit met betrekking tot het
 opdelen van panden, en de erkenning van de mogelijke risico's van inconsistente
-informatie, adviseert Geonovum om **scenario 3** verder uit te werken.
+informatie, adviseert Geonovum om **scenario 3 ‘Gecontroleerd opdelen van panden
+met keuzevrijheid voor bronhouders’** verder uit te werken.
 
 Dit scenario dient expliciet te worden gepresenteerd en gecommuniceerd als een
 **tussenoplossing**:
