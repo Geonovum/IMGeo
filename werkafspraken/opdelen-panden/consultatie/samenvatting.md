@@ -1,6 +1,4 @@
-# Samenvatting
-
-Dit rapport behandelt het resultaat van een consultatie over het onderwerp
+Dit document behandelt het resultaat van een consultatie over het onderwerp
 Opdelen van panden in de BGT.
 
 **Aanleiding, proces, consultatie**
