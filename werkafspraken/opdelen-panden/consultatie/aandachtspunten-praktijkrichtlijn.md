@@ -204,4 +204,6 @@ zijn, en dus niet als WOZ-deelobjectafbakening in BGT te laten terugkomen.
 ## Voorbeelden
 
 Hieronder volgen enkele voorbeelden om per praktijkrichtlijn bovenstaande
-aandachtspunten te bespreken:
+aandachtspunten te bespreken.
+
+*Nog toe te voegen*
