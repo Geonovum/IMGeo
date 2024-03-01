@@ -10,7 +10,7 @@ kunnen worden opgedeeld in meerdere objecten/geometrieën. Ongeveer een derde va
 de BGT bronhouders past deze vrijheid toe om panden nader op te delen, wat tot
 discussie heeft geleid over de wenselijkheid hiervan.
 
-Het opdelen van panden creëert variatie onder bronhouders, met name in de
+Het opdelen van panden kent variatie onder bronhouders, met name in de
 registratie van over/onderbouw en de aansluiting op WOZ-deelobjecten. Deze
 praktijk roept onduidelijkheid op over de juiste toepassing van de standaarden.
 
@@ -18,8 +18,8 @@ Geonovum heeft tussen maart en november 2023 een uitgebreid consultatieproces
 doorlopen, waarbij drie opties voor het opdelen van panden openbaar zijn
 geconsulteerd. Dit proces heeft geresulteerd in 121 reacties van
 belanghebbenden. De resultaten van de consultatie zijn geanalyseerd en gedeeld
-met het werkveld, waarna verdere besluitvorming is gepland tijdens het overleg
-BAG BAO AO en BGT Begeleidingsgroep BGT in april 2024.
+met het werkveld, waarna verdere behandeling is gepland tijdens het overleg BAG
+BAO AO en BGT Begeleidingsgroep BGT in april 2024.
 
 **Resultaat**
 
@@ -34,11 +34,6 @@ vanwege betere controle over verschillen tussen BGT en BAG geometrieën, terwijl
 'Wel-toestaan' wordt geadviseerd vanwege efficiënte gegevensinwinning en meer
 toegevoegde waarde voor de BGT.
 
-De impact van de verschillende werkafspraken omvat onder andere mogelijke
-informatieverlies of -uitbreiding, samenhang in bijhouding voor hogere
-kwaliteit, aanvullende controles in software en herstelacties op de BGT
-pandenpopulatie.
-
 **Scenario’s**
 
 Drie scenario’s zijn beschreven voor het opdelen van panden in de
@@ -51,7 +46,7 @@ Dit scenario behelst het niet instellen van een formele werkafspraak met
 betrekking tot het opdelen van panden in de BGT. Het voordeel is dat er
 (voorlopig) geen impact is op bronhouders, gebruikers, software of gegevens. Het
 nadeel is echter dat dit kan leiden tot niet-standaardisatie van gegevens in de
-BGT, wat de geautomatiseerde gegevensoverdracht bemoeilijkt.
+BGT, wat de geautomatiseerde conversies op later moment bemoeilijkt.
 
 *Scenario 2: Beperken van het Opdelen van Panden*
 
@@ -63,8 +58,8 @@ gegevens en capaciteit van bronhouders.
 *Scenario 3: Gecontroleerd Opdelen van Panden met Keuzevrijheid voor
 Bronhouders*
 
-Dit scenario biedt de mogelijkheid voor gecontroleerd opdelen van panden,
-terwijl tegelijkertijd richtlijnen voor uniforme afbakening worden
+Dit scenario biedt de mogelijkheid (optioneel) voor gecontroleerd opdelen van
+panden, terwijl tegelijkertijd richtlijnen voor uniforme afbakening worden
 geïntroduceerd. Hierdoor ontstaat flexibiliteit en kunnen gemeenten hun eigen
 keuzes maken. Het benadrukt de kans op een gestructureerde aanpak, maar vereist
 wel zorgvuldig beheer en duidelijke regels om ervoor te zorgen dat informatie
@@ -74,13 +69,24 @@ Elk scenario heeft specifieke voordelen, nadelen, kansen en risico's, waardoor
 een zorgvuldige afweging nodig is bij het kiezen van een geschikte aanpak voor
 het opdelen van panden in de BGT.
 
+De impact van de verschillende scenario’s omvat onder andere mogelijke
+informatieverlies of -uitbreiding, samenhang in bijhouding voor hogere
+kwaliteit, aanvullende controles in software en herstelacties op de BGT
+pandenpopulatie.
+
 **Conclusie en aanbevelingen**
 
-De respons op de consultatie toont aan dat er behoefte is aan een gebalanceerde
-aanpak voor het opdelen van panden in de BGT. Scenario 3, dat gecontroleerd
-opdelen mogelijk maakt met richtlijnen voor uniformiteit, verdient verdere
-uitwerking. Dit scenario biedt flexibiliteit en consistentie, waardoor het een
-veelbelovende oplossing is voor de uitdagingen rondom pandopdeling in de BGT.
-Het is essentieel om duidelijke richtlijnen op te stellen, de implementatie te
-monitoren en de impact op de datakwaliteit te evalueren. Communicatie met alle
-belanghebbenden is cruciaal voor een succesvolle acceptatie van dit scenario.
+De respons op de consultatie toont aan dat er behoefte is aan een evenwichtige
+aanpak voor het opdelen van panden in de BGT. Op basis hiervan adviseert
+Geonovum verdere uitwerking van scenario 3, dat gecontroleerd opdelen mogelijk
+maakt met richtlijnen voor uniformiteit.
+
+Dit scenario dient expliciet als tussenoplossing te worden gepresenteerd en
+gecommuniceerd. Communicatie met alle belanghebbenden is cruciaal voor een
+succesvolle acceptatie van dit scenario.
+
+Dit scenario biedt flexibiliteit en consistentie, waardoor het een
+perspectiefvolle tijdelijke oplossing is voor de behoeften rondom pandopdeling
+in de BGT. Het is de aanbeveling om in het vervolg duidelijke richtlijnen op te
+stellen, de implementatie te monitoren en de impact op de datakwaliteit te
+evalueren.

@@ -1,46 +1,64 @@
 # Resultaat
 
-In dit hoofdstuk wordt de respons op de consultatie en eerste inventariatie op
-de respons beschreven. Het hoofdstuk is als volgt opgebouwd: in de eerste
-paragraaf worden de statistieken beschreven, in de drie opvolgende paragrafen
-worden per werkafspraak de argumenten (drivers) voor de voorkeurswerkafspraak
-beschreven, de laatste paragraaf geeft een samenvatting van genoemde impact.
+In dit hoofdstuk wordt de respons op de consultatie en eenb eerste
+inventarisatie op de respons beschreven. Het hoofdstuk is als volgt opgebouwd:
+in de eerste paragraaf worden de statistieken beschreven, in de drie opvolgende
+paragrafen worden per werkafspraak de gegeven argumenten (*drivers*) voor de
+voorkeurswerkafspraak beschreven.
 
 ## Statistieken respons
 
+### Deze paragraaf presenteert de responsstatistieken in de vorm van een tabel en/of kaart.
+
 ### Type respondent
 
-| bronhouder             | 67  | 55,4%  |
-|------------------------|-----|--------|
-| gebruiker              | 11  | 9,1%   |
-| bronhouder + gebruiker | 26  | 21,5%  |
-| softwareleverancier    | 7   | 5,8%   |
-| overig                 | 8   | 6,6%   |
-| *«geen keuze»*         | 2   | 1,7%   |
-|                        | 121 | 100,0% |
+De tabel hieronder geeft de reacties weer op de vraag hoe de respondent zichzelf
+beschouwde: als bronhouder, gebruiker, softwareleverancier of anders.
+Respondenten konden meerdere opties selecteren.
+
+| Type respondent        | Aantal | Percentage |
+|------------------------|--------|------------|
+| bronhouder             | 67     | 55,4%      |
+| gebruiker              | 11     | 9,1%       |
+| bronhouder + gebruiker | 26     | 21,5%      |
+| softwareleverancier    | 7      | 5,8%       |
+| overig                 | 8      | 6,6%       |
+| *«geen keuze»*         | 2      | 1,7%       |
+|                        | 121    | 100,0%     |
 
 ### Type organisatie
 
-| Gemeente                        | 101 | 83,5%  |
-|---------------------------------|-----|--------|
-| Provincie                       | 1   | 0,8%   |
-| Marktpartij/softwareleverancier | 13  | 10,7%  |
-| Overige[^1]                     | 6   | 5,0%   |
-|                                 | 121 | 100,0% |
+De tabel hieronder geeft weer hoe respondenten hun reactie hebben gegeven,
+gegroepeerd naar het type organisatie waar ze toe behoren.
+
+| Type organisatie                | Aantal | Percentage |
+|---------------------------------|--------|------------|
+| Gemeente                        | 101    | 83,5%      |
+| Provincie                       | 1      | 0,8%       |
+| Marktpartij/softwareleverancier | 13     | 10,7%      |
+| Overige[^1]                     | 6      | 5,0%       |
+|                                 | 121    | 100,0%     |
 
 [^1]: Onder de categorie ‘overige’ vallen de Waarderingskamer, VNG Realisatie, het
     Kadaster, en een netbeheerder.
 
 ### Voorkeurswerkafspraak
 
-| Niet toestaan   | 14  | 11,6%  |
-|-----------------|-----|--------|
-| Deels toestaan  | 40  | 33,1%  |
-| Wel toestaan    | 66  | 54,5%  |
-| *Geen voorkeur* | 1   | 0,8%   |
-|                 | 121 | 100,0% |
+De tabel hieronder geeft de reacties weer op de vraag naar de
+voorkeurswerkafspraak van de betreffende organisatie.
+
+| Voorkeurswerkafspraak | Aantal | Percentage |
+|-----------------------|--------|------------|
+| Niet toestaan         | 14     | 11,6%      |
+| Deels toestaan        | 40     | 33,1%      |
+| Wel toestaan          | 66     | 54,5%      |
+| *Geen voorkeur*       | 1      | 0,8%       |
+|                       | 121    | 100,0%     |
 
 ### Voorkeurswerkafspraak vs. type respondent
+
+De tabel hieronder geeft een overzicht van de voorkeurswerkafspraak per type
+respondent.
 
 |                        | Niet-toestaan | Deels-toestaan | Wel-toestaan | *Geen voorkeur* |
 |------------------------|---------------|----------------|--------------|-----------------|
@@ -51,6 +69,8 @@ beschreven, de laatste paragraaf geeft een samenvatting van genoemde impact.
 | overig                 | 1             | 4              | 3            | 0               |
 | *«geen keuze»*         | 0             | 0              | 2            | 0               |
 
+### 
+
 ### Gemeenten
 
 Het respons dekt 108 van de 342 gemeenten. 3 gemeenten hebben namens de
@@ -59,9 +79,9 @@ gemeenten waarvoor zij het beheer van BGT en/of WOZ uitvoeren ingediend.
 Van/namens 6 gemeenten hebben meerdere medewerkers een reactie ingediend, welke
 afwijken van de eigen collega. Bij deze respondenten is gevraagd om te komen,
 waar voor een deel gehoor aan is gegeven. Deze aanvullende input is verwerkt in
-onderstaande statistieken en kaart.
+onderstaande tabel en kaart.
 
-|  **Gemeenten**        |     |        |
+| **Gemeenten**         |     |        |
 |-----------------------|-----|--------|
 | Niet toestaan         | 18  | 16,7%  |
 | Deels toestaan        | 31  | 28,7%  |
@@ -76,6 +96,9 @@ onderstaande statistieken en kaart.
 
 ## Voorkeurswerkafspraak Niet-toestaan
 
+Deze paragraaf geeft de respons en argumenten voor de voorkeurswerkafspraak
+‘Niet-toestaan’.
+
 ### Respons
 
 14 van de 121 respondenten (12%) geven de voorkeur aan de werkafspraak
@@ -89,9 +112,9 @@ gebruiker, en 2 respondenten als gebruiker.
 ### Drivers: waarom Niet-toestaan?
 
 Als redenen voor het toepassen van de werkspraak 'Niet-toestaan', die worden
-beschouwd als de *business drivers* voor het niet toestaan van het opdelen van
-panden in de Basisregistratie Grootschalige Topografie (BGT), worden door de
-respondenten de volgende argumenten genoemd:
+beschouwd als de *drivers* voor het niet toestaan van het opdelen van panden in
+de Basisregistratie Grootschalige Topografie (BGT), worden door de respondenten
+de volgende argumenten genoemd:
 
 1.  Geen impact op bestaande informatieproducten o.b.v. de BGT (DKK)
 
@@ -121,10 +144,10 @@ in bronhoudersoftware en/of LV BGT.
 
 Ad 3) Het opdelen van panden is optioneel, bronhouder/organisatie kiest zelf of
 extra tijd/capaciteit (lasten) opwegen tegen de baten en welke gegevens al
-beschikbaar zijn. kwaliteit handhaven kost meer tijd;
+beschikbaar zijn. Kwaliteit handhaven kost meer tijd.
 
 Ad 4) Het nader op te stellen goede werkinstructies in een praktijkrichtlijn
-moeten de foutgevoeligheid bij registratie en daarmee de kwaliteit waarborgen,
+kunnen de foutgevoeligheid bij registratie en daarmee de kwaliteit waarborgen,
 het model van BGT met vrijwillige en verplichte onderdelen (o.m. ‘nader opdelen
 voor eigen beheer’, en plus-topografie) kiest nu ook al op bepaalde onderdelen
 voor variatie in detail en volledigheid.
@@ -146,6 +169,9 @@ Wel toestaan sorteert de BGT voor op andere oplossingen.
 
 ## Voorkeurswerkafspraak Deels toestaan
 
+Deze paragraaf geeft de respons en argumenten voor de voorkeurswerkafspraak
+‘Deels-toestaan’.
+
 ### Respons
 
 40 van de 121 respondenten (33%) geven de voorkeur aan de werkafspraak
@@ -157,14 +183,14 @@ softwareleverancier en 4 als overige partij.
 
 32 respondenten zijn werkzaam bij een gemeente, 3 respondenten zijn
 softwareleverancier, 1 respondent namens het Kadaster, 1 respondent namens VNG,
-3 respondent van een overige (markt)partij.
+3 respondenten van een overige (markt)partij.
 
 ### Drivers: waarom Deels toestaan?
 
 Als redenen voor het toepassen van de werkspraak 'Deels-toestaan', die worden
-beschouwd als de *business drivers* voor het toestaan van het opnemen van
-overbouw en onderbouw in de Basisregistratie Grootschalige Topografie (BGT),
-worden door de respondenten de volgende argumenten genoemd:
+beschouwd als de *drivers* voor het toestaan van het opnemen van overbouw en
+onderbouw in de Basisregistratie Grootschalige Topografie (BGT), worden door de
+respondenten de volgende argumenten genoemd:
 
 1.  Samenhang in bijhouding en registratie geometrie in BAG en BGT.
 
@@ -174,7 +200,7 @@ worden door de respondenten de volgende argumenten genoemd:
 
 4.  Meer informatie over gebouwen voor gebruikers van de BGT (intern en extern).
 
-5.  houdt het onderscheid tussen registratie BAG en BGT zuiver.
+5.  Houdt het onderscheid tussen registratie BAG en BGT zuiver.
 
 6.  Past bij de huidige manier van registreren; slaan al boven/onderbouw op in
     BGT.
@@ -200,6 +226,9 @@ bronhouder nu reeds toepast, formeel toegestaan.
 
 ## Voorkeurswerkafspraak Wel toestaan
 
+Deze paragraaf geeft de respons en argumenten voor de voorkeurswerkafspraak
+‘Wel-toestaan’.
+
 ### Respons
 
 66 van de 121 respondenten (55%) geven de voorkeur aan de werkafspraak
@@ -216,9 +245,9 @@ namens een netbeheerder, 3 respondenten van een overige (markt)partij.
 ### Drivers: waarom Wel toestaan?
 
 Als redenen voor het toepassen van de werkspraak 'Wel-toestaan', die worden
-beschouwd als de *business drivers* voor het toestaan van het geometrische
-afbakenen van WOZ-deelobjecten als panddelen in de Basisregistratie
-Grootschalige Topografie (BGT), worden de volgende argumenten genoemd:
+beschouwd als de *drivers* voor het toestaan van het geometrische afbakenen van
+WOZ-deelobjecten als panddelen in de Basisregistratie Grootschalige Topografie
+(BGT), worden de volgende argumenten genoemd:
 
 1.  Past bij huidige afspraken over ‘opdelen voor beheer’.
 
@@ -235,12 +264,13 @@ Grootschalige Topografie (BGT), worden de volgende argumenten genoemd:
 
 7.  Extra informatie over gebouwen voor gebruikers van de BGT. (\*als in de LV!)
 
-8.  in eigen tempo toewerken naar geintegreerde bijhouding van registratie.
+8.  In eigen tempo toewerken naar geïntegreerde bijhouding van registraties.
 
-Ad 1) dat panddelen gekoppeld kunnen worden;
+Ad 1) Panddelen kunnen gekoppeld worden op basis van BAG-identificatie tot één
+BGT / BAG Pand.
 
-Ad 2) geometrie voor alle registraties kan op één plek beheerd worden wat de
-consistentie ten goede komt.
+Ad 2) Geometrie voor alle registraties kan op één plek beheerd worden wat de
+consistentie ten goede komt..
 
 Ad 3) Er hoeft geen aparte geometrie voor de WOZ-deelobjectenkaart meer
 ingewonnen/bijgehouden te worden.
@@ -248,7 +278,7 @@ ingewonnen/bijgehouden te worden.
 Ad 4) Meervoudig gebruik en aansluiting op WOZ heeft toegevoegde waarde voor
 gemeentelijke processen, en draagt bij aan de toegevoegde waarde van de BGT. De
 opties voor niet of deels toestaan beperkt gemeente in toekomstige keuzes.
-Makkelijk zelf afleiden van WOZ objectenkaart
+Makkelijk zelf afleiden van een WOZ objectenkaart.
 
 Ad 5) Meer gebruik van de BGT kan de kwaliteit van de BGT verhogen als gevolg
 van meer mutatiemeldingen. Ondanks dat het veel werk aan de voorkant is, levert
@@ -271,35 +301,5 @@ Ad 8) Het opdelen van panden is optioneel, bronhouder/organisatie kiest zelf of
 extra tijd/capaciteit (lasten) opwegen tegen de baten en welke gegevens al
 beschikbaar zijn. De opties voor niet of deels toestaan beperkt gemeente in
 toekomstige keuzes.
-
-## 
-
-## 
-
-## Impact
-
-Respondenten benoemen de volgende onderwerpen als mogelijke impact op data,
-software, en capaciteit.
-
-**Data**
-
--   Informatieverlies (of informatieuitbreiding)
-
--   Hogere kwaliteit door samenhang in bijhouding
-
--   Lagere kwaliteit bij onduidelijke afbakeningsregels
-
-**Software**
-
--   Aanvullende controles nodig ongeacht de keuze van één bepaalde werkafspraak.
-
--   Geen impact op GeoBAG koppelvlak.
-
-**Capaciteit**
-
--   Herstelactie op huidige populatie van BGT panden, die niet voldoen aan één
-    bepaalde werkafspraak.
-
--   Opdelen is veel werk, echter het is wel optioneel
 
 ## 

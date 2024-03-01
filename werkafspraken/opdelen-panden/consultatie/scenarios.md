@@ -1,6 +1,6 @@
 # Scenario’s
 
-Dit gedeelte introduceert drie scenario's die zijn ontwikkeld op basis van
+Dit hoofdstuk introduceert drie scenario's die zijn ontwikkeld op basis van
 feedback uit de consultatie, en verkent de verschillende overwegingen met
 betrekking tot de voordelen, nadelen, kansen en risico's van deze scenario's.
 Het richt zich op de mogelijke vervolgstappen met betrekking tot het opdelen van
@@ -16,9 +16,9 @@ de Landelijke Voorziening (LV) BGT of het kwaliteitsdashboard van de BGT.
 Een argument voor dit scenario is dat er momenteel geen technische problemen
 optreden, en dat de kwestie van het opdelen van panden slechts naar voren is
 gekomen omdat sommige gemeenten duidelijkheid wilden over hun bevoegdheden. In
-de praktijk zien we al geruime tijd dat overbouw/onderbouw voorkomt, maar tot nu
-toe heeft geen enkele afnemer gemeld dat dit problemen veroorzaakt bij het
-gebruik van de BGT.
+de praktijk zien we al geruime tijd dat overbouw/onderbouw voorkomt, maar tot
+voor de consultatie heeft geen enkele afnemer gemeld dat dit problemen
+veroorzaakt bij het gebruik van de BGT.
 
 Het voordeel van dit scenario is dat er (voorlopig) geen impact is op
 bronhouders, gebruikers, software of gegevens: er wordt immers geen verplichting
@@ -31,12 +31,8 @@ kan een transitie naar een meer uniforme aanpak in de toekomst moeilijker en
 kostbaarder maken.
 
 Bovendien biedt dit scenario geen kans om gezamenlijk stappen te zetten richting
-een Samenhangende Objectenregistratie (SOR[^1]) of naar een driedimensionale
-benadering (3D) van gebouwen.
-
-[^1]: Met SOR doelen we hier op de eisen en wensen zoals beschreven in het traject
-    om te komen tot één samenhangende objectenregistratie, zoals vastgelegd in
-    het document: <https://docs.geostandaarden.nl/disgeo/emso/>
+de wensen voor meer samenhang tussen de basisregistraties (‘SOR’) of naar een
+driedimensionale benadering (3D) van gebouwen.
 
 ## Scenario 2: beperken van het opdelen van panden in de BGT
 
@@ -53,8 +49,9 @@ de BGT. Echter, het nadeel is dat dit scenario wel degelijk impact heeft op
 software, gegevens en de capaciteit van bronhouders. Gegevens die niet voldoen
 aan de eisen van de BGT moeten worden gecorrigeerd: overbouw/onderbouw moet
 worden verwijderd en grondvlakgeometrie van opgedeelde BAG-panden moet worden
-geaggregeerd. Voor sommige afnemers kan dit leiden tot verlies van informatie in
-de BGT.
+geaggregeerd. Deze gegevens moeten worden gecorrigeerd in de Landelijke
+Voorziening BGT (LV BGT). Voor sommige afnemers kan dit leiden tot verlies van
+informatie in de BGT.
 
 Daarnaast vereist dit scenario extra controles in de software, zowel decentraal
 in bronhoudersoftware als centraal bij de Landelijke Voorziening BGT en/of
@@ -66,20 +63,21 @@ wordt afgedwongen in de software.
 
 Het risico bestaat ook dat overbouw/onderbouw of nadere opdeling van panden
 buiten het IMGeo om zullen worden gerealiseerd en beheerd. Dit kan resulteren in
-maatwerkoplossingen die schadelijk zijn voor de standaardisatie, en dit kan
+maatwerkoplossingen die nadeling zijn voor de standaardisatie, en dit kan
 mogelijk later leiden tot grotere investeringen bij een transitie naar een
 andere gegevensstructuur vanwege de verscheidenheid aan data.
 
 Evenzo biedt dit scenario geen kans om gezamenlijk stappen te zetten richting de
-ideeën voor een Samenhangende Objectenregistratie (SOR) of naar een
+wensen voor meer samenhang tussen basisregistraties (‘SOR’) of naar een
 driedimensionale benadering (3D).
 
 ## Scenario 3: gecontroleerd opdelen van panden met keuzevrijheid voor bronhouders
 
 Dit scenario omvat het instellen van een werkafspraak die het opdelen van panden
-in de BGT en de uitwisseling ervan met de Landelijke Voorziening BGT niet
-verbiedt, maar wel gecontroleerd toestaat. Het is een compromis dat tegemoetkomt
-aan de behoeften van gemeenten die hebben gereageerd op de consultatie.
+in de BGT en de uitwisseling ervan met de Landelijke Voorziening BGT (LV BGT)
+niet verbiedt, maar wel optioneel en gecontroleerd toestaat. Het is een
+compromis dat tegemoetkomt aan de behoeften van gemeenten die hebben gereageerd
+op de consultatie.
 
 Uit de respons blijkt dat 75% van de gemeenten die hebben gereageerd op de
 consultatie behoefte heeft aan de mogelijkheid om overbouw/onderbouw bij panden
@@ -87,6 +85,11 @@ in de BGT op te nemen en uit te wisselen. Meer dan de helft van deze gemeenten
 geeft aan ook de behoefte te hebben om panden verder op te delen in kleinere
 eenheden of panddelen, bijvoorbeeld voor aansluiting met WOZ-deelobjecten of
 voor een stap richting een driedimensionale benadering.
+
+Gebruikers hebben aangegeven toegevoegde waarde te zien in extra informatie in
+de BGT, met name voor overbouw en onderbouw voor bijvoorbeeld het samenstellen
+van de kleinschalige topografische kaart (BRT) en handhaving op maximale
+bebouwingsdichtheid van percelen.
 
 Een nadeel van dit scenario is echter dat er geen uniforme aanpak is voor de
 afbakening van overbouw/onderbouw en panddelen.
@@ -121,20 +124,28 @@ versa.
 Hoewel dit scenario kansen biedt voor meer flexibiliteit en stapsgewijze
 implementatie, bestaat het risico dat gebruikers verschillende informatie
 ontvangen. Dit kan met name een uitdaging vormen voor de Digitale Kadastrale
-Kaart, maar dit kan worden aangepakt door een extra naselectie van BGT-panden om
-toch alle benodigde panden in de DKK te tonen.
+Kaart (DKK), maar dit kan worden aangepakt door een extra naselectie van
+BGT-panden om toch alle benodigde panden in de DKK te tonen.
 
 Daarnaast biedt ook dit scenario directe mogelijkheid om gezamenlijke stappen te
-zetten richting de ideeën voor een Samenhangende Objectenregistratie (SOR) of
-naar een driedimensionale benadering (3D) van gebouwen.
+zetten richting de wensen voor meer samenhang tussen de basisregistraties
+(‘SOR’) of naar een driedimensionale benadering (3D) van gebouwen.
+
+Het nader opdelen van panden in de BGT in overbouw/onderbouw en WOZ-deelobjecten
+is nadrukkelijk optioneel. Zoals eerder vermeld, worden er twee
+praktijkrichtlijnen opgesteld, aangezien regels voor overbouw/onderbouw en
+WOZ-deelobjectafbakening niet met elkaar te verenigen zijn. De aandachtspunten
+voor het opstellen van deze regels zijn in de consultatie aangedragen en beknopt
+beschreven in bijlage 1.
 
 ## Samenvatting
 
-|               | **Scenario 1**                                                          | **Scenario 2**                                                                                                                                             | **Scenario 3**                                                                                                                                                                                             |
-|---------------|-------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Voordelen** | Geen impact IT Geen herstelactie op data Geen informatieverlies.        | Hoge uniformiteit.                                                                                                                                         | Voorziet wel in behoeften Beperkte impact IT Hogere uniformiteit, door praktijkrichtlijn. Geen informatieverlies.                                                                                          |
-| **Nadelen**   | Voorziet niet in behoeften Lage(re) uniformiteit.                       | Voorziet niet in behoeften Wel impact IT Grote herstelactie op. Informatieverlies in BGT.                                                                  | Minder grote herstelactie op bestaande data.                                                                                                                                                               |
-| **Kansen**    |                                                                         | Eenvoudige dataconversie in toekomst door gestandaardiseerde data.                                                                                         | Efficiente inwinning door samenhang in bijhouding BAG, BGT en WOZ. Meer toegevoegde waarde BGT door gebruik in ander werkproces. Eenvoudigere dataconversie in toekomst door meer-gestandaardiseerde data. |
-| **Risico’s**  | Dataconversie in toekomst moeilijker, door niet-gestandaardiseerde data | Minder toegevoegde waarde BGT door ongeschikt voor gebruik in ander werkproces. Inefficiënte inwinning door geen bijhouding in samenhang van BAG, BGT, WOZ |                                                                                                                                                                                                            |
+Hieronder volgt een samenvatting van de voordelen, nadelen, kansen en risico’s
+per scenario.
 
-Impact
+|               | **Scenario 1**                                                          | **Scenario 2**                                                                                                                                                               | **Scenario 3**                                                                                                                                                                                               |
+|---------------|-------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Voordelen** | Geen impact IT  Geen herstelactie op data  Geen informatieverlies.      | Hoge uniformiteit, vooral bij technisch afdwingen.                                                                                                                           | Voorziet in behoeften van gemeenten, optioneel en keuzevrijheid.  Beperkte impact IT  Hogere uniformiteit, door praktijkrichtlijn.  Geen informatieverlies in de BGT.                                        |
+| **Nadelen**   | Lage(re) uniformiteit.                                                  | Voorziet niet in behoeften  Wel impact IT, bij toevoegen controles voor tegenhouden opgedeelde panden.  Grote herstelactie op bestaande gegevens.  Informatieverlies in BGT. | (Beperkte) herstelactie op bestaande data.  Beperkte impact IT bij controles op correct uitvoeren praktijkrichtlijn.                                                                                         |
+| **Kansen**    |                                                                         | Eenvoudige dataconversie in toekomst door gestandaardiseerde data.                                                                                                           | Efficiente inwinning door samenhang in bijhouding BAG, BGT en WOZ.  Meer toegevoegde waarde BGT door gebruik in ander werkproces.  Eenvoudigere dataconversie in toekomst door meer-gestandaardiseerde data. |
+| **Risico’s**  | Dataconversie in toekomst moeilijker, door niet-gestandaardiseerde data | Minder toegevoegde waarde BGT door ongeschikt voor gebruik in ander werkproces.  Inefficiënte inwinning door geen bijhouding in samenhang van BAG, BGT, WOZ                  | Gemeenten riskeren tijd te besteden aan het afbakenen van opgedeelde panden in de BGT, maar moeten mogelijk toch snel naar een definitieve oplossing overstappen.                                            |

@@ -35,8 +35,8 @@ Overbouw en onderbouw zijn formeel nu geen onderdeel van de BGT, maar de LV BGT
 controleert bij registratie hier niet op. Ook zien we dat panden op maaiveld
 nader worden opgedeeld in meerdere BGT panden, waarbij deze panddelen aan elkaar
 grenzen met dezelfde BAG identificatie, een eigen BGT identificatie en veelal
-eigen nummeraanduidingreeks(en). Bronhouders passen dit toe voor aansluiting van
-de BGT op de WOZ-deelobjecten.
+eigen nummeraanduidingreeks(en). Bronhouders passen dit onder meer toe voor
+aansluiting van de BGT op de WOZ-deelobjecten.
 
 Twee regels in de BGT\|IMGeo standaarden lijken elkaar op dit onderwerp tegen te
 spreken:
@@ -44,7 +44,7 @@ spreken:
 1.  De BGT-standaard stelt dat opdelen van objecten 'voor eigen beheer' is
     toegestaan.
 
-2.  Voor eigen beheer mag een bronhouder objecten nader opdelen in afzonderlijke
+    Voor eigen beheer mag een bronhouder objecten nader opdelen in afzonderlijke
     aangrenzende objecten met gelijke attribuutwaarden (zie IMGeo-catalogus
     [§2.1](https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#plus-en-beheertopografie)
     en
@@ -55,11 +55,11 @@ spreken:
     classificaties van verhardingssoorten worden gekoppeld in het eigen
     beheersysteem.
 
-3.  De BGT-standaard hanteert de definitie van Pand uit de BAG, waarmee wordt
+2.  De BGT-standaard hanteert de definitie van Pand uit de BAG, waarmee wordt
     verondersteld dat voor elk object Pand in de BAG er precies één object Pand
     in de BGT met grondvlakgeometrie wordt opgenomen.
 
-4.  Vanaf de status ‘bouw gestart’ (zie BGT-catalogus
+    Vanaf de status ‘bouw gestart’ (zie BGT-catalogus
     [§10.7](https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#objectafbakening-pand-panddelen))
     moet een pand in de BAG worden opgenomen in de BGT[^1]. In IMGeo mag
     optioneel een pand vanaf status ‘bouwvergunning verleend’ worden opgenomen
@@ -81,10 +81,10 @@ lossen, kan Geonovum een 'werkafspraak' instellen.
 ## Proces en consultatie
 
 Op *7 maart 2023* is voor het eerst in de werkgroep Kwaliteit het onderwerp
-‘opdelen panden in de BGT’ besproken n.a.v. gemeente Best die de WOZ wil
-aansluiten op de BGT en een kleine pilot heeft uitgevoerd door BGT panden op te
-delen in afzonderlijke WOZ-deelobjecten met eigen BGT-identificatie en eigen
-geometrie.
+‘opdelen panden in de BGT’ besproken n.a.v. gemeente Best die de geometrie van
+de WOZ-deelobjectenkaart wil aansluiten op de BGT en een kleine pilot heeft
+uitgevoerd door BGT panden op te delen in afzonderlijke WOZ-deelobjecten met
+eigen BGT-identificatie en eigen geometrie.
 
 Op *30 mei 2023* heeft Geonovum een verzoek ontvangen van een consortium van 5
 gemeenten om de mogelijkheid van het nader mogen opdelen van de BGT onderdeel te
@@ -97,16 +97,19 @@ te peilen hoe verschillende stakeholders van de BGT tegen dit onderwerp
 aankijken.
 
 Op *6 september 2023* heeft Geonovum een werkbijeenkomst Opdelen panden in de
-BGT georganiseerd waaraan ca. deelnemers hebben deelgenomen.
+BGT georganiseerd waaraan ca. 35 deelnemers hebben deelgenomen.
 
 Naar aanleiding van de werkbijeenkomst heeft Geonovum drie opties van
 werkafspraken uitgewerkt: het opdelen van panden in de BGT
 
-1.  ‘niet-toestaan’
+1.  ‘niet-toestaan’:
+    <https://docs.geostandaarden.nl/imgeo/werkafspraken/opdelen-panden/niet-toestaan/>
 
-2.  ‘deels-toestaan’
+2.  ‘deels-toestaan’:
+    <https://docs.geostandaarden.nl/imgeo/werkafspraken/opdelen-panden/deels-toestaan/>
 
-3.  ‘wel-toestaan’
+3.  ‘wel-toestaan’:
+    <https://docs.geostandaarden.nl/imgeo/werkafspraken/opdelen-panden/wel-toestaan/>
 
 In de periode van *19 september tot en met 1 november 2023* heeft Geonovum de
 drie werkafspraken openbaar geconsulteerd onder het BGT werkveld.
@@ -114,23 +117,36 @@ drie werkafspraken openbaar geconsulteerd onder het BGT werkveld.
 Elke belanghebbende bij de BGT standaarden kon via een formulier feedback geven
 op de werkafspraken aan de hand van drie vragen:
 
+1.  Wat is uw voorkeurswerkafspraak?
+
+2.  Welke voordelen heeft deze voorkeurswerkafspraak voor uw organisatie?
+
+3.  Wat zijn de nadelen van de andere werkafspraken voor uw organisatie?
+
 Tijdens de consultatie heeft Geonovum twee consultatiesessies op *28 september
 en 10 oktober 2023* georganiseerd om belanghebbenden de mogelijkheid te geven
 over het onderwerp te discussiëren, en om in gesprek met BGT- en
 BAG-leveranciers de impact op het StUF-GeoBAG berichtenverkeer te bepalen.
 
-In de periode *november 2023 tot en met half februari 2024* zijn door Geonovum
-de 121 consultatiereacties geanalyseerd en hebben nog enkele aanvullende
-gesprekken plaatsgevonden met o.m. Kadaster-team van de Digitale Kadastrale
-Kaart. Verschillende scenario’s zijn uitgewerkt.
+De consultatie heeft geleid tot maar liefs 121 reacties.
 
-Op *26 februari 2024* heeft Geonovum de resultaten van de consultatie gedeeld
-met het werkveld, en voor een periode van twee weken gelegenheid gegeven om
-hierop te reageren.
+In de periode *november 2023 tot en met half februari 2024* zijn door Geonovum
+de consultatiereacties geanalyseerd en hebben nog enkele aanvullende gesprekken
+plaatsgevonden met o.m. Kadaster-team van de Digitale Kadastrale Kaart.
+Verschillende scenario’s zijn vervolgens uitgewerkt.
+
+Op *1 maart 2024* heeft Geonovum de resultaten van de consultatie gedeeld met
+het werkveld, en voor een periode van twee weken gelegenheid gegeven om hierop
+te reageren.
 
 Op *4 april 2024* wordt een beslisnotitie over dit onderwerp voorgelegd aan het
 gecombineerd overleg BAG BAO Agendaoverleg en BGT Begeleidingsgroep.
 
 ## Leeswijzer
 
-…
+Dit document bevat de resultaten van de consultatie ‘Opdelen panden in de BGT’.
+Hoofdstuk 1 beschrijft de aanleiding en het procesverloop. Hoofdstuk 2
+beschrijft de resultaten van de consultatie. Hoofdstuk 3 beschrijft enkele
+scenario’s, die Geonovum heeft uitgewerkt op basis van de consultatiereacties.
+Hoofdstuk 4 beschrijft het advies van Geonovum naar aanleiding van de
+consultatiereacties.
