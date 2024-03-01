@@ -115,13 +115,17 @@ In de periode van *19 september tot en met 1 november 2023* heeft Geonovum de
 drie werkafspraken openbaar geconsulteerd onder het BGT werkveld.
 <https://www.geonovum.nl/over-geonovum/actueel/consultatie-werkafspraak-opdelen-panden-in-bgt>.
 Elke belanghebbende bij de BGT standaarden kon via een formulier feedback geven
-op de werkafspraken aan de hand van drie vragen:
+op de werkafspraken aan de hand van vier vragen:
 
-1.  Wat is uw voorkeurswerkafspraak?
+1.  Welke werkafspraak heeft uw voorkeur?
 
-2.  Welke voordelen heeft deze voorkeurswerkafspraak voor uw organisatie?
+2.  Heeft u nog aanvullingen/verbetersuggesties van de werkafspraak van uw
+    voorkeur?
 
-3.  Wat zijn de nadelen van de andere werkafspraken voor uw organisatie?
+3.  Welke voordelen/kansen biedt deze werkafspraak voor uw organisatie?
+
+4.  Als u kijkt naar de werkafspraken die NIET uw voorkeur hebben, welke
+    nadelen/risico’s hebben die voor uw organisatie?
 
 Tijdens de consultatie heeft Geonovum twee consultatiesessies op *28 september
 en 10 oktober 2023* georganiseerd om belanghebbenden de mogelijkheid te geven
