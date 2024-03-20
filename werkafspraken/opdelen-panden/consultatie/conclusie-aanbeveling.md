@@ -30,7 +30,7 @@ registreren en uitwisselen van geometrie tussen BGT, BAG en WOZ.
 De belangrijkste redenen die gemeenten aanvoeren voor het opdelen van panden in de BGT zijn dat dit het geometriebeheer van BAG, BGT en WOZ nauwer op elkaar laat aansluiten, wat resulteert in een hogere mate van consistentie en efficiëntie binnen deze registraties. Deze nauwere afstemming stelt gemeenten in staat om hun data beter te beheren en te controleren, waardoor fouten en inconsistenties kunnen worden geminimaliseerd. 
 Bovendien biedt het opdelen van panden in de BGT de mogelijkheid om de toegevoegde waarde van deze registratie te vergroten door de gegevens in te zetten voor andere werkprocessen. Hierdoor kunnen gemeenten profiteren van een meer geïntegreerde benadering van gegevens in geobasisregsitraties, wat op zijn beurt kan leiden tot verbeterde besluitvorming, planning en dienstverlening. Met deze argumenten als leidraad, concludeert Geonovum dat het niet toestaan van het opdelen van panden in de BGT gemeenten veel beperkt.
 
-Dit scenario, dat gecontroleerd opdelen van panden toestaat met richtlijnen voor
+Het scenario, dat gecontroleerd opdelen van panden toestaat met richtlijnen voor
 uniforme afbakening, biedt een evenwicht tussen maatwerkoplossingen en de
 noodzaak van consistentie in de BGT-gegevens.
 
