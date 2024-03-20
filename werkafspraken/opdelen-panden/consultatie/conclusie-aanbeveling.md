@@ -7,6 +7,7 @@ diversiteit aan standpunten en behoeften van stakeholders benadrukt het belang
 van flexibiliteit en uniformiteit in het beheer van BGT-gegevens. Geonovum komt
 op basis van deze consultatie tot het volgende advies.
 
+
 ## Advies
 
 Gezien de interesse van de stakeholders in flexibiliteit met betrekking tot het
@@ -26,6 +27,9 @@ registreren en uitwisselen van geometrie tussen BGT, BAG en WOZ.
 
 ### Motivering
 
+De belangrijkste redenen die gemeenten aanvoeren voor het opdelen van panden in de BGT zijn dat dit het geometriebeheer van BAG, BGT en WOZ nauwer op elkaar laat aansluiten, wat resulteert in een hogere mate van consistentie en efficiëntie binnen deze registraties. Deze nauwere afstemming stelt gemeenten in staat om hun data beter te beheren en te controleren, waardoor fouten en inconsistenties kunnen worden geminimaliseerd. 
+Bovendien biedt het opdelen van panden in de BGT de mogelijkheid om de toegevoegde waarde van deze registratie te vergroten door de gegevens in te zetten voor andere werkprocessen. Hierdoor kunnen gemeenten profiteren van een meer geïntegreerde benadering van gegevens in geobasisregsitraties, wat op zijn beurt kan leiden tot verbeterde besluitvorming, planning en dienstverlening. Met deze argumenten als leidraad, concludeert Geonovum dat het niet toestaan van het opdelen van panden in de BGT gemeenten veel beperkt.
+
 Dit scenario, dat gecontroleerd opdelen van panden toestaat met richtlijnen voor
 uniforme afbakening, biedt een evenwicht tussen maatwerkoplossingen en de
 noodzaak van consistentie in de BGT-gegevens.
@@ -36,6 +40,7 @@ succes (o.m. middelen en vastgestelde visie/doel-data-architectuur) nu niet zijn
 ingevuld. Uit de consultatie blijkt dat gemeenten echter niet willen wachten en
 geen beperking willen ervaren in het gebruik van de BGT binnen hun eigen
 organisatie.
+
 
 Het niet mogen leveren van opgedeelde panden aan de Landelijke voorziening BGT
 heeft nadelige gevolgen voor bronhouders omdat extra logica in
