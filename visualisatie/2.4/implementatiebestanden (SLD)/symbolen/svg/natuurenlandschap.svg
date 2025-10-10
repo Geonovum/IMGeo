@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25px" height="25px">
+<g>
+	<path fill="#FFFFFF" d="M12.499,1.413l10.799,10.799l-10.8,10.801l-10.8-10.799L12.499,1.413 M12.499-0.001l-0.707,0.707
+		l-10.8,10.8l-0.707,0.708l0.707,0.708L11.791,23.72l0.707,0.707l0.707-0.707l10.801-10.801l0.707-0.707l-0.707-0.707L13.206,0.706
+		L12.499-0.001L12.499-0.001z"/>
+</g>
+<rect x="4.861" y="4.578" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -4.9759 12.4144)" fill="#693380" fill-opacity="0.2" stroke="#693380" width="15.273" height="15.272"/>
+<g>
+	<g>
+		<defs>
+			
+				<rect id="SVGID_1_" x="4.861" y="4.577" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -4.9755 12.4146)" width="15.274" height="15.272"/>
+		</defs>
+		<clipPath id="SVGID_2_">
+			<use xlink:href="#SVGID_1_"  overflow="visible"/>
+		</clipPath>
+		<path clip-path="url(#SVGID_2_)" fill="#693380" d="M9.857,19.253H8.35l0.229-5.733c0,0-2.169,0.163-2.898-1.368
+			c-0.73-1.53-0.042-2.674,0.104-2.917c0.146-0.244,0.562-0.57,0.562-0.57S5.659,5.152,8.871,5.174
+			c3.213,0.02,2.523,3.511,2.523,3.511s1.211,0.633,1.189,2.122c-0.022,1.489-0.898,2.185-1.523,2.43
+			c-0.626,0.242-1.502,0.283-1.502,0.283L9.857,19.253z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<defs>
+			
+				<rect id="SVGID_3_" x="4.861" y="4.577" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -4.9755 12.4146)" width="15.274" height="15.272"/>
+		</defs>
+		<clipPath id="SVGID_4_">
+			<use xlink:href="#SVGID_3_"  overflow="visible"/>
+		</clipPath>
+		<polygon clip-path="url(#SVGID_4_)" fill="#693380" points="5.472,15.069 5.472,16.069 7.476,16.069 7.516,15.069 		"/>
+	</g>
+</g>
+<g>
+	<g>
+		<defs>
+			
+				<rect id="SVGID_5_" x="4.861" y="4.577" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -4.9755 12.4146)" width="15.274" height="15.272"/>
+		</defs>
+		<clipPath id="SVGID_6_">
+			<use xlink:href="#SVGID_5_"  overflow="visible"/>
+		</clipPath>
+		<polygon clip-path="url(#SVGID_6_)" fill="#693380" points="10.692,16.069 19.645,16.069 19.645,15.069 10.64,15.069 		"/>
+	</g>
+</g>
+</svg>
