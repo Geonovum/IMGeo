@@ -1,4 +1,4 @@
-Dit is versie 2.4 van de visualisatie.
+# Versie 2.4 van de visualisatie
 
 T.o.v. vorige versie zijn de volgende aanpassingen doorgevoerd:
 
