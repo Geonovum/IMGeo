@@ -115,6 +115,7 @@
 					<PolygonSymbolizer>
 						<Fill>
 							<CssParameter name="fill">#CC0000</CssParameter>
+							<CssParameter name="fill-opacity">0.7</CssParameter>
 						</Fill>
 						<Stroke>
 							<CssParameter name="stroke">#CC0000</CssParameter>
