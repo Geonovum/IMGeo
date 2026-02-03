@@ -1,0 +1,14 @@
+img {
+  max-width: 100%;
+}
+
+table, td, th {
+  cell-padding: 0px;
+  cell-spacing: 0px;
+  border-color: #eee; 
+}
+
+thead {
+   border-color: #eee;
+  background-color: #ccc;
+}

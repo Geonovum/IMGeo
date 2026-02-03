@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20px" height="31px">
+<g>
+	<rect x="7.419" y="0.25" fill="#BD2877" width="5.161" height="17.5"/>
+	<path fill="#FFFFFF" d="M12.33,0.5v17H7.669v-17H12.33 M12.83,0h-0.5H7.669h-0.5v0.5v17V18h0.5h4.661h0.5v-0.5v-17V0L12.83,0z"/>
+</g>
+<rect x="7.67" y="0.5" fill="#BD2877" width="4.66" height="17"/>
+</svg>
